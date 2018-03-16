@@ -11,7 +11,7 @@ categories: toubleshooting
 
 ### 해결책
 아래와 같이 해당 checkbox 를 span으로 감싼다
-<script src="https://gist.github.com/min9nim/868bafbd51bcb671355d88b1574e0db8.js"></script>
+<script src="https://gist.github.com/min9nim/d4d664a3e07c4a68f341e014cd038ad4.js"></script>
 <br />
 
 ### 출처
