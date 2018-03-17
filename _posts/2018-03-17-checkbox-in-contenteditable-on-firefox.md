@@ -15,5 +15,4 @@ categories: toubleshooting
 <br />
 
 ### 출처
-[https://stackoverflow.com/questions/37106151/using-form-elements-checkboxes-inside-contenteditable-div
-](https://stackoverflow.com/questions/37106151/using-form-elements-checkboxes-inside-contenteditable-div)
+<https://stackoverflow.com/questions/37106151/using-form-elements-checkboxes-inside-contenteditable-div>{:target="_blank"}

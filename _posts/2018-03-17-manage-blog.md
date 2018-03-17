@@ -4,7 +4,7 @@ title:  "블로그 관리"
 date:   2018-03-17 02:30:00 +0900
 categories: memo
 ---
-#### 지킬 서비스 시작
+#### jekyll 서비스 시작
 ```
 bundle exec jekyll serve
 ```
@@ -16,3 +16,4 @@ git add *
 git commit -m "new post"
 git push
 ```
+<br />

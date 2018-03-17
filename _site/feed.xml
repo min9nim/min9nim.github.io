@@ -1,4 +1,82 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-17T17:20:49+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적끄적</title><subtitle>이런저런 기술관련 이야기들</subtitle><entry><title type="html">블로그 관리</title><link href="http://localhost:4000/memo/2018/03/17/manage-blog.html" rel="alternate" type="text/html" title="블로그 관리" /><published>2018-03-17T02:30:00+09:00</published><updated>2018-03-17T02:30:00+09:00</updated><id>http://localhost:4000/memo/2018/03/17/manage-blog</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/17/manage-blog.html">&lt;h4 id=&quot;지킬-서비스-시작&quot;&gt;지킬 서비스 시작&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-17T23:05:40+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적끄적</title><subtitle>이런저런 기술관련 이야기들</subtitle><entry><title type="html">telegra.ph 에 대하여</title><link href="http://localhost:4000/memo/2018/03/17/telegraph.html" rel="alternate" type="text/html" title="telegra.ph 에 대하여" /><published>2018-03-17T22:40:00+09:00</published><updated>2018-03-17T22:40:00+09:00</updated><id>http://localhost:4000/memo/2018/03/17/telegraph</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/17/telegraph.html">&lt;h4 id=&quot;telegraph-란&quot;&gt;telegra.ph 란&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;익명 기반 글 호스팅 서비스&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://telegra.ph/&quot; target=&quot;_blank&quot;&gt;http://telegra.ph/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Beauty is coming from simplicity&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;특성&quot;&gt;특성&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;쿠키/세션 기반의 권한 체크를 하는 것으로 보임
+    &lt;ul&gt;
+      &lt;li&gt;글 작성자라 할 지라도 글 작성 시 글 소유자에 대한 어떤 정보도 입력하지 않았으므로 시간이 지나 세션이 사라지면 해당 글에 대한 소유 권한을 잃어버림(수정 불가)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;수정/삭제 불가
+    &lt;ul&gt;
+      &lt;li&gt;왠지 여기서 블록체인 기술이 오버랩 되는 것은 나 뿐일까..&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;장점&quot;&gt;장점&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;누구나 간편하게 온라인 상에 컨텐츠를 게시할 수 있음
+    &lt;ul&gt;
+      &lt;li&gt;압도적인 단순함과 간결함과 용이함&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;광고 없음&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;이것이 참으로 메리트&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;주의사항&quot;&gt;주의사항&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;해당 글에 대한 링크를 잃어버리면 영원히 해당 글 access 불가&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;my-first-post&quot;&gt;my first post&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;http://telegra.ph/이쁘니-하니-03-17&quot; target=&quot;_blank&quot;&gt;http://telegra.ph/이쁘니-하니-03-17&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">telegra.ph 란 익명 기반 글 호스팅 서비스 http://telegra.ph/ Beauty is coming from simplicity</summary></entry><entry><title type="html">jekyll 사이트 favicon 추가하기</title><link href="http://localhost:4000/memo/2018/03/17/add-favicon.html" rel="alternate" type="text/html" title="jekyll 사이트 favicon 추가하기" /><published>2018-03-17T17:00:00+09:00</published><updated>2018-03-17T17:00:00+09:00</updated><id>http://localhost:4000/memo/2018/03/17/add-favicon</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/17/add-favicon.html">&lt;h4 id=&quot;jekyll-테마-변경-가이드&quot;&gt;jekyll 테마 변경 가이드&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://jekyllrb.com/docs/themes/#overriding-theme-defaults&quot; target=&quot;_blank&quot;&gt;https://jekyllrb.com/docs/themes/#overriding-theme-defaults&lt;/a&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;기본테마-경로&quot;&gt;기본테마 경로&lt;/h4&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ bundle show minima
+/Library/Ruby/Gems/2.3.0/gems/minima-2.1.1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;해당 테마의 기본 템플릿 자원을 서비스 할 jekyll 경로로 복사한다&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;/assets&lt;br /&gt;
+/_layouts&lt;br /&gt;
+/_includes&lt;br /&gt;
+/_sass&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;파비콘-업로드&quot;&gt;파비콘 업로드&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;파비콘 이미지를 /assets/ 경로에 업로드&lt;/li&gt;
+  &lt;li&gt;파비콘 이미지가 준비되어 있지 않다면 직접 만들어 볼 수 도 있다&lt;br /&gt;
+&lt;a href=&quot;http://www.degraeve.com/favicon/&quot; target=&quot;_blank&quot;&gt;http://www.degraeve.com/favicon/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;수정파일&quot;&gt;수정파일&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;em&gt;/_config.yml&lt;/em&gt; 에 &lt;code class=&quot;highlighter-rouge&quot;&gt;asset_url: /assets&lt;/code&gt; 추가&lt;br /&gt;
+&lt;img src=&quot;/images/config.yml.png&quot; alt=&quot;코드&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;/_include/head.html&lt;/em&gt; 12라인 favicon 설정 추가
+  &lt;script src=&quot;https://gist.github.com/min9nim/b61230296c6b9d755a77cf0fc4639fbe.js&quot;&gt;&lt;/script&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">jekyll 테마 변경 가이드 https://jekyllrb.com/docs/themes/#overriding-theme-defaults</summary></entry><entry><title type="html">블로그 관리</title><link href="http://localhost:4000/memo/2018/03/17/manage-blog.html" rel="alternate" type="text/html" title="블로그 관리" /><published>2018-03-17T02:30:00+09:00</published><updated>2018-03-17T02:30:00+09:00</updated><id>http://localhost:4000/memo/2018/03/17/manage-blog</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/17/manage-blog.html">&lt;h4 id=&quot;jekyll-서비스-시작&quot;&gt;jekyll 서비스 시작&lt;/h4&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle exec jekyll serve
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -7,7 +85,8 @@
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add *
 git commit -m &quot;new post&quot;
 git push
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">지킬 서비스 시작 bundle exec jekyll serve</summary></entry><entry><title type="html">Firefox에서 contenteditable 안의 checkbox 가 선택되지 않는 문제</title><link href="http://localhost:4000/toubleshooting/2018/03/17/checkbox-in-contenteditable-on-firefox.html" rel="alternate" type="text/html" title="Firefox에서 contenteditable 안의 checkbox 가 선택되지 않는 문제" /><published>2018-03-17T01:43:36+09:00</published><updated>2018-03-17T01:43:36+09:00</updated><id>http://localhost:4000/toubleshooting/2018/03/17/checkbox-in-contenteditable-on-firefox</id><content type="html" xml:base="http://localhost:4000/toubleshooting/2018/03/17/checkbox-in-contenteditable-on-firefox.html">&lt;h3 id=&quot;문제&quot;&gt;문제&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">jekyll 서비스 시작 bundle exec jekyll serve</summary></entry><entry><title type="html">Firefox에서 contenteditable 안의 checkbox 가 선택되지 않는 문제</title><link href="http://localhost:4000/toubleshooting/2018/03/17/checkbox-in-contenteditable-on-firefox.html" rel="alternate" type="text/html" title="Firefox에서 contenteditable 안의 checkbox 가 선택되지 않는 문제" /><published>2018-03-17T01:43:36+09:00</published><updated>2018-03-17T01:43:36+09:00</updated><id>http://localhost:4000/toubleshooting/2018/03/17/checkbox-in-contenteditable-on-firefox</id><content type="html" xml:base="http://localhost:4000/toubleshooting/2018/03/17/checkbox-in-contenteditable-on-firefox.html">&lt;h3 id=&quot;문제&quot;&gt;문제&lt;/h3&gt;
 &lt;p&gt;파이어폭스에서는 아래와 같이 contenteditable 영역 안의 checkbox는 선택도 클릭 이벤트도 정상동작 되지 않는다
 &lt;script src=&quot;https://gist.github.com/min9nim/868bafbd51bcb671355d88b1574e0db8.js&quot;&gt;&lt;/script&gt;
 &lt;br /&gt;&lt;/p&gt;
@@ -18,8 +97,7 @@ git push
 &lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;출처&quot;&gt;출처&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/37106151/using-form-elements-checkboxes-inside-contenteditable-div&quot;&gt;https://stackoverflow.com/questions/37106151/using-form-elements-checkboxes-inside-contenteditable-div
-&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">문제 파이어폭스에서는 아래와 같이 contenteditable 영역 안의 checkbox는 선택도 클릭 이벤트도 정상동작 되지 않는다</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2018/03/06/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-03-06T16:43:36+09:00</published><updated>2018-03-06T16:43:36+09:00</updated><id>http://localhost:4000/jekyll/update/2018/03/06/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/03/06/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/37106151/using-form-elements-checkboxes-inside-contenteditable-div&quot; target=&quot;_blank&quot;&gt;https://stackoverflow.com/questions/37106151/using-form-elements-checkboxes-inside-contenteditable-div&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">문제 파이어폭스에서는 아래와 같이 contenteditable 영역 안의 checkbox는 선택도 클릭 이벤트도 정상동작 되지 않는다</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2018/03/06/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-03-06T16:43:36+09:00</published><updated>2018-03-06T16:43:36+09:00</updated><id>http://localhost:4000/jekyll/update/2018/03/06/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/03/06/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
