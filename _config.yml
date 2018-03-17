@@ -25,6 +25,7 @@ github_username:  min9nim
 # Build settings
 markdown: kramdown
 theme: minima
+asset_url: /assets
 plugins:
   - jekyll-feed
 
