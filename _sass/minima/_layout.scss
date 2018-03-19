@@ -202,7 +202,10 @@
   @include relative-font-size(1.5);
 }
 
-
+.post-excerpt {
+  color: $grey-color;
+  @include relative-font-size(0.9);
+}
 
 /**
  * Posts
