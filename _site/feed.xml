@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-20T14:53:28+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적끄적</title><subtitle>이런저런 기술관련 이야기들</subtitle><entry><title type="html">Bookmark</title><link href="http://localhost:4000/memo/2018/03/18/bookmark.html" rel="alternate" type="text/html" title="Bookmark" /><published>2018-03-18T08:06:00+09:00</published><updated>2018-03-18T08:06:00+09:00</updated><id>http://localhost:4000/memo/2018/03/18/bookmark</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/18/bookmark.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-20T15:19:06+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적끄적</title><subtitle>이런저런 기술관련 이야기들</subtitle><entry><title type="html">Bookmark</title><link href="http://localhost:4000/memo/2018/03/18/bookmark.html" rel="alternate" type="text/html" title="Bookmark" /><published>2018-03-18T08:06:00+09:00</published><updated>2018-03-18T08:06:00+09:00</updated><id>http://localhost:4000/memo/2018/03/18/bookmark</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/18/bookmark.html">&lt;ul&gt;
   &lt;li&gt;Frequently
     &lt;ul&gt;
       &lt;li&gt;pyhon 프로그래밍 강좌&lt;br /&gt;
@@ -75,7 +75,11 @@
 &lt;h4 id=&quot;활용방안&quot;&gt;활용방안&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;특별히 수정이 발생 될 여지가 없는 컨텐츠를 여러 사람들과 간단히 공유할 필요가 있을 경우&lt;/li&gt;
-  &lt;li&gt;어떤 증거자료를 남기고자 할 경우, 사진을 온라인 상에 게시하고 해당 링크를 첨부할 수 있다&lt;/li&gt;
+  &lt;li&gt;어떤 증거자료를 남기고자 할 경우, 사진을 온라인 상에 게시하고 해당 링크를 첨부할 수 있다
+    &lt;ul&gt;
+      &lt;li&gt;핸드폰으로 찍은 사진을 바로 telegraph로 업로드 할 수 있어 편하다&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><summary type="html">telegra.ph 란 익명 기반 글 호스팅 서비스 http://telegra.ph/ Beauty is coming from simplicity</summary></entry><entry><title type="html">jekyll 사이트 favicon 추가하기</title><link href="http://localhost:4000/memo/2018/03/17/addFavicon.html" rel="alternate" type="text/html" title="jekyll 사이트 favicon 추가하기" /><published>2018-03-17T17:00:00+09:00</published><updated>2018-03-17T17:00:00+09:00</updated><id>http://localhost:4000/memo/2018/03/17/addFavicon</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/17/addFavicon.html">&lt;h4 id=&quot;jekyll-테마-변경-가이드&quot;&gt;jekyll 테마 변경 가이드&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;https://jekyllrb.com/docs/themes/#overriding-theme-defaults&quot; target=&quot;_blank&quot;&gt;https://jekyllrb.com/docs/themes/#overriding-theme-defaults&lt;/a&gt;&lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
