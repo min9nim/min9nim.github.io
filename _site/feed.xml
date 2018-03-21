@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-21T11:12:42+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적끄적</title><subtitle>이런저런 기술관련 이야기들</subtitle><entry><title type="html">[cross-browsing] 이벤트 처리시 주의사항</title><link href="http://localhost:4000/toubleshooting/2018/03/21/eventBinding.html" rel="alternate" type="text/html" title="[cross-browsing] 이벤트 처리시 주의사항" /><published>2018-03-21T10:20:36+09:00</published><updated>2018-03-21T10:20:36+09:00</updated><id>http://localhost:4000/toubleshooting/2018/03/21/eventBinding</id><content type="html" xml:base="http://localhost:4000/toubleshooting/2018/03/21/eventBinding.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-21T14:04:20+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적끄적</title><subtitle>이런저런 기술관련 이야기들</subtitle><entry><title type="html">[cross-browsing] 이벤트 처리시 주의사항</title><link href="http://localhost:4000/toubleshooting/2018/03/21/eventBinding.html" rel="alternate" type="text/html" title="[cross-browsing] 이벤트 처리시 주의사항" /><published>2018-03-21T10:20:36+09:00</published><updated>2018-03-21T10:20:36+09:00</updated><id>http://localhost:4000/toubleshooting/2018/03/21/eventBinding</id><content type="html" xml:base="http://localhost:4000/toubleshooting/2018/03/21/eventBinding.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;아래와 같이 event객체를 직접 참조하면 firefox에서 오류 발생
     &lt;ul&gt;
@@ -48,17 +48,20 @@
 
 &lt;h4 id=&quot;특성&quot;&gt;특성&lt;/h4&gt;
 &lt;ul&gt;
-  &lt;li&gt;쿠키/세션 기반의 권한 체크를 하는 것으로 보임
+  &lt;li&gt;한번 publish 된 글은 삭제 불가&lt;/li&gt;
+  &lt;li&gt;수정권한은 글 작성시 사용했던 장비의 브라우져에 한함
     &lt;ul&gt;
-      &lt;li&gt;권한체크는 글 작성 시 사용했던 브라우져인 지 여부만을 체크하는 것으로 보임&lt;/li&gt;
+      &lt;li&gt;글 작성 시 사용했던 장비와 브라우져를 잊어버리면 수정권한을 되찾을 수 없음&lt;/li&gt;
+      &lt;li&gt;&lt;em&gt;왠지 여기서 블록체인 기술이 오버랩 되는 것은 나 뿐일까..&lt;/em&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;권한 유실 시 수정/삭제 불가
+  &lt;li&gt;글의 URL주소는 최초 글 저장시 제목을 기준으로 결정됨
     &lt;ul&gt;
-      &lt;li&gt;왠지 여기서 블록체인 기술이 오버랩 되는 것은 나 뿐일까..
+      &lt;li&gt;제목 수정시 URL주소 변경 안됨&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;해당 글에 대한 링크를 잃어버리면 영원히 해당 글 access 불가
 &lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&quot;장점&quot;&gt;장점&lt;/h4&gt;
@@ -78,15 +81,8 @@
 
 &lt;h4 id=&quot;주의사항&quot;&gt;주의사항&lt;/h4&gt;
 &lt;ul&gt;
-  &lt;li&gt;한번 publish 된 글은 삭제 불가(접근주소 변경 불가)&lt;/li&gt;
-  &lt;li&gt;해당 글에 대한 링크를 잃어버리면 영원히 해당 글 access 불가&lt;/li&gt;
-  &lt;li&gt;수정권한은 글 작성시 사용했던 장비의 브라우져에 한함
-    &lt;ul&gt;
-      &lt;li&gt;글 작성 시 사용했던 장비와 브라우져를 잊어버리면 수정권한을 되찾을 수 없음&lt;/li&gt;
-      &lt;li&gt;그냥 수정/삭제 불가하다 생각하고 신중하게 글을 게시하는 것이 중요&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;초안 편집은 다른 곳에서 하고 수정/삭제 필요 없다고 판단되면 글 게시 후 링크를 잘 관리하는 것이 중요
+  &lt;li&gt;그냥 수정/삭제 불가하다 생각하고 신중하게 글을 게시하는 것이 중요&lt;/li&gt;
+  &lt;li&gt;글 게시 후 링크를 잘 관리하는 것이 중요
 &lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -99,7 +95,7 @@
   &lt;li&gt;특별히 수정이 발생 될 여지가 없는 컨텐츠를 여러 사람들과 간단히 공유할 필요가 있을 경우&lt;/li&gt;
   &lt;li&gt;어떤 증거자료를 남기고자 할 경우, 사진을 온라인 상에 게시하고 해당 링크를 첨부할 수 있다
     &lt;ul&gt;
-      &lt;li&gt;핸드폰으로 찍은 사진을 바로 telegraph로 업로드 할 수 있어 편하다&lt;/li&gt;
+      &lt;li&gt;핸드폰으로 찍은 사진을 바로 telegra.ph로 업로드 할 수 있어 편하다&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><summary type="html">telegra.ph 란 익명 기반 글 호스팅 서비스 http://telegra.ph/ Beauty is coming from simplicity</summary></entry><entry><title type="html">jekyll 사이트 favicon 추가하기</title><link href="http://localhost:4000/memo/2018/03/17/addFavicon.html" rel="alternate" type="text/html" title="jekyll 사이트 favicon 추가하기" /><published>2018-03-17T17:00:00+09:00</published><updated>2018-03-17T17:00:00+09:00</updated><id>http://localhost:4000/memo/2018/03/17/addFavicon</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/17/addFavicon.html">&lt;h4 id=&quot;jekyll-테마-변경-가이드&quot;&gt;jekyll 테마 변경 가이드&lt;/h4&gt;
