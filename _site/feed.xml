@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-21T14:04:20+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적끄적</title><subtitle>이런저런 기술관련 이야기들</subtitle><entry><title type="html">[cross-browsing] 이벤트 처리시 주의사항</title><link href="http://localhost:4000/toubleshooting/2018/03/21/eventBinding.html" rel="alternate" type="text/html" title="[cross-browsing] 이벤트 처리시 주의사항" /><published>2018-03-21T10:20:36+09:00</published><updated>2018-03-21T10:20:36+09:00</updated><id>http://localhost:4000/toubleshooting/2018/03/21/eventBinding</id><content type="html" xml:base="http://localhost:4000/toubleshooting/2018/03/21/eventBinding.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-22T01:11:55+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적끄적</title><subtitle>이런저런 기술관련 이야기들</subtitle><entry><title type="html">requirejs 모듈 로드시 순서 관련</title><link href="http://localhost:4000/memo/2018/03/22/requirejs.html" rel="alternate" type="text/html" title="requirejs 모듈 로드시 순서 관련" /><published>2018-03-22T00:46:36+09:00</published><updated>2018-03-22T00:46:36+09:00</updated><id>http://localhost:4000/memo/2018/03/22/requirejs</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/22/requirejs.html">&lt;h4 id=&quot;예시&quot;&gt;예시&lt;/h4&gt;
+&lt;script src=&quot;https://gist.github.com/min9nim/33a76b8c679e24dade2afc3ec134b4e4.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;설명&quot;&gt;설명&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;위와 같이 모듈들을 불러 올때 mn.js가 실행되는 스코프에서는 vue.js 에서 사용한 전역변수를 참조할 수 없다
+    &lt;ul&gt;
+      &lt;li&gt;vue.js, mn.js, util.js 의 실행 순서가 보장되지 않기 때문에&lt;/li&gt;
+      &lt;li&gt;&lt;em&gt;물론 mn.js 모듈 정의 시 vue.js를 디펜던시 모듈로 참조하면 가능하겠지만&lt;/em&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;15,16,17라인에서는 각 모듈에서 정의한 Vue, mn, $m 참조가 보장되며 각 모듈들에서 사용한 전역변수도 참조 가능하다&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">예시</summary></entry><entry><title type="html">[cross-browsing] 이벤트 처리시 주의사항</title><link href="http://localhost:4000/toubleshooting/2018/03/21/eventBinding.html" rel="alternate" type="text/html" title="[cross-browsing] 이벤트 처리시 주의사항" /><published>2018-03-21T10:20:36+09:00</published><updated>2018-03-21T10:20:36+09:00</updated><id>http://localhost:4000/toubleshooting/2018/03/21/eventBinding</id><content type="html" xml:base="http://localhost:4000/toubleshooting/2018/03/21/eventBinding.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;아래와 같이 event객체를 직접 참조하면 firefox에서 오류 발생
     &lt;ul&gt;
