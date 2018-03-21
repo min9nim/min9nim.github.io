@@ -11,7 +11,7 @@ categories: toubleshooting
 <script src="https://gist.github.com/min9nim/7f69402de6a6079a3e2936d266347a2c.js"></script>
 <br />
 
-### 해결책
+#### 해결책
 * 아래와 같이 패러미터로 전달된 이벤트 객체를 사용해야 한다
   * chrome & firefox 외 브라우져는 테스트 안 해봄
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-21T10:32:09+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적끄적</title><subtitle>이런저런 기술관련 이야기들</subtitle><entry><title type="html">[cross-browsing] 이벤트 처리시 주의사항</title><link href="http://localhost:4000/toubleshooting/2018/03/21/eventBinding.html" rel="alternate" type="text/html" title="[cross-browsing] 이벤트 처리시 주의사항" /><published>2018-03-21T10:20:36+09:00</published><updated>2018-03-21T10:20:36+09:00</updated><id>http://localhost:4000/toubleshooting/2018/03/21/eventBinding</id><content type="html" xml:base="http://localhost:4000/toubleshooting/2018/03/21/eventBinding.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-21T11:12:42+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적끄적</title><subtitle>이런저런 기술관련 이야기들</subtitle><entry><title type="html">[cross-browsing] 이벤트 처리시 주의사항</title><link href="http://localhost:4000/toubleshooting/2018/03/21/eventBinding.html" rel="alternate" type="text/html" title="[cross-browsing] 이벤트 처리시 주의사항" /><published>2018-03-21T10:20:36+09:00</published><updated>2018-03-21T10:20:36+09:00</updated><id>http://localhost:4000/toubleshooting/2018/03/21/eventBinding</id><content type="html" xml:base="http://localhost:4000/toubleshooting/2018/03/21/eventBinding.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;아래와 같이 event객체를 직접 참조하면 firefox에서 오류 발생
     &lt;ul&gt;
@@ -11,7 +11,7 @@
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;해결책&quot;&gt;해결책&lt;/h3&gt;
+&lt;h4 id=&quot;해결책&quot;&gt;해결책&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;아래와 같이 패러미터로 전달된 이벤트 객체를 사용해야 한다
     &lt;ul&gt;
@@ -33,12 +33,12 @@
   &lt;/li&gt;
   &lt;li&gt;temp
     &lt;ul&gt;
-      &lt;li&gt;kakao 기술 블로그가 GitHub Pages로 간 까닭은&lt;br /&gt;
+      &lt;li&gt;jekyll 태그기능 적용방법 참고
 &lt;a href=&quot;http://tech.kakao.com/2016/07/07/tech-blog-story/&quot; target=&quot;_blank&quot;&gt;http://tech.kakao.com/2016/07/07/tech-blog-story/&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;checked&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Frequently pyhon 프로그래밍 강좌 http://blog.eairship.kr/category/프로그래밍 관련/Python Medium https://medium.com/topic/programming liquid docs https://shopify.github.io/liquid/basics/introduction/ temp kakao 기술 블로그가 GitHub Pages로 간 까닭은 http://tech.kakao.com/2016/07/07/tech-blog-story/ checked</summary></entry><entry><title type="html">telegra.ph 에 대하여</title><link href="http://localhost:4000/memo/2018/03/17/telegraph.html" rel="alternate" type="text/html" title="telegra.ph 에 대하여" /><published>2018-03-17T22:40:00+09:00</published><updated>2018-03-17T22:40:00+09:00</updated><id>http://localhost:4000/memo/2018/03/17/telegraph</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/17/telegraph.html">&lt;h4 id=&quot;telegraph-란&quot;&gt;telegra.ph 란&lt;/h4&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Frequently pyhon 프로그래밍 강좌 http://blog.eairship.kr/category/프로그래밍 관련/Python Medium https://medium.com/topic/programming liquid docs https://shopify.github.io/liquid/basics/introduction/ temp jekyll 태그기능 적용방법 참고 http://tech.kakao.com/2016/07/07/tech-blog-story/ checked</summary></entry><entry><title type="html">telegra.ph 에 대하여</title><link href="http://localhost:4000/memo/2018/03/17/telegraph.html" rel="alternate" type="text/html" title="telegra.ph 에 대하여" /><published>2018-03-17T22:40:00+09:00</published><updated>2018-03-17T22:40:00+09:00</updated><id>http://localhost:4000/memo/2018/03/17/telegraph</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/17/telegraph.html">&lt;h4 id=&quot;telegraph-란&quot;&gt;telegra.ph 란&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;익명 기반 글 호스팅 서비스&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://telegra.ph/&quot; target=&quot;_blank&quot;&gt;http://telegra.ph/&lt;/a&gt;&lt;/li&gt;
