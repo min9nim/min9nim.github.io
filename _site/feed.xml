@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-20T15:19:06+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적끄적</title><subtitle>이런저런 기술관련 이야기들</subtitle><entry><title type="html">Bookmark</title><link href="http://localhost:4000/memo/2018/03/18/bookmark.html" rel="alternate" type="text/html" title="Bookmark" /><published>2018-03-18T08:06:00+09:00</published><updated>2018-03-18T08:06:00+09:00</updated><id>http://localhost:4000/memo/2018/03/18/bookmark</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/18/bookmark.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-21T10:32:09+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적끄적</title><subtitle>이런저런 기술관련 이야기들</subtitle><entry><title type="html">[cross-browsing] 이벤트 처리시 주의사항</title><link href="http://localhost:4000/toubleshooting/2018/03/21/eventBinding.html" rel="alternate" type="text/html" title="[cross-browsing] 이벤트 처리시 주의사항" /><published>2018-03-21T10:20:36+09:00</published><updated>2018-03-21T10:20:36+09:00</updated><id>http://localhost:4000/toubleshooting/2018/03/21/eventBinding</id><content type="html" xml:base="http://localhost:4000/toubleshooting/2018/03/21/eventBinding.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;아래와 같이 event객체를 직접 참조하면 firefox에서 오류 발생
+    &lt;ul&gt;
+      &lt;li&gt;크롬에서는 정상&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script src=&quot;https://gist.github.com/min9nim/7f69402de6a6079a3e2936d266347a2c.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;해결책&quot;&gt;해결책&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;아래와 같이 패러미터로 전달된 이벤트 객체를 사용해야 한다
+    &lt;ul&gt;
+      &lt;li&gt;chrome &amp;amp; firefox 외 브라우져는 테스트 안 해봄&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script src=&quot;https://gist.github.com/min9nim/82014d7854357088dab5083eb7fbedb7.js&quot;&gt;&lt;/script&gt;</content><author><name></name></author><summary type="html">문제 아래와 같이 event객체를 직접 참조하면 firefox에서 오류 발생 크롬에서는 정상</summary></entry><entry><title type="html">Bookmark</title><link href="http://localhost:4000/memo/2018/03/18/bookmark.html" rel="alternate" type="text/html" title="Bookmark" /><published>2018-03-18T08:06:00+09:00</published><updated>2018-03-18T08:06:00+09:00</updated><id>http://localhost:4000/memo/2018/03/18/bookmark</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/18/bookmark.html">&lt;ul&gt;
   &lt;li&gt;Frequently
     &lt;ul&gt;
       &lt;li&gt;pyhon 프로그래밍 강좌&lt;br /&gt;
