@@ -18,7 +18,7 @@ layout: default
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
-  {% if site.facebook_comments == true %}
+  {% if site.facebook_comments == true and jekyll.environment == "production" %}
     {% include facebook_comments.html %}
   {% endif %}
 </article>
