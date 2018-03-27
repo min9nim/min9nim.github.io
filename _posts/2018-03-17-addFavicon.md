@@ -14,12 +14,13 @@ categories: memo
 $ bundle show minima
 /Library/Ruby/Gems/2.3.0/gems/minima-2.1.1
 ```
-해당 테마의 기본 템플릿 자원을 서비스 할 jekyll 경로로 복사한다
-> /assets  
+해당 테마의 기본 템플릿 자원(아래 4개 폴더)을 서비스 할 jekyll 경로로 복사한다
+```
+/assets  
 /_layouts  
 /_includes  
 /_sass
-
+```
 <br>
 
 #### 파비콘 업로드
