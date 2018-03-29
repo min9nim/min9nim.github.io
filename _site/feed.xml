@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-28T07:26:22+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적끄적</title><subtitle>이런저런 기술관련 이야기들</subtitle><entry><title type="html">[crossBrowsing] safari 에서 가로스크롤 막기</title><link href="http://localhost:4000/frontend/2018/03/22/iosXScroll.html" rel="alternate" type="text/html" title="[crossBrowsing] safari 에서 가로스크롤 막기" /><published>2018-03-22T13:18:00+09:00</published><updated>2018-03-22T13:18:00+09:00</updated><id>http://localhost:4000/frontend/2018/03/22/iosXScroll</id><content type="html" xml:base="http://localhost:4000/frontend/2018/03/22/iosXScroll.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-29T23:20:20+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적끄적</title><subtitle>이런저런 기술관련 이야기들</subtitle><entry><title type="html">[crossBrowsing] safari 에서 가로스크롤 막기</title><link href="http://localhost:4000/frontend/2018/03/22/iosXScroll.html" rel="alternate" type="text/html" title="[crossBrowsing] safari 에서 가로스크롤 막기" /><published>2018-03-22T13:18:00+09:00</published><updated>2018-03-22T13:18:00+09:00</updated><id>http://localhost:4000/frontend/2018/03/22/iosXScroll</id><content type="html" xml:base="http://localhost:4000/frontend/2018/03/22/iosXScroll.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
 &lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;nl&quot;&gt;overflow-x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;hidden&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
@@ -64,19 +64,22 @@
 &lt;script src=&quot;https://gist.github.com/min9nim/82014d7854357088dab5083eb7fbedb7.js&quot;&gt;&lt;/script&gt;</content><author><name></name></author><summary type="html">문제 아래와 같이 event객체를 직접 참조하면 firefox에서 오류 발생 크롬에서는 정상</summary></entry><entry><title type="html">Bookmark</title><link href="http://localhost:4000/memo/2018/03/18/bookmark.html" rel="alternate" type="text/html" title="Bookmark" /><published>2018-03-18T08:06:00+09:00</published><updated>2018-03-18T08:06:00+09:00</updated><id>http://localhost:4000/memo/2018/03/18/bookmark</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/18/bookmark.html">&lt;ul&gt;
   &lt;li&gt;Frequently
     &lt;ul&gt;
-      &lt;li&gt;pyhon 프로그래밍 강좌, &lt;a href=&quot;http://blog.eairship.kr/category/프로그래밍 관련/Python&quot; target=&quot;_blank&quot;&gt;http://blog.eairship.kr/category/프로그래밍 관련/Python&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;Medium, &lt;a href=&quot;https://medium.com/topic/programming&quot; target=&quot;_blank&quot;&gt;https://medium.com/topic/programming&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;liquid docs, &lt;a href=&quot;https://shopify.github.io/liquid/basics/introduction/&quot; target=&quot;_blank&quot;&gt;https://shopify.github.io/liquid/basics/introduction/&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;es6 vs es5, &lt;a href=&quot;http://es6-features.org&quot; target=&quot;_blank&quot;&gt;http://es6-features.org&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://blog.eairship.kr/category/프로그래밍 관련/Python&quot; target=&quot;_blank&quot;&gt;pyhon 프로그래밍 강좌&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://medium.com/topic/programming&quot; target=&quot;_blank&quot;&gt;Medium&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://shopify.github.io/liquid/basics/introduction&quot; target=&quot;_blank&quot;&gt;liquid docs&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://es6-features.org&quot; target=&quot;_blank&quot;&gt;es6 vs es5&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://tech.inswave.com/2018/03/17/ES5&quot; target=&quot;_blank&quot;&gt;es5 core&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;temp
     &lt;ul&gt;
-      &lt;li&gt;jekyll 태그기능 적용방법 참고, &lt;a href=&quot;http://tech.kakao.com/2016/07/07/tech-blog-story/&quot; target=&quot;_blank&quot;&gt;http://tech.kakao.com/2016/07/07/tech-blog-story/&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://tech.kakao.com/2016/07/07/tech-blog-story&quot; target=&quot;_blank&quot;&gt;jekyll 태그기능 적용방법&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://auth0.com/blog/javascript-module-systems-showdown&quot; target=&quot;_blank&quot;&gt;js module&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://auth0.com/blog/four-types-of-leaks-in-your-javascript-code-and-how-to-get-rid-of-them/&quot; target=&quot;_blank&quot;&gt;4 Types of Memory Leaks in JavaScript&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;checked&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Frequently pyhon 프로그래밍 강좌, http://blog.eairship.kr/category/프로그래밍 관련/Python Medium, https://medium.com/topic/programming liquid docs, https://shopify.github.io/liquid/basics/introduction/ es6 vs es5, http://es6-features.org temp jekyll 태그기능 적용방법 참고, http://tech.kakao.com/2016/07/07/tech-blog-story/ checked</summary></entry><entry><title type="html">telegra.ph 에 대하여</title><link href="http://localhost:4000/memo/2018/03/17/telegraph.html" rel="alternate" type="text/html" title="telegra.ph 에 대하여" /><published>2018-03-17T22:40:00+09:00</published><updated>2018-03-17T22:40:00+09:00</updated><id>http://localhost:4000/memo/2018/03/17/telegraph</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/17/telegraph.html">&lt;h4 id=&quot;telegraph-란&quot;&gt;telegra.ph 란&lt;/h4&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Frequently pyhon 프로그래밍 강좌 Medium liquid docs es6 vs es5 es5 core temp jekyll 태그기능 적용방법 js module 4 Types of Memory Leaks in JavaScript checked</summary></entry><entry><title type="html">telegra.ph 에 대하여</title><link href="http://localhost:4000/memo/2018/03/17/telegraph.html" rel="alternate" type="text/html" title="telegra.ph 에 대하여" /><published>2018-03-17T22:40:00+09:00</published><updated>2018-03-17T22:40:00+09:00</updated><id>http://localhost:4000/memo/2018/03/17/telegraph</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/17/telegraph.html">&lt;h4 id=&quot;telegraph-란&quot;&gt;telegra.ph 란&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;익명 기반 글 호스팅 서비스&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://telegra.ph/&quot; target=&quot;_blank&quot;&gt;http://telegra.ph/&lt;/a&gt;&lt;/li&gt;
@@ -98,7 +101,8 @@
       &lt;li&gt;제목 수정시 URL주소 변경 안됨&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;해당 글에 대한 링크를 잃어버리면 영원히 해당 글 access 불가
+  &lt;li&gt;해당 글에 대한 링크를 잃어버리면 영원히 해당 글 access 불가&lt;/li&gt;
+  &lt;li&gt;이미지 첨부시 압축없이 원본 이미지 그대로 업로드되고 서비스 됨(썸네일 사용 안함)
 &lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -120,23 +124,28 @@
 &lt;h4 id=&quot;주의사항&quot;&gt;주의사항&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;그냥 수정/삭제 불가하다 생각하고 신중하게 글을 게시하는 것이 중요&lt;/li&gt;
-  &lt;li&gt;글 게시 후 링크를 잘 관리하는 것이 중요
+  &lt;li&gt;글 게시 후 링크를 잘 관리하는 것이 중요&lt;/li&gt;
+  &lt;li&gt;최초 글 저장 당시 제목이 해당 컨텐츠의 URL주소에 포함되기 때문에 URL이 불필요하게 길어질 수 있다
+    &lt;ul&gt;
+      &lt;li&gt;짧은 URL을 사용하고 싶다면 간단한 영문 타이틀 입력 후 저장을 한번 하고나서 적당한 제목으로 변경하도록 한다.
 &lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h4 id=&quot;my-first-post&quot;&gt;my first post&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;http://telegra.ph/이쁘니-하니-03-17&quot; target=&quot;_blank&quot;&gt;http://telegra.ph/이쁘니-하니-03-17&lt;/a&gt;
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;활용방안&quot;&gt;활용방안&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;특별히 수정이 발생 될 여지가 없는 컨텐츠를 여러 사람들과 간단히 공유할 필요가 있을 경우&lt;/li&gt;
   &lt;li&gt;어떤 증거자료를 남기고자 할 경우, 사진을 온라인 상에 게시하고 해당 링크를 첨부할 수 있다
     &lt;ul&gt;
-      &lt;li&gt;핸드폰으로 찍은 사진을 바로 telegra.ph로 업로드 할 수 있어 편하다&lt;/li&gt;
+      &lt;li&gt;핸드폰으로 찍은 사진을 바로 telegra.ph로 업로드 할 수 있어 편하다
+&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">telegra.ph 란 익명 기반 글 호스팅 서비스 http://telegra.ph/ Beauty is coming from simplicity</summary></entry><entry><title type="html">jekyll 사이트 favicon 추가하기</title><link href="http://localhost:4000/memo/2018/03/17/addFavicon.html" rel="alternate" type="text/html" title="jekyll 사이트 favicon 추가하기" /><published>2018-03-17T17:00:00+09:00</published><updated>2018-03-17T17:00:00+09:00</updated><id>http://localhost:4000/memo/2018/03/17/addFavicon</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/17/addFavicon.html">&lt;h4 id=&quot;jekyll-테마-변경-가이드&quot;&gt;jekyll 테마 변경 가이드&lt;/h4&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;my-first-post&quot;&gt;my first post&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;http://telegra.ph/이쁘니-하니-03-17&quot; target=&quot;_blank&quot;&gt;http://telegra.ph/이쁘니-하니-03-17&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">telegra.ph 란 익명 기반 글 호스팅 서비스 http://telegra.ph/ Beauty is coming from simplicity</summary></entry><entry><title type="html">jekyll 사이트 favicon 추가하기</title><link href="http://localhost:4000/memo/2018/03/17/addFavicon.html" rel="alternate" type="text/html" title="jekyll 사이트 favicon 추가하기" /><published>2018-03-17T17:00:00+09:00</published><updated>2018-03-17T17:00:00+09:00</updated><id>http://localhost:4000/memo/2018/03/17/addFavicon</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/17/addFavicon.html">&lt;h4 id=&quot;jekyll-테마-변경-가이드&quot;&gt;jekyll 테마 변경 가이드&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;https://jekyllrb.com/docs/themes/#overriding-theme-defaults&quot; target=&quot;_blank&quot;&gt;https://jekyllrb.com/docs/themes/#overriding-theme-defaults&lt;/a&gt;&lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 
