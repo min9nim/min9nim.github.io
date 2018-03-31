@@ -1,4 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-30T11:36:48+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적끄적</title><subtitle>이런저런 기술관련 이야기들</subtitle><entry><title type="html">[crossBrowsing] safari 에서 가로스크롤 막기</title><link href="http://localhost:4000/frontend/2018/03/22/iosXScroll.html" rel="alternate" type="text/html" title="[crossBrowsing] safari 에서 가로스크롤 막기" /><published>2018-03-22T13:18:00+09:00</published><updated>2018-03-22T13:18:00+09:00</updated><id>http://localhost:4000/frontend/2018/03/22/iosXScroll</id><content type="html" xml:base="http://localhost:4000/frontend/2018/03/22/iosXScroll.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-01T00:51:19+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적끄적</title><subtitle>이런저런 기술관련 이야기들</subtitle><entry><title type="html">[ramdajs] forEach 버그</title><link href="http://localhost:4000/frontend/2018/04/01/ramdajsForEach.html" rel="alternate" type="text/html" title="[ramdajs] forEach 버그" /><published>2018-04-01T00:35:00+09:00</published><updated>2018-04-01T00:35:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/01/ramdajsForEach</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/01/ramdajsForEach.html">&lt;h4 id=&quot;예시&quot;&gt;예시&lt;/h4&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;//cdn.jsdelivr.net/npm/ramda@0.25/dist/ramda.min.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;item&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;item&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;item&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;arguments.length = &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;arguments&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;querySelectorAll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;.item&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;결과&quot;&gt;결과&lt;/h4&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;arguments.length = 3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;질문&quot;&gt;질문&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;http://ramdajs.com/docs/#forEach&quot; target=&quot;_blank&quot;&gt;forEach 매뉴얼&lt;/a&gt; 을 보면
+첫번째 인자 함수가 패러미터를 1개만 받는다고 나와있는데.. 저 경우에는 왜 3개를 받는 걸가?
+버그라고 봐야하지 않을까&lt;/p&gt;</content><author><name></name></author><summary type="html">예시 ```html</summary></entry><entry><title type="html">[crossBrowsing] safari 에서 가로스크롤 막기</title><link href="http://localhost:4000/frontend/2018/03/22/iosXScroll.html" rel="alternate" type="text/html" title="[crossBrowsing] safari 에서 가로스크롤 막기" /><published>2018-03-22T13:18:00+09:00</published><updated>2018-03-22T13:18:00+09:00</updated><id>http://localhost:4000/frontend/2018/03/22/iosXScroll</id><content type="html" xml:base="http://localhost:4000/frontend/2018/03/22/iosXScroll.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
 &lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;nl&quot;&gt;overflow-x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;hidden&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
