@@ -5,27 +5,7 @@ date:   2018-04-01 00:35:00 +0900
 categories: FrontEnd
 ---
 #### 예시
-```html
-<html>
-
-    <head>
-        <script src="//cdn.jsdelivr.net/npm/ramda@0.25/dist/ramda.min.js"></script>
-    </head>
-
-    <body>
-        <div class="item" />
-        <div class="item" />
-        <div class="item" />
-        <script>
-            R.forEach(function() {
-                console.log("arguments.length = " + arguments.length)
-            }, document.querySelectorAll(".item"));
-
-        </script>
-    </body>
-
-</html>
-```
+<script src="https://gist.github.com/min9nim/11a2369a18f41c09ebc39c4991da78b0.js"></script>
 <br>
 
 #### 결과

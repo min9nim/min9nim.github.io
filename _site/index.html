@@ -80,11 +80,67 @@
         
         <span class="post-meta">Apr 1, 2018</span>
         <h2>
+          <a class="post-link" href="/frontend/2018/04/01/git-command.html">git 명령어 요약</a>
+        </h2>
+        <a class="" href="/frontend/2018/04/01/git-command.html">
+            <p class="post-excerpt">브랜치
+
+  브랜치 생성
+    $ git branch iss53
+    
+  
+  브랜치 이동
+    $ git checkout iss53
+    
+  
+  브랜치 목록 보기
+    $ git branch
+iss53
+&gt; master
+testing
+    
+  
+  브랜치를 만들면서 Checkout까지 한 번에
+    $ git checkout -b iss53
+    
+    위 명령은 아래 명령을 줄여놓은 것
+    $ git branch iss53
+$ git checkout iss53
+    
+  
+  master 브랜치에서 hotfix 브랜치를 merge 하고자 한다면
+    $ git checkout master
+$ git merge hotfix
+    
+  
+  merge 된 브랜치 목록
+    $ git branch --merged
+    
+  
+  아직 merge 안 된 브랜치 목록
+    $ git branch --no-merged
+    
+  
+  iss53 브랜치를 삭제
+    $ git branch -d iss53
+    
+    
+  
+
+
+</p>
+        </a>
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Apr 1, 2018</span>
+        <h2>
           <a class="post-link" href="/frontend/2018/04/01/ramdajs-forEach.html">[ramdajs] forEach 버그</a>
         </h2>
         <a class="" href="/frontend/2018/04/01/ramdajs-forEach.html">
             <p class="post-excerpt">예시
-```html
+
 
 
 
