@@ -50,3 +50,14 @@ _.find_i = _.findIndex = collf(function(data, iter, X, X2, i, l) {
   return -1;
 });
 ```
+<br>
+
+
+#### es6와 "use strict";
+- es6 모듈은 모듈 안에서 "use strict"; 를 사용하지 않아도 자동으로 strict 모드로 처리된다고 함
+- 해당 문제로 patial.js는 es6에서 모듈로 사용 불가
+<br>
+<br>
+
+#### Ref.
+<http://hacks.mozilla.or.kr/2016/05/es6-in-depth-modules/>
