@@ -1,15 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-03T11:20:29+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적끄적</title><subtitle>이런저런 기술관련 이야기들</subtitle><entry><title type="html">크롬 개발자도구를 이용한 js beautify</title><link href="http://localhost:4000/frontend/2018/04/chrome-beautify.html" rel="alternate" type="text/html" title="크롬 개발자도구를 이용한 js beautify" /><published>2018-04-02T23:25:00+09:00</published><updated>2018-04-02T23:25:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/chrome-beautify</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/chrome-beautify.html">&lt;h4 id=&quot;summary&quot;&gt;Summary&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-03T12:30:33+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적끄적</title><subtitle>이런저런 기술관련 이야기들</subtitle><entry><title type="html">크롬 개발자도구를 이용한 js beautify</title><link href="http://localhost:4000/frontend/2018/04/chrome-beautify.html" rel="alternate" type="text/html" title="크롬 개발자도구를 이용한 js beautify" /><published>2018-04-02T23:25:00+09:00</published><updated>2018-04-02T23:25:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/chrome-beautify</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/chrome-beautify.html">&lt;h4 id=&quot;summary&quot;&gt;Summary&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;난독화된 js를 디버깅해야 할 경우 크롬 개발자도구의 beautify 기능을 간단히 이용할 수 있다.
     &lt;ul&gt;
       &lt;li&gt;특별히 오프라인 환경에서 beautify 도구를 사용할 수 없을 때 유용함&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;본 가이드는 난독화된 $.clone 함수를 예로 해당 함수를 beautify 하여 디버깅하는 방법을 소개한다
+  &lt;li&gt;난독화된 $.clone 함수를 예로 해당 함수를 beautify 하는 방법을 소개
 &lt;br /&gt;
 &lt;br /&gt;
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h4 id=&quot;benefits-to&quot;&gt;Benefits to&lt;/h4&gt;
+&lt;p&gt;보안 상의 이유로 폐쇄 망에 갇혀 프로젝트를 진행해야 하는 가엾은 SI개발자
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;guide&quot;&gt;Guide&lt;/h4&gt;
 &lt;ol&gt;
@@ -35,10 +41,16 @@
 &lt;br /&gt;beautify 됨
 &lt;br /&gt;
 &lt;img src=&quot;/images/chrome-step3.PNG&quot; alt=&quot;step3&quot; /&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">Summary 난독화된 js를 디버깅해야 할 경우 크롬 개발자도구의 beautify 기능을 간단히 이용할 수 있다. 특별히 오프라인 환경에서 beautify 도구를 사용할 수 없을 때 유용함 본 가이드는 난독화된 $.clone 함수를 예로 해당 함수를 beautify 하여 디버깅하는 방법을 소개한다</summary></entry><entry><title type="html">[partialjs] webpack 빌드시 use strict 오류</title><link href="http://localhost:4000/frontend/2018/04/partialjs-strict.html" rel="alternate" type="text/html" title="[partialjs] webpack 빌드시 use strict 오류" /><published>2018-04-01T19:20:00+09:00</published><updated>2018-04-01T19:20:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/partialjs-strict</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/partialjs-strict.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Summary 난독화된 js를 디버깅해야 할 경우 크롬 개발자도구의 beautify 기능을 간단히 이용할 수 있다. 특별히 오프라인 환경에서 beautify 도구를 사용할 수 없을 때 유용함 난독화된 $.clone 함수를 예로 해당 함수를 beautify 하는 방법을 소개</summary></entry><entry><title type="html">[partialjs] webpack 빌드시 use strict 오류</title><link href="http://localhost:4000/frontend/2018/04/partialjs-strict.html" rel="alternate" type="text/html" title="[partialjs] webpack 빌드시 use strict 오류" /><published>2018-04-01T19:20:00+09:00</published><updated>2018-04-01T19:20:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/partialjs-strict</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/partialjs-strict.html">&lt;h4 id=&quot;benefits-to&quot;&gt;Benefits to&lt;/h4&gt;
+&lt;p&gt;webpack 빌드 환경에서 &lt;a href=&quot;https://github.com/marpple/partial.js&quot;&gt;partialjs&lt;/a&gt; 를 모듈로 사용하고자 할 경우
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;problem&quot;&gt;Problem&lt;/h4&gt;
 &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'./ext/partial.js'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;위와 같이 &lt;a href=&quot;https://github.com/marpple/partial.js&quot;&gt;partialjs&lt;/a&gt; 를 module로 사용하고자 할 경우 webpack 빌드 시도시 아래와 같은 문제가 발생할 수 있다&lt;/p&gt;
+&lt;p&gt;위와 같이 사용하고자 할 경우 webpack 빌드 시도시 아래와 같은 문제가 발생할 수 있다&lt;/p&gt;
 &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;Uncaught Error: Module build failed: SyntaxError: Argument name clash in strict mode (1146:57)
 
 [0m [90m 1144 | [39m
@@ -60,7 +72,7 @@
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;원인&quot;&gt;원인&lt;/h4&gt;
+&lt;h4 id=&quot;cause&quot;&gt;Cause&lt;/h4&gt;
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;patial.js&lt;/code&gt; 1146L 에서 정의된 아래 함수가 동일한 패러미터 네이밍 &lt;code class=&quot;highlighter-rouge&quot;&gt;X, X&lt;/code&gt; 을 사용하기 때문&lt;/p&gt;
 &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;find_i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;findIndex&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;collf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -69,7 +81,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;해결&quot;&gt;해결&lt;/h4&gt;
+&lt;h4 id=&quot;solution&quot;&gt;Solution&lt;/h4&gt;
 &lt;p&gt;아래와 같이 패러미터 네이밍(&lt;code class=&quot;highlighter-rouge&quot;&gt;X, X2&lt;/code&gt;)을 달리 한다. 동일 패턴으로 문제되는 소스를 모두 수정하도록 한다.&lt;/p&gt;
 &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;find_i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;findIndex&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;collf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;X2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -78,16 +90,17 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;es6와-use-strict&quot;&gt;es6와 “use strict”;&lt;/h4&gt;
+&lt;h4 id=&quot;es6와-use-strict&quot;&gt;es6와 “use strict”&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;es6 모듈은 모듈 안에서 “use strict”; 를 사용하지 않아도 자동으로 strict 모드로 처리된다고 함&lt;/li&gt;
   &lt;li&gt;해당 문제로 patial.js는 es6에서 모듈로 사용 불가
+&lt;br /&gt;
 &lt;br /&gt;
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&quot;ref&quot;&gt;Ref.&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;http://hacks.mozilla.or.kr/2016/05/es6-in-depth-modules/&quot;&gt;http://hacks.mozilla.or.kr/2016/05/es6-in-depth-modules/&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">문제 const _ = require('./ext/partial.js'); 위와 같이 partialjs 를 module로 사용하고자 할 경우 webpack 빌드 시도시 아래와 같은 문제가 발생할 수 있다 ```console Uncaught Error: Module build failed: SyntaxError: Argument name clash in strict mode (1146:57)</summary></entry><entry><title type="html">git 명령어 요약</title><link href="http://localhost:4000/frontend/2018/04/git-command.html" rel="alternate" type="text/html" title="git 명령어 요약" /><published>2018-04-01T01:14:00+09:00</published><updated>2018-04-01T01:14:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/git-command</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/git-command.html">&lt;h3 id=&quot;브랜치&quot;&gt;브랜치&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://hacks.mozilla.or.kr/2016/05/es6-in-depth-modules/&quot;&gt;http://hacks.mozilla.or.kr/2016/05/es6-in-depth-modules/&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Benefits to webpack 빌드 환경에서 partialjs 를 모듈로 사용하고자 할 경우</summary></entry><entry><title type="html">git 명령어 요약</title><link href="http://localhost:4000/frontend/2018/04/git-command.html" rel="alternate" type="text/html" title="git 명령어 요약" /><published>2018-04-01T01:14:00+09:00</published><updated>2018-04-01T01:14:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/git-command</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/git-command.html">&lt;h3 id=&quot;브랜치&quot;&gt;브랜치&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;브랜치 생성
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git branch iss53

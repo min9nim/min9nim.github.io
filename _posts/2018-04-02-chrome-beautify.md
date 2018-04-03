@@ -7,7 +7,13 @@ categories: FrontEnd
 #### Summary
 - 난독화된 js를 디버깅해야 할 경우 크롬 개발자도구의 beautify 기능을 간단히 이용할 수 있다.
   - 특별히 오프라인 환경에서 beautify 도구를 사용할 수 없을 때 유용함
-- 본 가이드는 난독화된 $.clone 함수를 예로 해당 함수를 beautify 하여 디버깅하는 방법을 소개한다
+- 난독화된 $.clone 함수를 예로 해당 함수를 beautify 하는 방법을 소개
+<br>
+<br>
+<br>
+
+#### Benefits to
+보안 상의 이유로 폐쇄 망에 갇혀 프로젝트를 진행해야 하는 가엾은 SI개발자
 <br>
 <br>
 <br>
