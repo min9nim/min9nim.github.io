@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-03T10:33:34+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적끄적</title><subtitle>이런저런 기술관련 이야기들</subtitle><entry><title type="html">크롬 개발자도구를 이용한 js beautify</title><link href="http://localhost:4000/frontend/2018/04/chrome-beautify.html" rel="alternate" type="text/html" title="크롬 개발자도구를 이용한 js beautify" /><published>2018-04-02T23:25:00+09:00</published><updated>2018-04-02T23:25:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/chrome-beautify</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/chrome-beautify.html">&lt;h4 id=&quot;summary&quot;&gt;Summary&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-03T10:40:57+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적끄적</title><subtitle>이런저런 기술관련 이야기들</subtitle><entry><title type="html">크롬 개발자도구를 이용한 js beautify</title><link href="http://localhost:4000/frontend/2018/04/chrome-beautify.html" rel="alternate" type="text/html" title="크롬 개발자도구를 이용한 js beautify" /><published>2018-04-02T23:25:00+09:00</published><updated>2018-04-02T23:25:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/chrome-beautify</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/chrome-beautify.html">&lt;h4 id=&quot;summary&quot;&gt;Summary&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;난독화된 js를 디버깅해야 할 경우 크롬 개발자도구의 beautify 기능을 간단히 이용할 수 있다.
     &lt;ul&gt;
@@ -26,13 +26,14 @@
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
     &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;debugger; tmp();&lt;/code&gt; 를 실행하고&lt;br /&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;debugger; tmp();&lt;/code&gt; 를 실행하고, tmp 함수내로 진입한 후
 &lt;img src=&quot;/images/chrome-step1.PNG&quot; alt=&quot;step1&quot; /&gt;
 &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;debugger;&lt;/code&gt; 에서 실행이 중단되면 tmp 함수내로 진입한 후
-&lt;img src=&quot;/images/chrome-step2.PNG&quot; alt=&quot;step2&quot; /&gt;
+왼쪽 아래 {} 버튼을 클릭하면
 &lt;br /&gt;
-왼쪽 아래 {} 버튼을 클릭한다.
+&lt;img src=&quot;/images/chrome-step2.PNG&quot; alt=&quot;step2&quot; /&gt;
+&lt;br /&gt;beautify 됨
+&lt;br /&gt;
 &lt;img src=&quot;/images/chrome-step3.PNG&quot; alt=&quot;step3&quot; /&gt;&lt;/li&gt;
 &lt;/ol&gt;</content><author><name></name></author><summary type="html">Summary 난독화된 js를 디버깅해야 할 경우 크롬 개발자도구의 beautify 기능을 간단히 이용할 수 있다. 특별히 오프라인 환경에서 beautify 도구를 사용할 수 없을 때 유용함 본 가이드는 난독화된 $.clone 함수를 예로 해당 함수를 beautify 하여 디버깅하는 방법을 소개한다</summary></entry><entry><title type="html">[partialjs] webpack 빌드시 use strict 오류</title><link href="http://localhost:4000/frontend/2018/04/partialjs-strict.html" rel="alternate" type="text/html" title="[partialjs] webpack 빌드시 use strict 오류" /><published>2018-04-01T19:20:00+09:00</published><updated>2018-04-01T19:20:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/partialjs-strict</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/partialjs-strict.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
 &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'./ext/partial.js'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
@@ -148,6 +149,11 @@ $ git merge hotfix
 &lt;ul&gt;
   &lt;li&gt;workingDirectory &amp;amp; staging 영역에서 파일 삭제
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git rm test.html
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;저장소 내려받기&lt;br /&gt;
+(명령을 수행하는 경로에 min9nim.github.io 폴더를 만들고 그 아래에 소스를 내려받음)
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone https://github.com/min9nim/min9nim.github.io.git
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
     &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
   &lt;/li&gt;

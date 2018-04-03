@@ -64,6 +64,11 @@ $ git log -p -2
 ```
 $ git rm test.html
 ```
+* 저장소 내려받기  
+(명령을 수행하는 경로에 min9nim.github.io 폴더를 만들고 그 아래에 소스를 내려받음)
+```
+$ git clone https://github.com/min9nim/min9nim.github.io.git
+```
 <br>
 
 

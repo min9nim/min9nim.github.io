@@ -26,11 +26,12 @@ categories: FrontEnd
 < undefined
 ```
 <br>
-3. `debugger; tmp();` 를 실행하고  
+3. `debugger; tmp();` 를 실행하고, tmp 함수내로 진입한 후
 ![step1](/images/chrome-step1.PNG)
 <br>
-`debugger;` 에서 실행이 중단되면 tmp 함수내로 진입한 후
-![step2](/images/chrome-step2.PNG)
+왼쪽 아래 {} 버튼을 클릭하면
 <br>
-왼쪽 아래 {} 버튼을 클릭한다.
+![step2](/images/chrome-step2.PNG)
+<br>beautify 됨
+<br>
 ![step3](/images/chrome-step3.PNG)
