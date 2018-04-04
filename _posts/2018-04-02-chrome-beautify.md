@@ -13,7 +13,7 @@ categories: FrontEnd
 <br>
 
 #### Benefits to
-보안 상의 이유로 폐쇄 망에 갇혀 프로젝트를 진행해야 하는 가엾은 SI개발자
+보안 상의 이유로 폐쇄 망에 갇혀 프로젝트를 진행해야 하는 서글픈 SI개발자
 <br>
 <br>
 <br>

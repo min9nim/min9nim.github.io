@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-04T07:43:27+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적끄적</title><subtitle>이런저런 기술관련 이야기들</subtitle><entry><title type="html">크롬 개발자도구를 이용한 js beautify</title><link href="http://localhost:4000/frontend/2018/04/chrome-beautify.html" rel="alternate" type="text/html" title="크롬 개발자도구를 이용한 js beautify" /><published>2018-04-02T23:25:00+09:00</published><updated>2018-04-02T23:25:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/chrome-beautify</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/chrome-beautify.html">&lt;h4 id=&quot;summary&quot;&gt;Summary&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-05T01:12:14+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적이~*</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">크롬 개발자도구를 이용한 js beautify</title><link href="http://localhost:4000/frontend/2018/04/chrome-beautify.html" rel="alternate" type="text/html" title="크롬 개발자도구를 이용한 js beautify" /><published>2018-04-02T23:25:00+09:00</published><updated>2018-04-02T23:25:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/chrome-beautify</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/chrome-beautify.html">&lt;h4 id=&quot;summary&quot;&gt;Summary&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;난독화된 js를 디버깅해야 할 경우 크롬 개발자도구의 beautify 기능을 간단히 이용할 수 있다.
     &lt;ul&gt;
@@ -12,7 +12,7 @@
 &lt;/ul&gt;
 
 &lt;h4 id=&quot;benefits-to&quot;&gt;Benefits to&lt;/h4&gt;
-&lt;p&gt;보안 상의 이유로 폐쇄 망에 갇혀 프로젝트를 진행해야 하는 가엾은 SI개발자
+&lt;p&gt;보안 상의 이유로 폐쇄 망에 갇혀 프로젝트를 진행해야 하는 서글픈 SI개발자
 &lt;br /&gt;
 &lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
@@ -41,7 +41,7 @@
 &lt;br /&gt;beautify 됨
 &lt;br /&gt;
 &lt;img src=&quot;/images/chrome-step3.PNG&quot; alt=&quot;step3&quot; /&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">Summary 난독화된 js를 디버깅해야 할 경우 크롬 개발자도구의 beautify 기능을 간단히 이용할 수 있다. 특별히 오프라인 환경에서 beautify 도구를 사용할 수 없을 때 유용함 난독화된 $.clone 함수를 예로 해당 함수를 beautify 하는 방법을 소개</summary></entry><entry><title type="html">[partialjs] webpack 빌드시 use strict 오류</title><link href="http://localhost:4000/frontend/2018/04/partialjs-strict.html" rel="alternate" type="text/html" title="[partialjs] webpack 빌드시 use strict 오류" /><published>2018-04-01T19:20:00+09:00</published><updated>2018-04-01T19:20:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/partialjs-strict</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/partialjs-strict.html">&lt;h4 id=&quot;benefits-to&quot;&gt;Benefits to&lt;/h4&gt;
+&lt;/ol&gt;</content><author><name>mg.song</name></author><summary type="html">Summary 난독화된 js를 디버깅해야 할 경우 크롬 개발자도구의 beautify 기능을 간단히 이용할 수 있다. 특별히 오프라인 환경에서 beautify 도구를 사용할 수 없을 때 유용함 난독화된 $.clone 함수를 예로 해당 함수를 beautify 하는 방법을 소개</summary></entry><entry><title type="html">[partialjs] webpack 빌드시 use strict 오류</title><link href="http://localhost:4000/frontend/2018/04/partialjs-strict.html" rel="alternate" type="text/html" title="[partialjs] webpack 빌드시 use strict 오류" /><published>2018-04-01T19:20:00+09:00</published><updated>2018-04-01T19:20:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/partialjs-strict</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/partialjs-strict.html">&lt;h4 id=&quot;benefits-to&quot;&gt;Benefits to&lt;/h4&gt;
 &lt;p&gt;webpack 빌드 환경에서 &lt;a href=&quot;https://github.com/marpple/partial.js&quot;&gt;partialjs&lt;/a&gt; 를 모듈로 사용하고자 할 경우
 &lt;br /&gt;
 &lt;br /&gt;
@@ -50,27 +50,9 @@
 &lt;h4 id=&quot;problem&quot;&gt;Problem&lt;/h4&gt;
 &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'./ext/partial.js'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;위와 같이 사용하고자 할 경우 webpack 빌드 시도시 아래와 같은 문제가 발생할 수 있다&lt;/p&gt;
-&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;Uncaught Error: Module build failed: SyntaxError: Argument name clash in strict mode (1146:57)
-
-[0m [90m 1144 | [39m
- [90m 1145 | [39m  [90m// async not supported[39m
-&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;[31m[1m&amp;gt;&lt;/span&gt;[22m[39m[90m 1146 | [39m  _[33m.[39mfind_i [33m&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;[39m _[33m.[39mfindIndex [33m&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;[39m collf&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;[36mfunction[39m&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;data[33m,[39m iter[33m,[39m [33mX[39m[33m,[39m [33mX[39m[33m,[39m i[33m,[39m l&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;go&quot;&gt; [90m      | [39m                                                         [31m[1m^[22m[39m
-&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt; [90m 1147 | [39m    [36mwhile[39m ([33m++[39mi [33m&amp;lt;[39m l) [36mif[39m (iter(data[i][33m,[39m i[33m,[39m data)) [36mreturn[39m i[33m;&lt;/span&gt;[39m
-&lt;span class=&quot;gp&quot;&gt; [90m 1148 | [39m    [36mreturn[39m [33m-[39m[35m1[39m[33m;&lt;/span&gt;[39m
-&lt;span class=&quot;gp&quot;&gt; [90m 1149 | [39m  })[33m;&lt;/span&gt;[39m[0m
-&lt;span class=&quot;go&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;    at Object.&amp;lt;anonymous&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:21519&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;go&quot;&gt;    at __webpack_require__ (bundle.js:20)
-    at Object._typeof (bundle.js:9925)
-    at __webpack_require__ (bundle.js:20)
-&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;    at Object.&amp;lt;anonymous&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:9893&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;go&quot;&gt;    at __webpack_require__ (bundle.js:20)
-    at module.exports (bundle.js:63)
-    at bundle.js:66
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;위와 같이 사용하고자 할 경우 webpack 빌드 시도시 아래와 같은 문제가 발생할 수 있다
+&lt;script src=&quot;https://gist.github.com/min9nim/b9813bbdaf8367ee34aba1bc14742168.js&quot;&gt;&lt;/script&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;cause&quot;&gt;Cause&lt;/h4&gt;
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;patial.js&lt;/code&gt; 1146L 에서 정의된 아래 함수가 동일한 패러미터 네이밍 &lt;code class=&quot;highlighter-rouge&quot;&gt;X, X&lt;/code&gt; 을 사용하기 때문&lt;/p&gt;
@@ -100,7 +82,7 @@
 &lt;/ul&gt;
 
 &lt;h4 id=&quot;ref&quot;&gt;Ref.&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;http://hacks.mozilla.or.kr/2016/05/es6-in-depth-modules/&quot;&gt;http://hacks.mozilla.or.kr/2016/05/es6-in-depth-modules/&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Benefits to webpack 빌드 환경에서 partialjs 를 모듈로 사용하고자 할 경우</summary></entry><entry><title type="html">git 명령어 요약</title><link href="http://localhost:4000/frontend/2018/04/git-command.html" rel="alternate" type="text/html" title="git 명령어 요약" /><published>2018-04-01T01:14:00+09:00</published><updated>2018-04-01T01:14:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/git-command</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/git-command.html">&lt;h3 id=&quot;브랜치&quot;&gt;브랜치&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://hacks.mozilla.or.kr/2016/05/es6-in-depth-modules/&quot;&gt;http://hacks.mozilla.or.kr/2016/05/es6-in-depth-modules/&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Benefits to webpack 빌드 환경에서 partialjs 를 모듈로 사용하고자 할 경우</summary></entry><entry><title type="html">git 명령어 요약</title><link href="http://localhost:4000/frontend/2018/04/git-command.html" rel="alternate" type="text/html" title="git 명령어 요약" /><published>2018-04-01T01:14:00+09:00</published><updated>2018-04-01T01:14:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/git-command</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/git-command.html">&lt;h3 id=&quot;브랜치&quot;&gt;브랜치&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;브랜치 생성
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git branch iss53
@@ -176,7 +158,7 @@ $ git merge hotfix
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/ko/v2/Git-브랜치-브랜치와-Merge-의-기초&quot;&gt;https://git-scm.com/book/ko/v2/Git-브랜치-브랜치와-Merge-의-기초&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/ko/v1/Git의-기초-커밋-히스토리-조회하기&quot;&gt;https://git-scm.com/book/ko/v1/Git의-기초-커밋-히스토리-조회하기&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">브랜치 브랜치 생성 $ git branch iss53 브랜치 이동 $ git checkout iss53 브랜치 목록 보기 $ git branch iss53 &amp;gt; master testing 브랜치를 만들면서 Checkout까지 한 번에 $ git checkout -b iss53 위 명령은 아래 명령을 줄여놓은 것 $ git branch iss53 $ git checkout iss53 master 브랜치에서 hotfix 브랜치를 merge 하고자 한다면 $ git checkout master $ git merge hotfix merge 된 브랜치 목록 $ git branch --merged 아직 merge 안 된 브랜치 목록 $ git branch --no-merged iss53 브랜치를 삭제 $ git branch -d iss53</summary></entry><entry><title type="html">[ramdajs] forEach 버그</title><link href="http://localhost:4000/frontend/2018/04/ramdajs-forEach.html" rel="alternate" type="text/html" title="[ramdajs] forEach 버그" /><published>2018-04-01T00:35:00+09:00</published><updated>2018-04-01T00:35:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/ramdajs-forEach</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/ramdajs-forEach.html">&lt;h4 id=&quot;예시&quot;&gt;예시&lt;/h4&gt;
+&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">브랜치 브랜치 생성 $ git branch iss53 브랜치 이동 $ git checkout iss53 브랜치 목록 보기 $ git branch iss53 &amp;gt; master testing 브랜치를 만들면서 Checkout까지 한 번에 $ git checkout -b iss53 위 명령은 아래 명령을 줄여놓은 것 $ git branch iss53 $ git checkout iss53 master 브랜치에서 hotfix 브랜치를 merge 하고자 한다면 $ git checkout master $ git merge hotfix merge 된 브랜치 목록 $ git branch --merged 아직 merge 안 된 브랜치 목록 $ git branch --no-merged iss53 브랜치를 삭제 $ git branch -d iss53</summary></entry><entry><title type="html">[ramdajs] forEach 버그</title><link href="http://localhost:4000/frontend/2018/04/ramdajs-forEach.html" rel="alternate" type="text/html" title="[ramdajs] forEach 버그" /><published>2018-04-01T00:35:00+09:00</published><updated>2018-04-01T00:35:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/ramdajs-forEach</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/ramdajs-forEach.html">&lt;h4 id=&quot;예시&quot;&gt;예시&lt;/h4&gt;
 &lt;script src=&quot;https://gist.github.com/min9nim/11a2369a18f41c09ebc39c4991da78b0.js&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -189,7 +171,7 @@ $ git merge hotfix
 &lt;h4 id=&quot;질문&quot;&gt;질문&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;http://ramdajs.com/docs/#forEach&quot; target=&quot;_blank&quot;&gt;forEach 매뉴얼&lt;/a&gt; 을 보면
 첫번째 인자 함수가 패러미터를 1개만 받는다고 나와있는데.. 저 경우에는 왜 3개를 받는 걸가?
-버그라고 봐야하지 않을까&lt;/p&gt;</content><author><name></name></author><summary type="html">예시</summary></entry><entry><title type="html">[crossBrowsing] safari 에서 가로스크롤 막기</title><link href="http://localhost:4000/frontend/2018/03/ios-xscroll.html" rel="alternate" type="text/html" title="[crossBrowsing] safari 에서 가로스크롤 막기" /><published>2018-03-22T13:18:00+09:00</published><updated>2018-03-22T13:18:00+09:00</updated><id>http://localhost:4000/frontend/2018/03/ios-xscroll</id><content type="html" xml:base="http://localhost:4000/frontend/2018/03/ios-xscroll.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
+버그라고 봐야하지 않을까&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">예시</summary></entry><entry><title type="html">[crossBrowsing] safari 에서 가로스크롤 막기</title><link href="http://localhost:4000/frontend/2018/03/ios-xscroll.html" rel="alternate" type="text/html" title="[crossBrowsing] safari 에서 가로스크롤 막기" /><published>2018-03-22T13:18:00+09:00</published><updated>2018-03-22T13:18:00+09:00</updated><id>http://localhost:4000/frontend/2018/03/ios-xscroll</id><content type="html" xml:base="http://localhost:4000/frontend/2018/03/ios-xscroll.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
 &lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;nl&quot;&gt;overflow-x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;hidden&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
@@ -216,7 +198,7 @@ $ git merge hotfix
 &lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;ref&quot;&gt;Ref.&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.thewordcracker.com/miscellaneous/모바일-기기에서-수평-스크롤-없애기&quot; target=&quot;_blank&quot;&gt;https://www.thewordcracker.com/miscellaneous/모바일-기기에서-수평-스크롤-없애기&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">문제 body { overflow-x: hidden; } 위와 같이 body 태그에 overflow-x: hidden; 를 적용하면 가로스크롤이 동작하지 않아야 하지만 사파리에서는 아래와 같이 여전히 가로스크롤이 동작하는 문제 데스크탑&amp;amp;모바일 사파리 모두 동일한 문제 발생 크롬&amp;amp;파폭은 정상</summary></entry><entry><title type="html">AMD 모듈 로드시 순서 관련</title><link href="http://localhost:4000/memo/2018/03/amd-order.html" rel="alternate" type="text/html" title="AMD 모듈 로드시 순서 관련" /><published>2018-03-22T00:46:36+09:00</published><updated>2018-03-22T00:46:36+09:00</updated><id>http://localhost:4000/memo/2018/03/amd-order</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/amd-order.html">&lt;h4 id=&quot;예시&quot;&gt;예시&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.thewordcracker.com/miscellaneous/모바일-기기에서-수평-스크롤-없애기&quot; target=&quot;_blank&quot;&gt;https://www.thewordcracker.com/miscellaneous/모바일-기기에서-수평-스크롤-없애기&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">문제 body { overflow-x: hidden; } 위와 같이 body 태그에 overflow-x: hidden; 를 적용하면 가로스크롤이 동작하지 않아야 하지만 사파리에서는 아래와 같이 여전히 가로스크롤이 동작하는 문제 데스크탑&amp;amp;모바일 사파리 모두 동일한 문제 발생 크롬&amp;amp;파폭은 정상</summary></entry><entry><title type="html">AMD 모듈 로드시 순서 관련</title><link href="http://localhost:4000/memo/2018/03/amd-order.html" rel="alternate" type="text/html" title="AMD 모듈 로드시 순서 관련" /><published>2018-03-22T00:46:36+09:00</published><updated>2018-03-22T00:46:36+09:00</updated><id>http://localhost:4000/memo/2018/03/amd-order</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/amd-order.html">&lt;h4 id=&quot;예시&quot;&gt;예시&lt;/h4&gt;
 &lt;script src=&quot;https://gist.github.com/min9nim/33a76b8c679e24dade2afc3ec134b4e4.js&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -230,7 +212,7 @@ $ git merge hotfix
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;15,16,17라인에서는 각 모듈에서 정의한 Vue, mn, $m 참조가 보장되며 각 모듈들에서 사용한 전역변수도 참조 가능하다&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">예시</summary></entry><entry><title type="html">[crossBrowsing] 이벤트 처리시 주의사항</title><link href="http://localhost:4000/frontend/2018/03/event-binding.html" rel="alternate" type="text/html" title="[crossBrowsing] 이벤트 처리시 주의사항" /><published>2018-03-21T10:20:36+09:00</published><updated>2018-03-21T10:20:36+09:00</updated><id>http://localhost:4000/frontend/2018/03/event-binding</id><content type="html" xml:base="http://localhost:4000/frontend/2018/03/event-binding.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
+&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">예시</summary></entry><entry><title type="html">[crossBrowsing] 이벤트 처리시 주의사항</title><link href="http://localhost:4000/frontend/2018/03/event-binding.html" rel="alternate" type="text/html" title="[crossBrowsing] 이벤트 처리시 주의사항" /><published>2018-03-21T10:20:36+09:00</published><updated>2018-03-21T10:20:36+09:00</updated><id>http://localhost:4000/frontend/2018/03/event-binding</id><content type="html" xml:base="http://localhost:4000/frontend/2018/03/event-binding.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;아래와 같이 event객체를 직접 참조하면 firefox에서 오류 발생
     &lt;ul&gt;
@@ -252,7 +234,7 @@ $ git merge hotfix
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;script src=&quot;https://gist.github.com/min9nim/82014d7854357088dab5083eb7fbedb7.js&quot;&gt;&lt;/script&gt;</content><author><name></name></author><summary type="html">문제 아래와 같이 event객체를 직접 참조하면 firefox에서 오류 발생 크롬에서는 정상</summary></entry><entry><title type="html">Bookmark</title><link href="http://localhost:4000/memo/2018/03/my-bookmark.html" rel="alternate" type="text/html" title="Bookmark" /><published>2018-03-18T08:06:00+09:00</published><updated>2018-03-18T08:06:00+09:00</updated><id>http://localhost:4000/memo/2018/03/my-bookmark</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/my-bookmark.html">&lt;ul&gt;
+&lt;script src=&quot;https://gist.github.com/min9nim/82014d7854357088dab5083eb7fbedb7.js&quot;&gt;&lt;/script&gt;</content><author><name>mg.song</name></author><summary type="html">문제 아래와 같이 event객체를 직접 참조하면 firefox에서 오류 발생 크롬에서는 정상</summary></entry><entry><title type="html">Bookmark</title><link href="http://localhost:4000/memo/2018/03/my-bookmark.html" rel="alternate" type="text/html" title="Bookmark" /><published>2018-03-18T08:06:00+09:00</published><updated>2018-03-18T08:06:00+09:00</updated><id>http://localhost:4000/memo/2018/03/my-bookmark</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/my-bookmark.html">&lt;ul&gt;
   &lt;li&gt;Frequently
     &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;http://blog.eairship.kr/category/프로그래밍 관련/Python&quot; target=&quot;_blank&quot;&gt;pyhon 프로그래밍 강좌&lt;/a&gt;&lt;/li&gt;
@@ -274,7 +256,7 @@ $ git merge hotfix
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;checked&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Frequently pyhon 프로그래밍 강좌 Medium liquid docs es6 vs es5 es5 core es6-in-depth-modules partial.js</summary></entry><entry><title type="html">telegra.ph 에 대하여</title><link href="http://localhost:4000/memo/2018/03/about-telegraph.html" rel="alternate" type="text/html" title="telegra.ph 에 대하여" /><published>2018-03-17T22:40:00+09:00</published><updated>2018-03-17T22:40:00+09:00</updated><id>http://localhost:4000/memo/2018/03/about-telegraph</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/about-telegraph.html">&lt;h4 id=&quot;telegraph-란&quot;&gt;telegra.ph 란&lt;/h4&gt;
+&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">Frequently pyhon 프로그래밍 강좌 Medium liquid docs es6 vs es5 es5 core es6-in-depth-modules partial.js</summary></entry><entry><title type="html">telegra.ph 에 대하여</title><link href="http://localhost:4000/memo/2018/03/about-telegraph.html" rel="alternate" type="text/html" title="telegra.ph 에 대하여" /><published>2018-03-17T22:40:00+09:00</published><updated>2018-03-17T22:40:00+09:00</updated><id>http://localhost:4000/memo/2018/03/about-telegraph</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/about-telegraph.html">&lt;h4 id=&quot;telegraph-란&quot;&gt;telegra.ph 란&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;익명 기반 글 호스팅 서비스&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://telegra.ph/&quot; target=&quot;_blank&quot;&gt;http://telegra.ph/&lt;/a&gt;&lt;/li&gt;
@@ -340,7 +322,7 @@ $ git merge hotfix
 &lt;/ul&gt;
 
 &lt;h4 id=&quot;my-first-post&quot;&gt;my first post&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;http://telegra.ph/이쁘니-하니-03-17&quot; target=&quot;_blank&quot;&gt;http://telegra.ph/이쁘니-하니-03-17&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">telegra.ph 란 익명 기반 글 호스팅 서비스 http://telegra.ph/ Beauty is coming from simplicity</summary></entry><entry><title type="html">jekyll 사이트 favicon 추가하기</title><link href="http://localhost:4000/memo/2018/03/add-favicon.html" rel="alternate" type="text/html" title="jekyll 사이트 favicon 추가하기" /><published>2018-03-17T17:00:00+09:00</published><updated>2018-03-17T17:00:00+09:00</updated><id>http://localhost:4000/memo/2018/03/add-favicon</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/add-favicon.html">&lt;h4 id=&quot;jekyll-테마-변경-가이드&quot;&gt;jekyll 테마 변경 가이드&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;http://telegra.ph/이쁘니-하니-03-17&quot; target=&quot;_blank&quot;&gt;http://telegra.ph/이쁘니-하니-03-17&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">telegra.ph 란 익명 기반 글 호스팅 서비스 http://telegra.ph/ Beauty is coming from simplicity</summary></entry><entry><title type="html">jekyll 사이트 favicon 추가하기</title><link href="http://localhost:4000/memo/2018/03/add-favicon.html" rel="alternate" type="text/html" title="jekyll 사이트 favicon 추가하기" /><published>2018-03-17T17:00:00+09:00</published><updated>2018-03-17T17:00:00+09:00</updated><id>http://localhost:4000/memo/2018/03/add-favicon</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/add-favicon.html">&lt;h4 id=&quot;jekyll-테마-변경-가이드&quot;&gt;jekyll 테마 변경 가이드&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;https://jekyllrb.com/docs/themes/#overriding-theme-defaults&quot; target=&quot;_blank&quot;&gt;https://jekyllrb.com/docs/themes/#overriding-theme-defaults&lt;/a&gt;&lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 
@@ -371,4 +353,4 @@ $ git merge hotfix
 &lt;img src=&quot;/images/config.yml.png&quot; alt=&quot;코드&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;&lt;em&gt;/_include/head.html&lt;/em&gt; 12라인 favicon 설정 추가
   &lt;script src=&quot;https://gist.github.com/min9nim/b61230296c6b9d755a77cf0fc4639fbe.js&quot;&gt;&lt;/script&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">jekyll 테마 변경 가이드 https://jekyllrb.com/docs/themes/#overriding-theme-defaults</summary></entry></feed>
+&lt;/ol&gt;</content><author><name>mg.song</name></author><summary type="html">jekyll 테마 변경 가이드 https://jekyllrb.com/docs/themes/#overriding-theme-defaults</summary></entry></feed>
