@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-05T15:35:28+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적이~*</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">크롬 개발자도구를 이용한 js beautify</title><link href="http://localhost:4000/frontend/2018/04/chrome-beautify.html" rel="alternate" type="text/html" title="크롬 개발자도구를 이용한 js beautify" /><published>2018-04-02T23:25:00+09:00</published><updated>2018-04-02T23:25:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/chrome-beautify</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/chrome-beautify.html">&lt;h4 id=&quot;summary&quot;&gt;Summary&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-06T23:58:26+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적이~*</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">크롬 개발자도구를 이용한 js beautify</title><link href="http://localhost:4000/frontend/2018/04/chrome-beautify.html" rel="alternate" type="text/html" title="크롬 개발자도구를 이용한 js beautify" /><published>2018-04-02T23:25:00+09:00</published><updated>2018-04-02T23:25:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/chrome-beautify</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/chrome-beautify.html">&lt;h4 id=&quot;summary&quot;&gt;Summary&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;난독화된 js를 디버깅해야 할 경우 크롬 개발자도구의 beautify 기능을 간단히 이용할 수 있다.
     &lt;ul&gt;
@@ -245,6 +245,7 @@ $ git merge hotfix
       &lt;li&gt;&lt;a href=&quot;http://hacks.mozilla.or.kr/2016/05/es6-in-depth-modules/&quot; target=&quot;_blank&quot;&gt;es6-in-depth-modules&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;https://marpple.github.io/partial.js/&quot; target=&quot;_blank&quot;&gt;partial.js&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;https://caniuse.com&quot; target=&quot;_blank&quot;&gt;caniuse.com&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://medium.freecodecamp.org/tagged/web-development&quot; target=&quot;_blank&quot;&gt;freecodecamp&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;temp
@@ -253,11 +254,16 @@ $ git merge hotfix
       &lt;li&gt;&lt;a href=&quot;https://auth0.com/blog/intro-to-immutable-js&quot; target=&quot;_blank&quot;&gt;intro-to-immutable-js&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;https://auth0.com/blog/javascript-module-systems-showdown&quot; target=&quot;_blank&quot;&gt;javascript-module-systems-showdown&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/ko/v2/Git-브랜치-브랜치-워크플로&quot; target=&quot;_blank&quot;&gt;Git-브랜치-브랜치-워크플로&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://medium.freecodecamp.org/here-are-examples-of-everything-new-in-ecmascript-2016-2017-and-2018-d52fa3b5a70e&quot; target=&quot;_blank&quot;&gt;ecmascript-2016-2017-2018&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;later
+    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;https://auth0.com/blog/four-types-of-leaks-in-your-javascript-code-and-how-to-get-rid-of-them/&quot; target=&quot;_blank&quot;&gt;4 Types of Memory Leaks in JavaScript&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;checked&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">Frequently pyhon 프로그래밍 강좌 Medium liquid docs es6 vs es5 es5 core es6-in-depth-modules partial.js caniuse.com</summary></entry><entry><title type="html">telegra.ph 에 대하여</title><link href="http://localhost:4000/memo/2018/03/about-telegraph.html" rel="alternate" type="text/html" title="telegra.ph 에 대하여" /><published>2018-03-17T22:40:00+09:00</published><updated>2018-03-17T22:40:00+09:00</updated><id>http://localhost:4000/memo/2018/03/about-telegraph</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/about-telegraph.html">&lt;h4 id=&quot;telegraph-란&quot;&gt;telegra.ph 란&lt;/h4&gt;
+&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">Frequently pyhon 프로그래밍 강좌 Medium liquid docs es6 vs es5 es5 core es6-in-depth-modules partial.js caniuse.com freecodecamp</summary></entry><entry><title type="html">telegra.ph 에 대하여</title><link href="http://localhost:4000/memo/2018/03/about-telegraph.html" rel="alternate" type="text/html" title="telegra.ph 에 대하여" /><published>2018-03-17T22:40:00+09:00</published><updated>2018-03-17T22:40:00+09:00</updated><id>http://localhost:4000/memo/2018/03/about-telegraph</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/about-telegraph.html">&lt;h4 id=&quot;telegraph-란&quot;&gt;telegra.ph 란&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;익명 기반 글 호스팅 서비스&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://telegra.ph/&quot; target=&quot;_blank&quot;&gt;http://telegra.ph/&lt;/a&gt;&lt;/li&gt;
