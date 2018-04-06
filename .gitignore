@@ -1,4 +1,6 @@
+.DS_Store
 _site
 *.bat
+*.command
 .sass-cache
 .jekyll-metadata
