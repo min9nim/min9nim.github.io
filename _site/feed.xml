@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-06T23:58:26+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적이~*</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">크롬 개발자도구를 이용한 js beautify</title><link href="http://localhost:4000/frontend/2018/04/chrome-beautify.html" rel="alternate" type="text/html" title="크롬 개발자도구를 이용한 js beautify" /><published>2018-04-02T23:25:00+09:00</published><updated>2018-04-02T23:25:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/chrome-beautify</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/chrome-beautify.html">&lt;h4 id=&quot;summary&quot;&gt;Summary&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-09T14:25:15+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적이~*</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">[js] boolean 결과 값이 false 인 값들</title><link href="http://localhost:4000/frontend/2018/04/js-boolean.html" rel="alternate" type="text/html" title="[js] boolean 결과 값이 false 인 값들" /><published>2018-04-09T14:00:00+09:00</published><updated>2018-04-09T14:00:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/js-boolean</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/js-boolean.html">&lt;h4 id=&quot;조건문에서-boolean-값으로-형변환-시&quot;&gt;조건문에서 boolean 값으로 형변환 시,&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;false를 리턴하는 값들
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;
+&lt;span class=&quot;kc&quot;&gt;undefined&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;kc&quot;&gt;NaN&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;true를 리턴하는 것
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//위 1번외 모든 값&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// !!Infinity 도 true 리턴&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>mg.song</name></author><summary type="html">조건문에서 boolean 값으로 형변환 시,</summary></entry><entry><title type="html">크롬 개발자도구를 이용한 js beautify</title><link href="http://localhost:4000/frontend/2018/04/chrome-beautify.html" rel="alternate" type="text/html" title="크롬 개발자도구를 이용한 js beautify" /><published>2018-04-02T23:25:00+09:00</published><updated>2018-04-02T23:25:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/chrome-beautify</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/chrome-beautify.html">&lt;h4 id=&quot;summary&quot;&gt;Summary&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;난독화된 js를 디버깅해야 할 경우 크롬 개발자도구의 beautify 기능을 간단히 이용할 수 있다.
     &lt;ul&gt;
@@ -329,35 +345,4 @@ $ git merge hotfix
 &lt;/ul&gt;
 
 &lt;h4 id=&quot;my-first-post&quot;&gt;my first post&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;http://telegra.ph/이쁘니-하니-03-17&quot; target=&quot;_blank&quot;&gt;http://telegra.ph/이쁘니-하니-03-17&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">telegra.ph 란 익명 기반 글 호스팅 서비스 http://telegra.ph/ Beauty is coming from simplicity</summary></entry><entry><title type="html">jekyll 사이트 favicon 추가하기</title><link href="http://localhost:4000/memo/2018/03/add-favicon.html" rel="alternate" type="text/html" title="jekyll 사이트 favicon 추가하기" /><published>2018-03-17T17:00:00+09:00</published><updated>2018-03-17T17:00:00+09:00</updated><id>http://localhost:4000/memo/2018/03/add-favicon</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/add-favicon.html">&lt;h4 id=&quot;jekyll-테마-변경-가이드&quot;&gt;jekyll 테마 변경 가이드&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;https://jekyllrb.com/docs/themes/#overriding-theme-defaults&quot; target=&quot;_blank&quot;&gt;https://jekyllrb.com/docs/themes/#overriding-theme-defaults&lt;/a&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;기본테마-경로&quot;&gt;기본테마 경로&lt;/h4&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ bundle show minima
-/Library/Ruby/Gems/2.3.0/gems/minima-2.1.1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;해당 테마의 기본 템플릿 자원(아래 4개 폴더)을 서비스 할 jekyll 경로로 복사한다&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/assets  
-/_layouts  
-/_includes  
-/_sass
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;파비콘-업로드&quot;&gt;파비콘 업로드&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;파비콘 이미지를 /assets/ 경로에 업로드&lt;/li&gt;
-  &lt;li&gt;파비콘 이미지가 준비되어 있지 않다면 직접 만들어 볼 수 도 있다&lt;br /&gt;
-&lt;a href=&quot;http://www.degraeve.com/favicon/&quot; target=&quot;_blank&quot;&gt;http://www.degraeve.com/favicon/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;수정파일&quot;&gt;수정파일&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;em&gt;/_config.yml&lt;/em&gt; 에 &lt;code class=&quot;highlighter-rouge&quot;&gt;asset_url: /assets&lt;/code&gt; 추가&lt;br /&gt;
-&lt;img src=&quot;/images/config.yml.png&quot; alt=&quot;코드&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;/_include/head.html&lt;/em&gt; 12라인 favicon 설정 추가
-  &lt;script src=&quot;https://gist.github.com/min9nim/b61230296c6b9d755a77cf0fc4639fbe.js&quot;&gt;&lt;/script&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>mg.song</name></author><summary type="html">jekyll 테마 변경 가이드 https://jekyllrb.com/docs/themes/#overriding-theme-defaults</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;http://telegra.ph/이쁘니-하니-03-17&quot; target=&quot;_blank&quot;&gt;http://telegra.ph/이쁘니-하니-03-17&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">telegra.ph 란 익명 기반 글 호스팅 서비스 http://telegra.ph/ Beauty is coming from simplicity</summary></entry></feed>
