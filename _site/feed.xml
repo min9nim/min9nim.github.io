@@ -1,4 +1,52 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-09T14:25:15+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적이~*</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">[js] boolean 결과 값이 false 인 값들</title><link href="http://localhost:4000/frontend/2018/04/js-boolean.html" rel="alternate" type="text/html" title="[js] boolean 결과 값이 false 인 값들" /><published>2018-04-09T14:00:00+09:00</published><updated>2018-04-09T14:00:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/js-boolean</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/js-boolean.html">&lt;h4 id=&quot;조건문에서-boolean-값으로-형변환-시&quot;&gt;조건문에서 boolean 값으로 형변환 시,&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-11T15:20:53+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적이~*</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">[mac] High Sierra 에서 telnet &amp;amp; ftp CLI 설치</title><link href="http://localhost:4000/frontend/2018/04/install-ftp.html" rel="alternate" type="text/html" title="[mac] High Sierra 에서 telnet &amp; ftp CLI 설치" /><published>2018-04-11T14:40:00+09:00</published><updated>2018-04-11T14:40:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/install-ftp</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/install-ftp.html">&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
+&lt;p&gt;Mac High Sierra 는 보안 상의 문제로 터미널에서 telnet, ftp 명령어를 기본적으로 지원하지 않는다
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;solution&quot;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;아래와 같이 CLI도구를 따로 설치해야 한다&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;다운로드
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; curl http://ftp.gnu.org/gnu/inetutils/inetutils-1.9.4.tar.gz &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; inetutils-1.9.4.tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;컴파일
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;tar &lt;/span&gt;xvzf inetutils-1.9.4.tar.gz
+&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;inetutils-1.9.4
+&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; ./configure
+&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; make
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;설치
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;make install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;추가로 설치되는 항목들은 아래와 같다(/usr/local/bin)
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ifconfig
+ping6
+ping
+whois
+talk
+ftp
+telnet
+traceroute
+tftp
+rsh
+rlogin
+rexec
+rcp
+logger
+dnsdomainname
+hostname
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;ref&quot;&gt;Ref.&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.unixfu.ch/get-telnet-and-ftp-client-back-on-macos-high-sierra/&quot;&gt;http://www.unixfu.ch/get-telnet-and-ftp-client-back-on-macos-high-sierra/&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Problem Mac High Sierra 는 보안 상의 문제로 터미널에서 telnet, ftp 명령어를 기본적으로 지원하지 않는다</summary></entry><entry><title type="html">[js] boolean 결과 값이 false 인 값들</title><link href="http://localhost:4000/frontend/2018/04/js-boolean.html" rel="alternate" type="text/html" title="[js] boolean 결과 값이 false 인 값들" /><published>2018-04-09T14:00:00+09:00</published><updated>2018-04-09T14:00:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/js-boolean</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/js-boolean.html">&lt;h4 id=&quot;조건문에서-boolean-값으로-형변환-시&quot;&gt;조건문에서 boolean 값으로 형변환 시,&lt;/h4&gt;
 
 &lt;ol&gt;
   &lt;li&gt;false를 리턴하는 값들
@@ -174,7 +222,7 @@ $ git merge hotfix
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/ko/v2/Git-브랜치-브랜치와-Merge-의-기초&quot;&gt;https://git-scm.com/book/ko/v2/Git-브랜치-브랜치와-Merge-의-기초&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/ko/v1/Git의-기초-커밋-히스토리-조회하기&quot;&gt;https://git-scm.com/book/ko/v1/Git의-기초-커밋-히스토리-조회하기&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">브랜치 브랜치 생성 $ git branch iss53 브랜치 이동 $ git checkout iss53 브랜치 목록 보기 $ git branch iss53 &amp;gt; master testing 브랜치를 만들면서 Checkout까지 한 번에 $ git checkout -b iss53 위 명령은 아래 명령을 줄여놓은 것 $ git branch iss53 $ git checkout iss53 master 브랜치에서 hotfix 브랜치를 merge 하고자 한다면 $ git checkout master $ git merge hotfix merge 된 브랜치 목록 $ git branch --merged 아직 merge 안 된 브랜치 목록 $ git branch --no-merged iss53 브랜치를 삭제 $ git branch -d iss53</summary></entry><entry><title type="html">[ramdajs] forEach 버그</title><link href="http://localhost:4000/frontend/2018/04/ramdajs-forEach.html" rel="alternate" type="text/html" title="[ramdajs] forEach 버그" /><published>2018-04-01T00:35:00+09:00</published><updated>2018-04-01T00:35:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/ramdajs-forEach</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/ramdajs-forEach.html">&lt;h4 id=&quot;예시&quot;&gt;예시&lt;/h4&gt;
+&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">브랜치 브랜치 생성 $ git branch iss53 브랜치 이동 $ git checkout iss53 브랜치 목록 보기 $ git branch iss53 &amp;gt; master testing 브랜치를 만들면서 Checkout까지 한 번에 $ git checkout -b iss53 위 명령은 아래 명령을 줄여놓은 것 $ git branch iss53 $ git checkout iss53 master 브랜치에서 hotfix 브랜치를 merge 하고자 한다면 $ git checkout master $ git merge hotfix merge 된 브랜치 목록 $ git branch --merged 아직 merge 안 된 브랜치 목록 $ git branch --no-merged iss53 브랜치를 삭제 $ git branch -d iss53</summary></entry><entry><title type="html">ramdajs 라이브러리 forEach 버그</title><link href="http://localhost:4000/frontend/2018/04/ramdajs-forEach.html" rel="alternate" type="text/html" title="ramdajs 라이브러리 forEach 버그" /><published>2018-04-01T00:35:00+09:00</published><updated>2018-04-01T00:35:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/ramdajs-forEach</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/ramdajs-forEach.html">&lt;h4 id=&quot;예시&quot;&gt;예시&lt;/h4&gt;
 &lt;script src=&quot;https://gist.github.com/min9nim/11a2369a18f41c09ebc39c4991da78b0.js&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -279,70 +327,4 @@ $ git merge hotfix
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;checked&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">Frequently pyhon 프로그래밍 강좌 Medium liquid docs es6 vs es5 es5 core es6-in-depth-modules partial.js caniuse.com freecodecamp</summary></entry><entry><title type="html">telegra.ph 에 대하여</title><link href="http://localhost:4000/memo/2018/03/about-telegraph.html" rel="alternate" type="text/html" title="telegra.ph 에 대하여" /><published>2018-03-17T22:40:00+09:00</published><updated>2018-03-17T22:40:00+09:00</updated><id>http://localhost:4000/memo/2018/03/about-telegraph</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/about-telegraph.html">&lt;h4 id=&quot;telegraph-란&quot;&gt;telegra.ph 란&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;익명 기반 글 호스팅 서비스&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://telegra.ph/&quot; target=&quot;_blank&quot;&gt;http://telegra.ph/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Beauty is coming from simplicity
-&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;특성&quot;&gt;특성&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;한번 publish 된 글은 삭제 불가&lt;/li&gt;
-  &lt;li&gt;수정권한은 글 작성시 사용했던 장비의 브라우져에 한함
-    &lt;ul&gt;
-      &lt;li&gt;글 작성 시 사용했던 장비와 브라우져를 잊어버리면 수정권한을 되찾을 수 없음&lt;/li&gt;
-      &lt;li&gt;&lt;em&gt;왠지 여기서 블록체인 기술이 오버랩 되는 것은 나 뿐일까..&lt;/em&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;글의 URL주소는 최초 글 저장시 제목을 기준으로 결정됨
-    &lt;ul&gt;
-      &lt;li&gt;제목 수정시 URL주소 변경 안됨&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;해당 글에 대한 링크를 잃어버리면 영원히 해당 글 access 불가&lt;/li&gt;
-  &lt;li&gt;이미지 첨부시 압축없이 원본 이미지 그대로 업로드되고 서비스 됨(썸네일 사용 안함)
-&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;장점&quot;&gt;장점&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;누구나 간편하게 온라인 상에 컨텐츠를 게시할 수 있음
-    &lt;ul&gt;
-      &lt;li&gt;압도적인 단순함과 간결함과 용이함&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;광고 없음&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;이것이 참으로 메리트
-&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;주의사항&quot;&gt;주의사항&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;그냥 수정/삭제 불가하다 생각하고 신중하게 글을 게시하는 것이 중요&lt;/li&gt;
-  &lt;li&gt;글 게시 후 링크를 잘 관리하는 것이 중요&lt;/li&gt;
-  &lt;li&gt;최초 글 저장 당시 제목이 해당 컨텐츠의 URL주소에 포함되기 때문에 URL이 불필요하게 길어질 수 있다
-    &lt;ul&gt;
-      &lt;li&gt;짧은 URL을 사용하고 싶다면 간단한 영문 타이틀 입력 후 저장을 한번 하고나서 적당한 제목으로 변경하도록 한다.
-&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;활용방안&quot;&gt;활용방안&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;특별히 수정이 발생 될 여지가 없는 컨텐츠를 여러 사람들과 간단히 공유할 필요가 있을 경우&lt;/li&gt;
-  &lt;li&gt;어떤 증거자료를 남기고자 할 경우, 사진을 온라인 상에 게시하고 해당 링크를 첨부할 수 있다
-    &lt;ul&gt;
-      &lt;li&gt;핸드폰으로 찍은 사진을 바로 telegra.ph로 업로드 할 수 있어 편하다
-&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;my-first-post&quot;&gt;my first post&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;http://telegra.ph/이쁘니-하니-03-17&quot; target=&quot;_blank&quot;&gt;http://telegra.ph/이쁘니-하니-03-17&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">telegra.ph 란 익명 기반 글 호스팅 서비스 http://telegra.ph/ Beauty is coming from simplicity</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">Frequently pyhon 프로그래밍 강좌 Medium liquid docs es6 vs es5 es5 core es6-in-depth-modules partial.js caniuse.com freecodecamp</summary></entry></feed>

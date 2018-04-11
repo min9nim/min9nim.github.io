@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[ramdajs] forEach 버그"
+title:  "ramdajs 라이브러리 forEach 버그"
 date:   2018-04-01 00:35:00 +0900
 categories: FrontEnd
 ---
