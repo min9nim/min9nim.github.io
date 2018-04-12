@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[windows] cmder 터미널을 특정 폴더에서 바로 열기"
+title:  "[windows] 특정 폴더에서 cmder 바로 열기"
 date:   2018-04-12 13:50:00 +0900
 categories: FrontEnd
 ---
@@ -11,8 +11,8 @@ categories: FrontEnd
 <br>
 
 ### Solution
-1. 잘 알려진 [윈도우용 터미널 cmder](http://cmder.net/) 를 `C:\cmder_mini` 경로에 설치한다.  
-(설치 경로를 변경하고자 한다면 아래 레지스트리 편집기 내용을 수정하면 된다.)
+1. 잘 알려진 [윈도우용 터미널 cmder](http://cmder.net/){:target="_blank"} 를 `C:\cmder_mini` 경로에 설치한다.  
+(설치 경로를 변경하고자 한다면 아래 레지스트리 편집기에서 경로를 알맞게 수정)
 ![img0](/images/addCmder0.png)
 
 2. 마우스 오른쪽 메뉴에 바로가기 등록을 위해 아래 레지스트리 편집 명령을 사용한다.
@@ -31,4 +31,4 @@ categories: FrontEnd
 
 
 ### Ref.
-<http://minq.tistory.com/667>
+<http://minq.tistory.com/667>{:target="_blank"}

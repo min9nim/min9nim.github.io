@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-12T14:21:40+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적이~*</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">[windows] cmder 터미널을 특정 폴더에서 바로 열기</title><link href="http://localhost:4000/frontend/2018/04/windows-cmder.html" rel="alternate" type="text/html" title="[windows] cmder 터미널을 특정 폴더에서 바로 열기" /><published>2018-04-12T13:50:00+09:00</published><updated>2018-04-12T13:50:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/windows-cmder</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/windows-cmder.html">&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-12T14:41:06+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적이~*</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">[windows] 특정 폴더에서 cmder 바로 열기</title><link href="http://localhost:4000/frontend/2018/04/windows-cmder.html" rel="alternate" type="text/html" title="[windows] 특정 폴더에서 cmder 바로 열기" /><published>2018-04-12T13:50:00+09:00</published><updated>2018-04-12T13:50:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/windows-cmder</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/windows-cmder.html">&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
 &lt;ol&gt;
   &lt;li&gt;윈도우에서 기본으로 제공되는 터미널은 Copy &amp;amp; Paste 및 창사이즈 조절에 제한이 있어 불편&lt;/li&gt;
   &lt;li&gt;터미널에서 cd 명령을 이용해 특정 경로로 이동하는 것도 귀찮고
@@ -9,8 +9,8 @@
 &lt;h3 id=&quot;solution&quot;&gt;Solution&lt;/h3&gt;
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;잘 알려진 &lt;a href=&quot;http://cmder.net/&quot;&gt;윈도우용 터미널 cmder&lt;/a&gt; 를 &lt;code class=&quot;highlighter-rouge&quot;&gt;C:\cmder_mini&lt;/code&gt; 경로에 설치한다.&lt;br /&gt;
-(설치 경로를 변경하고자 한다면 아래 레지스트리 편집기 내용을 수정하면 된다.)
+    &lt;p&gt;잘 알려진 &lt;a href=&quot;http://cmder.net/&quot; target=&quot;_blank&quot;&gt;윈도우용 터미널 cmder&lt;/a&gt; 를 &lt;code class=&quot;highlighter-rouge&quot;&gt;C:\cmder_mini&lt;/code&gt; 경로에 설치한다.&lt;br /&gt;
+(설치 경로를 변경하고자 한다면 아래 레지스트리 편집기에서 경로를 알맞게 수정)
 &lt;img src=&quot;/images/addCmder0.png&quot; alt=&quot;img0&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;마우스 오른쪽 메뉴에 바로가기 등록을 위해 아래 레지스트리 편집 명령을 사용한다.
@@ -31,7 +31,7 @@
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;ref&quot;&gt;Ref.&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;http://minq.tistory.com/667&quot;&gt;http://minq.tistory.com/667&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Problem 윈도우에서 기본으로 제공되는 터미널은 Copy &amp;amp; Paste 및 창사이즈 조절에 제한이 있어 불편 터미널에서 cd 명령을 이용해 특정 경로로 이동하는 것도 귀찮고</summary></entry><entry><title type="html">[mac] High Sierra 에서 telnet &amp;amp; ftp CLI 설치</title><link href="http://localhost:4000/frontend/2018/04/install-ftp.html" rel="alternate" type="text/html" title="[mac] High Sierra 에서 telnet &amp; ftp CLI 설치" /><published>2018-04-11T14:40:00+09:00</published><updated>2018-04-11T14:40:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/install-ftp</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/install-ftp.html">&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://minq.tistory.com/667&quot; target=&quot;_blank&quot;&gt;http://minq.tistory.com/667&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Problem 윈도우에서 기본으로 제공되는 터미널은 Copy &amp;amp; Paste 및 창사이즈 조절에 제한이 있어 불편 터미널에서 cd 명령을 이용해 특정 경로로 이동하는 것도 귀찮고</summary></entry><entry><title type="html">[mac] High Sierra 에서 telnet &amp;amp; ftp CLI 설치</title><link href="http://localhost:4000/frontend/2018/04/install-ftp.html" rel="alternate" type="text/html" title="[mac] High Sierra 에서 telnet &amp; ftp CLI 설치" /><published>2018-04-11T14:40:00+09:00</published><updated>2018-04-11T14:40:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/install-ftp</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/install-ftp.html">&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
 &lt;p&gt;Mac High Sierra 는 보안 상의 문제로 터미널에서 telnet, ftp 명령어를 기본적으로 지원하지 않는다
 &lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
