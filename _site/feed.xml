@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-11T15:20:53+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적이~*</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">[mac] High Sierra 에서 telnet &amp;amp; ftp CLI 설치</title><link href="http://localhost:4000/frontend/2018/04/install-ftp.html" rel="alternate" type="text/html" title="[mac] High Sierra 에서 telnet &amp; ftp CLI 설치" /><published>2018-04-11T14:40:00+09:00</published><updated>2018-04-11T14:40:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/install-ftp</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/install-ftp.html">&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-12T14:21:40+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적이~*</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">[windows] cmder 터미널을 특정 폴더에서 바로 열기</title><link href="http://localhost:4000/frontend/2018/04/windows-cmder.html" rel="alternate" type="text/html" title="[windows] cmder 터미널을 특정 폴더에서 바로 열기" /><published>2018-04-12T13:50:00+09:00</published><updated>2018-04-12T13:50:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/windows-cmder</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/windows-cmder.html">&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;윈도우에서 기본으로 제공되는 터미널은 Copy &amp;amp; Paste 및 창사이즈 조절에 제한이 있어 불편&lt;/li&gt;
+  &lt;li&gt;터미널에서 cd 명령을 이용해 특정 경로로 이동하는 것도 귀찮고
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;solution&quot;&gt;Solution&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;잘 알려진 &lt;a href=&quot;http://cmder.net/&quot;&gt;윈도우용 터미널 cmder&lt;/a&gt; 를 &lt;code class=&quot;highlighter-rouge&quot;&gt;C:\cmder_mini&lt;/code&gt; 경로에 설치한다.&lt;br /&gt;
+(설치 경로를 변경하고자 한다면 아래 레지스트리 편집기 내용을 수정하면 된다.)
+&lt;img src=&quot;/images/addCmder0.png&quot; alt=&quot;img0&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;마우스 오른쪽 메뉴에 바로가기 등록을 위해 아래 레지스트리 편집 명령을 사용한다.
+    &lt;ul&gt;
+      &lt;li&gt;마우스 오른클릭 메뉴에 바로가기 등록: &lt;a href=&quot;/files/AddCmder.reg&quot;&gt;AddCmder.reg&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;관리자 권한 실행 : &lt;a href=&quot;/files/AddCmderAdmin.reg&quot;&gt;AddCmderAdmin.reg&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;등록했던 바로가기 삭제: &lt;a href=&quot;/files/DelCmder.reg&quot;&gt;DelCmder.reg&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;관리자 권한 실행 삭제: &lt;a href=&quot;/files/DelCmderAdmin.reg&quot;&gt;DelCmderAdmin.reg&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;특정 경로에서 마우스 오른 클릭을 하면 바로가기 가능!
+&lt;img src=&quot;/images/addCmder1.png&quot; alt=&quot;img1&quot; /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;img src=&quot;/images/addCmder2.png&quot; alt=&quot;img2&quot; /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;ref&quot;&gt;Ref.&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://minq.tistory.com/667&quot;&gt;http://minq.tistory.com/667&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Problem 윈도우에서 기본으로 제공되는 터미널은 Copy &amp;amp; Paste 및 창사이즈 조절에 제한이 있어 불편 터미널에서 cd 명령을 이용해 특정 경로로 이동하는 것도 귀찮고</summary></entry><entry><title type="html">[mac] High Sierra 에서 telnet &amp;amp; ftp CLI 설치</title><link href="http://localhost:4000/frontend/2018/04/install-ftp.html" rel="alternate" type="text/html" title="[mac] High Sierra 에서 telnet &amp; ftp CLI 설치" /><published>2018-04-11T14:40:00+09:00</published><updated>2018-04-11T14:40:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/install-ftp</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/install-ftp.html">&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
 &lt;p&gt;Mac High Sierra 는 보안 상의 문제로 터미널에서 telnet, ftp 명령어를 기본적으로 지원하지 않는다
 &lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
@@ -298,33 +331,4 @@ $ git merge hotfix
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;script src=&quot;https://gist.github.com/min9nim/82014d7854357088dab5083eb7fbedb7.js&quot;&gt;&lt;/script&gt;</content><author><name>mg.song</name></author><summary type="html">문제 아래와 같이 event객체를 직접 참조하면 firefox에서 오류 발생 크롬에서는 정상</summary></entry><entry><title type="html">Bookmark</title><link href="http://localhost:4000/memo/2018/03/my-bookmark.html" rel="alternate" type="text/html" title="Bookmark" /><published>2018-03-18T08:06:00+09:00</published><updated>2018-03-18T08:06:00+09:00</updated><id>http://localhost:4000/memo/2018/03/my-bookmark</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/my-bookmark.html">&lt;ul&gt;
-  &lt;li&gt;Frequently
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;http://blog.eairship.kr/category/프로그래밍 관련/Python&quot; target=&quot;_blank&quot;&gt;pyhon 프로그래밍 강좌&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://medium.com/topic/programming&quot; target=&quot;_blank&quot;&gt;Medium&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://shopify.github.io/liquid/basics/introduction&quot; target=&quot;_blank&quot;&gt;liquid docs&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://es6-features.org&quot; target=&quot;_blank&quot;&gt;es6 vs es5&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://tech.inswave.com/2018/03/17/ES5&quot; target=&quot;_blank&quot;&gt;es5 core&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://hacks.mozilla.or.kr/2016/05/es6-in-depth-modules/&quot; target=&quot;_blank&quot;&gt;es6-in-depth-modules&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://marpple.github.io/partial.js/&quot; target=&quot;_blank&quot;&gt;partial.js&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://caniuse.com&quot; target=&quot;_blank&quot;&gt;caniuse.com&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://medium.freecodecamp.org/tagged/web-development&quot; target=&quot;_blank&quot;&gt;freecodecamp&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;temp
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;http://tech.kakao.com/2016/07/07/tech-blog-story&quot; target=&quot;_blank&quot;&gt;jekyll 태그기능 적용방법&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://auth0.com/blog/intro-to-immutable-js&quot; target=&quot;_blank&quot;&gt;intro-to-immutable-js&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://auth0.com/blog/javascript-module-systems-showdown&quot; target=&quot;_blank&quot;&gt;javascript-module-systems-showdown&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/ko/v2/Git-브랜치-브랜치-워크플로&quot; target=&quot;_blank&quot;&gt;Git-브랜치-브랜치-워크플로&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://medium.freecodecamp.org/here-are-examples-of-everything-new-in-ecmascript-2016-2017-and-2018-d52fa3b5a70e&quot; target=&quot;_blank&quot;&gt;ecmascript-2016-2017-2018&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;later
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://auth0.com/blog/four-types-of-leaks-in-your-javascript-code-and-how-to-get-rid-of-them/&quot; target=&quot;_blank&quot;&gt;4 Types of Memory Leaks in JavaScript&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;checked&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">Frequently pyhon 프로그래밍 강좌 Medium liquid docs es6 vs es5 es5 core es6-in-depth-modules partial.js caniuse.com freecodecamp</summary></entry></feed>
+&lt;script src=&quot;https://gist.github.com/min9nim/82014d7854357088dab5083eb7fbedb7.js&quot;&gt;&lt;/script&gt;</content><author><name>mg.song</name></author><summary type="html">문제 아래와 같이 event객체를 직접 참조하면 firefox에서 오류 발생 크롬에서는 정상</summary></entry></feed>
