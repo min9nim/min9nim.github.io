@@ -15,6 +15,7 @@ categories: memo
   * [partial.js](https://marpple.github.io/partial.js/){:target="_blank"}
   * [caniuse.com](https://caniuse.com){:target="_blank"}
   * [freecodecamp](https://medium.freecodecamp.org/tagged/web-development){:target="_blank"}
+  * [마크다운 문법](http://blog.kalkin7.com/2014/02/05/wordpress-markdown-quick-reference-for-koreans){:target="_blank"}
 
 * temp
   * [jekyll 태그기능 적용방법](http://tech.kakao.com/2016/07/07/tech-blog-story){:target="_blank"}
