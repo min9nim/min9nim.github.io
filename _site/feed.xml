@@ -1,4 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-13T10:21:53+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적이~*</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">[windows] 특정 폴더에서 cmder 바로 열기</title><link href="http://localhost:4000/frontend/2018/04/windows-cmder.html" rel="alternate" type="text/html" title="[windows] 특정 폴더에서 cmder 바로 열기" /><published>2018-04-12T13:50:00+09:00</published><updated>2018-04-12T13:50:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/windows-cmder</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/windows-cmder.html">&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-17T17:43:52+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적이~*</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">[mySQL] 테이블 수정 쿼리</title><link href="http://localhost:4000/frontend/2018/04/mysql-table.html" rel="alternate" type="text/html" title="[mySQL] 테이블 수정 쿼리" /><published>2018-04-16T11:00:00+09:00</published><updated>2018-04-16T11:00:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/mysql-table</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/mysql-table.html">&lt;h4 id=&quot;이름-바꾸기&quot;&gt;이름 바꾸기&lt;/h4&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tablename&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;RENAME&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bbs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;컬럼-속성-수정&quot;&gt;컬럼 속성 수정&lt;/h4&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tablename&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;MODIFY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colname&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;INT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AUTO_INCREMENT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;PRIMARY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;KEY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;컬럼-이름-바꾸기&quot;&gt;컬럼 이름 바꾸기&lt;/h4&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tablename&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CHANGE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colname&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newcolname&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;INT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AUTO_INCREMENT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;CHANGE는 컬럼 속성뿐아니라 이름도 바꿔준다
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;컬럼-추가&quot;&gt;컬럼 추가&lt;/h4&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bbs&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ADD&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;VARCHAR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;ALTER TABLE tablename ADD 컬럼이름 컬럼속성&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;컬럼-삭제&quot;&gt;컬럼 삭제&lt;/h4&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bbs&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;특정-컬럼-뒤에-새로운-컬럼-추가&quot;&gt;특정 컬럼 뒤에 새로운 컬럼 추가&lt;/h4&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bbs&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ADD&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newcol&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;VARCHAR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AFTER&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;num 컬럼 뒤에 newcol 컬럼 추가
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;기존-컬럼을-지우고-맨-앞에-컬럼-추가&quot;&gt;기존 컬럼을 지우고 맨 앞에 컬럼 추가&lt;/h4&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bbs&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newcol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ADD&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newcol&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;VARCHAR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FIRST&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;맨 앞에 추가하려면 FIRST를 사용한다
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;primary-key-속성-삭제&quot;&gt;PRIMARY KEY 속성 삭제&lt;/h4&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;test&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;PRIMARY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;KEY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;이미-primary-key인-컬럼의-속성을-바꿀-때&quot;&gt;이미 PRIMARY KEY인 컬럼의 속성을 바꿀 때&lt;/h4&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;test&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;MODIFY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CHAR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;PRIMARY KEY 속성은 지정하지 말고, NOT NULL 속성을 함께 지정해 주면 기존 PRIMARY KEY 속성은 그대로 남은 상태로 컬럼의 속성을 변경할 수 있다.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;ref&quot;&gt;Ref.&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;http://kwonnam.pe.kr/wiki/database/mysql/alter_table&quot;&gt;http://kwonnam.pe.kr/wiki/database/mysql/alter_table&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">이름 바꾸기 ALTER TABLE tablename RENAME bbs;</summary></entry><entry><title type="html">[windows] 특정 폴더에서 cmder 바로 열기</title><link href="http://localhost:4000/frontend/2018/04/windows-cmder.html" rel="alternate" type="text/html" title="[windows] 특정 폴더에서 cmder 바로 열기" /><published>2018-04-12T13:50:00+09:00</published><updated>2018-04-12T13:50:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/windows-cmder</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/windows-cmder.html">&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
 &lt;ol&gt;
   &lt;li&gt;윈도우에서 기본으로 제공되는 터미널은 Copy &amp;amp; Paste 및 창사이즈 조절에 제한이 있어 불편&lt;/li&gt;
   &lt;li&gt;터미널에서 cd 명령을 이용해 특정 경로로 이동하는 것도 귀찮고
@@ -324,26 +390,4 @@ $ git merge hotfix
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;15,16,17라인에서는 각 모듈에서 정의한 Vue, mn, $m 참조가 보장되며 각 모듈들에서 사용한 전역변수도 참조 가능하다&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">예시</summary></entry><entry><title type="html">[crossBrowsing] 이벤트 처리시 주의사항</title><link href="http://localhost:4000/frontend/2018/03/event-binding.html" rel="alternate" type="text/html" title="[crossBrowsing] 이벤트 처리시 주의사항" /><published>2018-03-21T10:20:36+09:00</published><updated>2018-03-21T10:20:36+09:00</updated><id>http://localhost:4000/frontend/2018/03/event-binding</id><content type="html" xml:base="http://localhost:4000/frontend/2018/03/event-binding.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;아래와 같이 event객체를 직접 참조하면 firefox에서 오류 발생
-    &lt;ul&gt;
-      &lt;li&gt;크롬에서는 정상&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;script src=&quot;https://gist.github.com/min9nim/7f69402de6a6079a3e2936d266347a2c.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;해결책&quot;&gt;해결책&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;아래와 같이 패러미터로 전달된 이벤트 객체를 사용해야 한다
-    &lt;ul&gt;
-      &lt;li&gt;chrome &amp;amp; firefox 외 브라우져는 테스트 안 해봄&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;script src=&quot;https://gist.github.com/min9nim/82014d7854357088dab5083eb7fbedb7.js&quot;&gt;&lt;/script&gt;</content><author><name>mg.song</name></author><summary type="html">문제 아래와 같이 event객체를 직접 참조하면 firefox에서 오류 발생 크롬에서는 정상</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">예시</summary></entry></feed>

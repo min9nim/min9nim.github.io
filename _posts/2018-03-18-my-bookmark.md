@@ -4,7 +4,6 @@ title:  "Bookmark"
 date:   2018-03-18 08:06:00 +0900
 categories: memo
 ---
-
 * Frequently
   * [pyhon 프로그래밍 강좌](http://blog.eairship.kr/category/프로그래밍 관련/Python){:target="_blank"}
   * [Medium](https://medium.com/topic/programming){:target="_blank"}
@@ -27,4 +26,6 @@ categories: memo
 * later
   * [4 Types of Memory Leaks in JavaScript](https://auth0.com/blog/four-types-of-leaks-in-your-javascript-code-and-how-to-get-rid-of-them/){:target="_blank"}
 
-* checked
+* 개발자블로그
+  * <http://ingeec.tistory.com>{:target="_blank"}
+  * <https://taegon.kim>{:target="_blank"}
