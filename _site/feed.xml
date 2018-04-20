@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-17T17:43:52+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적이~*</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">[mySQL] 테이블 수정 쿼리</title><link href="http://localhost:4000/frontend/2018/04/mysql-table.html" rel="alternate" type="text/html" title="[mySQL] 테이블 수정 쿼리" /><published>2018-04-16T11:00:00+09:00</published><updated>2018-04-16T11:00:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/mysql-table</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/mysql-table.html">&lt;h4 id=&quot;이름-바꾸기&quot;&gt;이름 바꾸기&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-21T00:12:59+09:00</updated><id>http://localhost:4000/</id><title type="html">끄적이~*</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">postman 을 이용한 request 캡쳐</title><link href="http://localhost:4000/python/2018/04/postman.html" rel="alternate" type="text/html" title="postman 을 이용한 request 캡쳐" /><published>2018-04-20T23:00:00+09:00</published><updated>2018-04-20T23:00:00+09:00</updated><id>http://localhost:4000/python/2018/04/postman</id><content type="html" xml:base="http://localhost:4000/python/2018/04/postman.html">&lt;h4 id=&quot;모바일에서-http-request-캡쳐&quot;&gt;모바일에서 HTTP request 캡쳐&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.getpostman.com/docs/v6/postman/sending_api_requests/capturing_http_requests&quot;&gt;https://www.getpostman.com/docs/v6/postman/sending_api_requests/capturing_http_requests&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;postman의 proxy 를 사용&lt;/li&gt;
+  &lt;li&gt;모바일 장비와 postman이 설치된 PC가 동일한 네트워크 망내 물려 있어야 함
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;크롬에서-http-request-캡쳐&quot;&gt;크롬에서 HTTP request 캡쳐&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.getpostman.com/docs/v6/postman/sending_api_requests/interceptor_extension&quot;&gt;https://www.getpostman.com/docs/v6/postman/sending_api_requests/interceptor_extension&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;postman native app&lt;/em&gt; 으로는 안되고 &lt;em&gt;chrome postman app&lt;/em&gt; 을 이용해야 함&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;interceptor extension&lt;/em&gt; 과 &lt;em&gt;chrome postman app&lt;/em&gt; 양쪽 모두에서 &lt;em&gt;Request Capture&lt;/em&gt; 를 &lt;em&gt;on&lt;/em&gt; 설정&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">모바일에서 HTTP request 캡쳐 https://www.getpostman.com/docs/v6/postman/sending_api_requests/capturing_http_requests postman의 proxy 를 사용 모바일 장비와 postman이 설치된 PC가 동일한 네트워크 망내 물려 있어야 함</summary></entry><entry><title type="html">[python] SimpleHTTPServer</title><link href="http://localhost:4000/python/2018/04/SimpleHTTPServer.html" rel="alternate" type="text/html" title="[python] SimpleHTTPServer" /><published>2018-04-20T13:00:00+09:00</published><updated>2018-04-20T13:00:00+09:00</updated><id>http://localhost:4000/python/2018/04/SimpleHTTPServer</id><content type="html" xml:base="http://localhost:4000/python/2018/04/SimpleHTTPServer.html">&lt;h4 id=&quot;problem&quot;&gt;Problem&lt;/h4&gt;
+&lt;p&gt;로컬에 서버 설치되어 있지 않지만 간단하게(3초 안에) 웹서버를 띄우고 싶다
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;solution&quot;&gt;Solution&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;python 이 설치되어 있다면,  &lt;em&gt;DOCUMENT_ROOT&lt;/em&gt; 경로에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;$ python -m SimpleHTTPServer&lt;/code&gt; 를 실행한다.&lt;/li&gt;
+  &lt;li&gt;브라우져에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;http://127.0.0.1:8000&lt;/code&gt; 로 붙어 본다.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;ref&quot;&gt;Ref.&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.pythonforbeginners.com/modules-in-python/how-to-use-simplehttpserver/&quot; target=&quot;_blank&quot;&gt;http://www.pythonforbeginners.com/modules-in-python/how-to-use-simplehttpserver/&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Problem 로컬에 서버 설치되어 있지 않지만 간단하게(3초 안에) 웹서버를 띄우고 싶다</summary></entry><entry><title type="html">[mySQL] 테이블 수정 쿼리</title><link href="http://localhost:4000/frontend/2018/04/mysql-table.html" rel="alternate" type="text/html" title="[mySQL] 테이블 수정 쿼리" /><published>2018-04-16T11:00:00+09:00</published><updated>2018-04-16T11:00:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/mysql-table</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/mysql-table.html">&lt;h4 id=&quot;이름-바꾸기&quot;&gt;이름 바꾸기&lt;/h4&gt;
 &lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tablename&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;RENAME&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bbs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -349,45 +377,4 @@ $ git merge hotfix
 &lt;h4 id=&quot;질문&quot;&gt;질문&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;http://ramdajs.com/docs/#forEach&quot; target=&quot;_blank&quot;&gt;forEach 매뉴얼&lt;/a&gt; 을 보면
 첫번째 인자 함수가 패러미터를 1개만 받는다고 나와있는데.. 저 경우에는 왜 3개를 받는 걸가?
-버그라고 봐야하지 않을까&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">예시</summary></entry><entry><title type="html">[crossBrowsing] safari 에서 가로스크롤 막기</title><link href="http://localhost:4000/frontend/2018/03/ios-xscroll.html" rel="alternate" type="text/html" title="[crossBrowsing] safari 에서 가로스크롤 막기" /><published>2018-03-22T13:18:00+09:00</published><updated>2018-03-22T13:18:00+09:00</updated><id>http://localhost:4000/frontend/2018/03/ios-xscroll</id><content type="html" xml:base="http://localhost:4000/frontend/2018/03/ios-xscroll.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;overflow-x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;hidden&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;위와 같이 &lt;code class=&quot;highlighter-rouge&quot;&gt;body&lt;/code&gt; 태그에 &lt;code class=&quot;highlighter-rouge&quot;&gt;overflow-x: hidden;&lt;/code&gt; 를 적용하면 가로스크롤이 동작하지 않아야 하지만 사파리에서는 아래와 같이 여전히 가로스크롤이 동작하는 문제
-&lt;br /&gt;
-&lt;img src=&quot;/images/safari.gif&quot; alt=&quot;iOS safari 에서 가로스크롤 문제&quot; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;데스크탑&amp;amp;모바일 사파리 모두 동일한 문제 발생&lt;/li&gt;
-  &lt;li&gt;크롬&amp;amp;파폭은 정상
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;해결책&quot;&gt;해결책&lt;/h4&gt;
-&lt;p&gt;아래와 같이 &lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt; 태그에도 &lt;code class=&quot;highlighter-rouge&quot;&gt;overflow-x: hidden;&lt;/code&gt; 를 추가하니 해결 됨&lt;/p&gt;
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;overflow-x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;hidden&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;ref&quot;&gt;Ref.&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.thewordcracker.com/miscellaneous/모바일-기기에서-수평-스크롤-없애기&quot; target=&quot;_blank&quot;&gt;https://www.thewordcracker.com/miscellaneous/모바일-기기에서-수평-스크롤-없애기&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">문제 body { overflow-x: hidden; } 위와 같이 body 태그에 overflow-x: hidden; 를 적용하면 가로스크롤이 동작하지 않아야 하지만 사파리에서는 아래와 같이 여전히 가로스크롤이 동작하는 문제 데스크탑&amp;amp;모바일 사파리 모두 동일한 문제 발생 크롬&amp;amp;파폭은 정상</summary></entry><entry><title type="html">AMD 모듈 로드시 순서 관련</title><link href="http://localhost:4000/memo/2018/03/amd-order.html" rel="alternate" type="text/html" title="AMD 모듈 로드시 순서 관련" /><published>2018-03-22T00:46:36+09:00</published><updated>2018-03-22T00:46:36+09:00</updated><id>http://localhost:4000/memo/2018/03/amd-order</id><content type="html" xml:base="http://localhost:4000/memo/2018/03/amd-order.html">&lt;h4 id=&quot;예시&quot;&gt;예시&lt;/h4&gt;
-&lt;script src=&quot;https://gist.github.com/min9nim/33a76b8c679e24dade2afc3ec134b4e4.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;설명&quot;&gt;설명&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;위와 같이 모듈들을 불러 올때 mn.js가 실행되는 스코프에서는 vue.js 에서 사용한 전역변수를 참조할 수 없다
-    &lt;ul&gt;
-      &lt;li&gt;vue.js, mn.js, util.js 의 실행 순서가 보장되지 않기 때문에&lt;/li&gt;
-      &lt;li&gt;&lt;em&gt;물론 mn.js 모듈 정의 시 vue.js를 디펜던시 모듈로 참조하면 가능하겠지만&lt;/em&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;15,16,17라인에서는 각 모듈에서 정의한 Vue, mn, $m 참조가 보장되며 각 모듈들에서 사용한 전역변수도 참조 가능하다&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">예시</summary></entry></feed>
+버그라고 봐야하지 않을까&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">예시</summary></entry></feed>
