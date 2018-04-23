@@ -1,4 +1,152 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-21T00:21:33+09:00</updated><id>http://localhost:4000/</id><title type="html">codename J.</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">postman 을 이용한 request 캡쳐</title><link href="http://localhost:4000/python/2018/04/postman.html" rel="alternate" type="text/html" title="postman 을 이용한 request 캡쳐" /><published>2018-04-20T23:00:00+09:00</published><updated>2018-04-20T23:00:00+09:00</updated><id>http://localhost:4000/python/2018/04/postman</id><content type="html" xml:base="http://localhost:4000/python/2018/04/postman.html">&lt;h4 id=&quot;모바일에서-http-request-캡쳐&quot;&gt;모바일에서 HTTP request 캡쳐&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-23T17:30:53+09:00</updated><id>http://localhost:4000/</id><title type="html">codename J.</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">Node.js 란 도대체 무엇입니까?</title><link href="http://localhost:4000/frontend/2018/04/what-nodejs.html" rel="alternate" type="text/html" title="Node.js 란 도대체 무엇입니까?" /><published>2018-04-23T14:00:00+09:00</published><updated>2018-04-23T14:00:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/what-nodejs</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/what-nodejs.html">&lt;p&gt;Node.js는 javascript 실행 환경입니다. 멋진 말입니다. 도대체 그것이 의미하는 바가 무엇이고 어떻게 동작이 된다는 말일까요??&lt;/p&gt;
+
+&lt;p&gt;Nodejs는 javascript를 이용해 프로그램을 작성하기 위해 필요한 모든 것을 가지고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/what-nodejs1.png&quot; alt=&quot;자바 vs 자바스크립트&quot; /&gt;
+Java 와 Node.js 의 비교&lt;/p&gt;
+
+&lt;p&gt;Node.js 는 javascript를 웹브라우져 뿐만 아니라 독립적인 애플리케이션을 만드는 데에도 사용하기 위한 목적으로 태어났습니다.
+이제 당신은 JavaScript 를 웹사이트를 만드는 것 이상으로 훨씬 더 많은 일들을 할 수 있습니다&lt;/p&gt;
+
+&lt;p&gt;JavaScript는 이제 파이썬 같은 스크립트언어들이 하던 일을 동일하게 처리할 수 있는 능력이 생겼습니다&lt;/p&gt;
+
+&lt;p&gt;웹브라우져에서 동작하는 JavaScript 든 Node.js 든 모두 내부적으로 V8엔진 위에서 동작합니다. V8엔진은 JavaScript 코드를 기계어로 변환해 줍니다. 기계어는 다른 번역이 필요없이 컴퓨터가 바로 실행할 수 있는 저수준의 실행 코드입니다
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;왜-nodejs-를-사용해야-합니까&quot;&gt;왜 Node.js 를 사용해야 합니까?&lt;/h3&gt;
+&lt;p&gt;Node.js 공식사이트에서는 Node.js를 아래와 같이 정의하고 있습니다&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Node.js 는 크롬의 V8엔진을 이용한 실행환경이다.&lt;/li&gt;
+    &lt;li&gt;Node.js 는 event-driven, non-blocking I/O 를 사용하여 가볍고 효율적이다.&lt;/li&gt;
+    &lt;li&gt;Node.js 의 패키지 관리 시스템인 npm은 전세계에서 가장 큰 오픈소스 라이브러리 생태계를 이루고 있다.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;우리는 앞서 이미 첫번째 사항에 대하여 살펴 보았습니다.
+이제 우리는 Node.js의 나머지 2가지 특성을 알아볼 것입니다. 이를 통해 우리는 Node.js 가 유명해진 이유를 이해하게 될 것 입니다.&lt;/p&gt;
+
+&lt;p&gt;I/O는 입력과 출력을 의미합니다. 그것은 네트워크나 파일시스템을 통해 데이터를 읽고 쓰는 행위를 말합니다.&lt;/p&gt;
+
+&lt;p&gt;보통 I/O 처리는 시간을 많이 잡아먹기 때문에 I/O가 처리되는 동안 다른 함수들은 오래도록 실행을 대기해야 합니다&lt;/p&gt;
+
+&lt;p&gt;아래와 같은 상황을 예로 Blocking I/O 와 Non-Blocking I/O를 비교해 봅시다.
+user1과 user2의 상세 정보를 서버에 요청하고 그 결과를 받아서 화면에 출력하고자 합니다. 서버에서 해당 요청에 대한 처리는 시간이 좀 걸립니다 하지만 2가지 요청이 동시에 서버로 날라간다고 가정해 봅시다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/what-nodejs2.png&quot; alt=&quot;Blocking vs Non-Blocking&quot; /&gt;
+Blocking i/O vs Non-Blocking I/O
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;blocking-io&quot;&gt;Blocking I/O&lt;/h3&gt;
+&lt;p&gt;Blocking I/O 의 경우 user1의 요청에 대한 응답이 끝날 때 까지 user2 요청 처리에 대한 어떤 작업도 진행할 수 없습니다.&lt;/p&gt;
+
+&lt;p&gt;그래서 웹서버는 새로운 요청을 처리하기 위해 새로운 thread를 시작할 수 밖에 없습니다. 그러나 JavaScript는 단일 쓰레드로 동작합니다(정확히 표현하자면 event loop 가 단일쓰레드로 동작하는 것입니다. 자세한 것은 나중에 다시 다루도록 하겠습니다). 이렇게 멀티쓰레드로 처리 해야하는 상황이라면 자바스크립트는 적절한 선택이 될 수 없습니다.&lt;/p&gt;
+
+&lt;p&gt;이제 Non-Blocking I/O 에 대하여 이야기를 할 때가 된 것 같습니다.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;non-blocking-io&quot;&gt;Non-blocking I/O&lt;/h3&gt;
+&lt;p&gt;앞선 경우와 다르게 JavaScript는 Non-blocking 으로 위 상황을 처리할 수 있습니다. 당신은 user1의 요청에 대한 처리가 끝나기를 기다릴 필요 없이 user2의 요청을 준비하고 실행할 수 있습니다. 당신은 user1, user2의 요청을 동시에 처리할 수 있는 것입니다&lt;/p&gt;
+
+&lt;p&gt;Non-Blocking I/O 가 가능하다면 멀티쓰레드를 사용하지 않고도 서버는 여러개의 요청을 동시에 처리하는 것이 가능합니다&lt;/p&gt;
+
+&lt;h3 id=&quot;the-javascript-event-loop&quot;&gt;The JavaScript event loop&lt;/h3&gt;
+&lt;p&gt;당신에게 지금 26분의 여유가 있다면 아래 Event Loop 에 대한 훌륭한 설명 영상을 권하고 싶습니다&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/8aGhZQkoFbQ&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;그렇지 않다면, 자바스크립트 이벤트루프가 어떻게 동작하는지 단계별로 간단히 설명을 드려보겠습니다&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/what-nodejs3.png&quot; alt=&quot;이벤트루프&quot; /&gt;
+자바스크립트 이벤트루프&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;main()&lt;/code&gt; 함수를 &lt;em&gt;call stack&lt;/em&gt; 에 추가한다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;console.log()&lt;/code&gt; 를 콜스택에 추가한다. 이것은 바로 실행되고 콜스택에서 사라진다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout(2000)&lt;/code&gt; 을 스택에 추가한다. &lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout(2000)&lt;/code&gt; 는 Node API이다. 해당 함수를 호출할 때 이벤트 콜백함수를 &lt;em&gt;callback queue&lt;/em&gt; 에 등록한다. 2초 초동안 기다린 후 콜백함수를 호출한다.&lt;/li&gt;
+  &lt;li&gt;API목록에 등록이 되면, &lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout(2000)&lt;/code&gt; 은 &lt;em&gt;call stack&lt;/em&gt; 에서 꺼내진다&lt;/li&gt;
+  &lt;li&gt;이제 같은 방식으로 setTimeout(0)가 APIs에 등록된다. 이제 우리는 실행 대기중인 2개의 Node API를 가지고 있다.&lt;/li&gt;
+  &lt;li&gt;0초 후에, &lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout(0)&lt;/code&gt;가 &lt;em&gt;call stack&lt;/em&gt; 으로 이동된다. 그리고 동일한 setTimeout(2000) 도 동일하게 처리된다.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;callback queue&lt;/em&gt; 에서는 &lt;em&gt;call stack&lt;/em&gt; 의 함수들이 비어지기를 기다리고 있다. 단일쓰레드 환경에서는 한번에 하나의 명령만 실행될 수 있기 때문이다. 이 부분을 주의 깊게 보아야 한다.&lt;/li&gt;
+  &lt;li&gt;마지막 &lt;code class=&quot;highlighter-rouge&quot;&gt;console.log()&lt;/code&gt; 가 실행되면, &lt;em&gt;call stack&lt;/em&gt; 에서 main() 가 꺼내진다&lt;/li&gt;
+  &lt;li&gt;이벤트루프는 &lt;em&gt;call stack&lt;/em&gt; 가 비어져 있는지 본 후 &lt;em&gt;callback queue&lt;/em&gt; 가 비워져 있다면 &lt;em&gt;callback queue&lt;/em&gt; 이 콜백함수를 callstack으로 옮겨 넣는다.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;npm&quot;&gt;npm&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/images/what-nodejs4.png&quot; alt=&quot;npm&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;npm은 일반적인 문제들을 해결할 수 있는 다양한 라이브러리들을 가지고 있습니다. 당신은 애플리케이션을 보다 빠르고 효율적으로 만들 기 위헤 이 npm 패키들을 이용할 수 있습니다
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;require&quot;&gt;Require&lt;/h3&gt;
+&lt;p&gt;Require 는 3가지 일을 합니다&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Node.js&lt;/em&gt; 패키지 모듈을 로드합니다.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Express&lt;/em&gt; 나 &lt;em&gt;Mongoose&lt;/em&gt; 같은 외부 라이브러리들을 불러오거나 npm을 이용해 설치할 수 있습니다&lt;/li&gt;
+  &lt;li&gt;당신이 작성한 모듈을 직접 불러오거나 프로젝트를 모듈화 할 수 있습니다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Require&lt;/em&gt; 는 &lt;em&gt;“path”&lt;/em&gt; 를 인자로 받아서 &lt;code class=&quot;highlighter-rouge&quot;&gt;module.exports&lt;/code&gt; 를 리턴합니다
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;node-modules&quot;&gt;Node Modules&lt;/h3&gt;
+&lt;p&gt;Node의 모듈은 다른 코드들에 영향을 미치지 않는 재사용 가능한 코드블록 입니다&lt;/p&gt;
+
+&lt;p&gt;당신은 자신만의 모듈을 작성할 수 있고 다양한 애플리케이션에서 그것을 사용할 수 있습니다. Node.js 는 특별한 설치없이 바로 사용가능한 모듈들을 포함하고 있습니다
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;v8-turbo-charges-javascript-by-leveraging-c&quot;&gt;V8 turbo-charges JavaScript by leveraging C++&lt;/h3&gt;
+&lt;p&gt;V8은 C++로 씌어진 자바스크립트의 오픈소스 실행환경입니다&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;JavaScript -&amp;gt; V8(C++) -&amp;gt; Machine Code&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;V8은 ECMA-262의 명세인 ECMAScript 를 구현하였습니다. ECMAScript는 자바스크립트 표준화 단체인 Ecma International에 의해 탄생하였습니다.&lt;/p&gt;
+
+&lt;p&gt;V8은 단독으로 실행되거나 C++ 애플리케이션에 포함될 수 있습니다. 또한 자바스크립트를 사용할 수 있는 당신만의 C++코드를 작성할 수 있도록 허용합니다.&lt;/p&gt;
+
+&lt;p&gt;이것은 V8을 이용해 당신이 ECMAScript 표준 스펙 이외의 원하는 자바스크립트 기능을 자신만의 C++을 이용해 직접 추가할 수 있음을 의미합니다.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;events&quot;&gt;Events&lt;/h3&gt;
+&lt;p&gt;Something that has happened in our app that we can respond to. There are two types to events in Node.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;System Events: C++ core from a library called libuv. (For example, finished reading a file).&lt;/li&gt;
+  &lt;li&gt;Custom Events: JavaScript core.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;writing-hello-world-in-nodejs&quot;&gt;Writing Hello World in Node.js&lt;/h3&gt;
+&lt;p&gt;We have to do this, don’t we?&lt;/p&gt;
+
+&lt;p&gt;Make a file app.js and add the following to it.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;console.log(&quot;Hello World!&quot;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Open your node terminal, change the directory to the folder where the file is saved and run &lt;code class=&quot;highlighter-rouge&quot;&gt;node app.js&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Bam — you’ve just written Hello World in Node.js.&lt;/p&gt;
+
+&lt;p&gt;There are a ton of resources you can use learn more about Node.js, including freeCodeCamp.org.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;ref&quot;&gt;Ref.&lt;/h3&gt;
+&lt;p&gt;이 글은 &lt;a href=&quot;https://medium.freecodecamp.org/what-exactly-is-node-js-ae36e97449f5&quot;&gt;What exactly is Node.js?&lt;/a&gt;를 번역한 글입니다. 글읽기에 어려움이 없도록 충분한 의역을 포함하였습니다.&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Node.js는 javascript 실행 환경입니다. 멋진 말입니다. 도대체 그것이 의미하는 바가 무엇이고 어떻게 동작이 된다는 말일까요??</summary></entry><entry><title type="html">postman 을 이용한 request 캡쳐</title><link href="http://localhost:4000/python/2018/04/postman.html" rel="alternate" type="text/html" title="postman 을 이용한 request 캡쳐" /><published>2018-04-20T23:00:00+09:00</published><updated>2018-04-20T23:00:00+09:00</updated><id>http://localhost:4000/python/2018/04/postman</id><content type="html" xml:base="http://localhost:4000/python/2018/04/postman.html">&lt;h4 id=&quot;모바일에서-http-request-캡쳐&quot;&gt;모바일에서 HTTP request 캡쳐&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.getpostman.com/docs/v6/postman/sending_api_requests/capturing_http_requests&quot;&gt;https://www.getpostman.com/docs/v6/postman/sending_api_requests/capturing_http_requests&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;postman의 proxy 를 사용&lt;/li&gt;
@@ -362,80 +510,4 @@ hostname
 &lt;/ul&gt;
 
 &lt;h4 id=&quot;ref&quot;&gt;Ref.&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;http://hacks.mozilla.or.kr/2016/05/es6-in-depth-modules/&quot;&gt;http://hacks.mozilla.or.kr/2016/05/es6-in-depth-modules/&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Benefits to webpack 빌드 환경에서 partialjs 를 모듈로 사용하고자 할 경우</summary></entry><entry><title type="html">git 명령어 요약</title><link href="http://localhost:4000/frontend/2018/04/git-command.html" rel="alternate" type="text/html" title="git 명령어 요약" /><published>2018-04-01T01:14:00+09:00</published><updated>2018-04-01T01:14:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/git-command</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/git-command.html">&lt;h3 id=&quot;브랜치&quot;&gt;브랜치&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;브랜치 생성
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git branch iss53
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;브랜치 이동
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout iss53
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;브랜치 목록 보기
-    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; git branch
-&lt;span class=&quot;go&quot;&gt;iss53
-&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;&amp;gt;&lt;/span&gt; master
-&lt;span class=&quot;go&quot;&gt;testing
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;브랜치를 만들면서 Checkout까지 한 번에
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout -b iss53
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;위 명령은 아래 명령을 줄여놓은 것&lt;/p&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git branch iss53
-$ git checkout iss53
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;master 브랜치에서 hotfix 브랜치를 merge 하고자 한다면
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout master
-$ git merge hotfix
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;merge 된 브랜치 목록
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git branch --merged
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;아직 merge 안 된 브랜치 목록
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git branch --no-merged
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;iss53 브랜치를 삭제
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git branch -d iss53
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;로그&quot;&gt;로그&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;commit 메세지만 한줄로 &amp;amp; 그래프로 보이기
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git log --oneline --graph
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;commit 의 diff 결과를 최근 2개만 보이기
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git log -p -2
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;기타&quot;&gt;기타&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;workingDirectory &amp;amp; staging 영역에서 파일 삭제
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git rm test.html
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;저장소 내려받기&lt;br /&gt;
-(명령을 수행하는 경로에 min9nim.github.io 폴더를 만들고 그 아래에 소스를 내려받음)
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone https://github.com/min9nim/min9nim.github.io.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;ref&quot;&gt;Ref.&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/ko/v2/Git-브랜치-브랜치와-Merge-의-기초&quot;&gt;https://git-scm.com/book/ko/v2/Git-브랜치-브랜치와-Merge-의-기초&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/ko/v1/Git의-기초-커밋-히스토리-조회하기&quot;&gt;https://git-scm.com/book/ko/v1/Git의-기초-커밋-히스토리-조회하기&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">브랜치 브랜치 생성 $ git branch iss53 브랜치 이동 $ git checkout iss53 브랜치 목록 보기 $ git branch iss53 &amp;gt; master testing 브랜치를 만들면서 Checkout까지 한 번에 $ git checkout -b iss53 위 명령은 아래 명령을 줄여놓은 것 $ git branch iss53 $ git checkout iss53 master 브랜치에서 hotfix 브랜치를 merge 하고자 한다면 $ git checkout master $ git merge hotfix merge 된 브랜치 목록 $ git branch --merged 아직 merge 안 된 브랜치 목록 $ git branch --no-merged iss53 브랜치를 삭제 $ git branch -d iss53</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;http://hacks.mozilla.or.kr/2016/05/es6-in-depth-modules/&quot;&gt;http://hacks.mozilla.or.kr/2016/05/es6-in-depth-modules/&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Benefits to webpack 빌드 환경에서 partialjs 를 모듈로 사용하고자 할 경우</summary></entry></feed>
