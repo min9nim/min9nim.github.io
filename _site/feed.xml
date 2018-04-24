@@ -1,16 +1,89 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-23T17:30:53+09:00</updated><id>http://localhost:4000/</id><title type="html">codename J.</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">Node.js 란 도대체 무엇입니까?</title><link href="http://localhost:4000/frontend/2018/04/what-nodejs.html" rel="alternate" type="text/html" title="Node.js 란 도대체 무엇입니까?" /><published>2018-04-23T14:00:00+09:00</published><updated>2018-04-23T14:00:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/what-nodejs</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/what-nodejs.html">&lt;p&gt;Node.js는 javascript 실행 환경입니다. 멋진 말입니다. 도대체 그것이 의미하는 바가 무엇이고 어떻게 동작이 된다는 말일까요??&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-24T10:45:26+09:00</updated><id>http://localhost:4000/</id><title type="html">codename J.</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">마크다운 주요 문법 정리</title><link href="http://localhost:4000/frontend/2018/04/markdown-syntax.html" rel="alternate" type="text/html" title="마크다운 주요 문법 정리" /><published>2018-04-23T22:00:00+09:00</published><updated>2018-04-23T22:00:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/markdown-syntax</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/markdown-syntax.html">&lt;h4 id=&quot;마크다운-이미지-중앙정렬-방법&quot;&gt;마크다운 이미지 중앙정렬 방법&lt;/h4&gt;
 
-&lt;p&gt;Nodejs는 javascript를 이용해 프로그램을 작성하기 위해 필요한 모든 것을 가지고 있습니다.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{: refdef: style=&quot;text-align: center;&quot;}
+![자바 vs 자바스크립트](/images/what-nodejs1.png)  
+_\&amp;lt;Java 와 Node.js 의 비교\&amp;gt;_
+{: refdef}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/what-nodejs1.png&quot; alt=&quot;자바 vs 자바스크립트&quot; /&gt;
-Java 와 Node.js 의 비교&lt;/p&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;/images/what-nodejs1.png&quot; alt=&quot;자바 vs 자바스크립트&quot; /&gt;&lt;br /&gt;
+&lt;em&gt;&amp;lt;Java 와 Node.js 의 비교&amp;gt;&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Node.js 는 javascript를 웹브라우져 뿐만 아니라 독립적인 애플리케이션을 만드는 데에도 사용하기 위한 목적으로 태어났습니다.
-이제 당신은 JavaScript 를 웹사이트를 만드는 것 이상으로 훨씬 더 많은 일들을 할 수 있습니다&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;JavaScript는 이제 파이썬 같은 스크립트언어들이 하던 일을 동일하게 처리할 수 있는 능력이 생겼습니다&lt;/p&gt;
+&lt;h4 id=&quot;링크-새창으로-열기&quot;&gt;링크 새창으로 열기&lt;/h4&gt;
 
-&lt;p&gt;웹브라우져에서 동작하는 JavaScript 든 Node.js 든 모두 내부적으로 V8엔진 위에서 동작합니다. V8엔진은 JavaScript 코드를 기계어로 변환해 줍니다. 기계어는 다른 번역이 필요없이 컴퓨터가 바로 실행할 수 있는 저수준의 실행 코드입니다
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[네이버](http://naver.com){:target=&quot;_blank&quot;}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://naver.com&quot; target=&quot;_blank&quot;&gt;네이버&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;참조-링크&quot;&gt;참조 링크&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;참조링크는 본문과 한줄 이상 띄어야 합니다&lt;/li&gt;
+  &lt;li&gt;참조링크의 위치는 본문 어느 곳이든 위치할 수 있습니다. 보통은 글 마지막에 둡니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;이 글은 [What exactly is Node.js?][1]를 번역한 글입니다.
+
+[1]:https://medium.freecodecamp.org/what-exactly-is-node-js-ae36e97449f5
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이 글은 &lt;a href=&quot;https://medium.freecodecamp.org/what-exactly-is-node-js-ae36e97449f5&quot;&gt;What exactly is Node.js?&lt;/a&gt;를 번역한 글입니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;테이블&quot;&gt;테이블&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;| foo | bar |
+| --- | --- |
+| baz | bim |
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;foo&lt;/th&gt;
+      &lt;th&gt;bar&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;baz&lt;/td&gt;
+      &lt;td&gt;bim&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;ref&quot;&gt;Ref.&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://hashbox.github.io/마크다운-이미지-중앙정렬&quot; target=&quot;_blank&quot;&gt;https://hashbox.github.io/마크다운-이미지-중앙정렬&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tech.inswave.com/2018/02/13/setup&quot; target=&quot;_blank&quot;&gt;http://tech.inswave.com/2018/02/13/setup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">마크다운 이미지 중앙정렬 방법</summary></entry><entry><title type="html">Node.js 란 도대체 무엇입니까?</title><link href="http://localhost:4000/frontend/2018/04/what-nodejs.html" rel="alternate" type="text/html" title="Node.js 란 도대체 무엇입니까?" /><published>2018-04-23T14:00:00+09:00</published><updated>2018-04-23T14:00:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/what-nodejs</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/what-nodejs.html">&lt;p&gt;Node.js는 자바스크립트 실행 환경입니다. 멋진 말입니다. 그런데 그것이 의미하는 바는 무엇이며 어떻게 동작이 된다는 말일까요?&lt;/p&gt;
+
+&lt;p&gt;Node.js는 자바스크립트를 이용해 프로그램을 작성하기 위해 필요한 모든 것을 가지고 있습니다.&lt;/p&gt;
+
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;/images/what-nodejs1.png&quot; alt=&quot;자바 vs 자바스크립트&quot; /&gt;&lt;br /&gt;
+&lt;em&gt;&amp;lt;Java 와 Node.js 의 비교&amp;gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Node.js 는 자바스크립트를 웹브라우져 뿐만 아니라 독립적인 애플리케이션을 만들 때에도 사용하기 위한 목적으로 태어났습니다.
+이제 당신은 자바스크립트를 웹사이트의 동적인 사용자 경험을 만드는 것 이상으로 훨씬 더 많은 일들을 할 수 있게 되었습니다.&lt;/p&gt;
+
+&lt;p&gt;자바스크립트는 이제 파이썬 같은 스크립트언어들이 하던 일을 동일하게 처리할 수 있는 능력이 생겼습니다&lt;/p&gt;
+
+&lt;p&gt;웹브라우져에서 동작하는 자바스크립트와 &lt;em&gt;Node.js&lt;/em&gt; 모두 V8엔진 위에서 동작합니다. V8엔진은 자바스크립트 코드를 기계어로 변환해 줍니다. 기계어는 더 이상 번역이 필요없이 컴퓨터가 바로 실행할 수 있는 저수준의 실행 코드입니다
 &lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 
@@ -26,62 +99,65 @@ Java 와 Node.js 의 비교&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;우리는 앞서 이미 첫번째 사항에 대하여 살펴 보았습니다.
-이제 우리는 Node.js의 나머지 2가지 특성을 알아볼 것입니다. 이를 통해 우리는 Node.js 가 유명해진 이유를 이해하게 될 것 입니다.&lt;/p&gt;
+이제 우리는 Node.js의 나머지 2가지 내용에 대하여 알아볼 것입니다. 이를 통해 우리는 Node.js 가 유명해진 이유를 알게 될 것 입니다.&lt;/p&gt;
 
 &lt;p&gt;I/O는 입력과 출력을 의미합니다. 그것은 네트워크나 파일시스템을 통해 데이터를 읽고 쓰는 행위를 말합니다.&lt;/p&gt;
 
-&lt;p&gt;보통 I/O 처리는 시간을 많이 잡아먹기 때문에 I/O가 처리되는 동안 다른 함수들은 오래도록 실행을 대기해야 합니다&lt;/p&gt;
+&lt;p&gt;보통 I/O 처리는 시간을 많이 잡아먹기 때문에 I/O가 처리될 때까지 다른 함수들은 오래도록 실행을 대기해야 합니다&lt;/p&gt;
 
-&lt;p&gt;아래와 같은 상황을 예로 Blocking I/O 와 Non-Blocking I/O를 비교해 봅시다.
+&lt;p&gt;아래와 같은 상황을 예로 Blocking I/O 와 Non-Blocking I/O를 비교해 봅시다.&lt;br /&gt;
 user1과 user2의 상세 정보를 서버에 요청하고 그 결과를 받아서 화면에 출력하고자 합니다. 서버에서 해당 요청에 대한 처리는 시간이 좀 걸립니다 하지만 2가지 요청이 동시에 서버로 날라간다고 가정해 봅시다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/what-nodejs2.png&quot; alt=&quot;Blocking vs Non-Blocking&quot; /&gt;
-Blocking i/O vs Non-Blocking I/O
-&lt;br /&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;/images/what-nodejs2.png&quot; alt=&quot;Blocking vs Non-Blocking&quot; /&gt;
+&lt;em&gt;&amp;lt;Blocking i/O vs Non-Blocking I/O&amp;gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;blocking-io&quot;&gt;Blocking I/O&lt;/h3&gt;
 &lt;p&gt;Blocking I/O 의 경우 user1의 요청에 대한 응답이 끝날 때 까지 user2 요청 처리에 대한 어떤 작업도 진행할 수 없습니다.&lt;/p&gt;
 
-&lt;p&gt;그래서 웹서버는 새로운 요청을 처리하기 위해 새로운 thread를 시작할 수 밖에 없습니다. 그러나 JavaScript는 단일 쓰레드로 동작합니다(정확히 표현하자면 event loop 가 단일쓰레드로 동작하는 것입니다. 자세한 것은 나중에 다시 다루도록 하겠습니다). 이렇게 멀티쓰레드로 처리 해야하는 상황이라면 자바스크립트는 적절한 선택이 될 수 없습니다.&lt;/p&gt;
+&lt;p&gt;그래서 웹서버는 새로운 요청을 처리하기 위해 새로운 thread를 시작할 수 밖에 없습니다. 그러나 자바스크립트는 단일 쓰레드로 동작합니다(정확히 표현하자면 이벤트루프가 단일쓰레드로 동작합니다. 자세한 것은 나중에 다시 다루도록 하겠습니다). 이렇게 멀티쓰레드로 처리 해야하는 상황이라면 자바스크립트는 적절한 선택이 될 수 없습니다.&lt;/p&gt;
 
 &lt;p&gt;이제 Non-Blocking I/O 에 대하여 이야기를 할 때가 된 것 같습니다.
 &lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;non-blocking-io&quot;&gt;Non-blocking I/O&lt;/h3&gt;
-&lt;p&gt;앞선 경우와 다르게 JavaScript는 Non-blocking 으로 위 상황을 처리할 수 있습니다. 당신은 user1의 요청에 대한 처리가 끝나기를 기다릴 필요 없이 user2의 요청을 준비하고 실행할 수 있습니다. 당신은 user1, user2의 요청을 동시에 처리할 수 있는 것입니다&lt;/p&gt;
+&lt;p&gt;앞선 경우와 다르게 자바스크립트는 Non-blocking 으로 위 상황을 처리할 수 있습니다. 당신은 user1의 요청에 대한 처리가 끝나기를 기다릴 필요 없이 user2의 요청을 준비하고 실행할 수 있습니다. 당신은 user1, user2의 요청을 동시에 처리할 수 있는 것입니다&lt;/p&gt;
 
 &lt;p&gt;Non-Blocking I/O 가 가능하다면 멀티쓰레드를 사용하지 않고도 서버는 여러개의 요청을 동시에 처리하는 것이 가능합니다&lt;/p&gt;
 
 &lt;h3 id=&quot;the-javascript-event-loop&quot;&gt;The JavaScript event loop&lt;/h3&gt;
-&lt;p&gt;당신에게 지금 26분의 여유가 있다면 아래 Event Loop 에 대한 훌륭한 설명 영상을 권하고 싶습니다&lt;/p&gt;
+&lt;p&gt;당신에게 지금 26분의 여유가 있다면 아래 이벤트루프에 대한 영상을 보기를 권합니다&lt;/p&gt;
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/8aGhZQkoFbQ&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;그렇지 않다면, 자바스크립트 이벤트루프가 어떻게 동작하는지 단계별로 간단히 설명을 드려보겠습니다&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+위 영상을 볼 수 없다면 이벤트루프의 단계별 동작에 대해서 간단히 설명을 드리겠습니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/what-nodejs3.png&quot; alt=&quot;이벤트루프&quot; /&gt;
-자바스크립트 이벤트루프&lt;/p&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;/images/what-nodejs3.png&quot; alt=&quot;이벤트루프&quot; /&gt;
+&lt;em&gt;&amp;lt;자바스크립트 이벤트루프&amp;gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;main()&lt;/code&gt; 함수를 &lt;em&gt;call stack&lt;/em&gt; 에 추가한다.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;console.log()&lt;/code&gt; 를 콜스택에 추가한다. 이것은 바로 실행되고 콜스택에서 사라진다.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout(2000)&lt;/code&gt; 을 스택에 추가한다. &lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout(2000)&lt;/code&gt; 는 Node API이다. 해당 함수를 호출할 때 이벤트 콜백함수를 &lt;em&gt;callback queue&lt;/em&gt; 에 등록한다. 2초 초동안 기다린 후 콜백함수를 호출한다.&lt;/li&gt;
-  &lt;li&gt;API목록에 등록이 되면, &lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout(2000)&lt;/code&gt; 은 &lt;em&gt;call stack&lt;/em&gt; 에서 꺼내진다&lt;/li&gt;
-  &lt;li&gt;이제 같은 방식으로 setTimeout(0)가 APIs에 등록된다. 이제 우리는 실행 대기중인 2개의 Node API를 가지고 있다.&lt;/li&gt;
-  &lt;li&gt;0초 후에, &lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout(0)&lt;/code&gt;가 &lt;em&gt;call stack&lt;/em&gt; 으로 이동된다. 그리고 동일한 setTimeout(2000) 도 동일하게 처리된다.&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;callback queue&lt;/em&gt; 에서는 &lt;em&gt;call stack&lt;/em&gt; 의 함수들이 비어지기를 기다리고 있다. 단일쓰레드 환경에서는 한번에 하나의 명령만 실행될 수 있기 때문이다. 이 부분을 주의 깊게 보아야 한다.&lt;/li&gt;
-  &lt;li&gt;마지막 &lt;code class=&quot;highlighter-rouge&quot;&gt;console.log()&lt;/code&gt; 가 실행되면, &lt;em&gt;call stack&lt;/em&gt; 에서 main() 가 꺼내진다&lt;/li&gt;
-  &lt;li&gt;이벤트루프는 &lt;em&gt;call stack&lt;/em&gt; 가 비어져 있는지 본 후 &lt;em&gt;callback queue&lt;/em&gt; 가 비워져 있다면 &lt;em&gt;callback queue&lt;/em&gt; 이 콜백함수를 callstack으로 옮겨 넣는다.
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;main()&lt;/code&gt; 함수를 &lt;em&gt;Call Stack&lt;/em&gt; 에 추가합니다&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;console.log()&lt;/code&gt; 를 &lt;em&gt;Call Stack&lt;/em&gt; 에 추가합니다. 이것은 바로 실행되고 &lt;em&gt;Call Stack&lt;/em&gt;  에서 사라집니다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout(2000)&lt;/code&gt; 을 스택에 추가합니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout(2000)&lt;/code&gt; 는 Node API이다. 해당 함수를 호출할 때 이벤트 콜백함수를 &lt;em&gt;Callback Queue&lt;/em&gt; 에 등록합니다. 2초 초동안 기다린 후 콜백함수를 호출합니다&lt;/li&gt;
+  &lt;li&gt;API목록에 등록이 되면, &lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout(2000)&lt;/code&gt; 은 &lt;em&gt;Call Stack&lt;/em&gt; 에서 사라집니다&lt;/li&gt;
+  &lt;li&gt;이제 같은 방식으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout(0)&lt;/code&gt;가 APIs에 등록됩니다. 이제 우리는 실행 대기중인 2개의 Node API를 가지고 있습니다.&lt;/li&gt;
+  &lt;li&gt;0초 후에, &lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout(0)&lt;/code&gt;가 &lt;em&gt;Call Stack&lt;/em&gt; 으로 이동됩니다. 그리고 &lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout(2000)&lt;/code&gt; 도 동일한 방식으로 처리가 됩니다.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Callback Queue&lt;/em&gt; 에서는 &lt;em&gt;Call Stack&lt;/em&gt; 의 함수들이 모두 처리되기를 기다립니다. 단일쓰레드 환경에서는 한번에 하나의 명령만 실행되기 때문에 이 부분을 주의 깊게 보아야 합니다.&lt;/li&gt;
+  &lt;li&gt;마지막 &lt;code class=&quot;highlighter-rouge&quot;&gt;console.log()&lt;/code&gt; 가 실행되면, &lt;em&gt;Call Stack&lt;/em&gt; 에서 main() 가 꺼내집니다&lt;/li&gt;
+  &lt;li&gt;이벤트루프는 &lt;em&gt;Call Stack&lt;/em&gt; 의 empty 여부를 모니터링 하다가 &lt;em&gt;Call Stack&lt;/em&gt; 이 empty 상태가 되면 &lt;em&gt;Callback Queue&lt;/em&gt; 에서 콜백함수를 &lt;em&gt;Call Stack&lt;/em&gt; 으로 이동시킵니다.
 &lt;br /&gt;
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;npm&quot;&gt;npm&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/what-nodejs4.png&quot; alt=&quot;npm&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;npm은 일반적인 문제들을 해결할 수 있는 다양한 라이브러리들을 가지고 있습니다. 당신은 애플리케이션을 보다 빠르고 효율적으로 만들 기 위헤 이 npm 패키들을 이용할 수 있습니다
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;/images/what-nodejs4.png&quot; alt=&quot;npm&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;npm은 일반적인 문제들을 해결할 수 있는 다양한 라이브러리들을 가지고 있습니다. 당신은 애플리케이션을 보다 빠르고 효율적으로 만들기 위헤 이 npm 패키지들을 이용할 수 있습니다
 &lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 
@@ -121,32 +197,34 @@ Blocking i/O vs Non-Blocking I/O
 &lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;events&quot;&gt;Events&lt;/h3&gt;
-&lt;p&gt;Something that has happened in our app that we can respond to. There are two types to events in Node.&lt;/p&gt;
+&lt;p&gt;애플리케이션 안에서 발생하는 사건들 중 우리가 직접 핸들링이 가능한 것을 이벤트라고 한다. Node 에는 2가지 종류의 이벤트가 있습니다.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;System Events: C++ core from a library called libuv. (For example, finished reading a file).&lt;/li&gt;
-  &lt;li&gt;Custom Events: JavaScript core.
+  &lt;li&gt;System Events: libuv 라고 불리는 C++코어에서 발생하는 이벤트(예를 들면, 파일을 읽기가 끝났을 때).&lt;/li&gt;
+  &lt;li&gt;Custom Events: 자바스크립트 코어에서 발생하는 이벤트
 &lt;br /&gt;
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;writing-hello-world-in-nodejs&quot;&gt;Writing Hello World in Node.js&lt;/h3&gt;
-&lt;p&gt;We have to do this, don’t we?&lt;/p&gt;
+&lt;p&gt;Node.js 용 Hello World 를 만들어 보겠습니다.&lt;/p&gt;
 
-&lt;p&gt;Make a file app.js and add the following to it.&lt;/p&gt;
+&lt;p&gt;app.js 파일을 만들고 아래 코드를 작성합니다&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;console.log(&quot;Hello World!&quot;);
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Open your node terminal, change the directory to the folder where the file is saved and run &lt;code class=&quot;highlighter-rouge&quot;&gt;node app.js&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;터미널에서 app.js 파일이 있는 경로로 이동한 후 &lt;code class=&quot;highlighter-rouge&quot;&gt;node app.js&lt;/code&gt; 명령을 실행해 봅니다.&lt;/p&gt;
 
-&lt;p&gt;Bam — you’ve just written Hello World in Node.js.&lt;/p&gt;
+&lt;p&gt;짠, 이렇게 Hello World 프로그램을 Node.js 로 작성해 보았습니다.&lt;/p&gt;
 
-&lt;p&gt;There are a ton of resources you can use learn more about Node.js, including freeCodeCamp.org.
+&lt;p&gt;freeCodeCamp.org를 포함하여 Node.js 에 대하여 배울 수 있는 자료들은 엄청나게 많이 있습니다.
+&lt;br /&gt;
+&lt;br /&gt;
 &lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;ref&quot;&gt;Ref.&lt;/h3&gt;
-&lt;p&gt;이 글은 &lt;a href=&quot;https://medium.freecodecamp.org/what-exactly-is-node-js-ae36e97449f5&quot;&gt;What exactly is Node.js?&lt;/a&gt;를 번역한 글입니다. 글읽기에 어려움이 없도록 충분한 의역을 포함하였습니다.&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Node.js는 javascript 실행 환경입니다. 멋진 말입니다. 도대체 그것이 의미하는 바가 무엇이고 어떻게 동작이 된다는 말일까요??</summary></entry><entry><title type="html">postman 을 이용한 request 캡쳐</title><link href="http://localhost:4000/python/2018/04/postman.html" rel="alternate" type="text/html" title="postman 을 이용한 request 캡쳐" /><published>2018-04-20T23:00:00+09:00</published><updated>2018-04-20T23:00:00+09:00</updated><id>http://localhost:4000/python/2018/04/postman</id><content type="html" xml:base="http://localhost:4000/python/2018/04/postman.html">&lt;h4 id=&quot;모바일에서-http-request-캡쳐&quot;&gt;모바일에서 HTTP request 캡쳐&lt;/h4&gt;
+&lt;p&gt;이 글은 &lt;a href=&quot;https://medium.freecodecamp.org/what-exactly-is-node-js-ae36e97449f5&quot;&gt;What exactly is Node.js?&lt;/a&gt;를 번역한 글입니다. 글읽기에 어려움이 없도록 충분한 의역을 포함하였습니다.&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Node.js는 자바스크립트 실행 환경입니다. 멋진 말입니다. 그런데 그것이 의미하는 바는 무엇이며 어떻게 동작이 된다는 말일까요?</summary></entry><entry><title type="html">postman 을 이용한 request 캡쳐</title><link href="http://localhost:4000/python/2018/04/postman.html" rel="alternate" type="text/html" title="postman 을 이용한 request 캡쳐" /><published>2018-04-20T23:00:00+09:00</published><updated>2018-04-20T23:00:00+09:00</updated><id>http://localhost:4000/python/2018/04/postman</id><content type="html" xml:base="http://localhost:4000/python/2018/04/postman.html">&lt;h4 id=&quot;모바일에서-http-request-캡쳐&quot;&gt;모바일에서 HTTP request 캡쳐&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.getpostman.com/docs/v6/postman/sending_api_requests/capturing_http_requests&quot;&gt;https://www.getpostman.com/docs/v6/postman/sending_api_requests/capturing_http_requests&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;postman의 proxy 를 사용&lt;/li&gt;
@@ -469,45 +547,4 @@ hostname
 &lt;br /&gt;beautify 됨
 &lt;br /&gt;
 &lt;img src=&quot;/images/chrome-step3.PNG&quot; alt=&quot;step3&quot; /&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>mg.song</name></author><summary type="html">Summary 난독화된 js를 디버깅해야 할 경우 크롬 개발자도구의 beautify 기능을 간단히 이용할 수 있다. 특별히 오프라인 환경에서 beautify 도구를 사용할 수 없을 때 유용함 난독화된 $.clone 함수를 예로 해당 함수를 beautify 하는 방법을 소개</summary></entry><entry><title type="html">[partialjs] webpack 빌드시 use strict 오류</title><link href="http://localhost:4000/frontend/2018/04/partialjs-strict.html" rel="alternate" type="text/html" title="[partialjs] webpack 빌드시 use strict 오류" /><published>2018-04-01T19:20:00+09:00</published><updated>2018-04-01T19:20:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/partialjs-strict</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/partialjs-strict.html">&lt;h4 id=&quot;benefits-to&quot;&gt;Benefits to&lt;/h4&gt;
-&lt;p&gt;webpack 빌드 환경에서 &lt;a href=&quot;https://github.com/marpple/partial.js&quot;&gt;partialjs&lt;/a&gt; 를 모듈로 사용하고자 할 경우
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;problem&quot;&gt;Problem&lt;/h4&gt;
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'./ext/partial.js'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;위와 같이 사용하고자 할 경우 webpack 빌드 시도시 아래와 같은 문제가 발생할 수 있다
-&lt;script src=&quot;https://gist.github.com/min9nim/b9813bbdaf8367ee34aba1bc14742168.js&quot;&gt;&lt;/script&gt;
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;cause&quot;&gt;Cause&lt;/h4&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;patial.js&lt;/code&gt; 1146L 에서 정의된 아래 함수가 동일한 패러미터 네이밍 &lt;code class=&quot;highlighter-rouge&quot;&gt;X, X&lt;/code&gt; 을 사용하기 때문&lt;/p&gt;
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;find_i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;findIndex&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;collf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;solution&quot;&gt;Solution&lt;/h4&gt;
-&lt;p&gt;아래와 같이 패러미터 네이밍(&lt;code class=&quot;highlighter-rouge&quot;&gt;X, X2&lt;/code&gt;)을 달리 한다. 동일 패턴으로 문제되는 소스를 모두 수정하도록 한다.&lt;/p&gt;
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;find_i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;findIndex&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;collf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;X2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;es6와-use-strict&quot;&gt;es6와 “use strict”&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;es6 모듈은 모듈 안에서 “use strict”; 를 사용하지 않아도 자동으로 strict 모드로 처리된다고 함&lt;/li&gt;
-  &lt;li&gt;해당 문제로 patial.js는 es6에서 모듈로 사용 불가
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;ref&quot;&gt;Ref.&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;http://hacks.mozilla.or.kr/2016/05/es6-in-depth-modules/&quot;&gt;http://hacks.mozilla.or.kr/2016/05/es6-in-depth-modules/&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Benefits to webpack 빌드 환경에서 partialjs 를 모듈로 사용하고자 할 경우</summary></entry></feed>
+&lt;/ol&gt;</content><author><name>mg.song</name></author><summary type="html">Summary 난독화된 js를 디버깅해야 할 경우 크롬 개발자도구의 beautify 기능을 간단히 이용할 수 있다. 특별히 오프라인 환경에서 beautify 도구를 사용할 수 없을 때 유용함 난독화된 $.clone 함수를 예로 해당 함수를 beautify 하는 방법을 소개</summary></entry></feed>
