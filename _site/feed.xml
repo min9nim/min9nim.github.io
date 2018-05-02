@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-27T17:45:17+09:00</updated><id>http://localhost:4000/</id><title type="html">코딩수다</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">Blockchain 학습 로드맵</title><link href="http://localhost:4000/algorithm/2018/04/learn-blockchain.html" rel="alternate" type="text/html" title="Blockchain 학습 로드맵" /><published>2018-04-27T17:00:00+09:00</published><updated>2018-04-27T17:00:00+09:00</updated><id>http://localhost:4000/algorithm/2018/04/learn-blockchain</id><content type="html" xml:base="http://localhost:4000/algorithm/2018/04/learn-blockchain.html">&lt;h2 id=&quot;into&quot;&gt;Into&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-02T14:31:54+09:00</updated><id>http://localhost:4000/</id><title type="html">코딩수다</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">소수 찾기 알고리즘</title><link href="http://localhost:4000/algorithm/2018/05/find-primes.html" rel="alternate" type="text/html" title="소수 찾기 알고리즘" /><published>2018-05-02T14:00:00+09:00</published><updated>2018-05-02T14:00:00+09:00</updated><id>http://localhost:4000/algorithm/2018/05/find-primes</id><content type="html" xml:base="http://localhost:4000/algorithm/2018/05/find-primes.html">&lt;h2 id=&quot;problem&quot;&gt;Problem&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;1부터 n까지 모든 소수를 찾는 알고리즘&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;concept&quot;&gt;Concept&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;2부터 n까지 자연수를 요소로 갖는 배열 &lt;code class=&quot;highlighter-rouge&quot;&gt;arr&lt;/code&gt; 생성 &lt;code class=&quot;highlighter-rouge&quot;&gt;[2, 3, 4, ..., n]&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;빈 배열 &lt;code class=&quot;highlighter-rouge&quot;&gt;primes&lt;/code&gt; 를 생성&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;arr&lt;/code&gt; 배열의 첫번째 요소(&lt;code class=&quot;highlighter-rouge&quot;&gt;arr[0]&lt;/code&gt;)를 &lt;code class=&quot;highlighter-rouge&quot;&gt;primes&lt;/code&gt; 배열에 추가&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;arr&lt;/code&gt; 배열에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;arr[0]&lt;/code&gt; 의 배수를 모두 제거&lt;/li&gt;
+  &lt;li&gt;위 3~4과정을 &lt;code class=&quot;highlighter-rouge&quot;&gt;arr[0]&lt;/code&gt; 이 &lt;code class=&quot;highlighter-rouge&quot;&gt;n/2&lt;/code&gt; 보다 커지기 전까지 반복&lt;/li&gt;
+  &lt;li&gt;위 과정이 끝나고 &lt;code class=&quot;highlighter-rouge&quot;&gt;primes&lt;/code&gt; 배열과 &lt;code class=&quot;highlighter-rouge&quot;&gt;arr&lt;/code&gt; 배열을 합치면, 1부터 n까지의 모든 소수를 얻게됨&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;js-code&quot;&gt;JS Code&lt;/h2&gt;
+&lt;script src=&quot;https://gist.github.com/min9nim/1818bf6fe935e99cb9677227a1e8919f.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ref&quot;&gt;Ref.&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/challenge_codes/21&quot;&gt;https://programmers.co.kr/learn/challenge_codes/21&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Problem 1부터 n까지 모든 소수를 찾는 알고리즘</summary></entry><entry><title type="html">Blockchain 학습 로드맵</title><link href="http://localhost:4000/blockchain/2018/04/learn-blockchain.html" rel="alternate" type="text/html" title="Blockchain 학습 로드맵" /><published>2018-04-27T17:00:00+09:00</published><updated>2018-04-27T17:00:00+09:00</updated><id>http://localhost:4000/blockchain/2018/04/learn-blockchain</id><content type="html" xml:base="http://localhost:4000/blockchain/2018/04/learn-blockchain.html">&lt;h2 id=&quot;into&quot;&gt;Into&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;요즘 뜨거운 관심을 받고 있는 블록체인&lt;/li&gt;
   &lt;li&gt;발을 담가볼 준비가 되었다면 &lt;a href=&quot;https://hackernoon.com/5-technology-trends-to-learn-in-2018-if-you-want-a-great-career-caf2e2318abb&quot;&gt;5 Technology Trends to Learn in 2018 If You Want a Great Career&lt;/a&gt; 에서 소개하는 학습로드맵을 참고해 보자&lt;/li&gt;
@@ -509,52 +534,4 @@ user1과 user2의 상세 정보를 서버에 요청하고 그 결과를 받아�
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;ref&quot;&gt;Ref.&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;http://minq.tistory.com/667&quot; target=&quot;_blank&quot;&gt;http://minq.tistory.com/667&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Problem 윈도우에서 기본으로 제공되는 터미널은 Copy &amp;amp; Paste 및 창사이즈 조절에 제한이 있어 불편 터미널에서 cd 명령을 이용해 특정 경로로 이동하는 것도 귀찮고</summary></entry><entry><title type="html">[mac] High Sierra 에서 telnet &amp;amp; ftp CLI 설치</title><link href="http://localhost:4000/frontend/2018/04/install-ftp.html" rel="alternate" type="text/html" title="[mac] High Sierra 에서 telnet &amp; ftp CLI 설치" /><published>2018-04-11T14:40:00+09:00</published><updated>2018-04-11T14:40:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/install-ftp</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/install-ftp.html">&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
-&lt;p&gt;Mac High Sierra 는 보안 상의 문제로 터미널에서 telnet, ftp 명령어를 기본적으로 지원하지 않는다
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;solution&quot;&gt;Solution&lt;/h3&gt;
-&lt;p&gt;아래와 같이 CLI도구를 따로 설치해야 한다&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;다운로드
-    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; curl http://ftp.gnu.org/gnu/inetutils/inetutils-1.9.4.tar.gz &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; inetutils-1.9.4.tar.gz
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;컴파일
-    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;tar &lt;/span&gt;xvzf inetutils-1.9.4.tar.gz
-&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;inetutils-1.9.4
-&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; ./configure
-&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; make
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;설치
-    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;make install
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;추가로 설치되는 항목들은 아래와 같다(/usr/local/bin)
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ifconfig
-ping6
-ping
-whois
-talk
-ftp
-telnet
-traceroute
-tftp
-rsh
-rlogin
-rexec
-rcp
-logger
-dnsdomainname
-hostname
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;ref&quot;&gt;Ref.&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.unixfu.ch/get-telnet-and-ftp-client-back-on-macos-high-sierra/&quot;&gt;http://www.unixfu.ch/get-telnet-and-ftp-client-back-on-macos-high-sierra/&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Problem Mac High Sierra 는 보안 상의 문제로 터미널에서 telnet, ftp 명령어를 기본적으로 지원하지 않는다</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;http://minq.tistory.com/667&quot; target=&quot;_blank&quot;&gt;http://minq.tistory.com/667&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Problem 윈도우에서 기본으로 제공되는 터미널은 Copy &amp;amp; Paste 및 창사이즈 조절에 제한이 있어 불편 터미널에서 cd 명령을 이용해 특정 경로로 이동하는 것도 귀찮고</summary></entry></feed>
