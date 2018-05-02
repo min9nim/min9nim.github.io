@@ -14,6 +14,16 @@ ALTER TABLE tablename RENAME bbs;
 ```sql
 ALTER TABLE tablename MODIFY colname INT NOT NULL AUTO_INCREMENT PRIMARY KEY;
 ```
+
+<br/>
+
+
+#### 특정 컬럼 인코딩 수정
+```sql
+ALTER TABLE HUMSD02 MODIFY orgFilename varchar(100) character set utf8 default NULL;
+ALTER TABLE HUMSD02 MODIFY orgFilename varchar(100) character set euckr default NULL;
+```
+
 <br/>
 
 #### 컬럼 이름 바꾸기
