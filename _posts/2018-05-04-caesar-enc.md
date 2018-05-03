@@ -23,7 +23,7 @@ Solution
 function caesar(s, n) {
   function replacer1(m) {
     return String.fromCharCode((m.charCodeAt(0) -97 + n)%26 +97)
-	}
+  }
   function replacer2(m) {
     return String.fromCharCode((m.charCodeAt(0) -65 + n)%26 +65)
   }  
@@ -40,11 +40,9 @@ function caesar(s, n) {
   function enc(c, offset, n){
     return (c.charCodeAt(0) - offset + n)%26 + offset;
   }
-
   function replacer(m) {
     return String.fromCharCode(m.charCodeAt(0) > 90 ? enc(m, 97, n) : enc(m, 65, n));
   }
-
   return s.replace(/[A-Za-z]/g, replacer);
 }
 
