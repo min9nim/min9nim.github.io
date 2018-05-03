@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Node.js 란 도대체 무엇입니까?"
+title:  "What exactly is Node.js?"
 date:   2018-04-23 14:00:00 +0900
 categories: FrontEnd
 ---

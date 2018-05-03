@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-03T06:32:11+09:00</updated><id>http://localhost:4000/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">소수 찾기 알고리즘</title><link href="http://localhost:4000/algorithm/2018/05/find-primes.html" rel="alternate" type="text/html" title="소수 찾기 알고리즘" /><published>2018-05-02T14:00:00+09:00</published><updated>2018-05-02T14:00:00+09:00</updated><id>http://localhost:4000/algorithm/2018/05/find-primes</id><content type="html" xml:base="http://localhost:4000/algorithm/2018/05/find-primes.html">&lt;h2 id=&quot;problem&quot;&gt;Problem&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-03T10:12:31+09:00</updated><id>http://localhost:4000/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">What is Elm?</title><link href="http://localhost:4000/frontend/2018/05/whatis-elm.html" rel="alternate" type="text/html" title="What is Elm?" /><published>2018-05-03T09:00:00+09:00</published><updated>2018-05-03T09:00:00+09:00</updated><id>http://localhost:4000/frontend/2018/05/whatis-elm</id><content type="html" xml:base="http://localhost:4000/frontend/2018/05/whatis-elm.html">&lt;p&gt;&lt;a href=&quot;https://medium.com/@cscalfani&quot;&gt;Charles Scalfani&lt;/a&gt;의 &lt;a href=&quot;https://medium.com/@cscalfani/so-you-want-to-be-a-functional-programmer-part-6-db502830403&quot;&gt;글&lt;/a&gt;을 통해 Elm을 알게 되었다. 이 글을 꼼꼼히 번역해보고 싶지만, 바쁜 일정을 핑계로 번역은 다음으로 미루고 일단 몇가지 인상깊은 문장들을 중심으로 summary 만 남긴다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;자바스크립트는 함수형프로그래밍을 비슷하게나마 흉내낼 수 는 있지만 순수함수형프로그래밍 언어가 아니기 때문에 여러가지 제약이 있을 수 있다&lt;/li&gt;
+  &lt;li&gt;js함수형 프로그래밍을 위해 &lt;a href=&quot;http://ramdajs.com/&quot;&gt;Ramds.js&lt;/a&gt;, &lt;a href=&quot;https://facebook.github.io/immutable-js/&quot;&gt;immutable.js&lt;/a&gt; 등을 이용할 수 있지만 충분하지는 않다.&lt;/li&gt;
+  &lt;li&gt;Haskell, Lisp, &lt;a href=&quot;https://clojure.org/&quot;&gt;Clojure&lt;/a&gt; 등의 함수형 언어들이 있지만 Frontend 개발에 적합하지는 않다.(웹브라우져에서 사용 가능한 언어는 js뿐이라)&lt;/li&gt;
+  &lt;li&gt;front-end 함수형 프로그래밍을 위해 만들어진 &lt;a href=&quot;http://elm-lang.org/&quot;&gt;Elm&lt;/a&gt; 을 사용해 보기를 권장
+    &lt;ul&gt;
+      &lt;li&gt;Elm은 js로 컴파일되기 때문에 webapp을 만들기 적합&lt;/li&gt;
+      &lt;li&gt;js의 초안은 10일만에 작성되었고, 이후 20년 동안 패치가 거듭되면서 함수형, 객체지향형, 절차형 프로그래밍을 모두 흉내낼 수 있게 되었지만 충분하지 않다.&lt;/li&gt;
+      &lt;li&gt;Elm 은 Haskell 커뮤니티에 의해 지난 30년간 배운 기술과 지식들이 총망라되어 설계되었다&lt;/li&gt;
+      &lt;li&gt;Elm 은 fron-end 웹개발자들을 위해 탄생하였다. 그것은 그들의 삶의 질을 향상시켜 줄 것이다&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://kyunooh.gitbooks.io/elm/content/&quot;&gt;Elm 한글가이드&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;미래예측
+    &lt;ul&gt;
+      &lt;li&gt;coffeescript, typescript, elm 과 같이 자바스크립트로 컴파일되는 언어들이 대중적이 될 것이다&lt;/li&gt;
+      &lt;li&gt;sw의 복잡성을 해결하는 방법으로서 함수형 프로그래밍은 재조명을 받을 것이다.&lt;/li&gt;
+      &lt;li&gt;GB단위의 메모리와 빠른 프로세서는 함수형프로그래밍을 더욱 쓸모있게 만들어 줄 것이다&lt;/li&gt;
+      &lt;li&gt;CPU는 더이상 빨라질 수 없지만, 코어수는 계속 늘어날 것이다&lt;/li&gt;
+      &lt;li&gt;변경가능한 상태(변수사용)가 sw의 복잡성을 발생시키는 주요 문제로 인식이 되어질 것이다&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">Charles Scalfani의 글을 통해 Elm을 알게 되었다. 이 글을 꼼꼼히 번역해보고 싶지만, 바쁜 일정을 핑계로 번역은 다음으로 미루고 일단 몇가지 인상깊은 문장들을 중심으로 summary 만 남긴다.</summary></entry><entry><title type="html">소수 찾기 알고리즘</title><link href="http://localhost:4000/algorithm/2018/05/find-primes.html" rel="alternate" type="text/html" title="소수 찾기 알고리즘" /><published>2018-05-02T14:00:00+09:00</published><updated>2018-05-02T14:00:00+09:00</updated><id>http://localhost:4000/algorithm/2018/05/find-primes</id><content type="html" xml:base="http://localhost:4000/algorithm/2018/05/find-primes.html">&lt;h2 id=&quot;problem&quot;&gt;Problem&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;1부터 n까지 모든 소수를 찾는 알고리즘&lt;/li&gt;
 &lt;/ul&gt;
@@ -165,7 +189,7 @@ _\&amp;lt;Java 와 Node.js 의 비교\&amp;gt;_
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://hashbox.github.io/마크다운-이미지-중앙정렬&quot; target=&quot;_blank&quot;&gt;https://hashbox.github.io/마크다운-이미지-중앙정렬&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://tech.inswave.com/2018/02/13/setup&quot; target=&quot;_blank&quot;&gt;http://tech.inswave.com/2018/02/13/setup&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">마크다운 이미지 중앙정렬 방법</summary></entry><entry><title type="html">Node.js 란 도대체 무엇입니까?</title><link href="http://localhost:4000/frontend/2018/04/what-nodejs.html" rel="alternate" type="text/html" title="Node.js 란 도대체 무엇입니까?" /><published>2018-04-23T14:00:00+09:00</published><updated>2018-04-23T14:00:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/what-nodejs</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/what-nodejs.html">&lt;p&gt;Node.js는 자바스크립트 실행 환경입니다. 멋진 말입니다. 그런데 그것이 의미하는 바는 무엇이며 어떻게 동작이 된다는 말일까요?&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">마크다운 이미지 중앙정렬 방법</summary></entry><entry><title type="html">What exactly is Node.js?</title><link href="http://localhost:4000/frontend/2018/04/whatis-nodejs.html" rel="alternate" type="text/html" title="What exactly is Node.js?" /><published>2018-04-23T14:00:00+09:00</published><updated>2018-04-23T14:00:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/whatis-nodejs</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/whatis-nodejs.html">&lt;p&gt;Node.js는 자바스크립트 실행 환경입니다. 멋진 말입니다. 그런데 그것이 의미하는 바는 무엇이며 어떻게 동작이 된다는 말일까요?&lt;/p&gt;
 
 &lt;p&gt;Node.js는 자바스크립트를 이용해 프로그램을 작성하기 위해 필요한 모든 것을 가지고 있습니다.&lt;/p&gt;
 
@@ -494,52 +518,4 @@ user1과 user2의 상세 정보를 서버에 요청하고 그 결과를 받아�
 &lt;/ul&gt;
 
 &lt;h4 id=&quot;ref&quot;&gt;Ref.&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;http://kwonnam.pe.kr/wiki/database/mysql/alter_table&quot;&gt;http://kwonnam.pe.kr/wiki/database/mysql/alter_table&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">이름 바꾸기 ALTER TABLE tablename RENAME bbs;</summary></entry><entry><title type="html">[windows] 특정 폴더에서 cmder 바로 열기</title><link href="http://localhost:4000/frontend/2018/04/windows-cmder.html" rel="alternate" type="text/html" title="[windows] 특정 폴더에서 cmder 바로 열기" /><published>2018-04-12T13:50:00+09:00</published><updated>2018-04-12T13:50:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/windows-cmder</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/windows-cmder.html">&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;윈도우에서 기본으로 제공되는 터미널은 Copy &amp;amp; Paste 및 창사이즈 조절에 제한이 있어 불편&lt;/li&gt;
-  &lt;li&gt;터미널에서 cd 명령을 이용해 특정 경로로 이동하는 것도 귀찮고
-&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;solution&quot;&gt;Solution&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;잘 알려진 &lt;a href=&quot;http://cmder.net&quot;&gt;윈도우용 터미널 cmder&lt;/a&gt; 를 &lt;code class=&quot;highlighter-rouge&quot;&gt;C:\cmder_mini&lt;/code&gt; 경로에 설치한다.&lt;br /&gt;
-(설치 경로를 변경하고자 한다면 아래 레지스트리 편집기에서 경로를 알맞게 수정)
-&lt;img src=&quot;/images/addCmder0.png&quot; alt=&quot;img0&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;아래와 같이 레지스트리 편집
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; Windows Registry Editor Version 5.00
-
- [HKEY_CLASSES_ROOT\Directory\Background\shell\Open Command Window Here]
- @=&quot;Open commend window here(&amp;amp;Z)&quot;
-
- [HKEY_CLASSES_ROOT\Directory\Background\shell\Open Command Window Here\command]
- @=&quot;C:\\cmder_mini\\cmder.exe %v&quot;
-
- [HKEY_CLASSES_ROOT\Directory\shell\Open Command Window Here]
- @=&quot;Open commend window here(&amp;amp;Z)&quot;
-
- [HKEY_CLASSES_ROOT\Directory\shell\Open Command Window Here\command]
- @=&quot;C:\\cmder_mini\\cmder.exe %v&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;직접 수정하기가 귀찮다면 아래 레지스트리 편집 파일을 간단히 사용해도 된다&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;/files/AddCmder.reg&quot;&gt;AddCmder.reg&lt;/a&gt; (위 내용과 동일)&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;/files/DelCmder.reg&quot;&gt;DelCmder.reg&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;/files/AddCmderAdmin.reg&quot;&gt;AddCmderAdmin.reg&lt;/a&gt; (관리자권한 실행)&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;/files/DelCmderAdmin.reg&quot;&gt;DelCmderAdmin.reg&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;특정 경로에서 마우스 오른 클릭을 하면 바로가기 가능!
-&lt;img src=&quot;/images/addCmder1.png&quot; alt=&quot;img1&quot; /&gt;
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;img src=&quot;/images/addCmder2.png&quot; alt=&quot;img2&quot; /&gt;
-&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;ref&quot;&gt;Ref.&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;http://minq.tistory.com/667&quot; target=&quot;_blank&quot;&gt;http://minq.tistory.com/667&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Problem 윈도우에서 기본으로 제공되는 터미널은 Copy &amp;amp; Paste 및 창사이즈 조절에 제한이 있어 불편 터미널에서 cd 명령을 이용해 특정 경로로 이동하는 것도 귀찮고</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;http://kwonnam.pe.kr/wiki/database/mysql/alter_table&quot;&gt;http://kwonnam.pe.kr/wiki/database/mysql/alter_table&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">이름 바꾸기 ALTER TABLE tablename RENAME bbs;</summary></entry></feed>
