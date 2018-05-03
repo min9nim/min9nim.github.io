@@ -15,6 +15,8 @@ categories: memo
   * [caniuse.com](https://caniuse.com){:target="_blank"}
   * [freecodecamp](https://medium.freecodecamp.org/tagged/web-development){:target="_blank"}
   * [마크다운 문법](http://blog.kalkin7.com/2014/02/05/wordpress-markdown-quick-reference-for-koreans){:target="_blank"}
+  * [국내개발자블로그](https://github.com/sarojaba/awesome-devblog/blob/master/README.md){:target="_blank"}
+  
 
 * temp
   * [jekyll 태그기능 적용방법](http://tech.kakao.com/2016/07/07/tech-blog-story){:target="_blank"}
@@ -28,4 +30,5 @@ categories: memo
 
 * 개발자블로그
   * <http://ingeec.tistory.com>{:target="_blank"}
-  * <https://taegon.kim>{:target="_blank"}
+  * [김태곤](https://taegon.kim){:target="_blank"}
+  * [장기효](https://joshua1988.github.io/){:target="_blank"}
