@@ -39,13 +39,7 @@ ALTER TABLE tablename CHANGE colname newcolname INT NOT NULL AUTO_INCREMENT;
 ALTER TABLE bbs ADD name VARCHAR(10);
 ```
 * ALTER TABLE tablename ADD 컬럼이름 컬럼속성  
-<br/>
-<br/>
 
-#### 컬럼 삭제
-```sql
-ALTER TABLE bbs DROP colname;
-```
 <br/>
 
 #### 특정 컬럼 뒤에 새로운 컬럼 추가
@@ -53,8 +47,29 @@ ALTER TABLE bbs DROP colname;
 ALTER TABLE bbs ADD newcol VARCHAR(10) AFTER num;
 ```
 * num 컬럼 뒤에 newcol 컬럼 추가
+
 <br/>
-<br>
+
+#### 외래키 추가
+```sql
+ALTER TABLE HUMSD02 ADD FOREIGN KEY (resNo) REFERENCES HUMSD03(resNo) ON DELETE CASCADE;
+```
+* 타 테이블의 참조 당하는 키는 반드시 유일 키이어야 함
+
+<br/>
+
+
+
+
+
+#### 컬럼 삭제
+```sql
+ALTER TABLE bbs DROP colname;
+```
+<br/>
+
+
+
 
 #### 기존 컬럼을 지우고 맨 앞에 컬럼 추가
 ```sql

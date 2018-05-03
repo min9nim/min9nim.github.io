@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-03T10:57:53+09:00</updated><id>http://localhost:4000/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">What is Elm?</title><link href="http://localhost:4000/frontend/2018/05/whatis-elm.html" rel="alternate" type="text/html" title="What is Elm?" /><published>2018-05-03T09:00:00+09:00</published><updated>2018-05-03T09:00:00+09:00</updated><id>http://localhost:4000/frontend/2018/05/whatis-elm</id><content type="html" xml:base="http://localhost:4000/frontend/2018/05/whatis-elm.html">&lt;p&gt;&lt;a href=&quot;https://medium.com/@cscalfani&quot;&gt;Charles Scalfani&lt;/a&gt;의 &lt;a href=&quot;https://medium.com/@cscalfani/so-you-want-to-be-a-functional-programmer-part-6-db502830403&quot;&gt;글&lt;/a&gt;을 통해 Elm을 알게 되었다. 이 글을 꼼꼼히 번역해보고 싶지만, 바쁜 일정을 핑계로 번역은 다음으로 미루고 일단 몇가지 인상깊은 문장들을 중심으로 summary 만 남긴다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-03T14:27:40+09:00</updated><id>http://localhost:4000/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">What is Elm?</title><link href="http://localhost:4000/frontend/2018/05/whatis-elm.html" rel="alternate" type="text/html" title="What is Elm?" /><published>2018-05-03T09:00:00+09:00</published><updated>2018-05-03T09:00:00+09:00</updated><id>http://localhost:4000/frontend/2018/05/whatis-elm</id><content type="html" xml:base="http://localhost:4000/frontend/2018/05/whatis-elm.html">&lt;p&gt;&lt;a href=&quot;https://medium.com/@cscalfani&quot;&gt;Charles Scalfani&lt;/a&gt;의 &lt;a href=&quot;https://medium.com/@cscalfani/so-you-want-to-be-a-functional-programmer-part-6-db502830403&quot;&gt;글&lt;/a&gt;을 통해 Elm을 알게 되었다. 이 글을 꼼꼼히 번역해보고 싶지만, 바쁜 일정을 핑계로 번역은 다음으로 미루고 일단 몇가지 인상깊은 문장들을 중심으로 summary 만 남긴다.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;자바스크립트는 함수형프로그래밍을 비슷하게나마 흉내낼 수 는 있지만 순수함수형프로그래밍 언어가 아니기 때문에 여러가지 제약이 있을 수 있다&lt;/li&gt;
@@ -475,24 +475,33 @@ user1과 user2의 상세 정보를 서버에 요청하고 그 결과를 받아�
 &lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bbs&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ADD&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;VARCHAR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;ul&gt;
-  &lt;li&gt;ALTER TABLE tablename ADD 컬럼이름 컬럼속성&lt;br /&gt;
-&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;ALTER TABLE tablename ADD 컬럼이름 컬럼속성&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;컬럼-삭제&quot;&gt;컬럼 삭제&lt;/h4&gt;
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bbs&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;특정-컬럼-뒤에-새로운-컬럼-추가&quot;&gt;특정 컬럼 뒤에 새로운 컬럼 추가&lt;/h4&gt;
 &lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bbs&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ADD&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newcol&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;VARCHAR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AFTER&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;ul&gt;
-  &lt;li&gt;num 컬럼 뒤에 newcol 컬럼 추가
-&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;num 컬럼 뒤에 newcol 컬럼 추가&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;외래키-추가&quot;&gt;외래키 추가&lt;/h4&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HUMSD02&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ADD&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FOREIGN&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;KEY&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resNo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;REFERENCES&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HUMSD03&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resNo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DELETE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;CASCADE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;타 테이블의 참조 당하는 키는 반드시 유일 키이어야 함&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;컬럼-삭제&quot;&gt;컬럼 삭제&lt;/h4&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bbs&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;기존-컬럼을-지우고-맨-앞에-컬럼-추가&quot;&gt;기존 컬럼을 지우고 맨 앞에 컬럼 추가&lt;/h4&gt;
 &lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bbs&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newcol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ADD&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newcol&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;VARCHAR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FIRST&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
