@@ -32,19 +32,21 @@ by Douglas Crockford][1] 에서는 undefined 는 속성의 값으로 사용할 �
 
 
 <br>
- 
-객체 생성 방법 
+
+객체 생성 방법
 ---
 prototype 을 선택하여 객체를 생성하는 방법은 2가지가 있다
 1. new 연산자를 이용하는 방법
-  * 생성자 함수를 정의하고 new 연산자와 함께 생성자 함수를 호출하면 생성자함수의 prototype에 연결을 갖는 새로운 객체가 생성되고 생성자 함수에 의해 새로운 객체의 속성이 초기화 된다
+  * 생성자 함수를 정의하고 new 연산자와 함께 생성자 함수를 호출하면 생성자함수의 prototype에 연결을 갖는(생성자함수의 prototype 을 원형으로 하는) 새로운 객체가 생성되고 생성자 함수에 의해 새로운 객체의 속성이 초기화 된다
   <script src="https://gist.github.com/min9nim/7a384c89b085ac41ab72f53e0b5c19fb.js"></script>
   * new 연산자의 동작을 Function의 메소드로 정의 한다면 아래와 같을 것이다
   <script src="https://gist.github.com/min9nim/72fd726a2ff9f6b8d61ad8c534a4a756.js"></script>
+  * 이 방법은 자바의 클래스 기반 객체생성 표현법을 닮았다. (아마 당시 자바의 인기에 편승하여 흉내를 낸 것이 아닌가 싶다). 이 방법이 자바스크립트가 인기를 끄는데는 조금이나마 기여했을 지도 모르겠지만 프로토타입을 기반으로 객체 상속을 지원하는 자바스크립트의 내부 동작을 숨겼기 때문에 자바스크립트를 배우는 사람들에게 여러가지 혼란을 가져오고 오해를 불러 일으키게 되었다.
+  * 따라서 자바스크립트에서 객체를 생성하는 조금 더 직관적인 방법으로 Object.create 를 이용한 객체 생성법을 권장한다.
 
 
 1. Object.create 를 이용하는 방법
-  * prototype으로 사용할 객체를 인자로 전달하면 해당 객체가 prototype으로 연결된 새로운 객체가 생성된다
+  * prototype 으로 사용할 객체를 인자로 전달하면 인자로 전달 된 객체를 원형으로 하는 새로운 객체(o)가 생성된다. `o.__proto__ === a` 는 `true`
   <script src="https://gist.github.com/min9nim/5cf5cd11463c79bc3de2f9039c8b2e76.js"></script>
   * Object.create 가 지원되지 않는다면 아래와 같이 간단하게 polyfill 을 구현할 수 있다.
   <script src="https://gist.github.com/min9nim/02f40a241014c6f13e0337cac84cb9f0.js"></script>
@@ -69,4 +71,3 @@ Ref.
 
 
 [1]: https://7chan.org/pr/src/OReilly_JavaScript_The_Good_Parts_May_2008.pdf
-
