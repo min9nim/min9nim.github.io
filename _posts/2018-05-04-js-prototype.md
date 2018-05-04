@@ -35,21 +35,21 @@ by Douglas Crockford][1] 에서는 undefined 는 속성의 값으로 사용할 �
  
 객체 생성 방법 
 ---
-prototype 을 선택하여 객체를 생성하는 방법은 2가지가 있습니다.
+prototype 을 선택하여 객체를 생성하는 방법은 2가지가 있다
 1. new 연산자를 이용하는 방법
-  * 생성자 함수를 정의하고 new 연산자와 함께 생성자 함수를 호출하면 생성자함수의 prototype에 연결을 갖는 새로운 객체가 생성되고 생성자 함수에 의해 새로운 객체의 속성이 초기화 됩니다
+  * 생성자 함수를 정의하고 new 연산자와 함께 생성자 함수를 호출하면 생성자함수의 prototype에 연결을 갖는 새로운 객체가 생성되고 생성자 함수에 의해 새로운 객체의 속성이 초기화 된다
   <script src="https://gist.github.com/min9nim/7a384c89b085ac41ab72f53e0b5c19fb.js"></script>
-  * new 연산자의 동작을 Function의 메소드로 정의 한다면 아래와 같을 것입니다
+  * new 연산자의 동작을 Function의 메소드로 정의 한다면 아래와 같을 것이다
   <script src="https://gist.github.com/min9nim/72fd726a2ff9f6b8d61ad8c534a4a756.js"></script>
 
 
 1. Object.create 를 이용하는 방법
-  * prototype으로 사용할 객체를 인자로 전달하면 해당 객체가 prototype으로 연결된 새로운 객체가 생성됩니다
+  * prototype으로 사용할 객체를 인자로 전달하면 해당 객체가 prototype으로 연결된 새로운 객체가 생성된다
   <script src="https://gist.github.com/min9nim/5cf5cd11463c79bc3de2f9039c8b2e76.js"></script>
-  * Object.create 가 지원되지 않는다면 아래와 같이 간단하게 polyfill 을 구현할 수 있습니다.
+  * Object.create 가 지원되지 않는다면 아래와 같이 간단하게 polyfill 을 구현할 수 있다.
   <script src="https://gist.github.com/min9nim/02f40a241014c6f13e0337cac84cb9f0.js"></script>
 
-1. 위 두가지 방식의 유일한 차이점은 1번방식으로 생성된 객체는 해당 속성들이 열거 가능하지만, 2번방법으로 생성된 속성들은 열거 가능하지 않다는 점입니다
+1. 위 두가지 방식의 유일한 차이점은 1번방식으로 생성된 객체는 해당 속성들이 열거 가능하지만, 2번방법으로 생성된 속성들은 열거 가능하지 않다는 점이다
   * 1번 방법으로 생성된 객체
   <script src="https://gist.github.com/min9nim/a6ab5bd9563bca5dd35671f64b67a258.js"></script>
   * 2번 방법으로 생성된 객체
