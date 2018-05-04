@@ -17,7 +17,7 @@ categories: memo
   * [마크다운 문법](http://blog.kalkin7.com/2014/02/05/wordpress-markdown-quick-reference-for-koreans){:target="_blank"}
   * [국내개발자블로그](https://github.com/sarojaba/awesome-devblog/blob/master/README.md){:target="_blank"}
   * [Javascript the good parts](https://7chan.org/pr/src/OReilly_JavaScript_The_Good_Parts_May_2008.pdf){:target="_blank"}
-  * [js-good-parts](/files/js-good-parts2.pdf){:target="_blank"}
+  * [js-good-parts](https://drive.google.com/file/d/1eMNpa9r_o1N6BMgZ0x9V_kvTdpHN07rV/view?usp=sharing){:target="_blank"}
 
   
   
