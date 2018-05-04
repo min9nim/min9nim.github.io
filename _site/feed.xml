@@ -1,4 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-04T09:44:36+09:00</updated><id>http://localhost:4000/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">[js] Srting.prototype.replace 에서 function 활용</title><link href="http://localhost:4000/algorithm/2018/05/caesar-enc.html" rel="alternate" type="text/html" title="[js] Srting.prototype.replace 에서 function 활용" /><published>2018-05-04T00:00:00+09:00</published><updated>2018-05-04T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/2018/05/caesar-enc</id><content type="html" xml:base="http://localhost:4000/algorithm/2018/05/caesar-enc.html">&lt;h2 id=&quot;problem&quot;&gt;Problem&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-04T14:22:40+09:00</updated><id>http://localhost:4000/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">[js] 객체와 prototype 의 이해</title><link href="http://localhost:4000/frontend/2018/05/js-prototype.html" rel="alternate" type="text/html" title="[js] 객체와 prototype 의 이해" /><published>2018-05-04T13:00:00+09:00</published><updated>2018-05-04T13:00:00+09:00</updated><id>http://localhost:4000/frontend/2018/05/js-prototype</id><content type="html" xml:base="http://localhost:4000/frontend/2018/05/js-prototype.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;자바스크립트는 prototype 을 이용해 완전하지는 않지만 그럴듯하게 객체지향프로그래밍을 흉내낼 수 있다. 기존 자바의 클래스 기반 객체생성 및 상속에 익숙해져 있는 사람이라면 자바스크립트의 객체 생성 및 상속의 개념이 상당히 이질적으로 느껴질 수 있다. 자바스크립트로 객체지향프로그래밍을 하고자 한다면 prototype 에 대한 정확한 이해는 무엇보다 중요하다.&lt;/li&gt;
+  &lt;li&gt;이 글은 자바스크립트를 처음 접하는 사람들에게 친절하지 않다. 반면 prototype의 동작방식을 대충은 알지만 정확하게 알지 못한 채 자바스크립트를 습관적으로 사용하던 개발자에게 prototype 의 정확한 이해를 돕는데 집중한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;자바스크립트의-객체&quot;&gt;자바스크립트의 객체&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;자바스크립트의 primitive 데이터타입 5가지
+    &lt;ul&gt;
+      &lt;li&gt;숫자, 문자열, 불리언(true/false), null, undefined&lt;/li&gt;
+      &lt;li&gt;숫자/문자열/불리언은 메소드를 가지고 있기 때문에 객체처럼 보일 수 있지만 일반적인 객체와 달리 이 값들은 한번 정해지면 변경이 불가합니다(immutable)&lt;/li&gt;
+      &lt;li&gt;primitive 타입을 제외한 모든 값은 객체&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;자바스크립트에서 객체란 변경 가능한 속성들의 집합
+    &lt;ul&gt;
+      &lt;li&gt;ex) 배열, 함수, 정규표현식&lt;/li&gt;
+      &lt;li&gt;속성의 이름은 문자열이면 모두 가능, 빈문자열도 허용&lt;/li&gt;
+      &lt;li&gt;속성의 값으로는 자바스크립트의 모든 값이 가능
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://7chan.org/pr/src/OReilly_JavaScript_The_Good_Parts_May_2008.pdf&quot;&gt;The Good Parts
+by Douglas Crockford&lt;/a&gt; 에서는 undefined 는 속성의 값으로 사용할 수 없다고 되어있는데 책집필 당시에서 그랬었는지 모르겠지만 최근에는 undefined 도 속성의 값으로 들어가는 것으로 확인됩니다&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;자바스크립트의 객체는 클래스가 불필요&lt;/li&gt;
+      &lt;li&gt;자바스크립트는 특정 객체에 있는 속성들을 다른 객체에 그대로 상속하게 해주는 간단한 방법을 제공하는데 그것이 바로 prototype 연결&lt;/li&gt;
+      &lt;li&gt;객체는 참조방식으로 전달, 결코 복사되지 않음&lt;/li&gt;
+      &lt;li&gt;객체리터럴로 생성되는 모든 객체는 Object.prototype 객체에 연결됨&lt;/li&gt;
+      &lt;li&gt;객체를 생성할 때는 해당 객체의 프로토타입이 될 객체를 선택할 수 있음&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;객체-생성-방법&quot;&gt;객체 생성 방법&lt;/h2&gt;
+&lt;p&gt;prototype 을 선택하여 객체를 생성하는 방법은 2가지가 있습니다.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;new 연산자를 이용하는 방법
+    &lt;ul&gt;
+      &lt;li&gt;생성자 함수를 정의하고 new 연산자와 함께 생성자 함수를 호출하면 생성자함수의 prototype에 연결을 갖는 새로운 객체가 생성되고 생성자 함수에 의해 새로운 객체의 속성이 초기화 됩니다
+  &lt;script src=&quot;https://gist.github.com/min9nim/7a384c89b085ac41ab72f53e0b5c19fb.js&quot;&gt;&lt;/script&gt;&lt;/li&gt;
+      &lt;li&gt;new 연산자의 동작을 Function의 메소드로 정의 한다면 아래와 같을 것입니다
+  &lt;script src=&quot;https://gist.github.com/min9nim/72fd726a2ff9f6b8d61ad8c534a4a756.js&quot;&gt;&lt;/script&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Object.create 를 이용하는 방법
+    &lt;ul&gt;
+      &lt;li&gt;prototype으로 사용할 객체를 인자로 전달하면 해당 객체가 prototype으로 연결된 새로운 객체가 생성됩니다
+  &lt;script src=&quot;https://gist.github.com/min9nim/5cf5cd11463c79bc3de2f9039c8b2e76.js&quot;&gt;&lt;/script&gt;&lt;/li&gt;
+      &lt;li&gt;Object.create 가 지원되지 않는다면 아래와 같이 간단하게 polyfill 을 구현할 수 있습니다.
+  &lt;script src=&quot;https://gist.github.com/min9nim/02f40a241014c6f13e0337cac84cb9f0.js&quot;&gt;&lt;/script&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;위 두가지 방식의 유일한 차이점은 1번방식으로 생성된 객체는 해당 속성들이 열거 가능하지만, 2번방법으로 생성된 속성들은 열거 가능하지 않다는 점입니다
+    &lt;ul&gt;
+      &lt;li&gt;1번 방법으로 생성된 객체
+  &lt;script src=&quot;https://gist.github.com/min9nim/a6ab5bd9563bca5dd35671f64b67a258.js&quot;&gt;&lt;/script&gt;&lt;/li&gt;
+      &lt;li&gt;2번 방법으로 생성된 객체
+  &lt;script src=&quot;https://gist.github.com/min9nim/6eb131fd72ec002edfa075e7e2154aea.js&quot;&gt;&lt;/script&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ref&quot;&gt;Ref.&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://7chan.org/pr/src/OReilly_JavaScript_The_Good_Parts_May_2008.pdf&quot;&gt;https://7chan.org/pr/src/OReilly_JavaScript_The_Good_Parts_May_2008.pdf&lt;/a&gt;
+&lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/create&quot;&gt;https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/create&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Intro 자바스크립트는 prototype 을 이용해 완전하지는 않지만 그럴듯하게 객체지향프로그래밍을 흉내낼 수 있다. 기존 자바의 클래스 기반 객체생성 및 상속에 익숙해져 있는 사람이라면 자바스크립트의 객체 생성 및 상속의 개념이 상당히 이질적으로 느껴질 수 있다. 자바스크립트로 객체지향프로그래밍을 하고자 한다면 prototype 에 대한 정확한 이해는 무엇보다 중요하다. 이 글은 자바스크립트를 처음 접하는 사람들에게 친절하지 않다. 반면 prototype의 동작방식을 대충은 알지만 정확하게 알지 못한 채 자바스크립트를 습관적으로 사용하던 개발자에게 prototype 의 정확한 이해를 돕는데 집중한다.</summary></entry><entry><title type="html">[js] Srting.prototype.replace 에서 function 활용</title><link href="http://localhost:4000/algorithm/2018/05/caesar-enc.html" rel="alternate" type="text/html" title="[js] Srting.prototype.replace 에서 function 활용" /><published>2018-05-04T00:00:00+09:00</published><updated>2018-05-04T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/2018/05/caesar-enc</id><content type="html" xml:base="http://localhost:4000/algorithm/2018/05/caesar-enc.html">&lt;h2 id=&quot;problem&quot;&gt;Problem&lt;/h2&gt;
 &lt;p&gt;어떤 문장의 각 알파벳을 일정한 거리만큼 밀어서 다른 알파벳으로 바꾸는 암호화 방식을 시저 암호라고 합니다.
 A를 3만큼 밀면 D가 되고 z를 1만큼 밀면 a가 됩니다. 공백은 수정하지 않습니다.
 보낼 문자열 s와 얼마나 밀지 알려주는 n을 입력받아 암호문을 만드는 caesar 함수를 완성해 보세요.&lt;/p&gt;
@@ -438,78 +509,4 @@ user1과 user2의 상세 정보를 서버에 요청하고 그 결과를 받아�
 &lt;/ol&gt;
 
 &lt;h4 id=&quot;ref&quot;&gt;Ref.&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.pythonforbeginners.com/modules-in-python/how-to-use-simplehttpserver/&quot; target=&quot;_blank&quot;&gt;http://www.pythonforbeginners.com/modules-in-python/how-to-use-simplehttpserver/&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Problem 로컬에 서버가 설치되어 있지 않지만 간단하게(3초 안에) 웹서버를 띄우고 싶다</summary></entry><entry><title type="html">[js] getter와 setter 를 설정하는 방법</title><link href="http://localhost:4000/frontend/2018/04/getter-setter.html" rel="alternate" type="text/html" title="[js] getter와 setter 를 설정하는 방법" /><published>2018-04-19T10:00:00+09:00</published><updated>2018-04-19T10:00:00+09:00</updated><id>http://localhost:4000/frontend/2018/04/getter-setter</id><content type="html" xml:base="http://localhost:4000/frontend/2018/04/getter-setter.html">&lt;p&gt;getter와 setter 를 이용하면 객체의 속성값을 읽고 쓰는 방법을 새롭게 정의할 수 있다
-아래 코드를 먼저 보자&lt;/p&gt;
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;o&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 7&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 8&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 25&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;o&lt;/code&gt; 객체는 아래 3가지 속성을 갖는다&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;o.a&lt;/code&gt; — 숫자값&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;o.b&lt;/code&gt; — &lt;code class=&quot;highlighter-rouge&quot;&gt;o.a&lt;/code&gt; 에 1을 더한 값을 리턴하는 getter&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;o.c&lt;/code&gt; — &lt;code class=&quot;highlighter-rouge&quot;&gt;o.a&lt;/code&gt; 에 할당된 값의 절반을 세팅하는 setter&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;getter와 setter를 정의할 때  &lt;code class=&quot;highlighter-rouge&quot;&gt;[gs]et propertyName(){ ~~ }&lt;/code&gt; 문법을 사용하고 있음을 주목하기 바란다. 이 문법은 사람(사용자)에게는 혼돈스러움을 줄 수 있지만 기계(프로그램)적으로는 다른 문법요소(ex, 함수정의)와 구별하여 정확하게 getter와 setter 설정을 가능하게 한다.&lt;/p&gt;
-
-&lt;p&gt;아래 코드는 이미 생성된 객체에 getter 와 setter 를 설정하는 방법을 보여준다.&lt;/p&gt;
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prototype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;defineProperty&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'year'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getFullYear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setFullYear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;실행결과는 아래와 같다&lt;/p&gt;
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;now&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 2000&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;year&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2001&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 987617605170&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// Wed Apr 18 11:13:25 GMT-0700 (Pacific Daylight Time) 2001&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;원칙적으로 getter와 setter를 설정하는 방법은 아래 2가지 방법만 가능하다.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;객체리터럴을 이용해 객체를 생성할 때&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Object.defineProperty&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Object.defineProperties&lt;/code&gt; 를 이용한 동적 설정&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;아래 예와 같이 객체생성자를 이용할 때 당신이 해야할 일은 단지 속성명으로된 함수 정의 앞에 get 이나 set을 적어주는 것 뿐이다. 물론 getter 는 패러미터를 가지지 말아야 하며, setter는 정확히 단 한 개의 패러미터만 가질 수 있다.&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;o&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Object.defineProperties 를 이용하면 getter와 setter는 객체생성 이후 어느 시점에서든 추가될 수 있다. 첫번째 인자는 getter/setter 를 추가할 객체를, 두번째 인자로는 getter/setter를 추가할 속성명과 getter/setter 함수가 정의된 객체를 전달한다. 앞선 예제와 동일한 기능을 하는 아래 예시를 보자&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;o&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;defineProperties&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;s1&quot;&gt;'b'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-    &lt;span class=&quot;s1&quot;&gt;'c'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Runs the setter, which assigns 10 / 2 (5) to the 'a' property&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Runs the getter, which yields a + 1 or 6&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;당신은 당신의 코드스타일이나 처리할 문제 유형에 따라 위 둘 중 어느 형태든 선택을 할 수 있다. 객체의 prototype을 직접 정의하는 경우라면 대부분 첫번째 방법을 사용할 것이다. 이 방법은 훨씬 간결하고 자연스럽기 때문이다. 하지만 당신이 직접 객체의 prototype을 정의하는 경우가 아니라면 두번째 방법만이 유일한 선택지가 된다. 두번째 방법은 동적 언어로서의 자바스크립트 특성을 멋지게 잘 보여준다. 하지만 이런 방법은 코드의 가독성을 떨어뜨려 코드를 이해하기 어렵게 하는 요인이 될 수 있다.
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;ref&quot;&gt;Ref.&lt;/h3&gt;
-&lt;p&gt;이 글은 getter와 setter에 관한 &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#Defining_getters_and_setters&quot;&gt;MDN 기술문서의 일부&lt;/a&gt;를 번역한 글이다. 글읽기에 어려움이 없도록 충분한 의역을 포함하였다.&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">getter와 setter 를 이용하면 객체의 속성값을 읽고 쓰는 방법을 새롭게 정의할 수 있다 아래 코드를 먼저 보자 ```js var o = { a: 7, get b() { return this.a + 1; }, set c(x) { this.a = x / 2; } };</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;http://www.pythonforbeginners.com/modules-in-python/how-to-use-simplehttpserver/&quot; target=&quot;_blank&quot;&gt;http://www.pythonforbeginners.com/modules-in-python/how-to-use-simplehttpserver/&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Problem 로컬에 서버가 설치되어 있지 않지만 간단하게(3초 안에) 웹서버를 띄우고 싶다</summary></entry></feed>
