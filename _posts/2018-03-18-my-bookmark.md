@@ -16,6 +16,9 @@ categories: memo
   * [freecodecamp](https://medium.freecodecamp.org/tagged/web-development){:target="_blank"}
   * [마크다운 문법](http://blog.kalkin7.com/2014/02/05/wordpress-markdown-quick-reference-for-koreans){:target="_blank"}
   * [국내개발자블로그](https://github.com/sarojaba/awesome-devblog/blob/master/README.md){:target="_blank"}
+  * [Javascript the good parts](https://7chan.org/pr/src/OReilly_JavaScript_The_Good_Parts_May_2008.pdf){:target="_blank"}
+
+  
   
 
 * temp
