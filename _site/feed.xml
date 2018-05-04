@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-04T15:14:18+09:00</updated><id>http://localhost:4000/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">[js] 객체와 prototype 의 이해</title><link href="http://localhost:4000/frontend/2018/05/js-prototype.html" rel="alternate" type="text/html" title="[js] 객체와 prototype 의 이해" /><published>2018-05-04T13:00:00+09:00</published><updated>2018-05-04T13:00:00+09:00</updated><id>http://localhost:4000/frontend/2018/05/js-prototype</id><content type="html" xml:base="http://localhost:4000/frontend/2018/05/js-prototype.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-05T03:29:35+09:00</updated><id>http://localhost:4000/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">피보나치 수 알고리즘</title><link href="http://localhost:4000/algorithm/2018/05/fibonacci-num.html" rel="alternate" type="text/html" title="피보나치 수 알고리즘" /><published>2018-05-04T13:00:00+09:00</published><updated>2018-05-04T13:00:00+09:00</updated><id>http://localhost:4000/algorithm/2018/05/fibonacci-num</id><content type="html" xml:base="http://localhost:4000/algorithm/2018/05/fibonacci-num.html">&lt;h2 id=&quot;problem&quot;&gt;Problem&lt;/h2&gt;
+&lt;p&gt;효진이는 멀리 뛰기를 연습하고 있습니다. 효진이는 한번에 1칸, 또는 2칸을 뛸 수 있습니다. 칸이 총 4개 있을 때, 효진이는
+(1칸, 1칸, 1칸, 1칸)
+(1칸, 2칸, 1칸)
+(1칸, 1칸, 2칸)
+(2칸, 1칸, 1칸)
+(2칸, 2칸)
+의 5가지 방법으로 맨 끝 칸에 도달할 수 있습니다. 멀리뛰기에 사용될 칸의 수 n이 주어질 때, 효진이가 끝에 도달하는 방법이 몇 가지인지 출력하는 jumpCase 함수를 완성하세요. 예를 들어 4가 입력된다면, 5를 반환해 주면 됩니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;solution&quot;&gt;Solution&lt;/h2&gt;
+&lt;p&gt;칸의 수가 n 개 주어졌을 때 총 멀리뛰기 방법의 수를 j(n)이라 하자. n칸을 멀리뛰기 하는 전체 방법의 수는 최초 1칸을 뛰었을 경우와 최초 2칸을 뛰었을 경우 2가지로 나누어 볼 수 있다.
+첫번째 경우의 방법의 수는 남아있는 칸의 수가 n-1 개 이므로 j(n-1)이 되고 두번째 경우의 방법의 수는 남아있는 칸의 수가 n-2개 이므로 j(n-2)가 된다.
+그러므로 j(n) = j(n-1) + j(n-2) 와 같이 표현될 수 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;js-code&quot;&gt;JS Code&lt;/h2&gt;
+&lt;script src=&quot;https://gist.github.com/min9nim/efde65bfb9e1fbff36d427c5da551b0c.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ref&quot;&gt;Ref.&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://programmers.co.kr/learn/challenge_codes/33&quot;&gt;https://programmers.co.kr/learn/challenge_codes/33&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.acmicpc.net/blog/view/28&quot;&gt;https://www.acmicpc.net/blog/view/28&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">Problem 효진이는 멀리 뛰기를 연습하고 있습니다. 효진이는 한번에 1칸, 또는 2칸을 뛸 수 있습니다. 칸이 총 4개 있을 때, 효진이는 (1칸, 1칸, 1칸, 1칸) (1칸, 2칸, 1칸) (1칸, 1칸, 2칸) (2칸, 1칸, 1칸) (2칸, 2칸) 의 5가지 방법으로 맨 끝 칸에 도달할 수 있습니다. 멀리뛰기에 사용될 칸의 수 n이 주어질 때, 효진이가 끝에 도달하는 방법이 몇 가지인지 출력하는 jumpCase 함수를 완성하세요. 예를 들어 4가 입력된다면, 5를 반환해 주면 됩니다.</summary></entry><entry><title type="html">[js] 객체와 prototype 의 이해</title><link href="http://localhost:4000/frontend/2018/05/js-prototype.html" rel="alternate" type="text/html" title="[js] 객체와 prototype 의 이해" /><published>2018-05-04T13:00:00+09:00</published><updated>2018-05-04T13:00:00+09:00</updated><id>http://localhost:4000/frontend/2018/05/js-prototype</id><content type="html" xml:base="http://localhost:4000/frontend/2018/05/js-prototype.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;자바스크립트는 prototype 을 이용해 완전하지는 않지만 그럴듯하게 객체지향프로그래밍을 흉내낼 수 있다. 기존 자바의 클래스 기반 객체생성 및 상속에 익숙해져 있는 사람이라면 자바스크립트의 객체 생성 및 상속의 개념이 상당히 이질적으로 느껴질 수 있다. 자바스크립트로 객체지향프로그래밍을 하고자 한다면 prototype 에 대한 정확한 이해는 무엇보다 중요하다.&lt;/li&gt;
   &lt;li&gt;이 글은 자바스크립트를 처음 접하는 사람들에게 친절하지 않다. 반면 prototype의 동작방식을 대충은 알지만 정확하게 알지 못한 채 자바스크립트를 습관적으로 사용하던 개발자에게 prototype 의 정확한 이해를 돕는데 집중한다.&lt;/li&gt;
@@ -497,18 +524,4 @@ user1과 user2의 상세 정보를 서버에 요청하고 그 결과를 받아�
   &lt;li&gt;&lt;a href=&quot;https://www.getpostman.com/docs/v6/postman/sending_api_requests/interceptor_extension&quot;&gt;https://www.getpostman.com/docs/v6/postman/sending_api_requests/interceptor_extension&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;em&gt;postman native app&lt;/em&gt; 으로는 안되고 &lt;em&gt;chrome postman app&lt;/em&gt; 을 이용해야 함&lt;/li&gt;
   &lt;li&gt;&lt;em&gt;interceptor extension&lt;/em&gt; 과 &lt;em&gt;chrome postman app&lt;/em&gt; 양쪽 모두에서 &lt;em&gt;Request Capture&lt;/em&gt; 를 &lt;em&gt;on&lt;/em&gt; 설정&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">모바일에서 HTTP request 캡쳐 https://www.getpostman.com/docs/v6/postman/sending_api_requests/capturing_http_requests postman의 proxy 를 사용 모바일 장비와 postman이 설치된 PC가 동일한 네트워크 망내 물려 있어야 함</summary></entry><entry><title type="html">[python] SimpleHTTPServer</title><link href="http://localhost:4000/python/2018/04/SimpleHTTPServer.html" rel="alternate" type="text/html" title="[python] SimpleHTTPServer" /><published>2018-04-20T13:00:00+09:00</published><updated>2018-04-20T13:00:00+09:00</updated><id>http://localhost:4000/python/2018/04/SimpleHTTPServer</id><content type="html" xml:base="http://localhost:4000/python/2018/04/SimpleHTTPServer.html">&lt;h4 id=&quot;problem&quot;&gt;Problem&lt;/h4&gt;
-&lt;p&gt;로컬에 서버가 설치되어 있지 않지만 간단하게(3초 안에) 웹서버를 띄우고 싶다
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;solution&quot;&gt;Solution&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;python 이 설치되어 있다면,  &lt;em&gt;DOCUMENT_ROOT&lt;/em&gt; 경로에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;$ python -m SimpleHTTPServer&lt;/code&gt; 를 실행한다.&lt;/li&gt;
-  &lt;li&gt;브라우져에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;http://127.0.0.1:8000&lt;/code&gt; 로 붙어 본다.
-&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;ref&quot;&gt;Ref.&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.pythonforbeginners.com/modules-in-python/how-to-use-simplehttpserver/&quot; target=&quot;_blank&quot;&gt;http://www.pythonforbeginners.com/modules-in-python/how-to-use-simplehttpserver/&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Problem 로컬에 서버가 설치되어 있지 않지만 간단하게(3초 안에) 웹서버를 띄우고 싶다</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">모바일에서 HTTP request 캡쳐 https://www.getpostman.com/docs/v6/postman/sending_api_requests/capturing_http_requests postman의 proxy 를 사용 모바일 장비와 postman이 설치된 PC가 동일한 네트워크 망내 물려 있어야 함</summary></entry></feed>
