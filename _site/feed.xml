@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-06T09:18:10+09:00</updated><id>http://localhost:4000/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">피보나치 수 알고리즘</title><link href="http://localhost:4000/algorithm/2018/05/fibonacci-num.html" rel="alternate" type="text/html" title="피보나치 수 알고리즘" /><published>2018-05-04T13:00:00+09:00</published><updated>2018-05-04T13:00:00+09:00</updated><id>http://localhost:4000/algorithm/2018/05/fibonacci-num</id><content type="html" xml:base="http://localhost:4000/algorithm/2018/05/fibonacci-num.html">&lt;h2 id=&quot;problem&quot;&gt;Problem&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-13T23:11:31+09:00</updated><id>http://localhost:4000/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">피보나치 수 알고리즘</title><link href="http://localhost:4000/algorithm/2018/05/fibonacci-num.html" rel="alternate" type="text/html" title="피보나치 수 알고리즘" /><published>2018-05-04T13:00:00+09:00</published><updated>2018-05-04T13:00:00+09:00</updated><id>http://localhost:4000/algorithm/2018/05/fibonacci-num</id><content type="html" xml:base="http://localhost:4000/algorithm/2018/05/fibonacci-num.html">&lt;h2 id=&quot;problem&quot;&gt;Problem&lt;/h2&gt;
 &lt;p&gt;효진이는 멀리 뛰기를 연습하고 있습니다. 효진이는 한번에 1칸, 또는 2칸을 뛸 수 있습니다. 칸이 총 4개 있을 때, 효진이는
 (1칸, 1칸, 1칸, 1칸)
 (1칸, 2칸, 1칸)
@@ -72,21 +72,22 @@ by Douglas Crockford&lt;/a&gt; 에서는 undefined 는 속성의 값으로 사�
     &lt;ul&gt;
       &lt;li&gt;생성자 함수를 정의하고 new 연산자와 함께 생성자 함수를 호출하면 생성자함수의 prototype에 연결을 갖는(생성자함수의 prototype 을 원형으로 하는) 새로운 객체가 생성되고 생성자 함수에 의해 새로운 객체의 속성이 초기화 된다
   &lt;script src=&quot;https://gist.github.com/min9nim/7a384c89b085ac41ab72f53e0b5c19fb.js&quot;&gt;&lt;/script&gt;&lt;/li&gt;
+      &lt;li&gt;이 방법은 자바의 클래스 기반 객체생성 표현법을 닮았다. (아마 당시 자바의 인기에 편승하여 흉내를 낸 것이 아닌가 싶다). 이 방법이 자바스크립트가 인기를 끄는데는 조금이나마 기여했을 지도 모르겠지만 프로토타입을 기반으로 객체 상속을 지원하는 자바스크립트의 내부 동작을 숨겼기 때문에 자바스크립트를 배우는 사람들에게 여러가지 혼란을 가져오고 오해를 불러 일으키게 되었다.&lt;/li&gt;
       &lt;li&gt;new 연산자의 동작을 Function의 메소드로 정의 한다면 아래와 같을 것이다
   &lt;script src=&quot;https://gist.github.com/min9nim/72fd726a2ff9f6b8d61ad8c534a4a756.js&quot;&gt;&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;이 방법은 자바의 클래스 기반 객체생성 표현법을 닮았다. (아마 당시 자바의 인기에 편승하여 흉내를 낸 것이 아닌가 싶다). 이 방법이 자바스크립트가 인기를 끄는데는 조금이나마 기여했을 지도 모르겠지만 프로토타입을 기반으로 객체 상속을 지원하는 자바스크립트의 내부 동작을 숨겼기 때문에 자바스크립트를 배우는 사람들에게 여러가지 혼란을 가져오고 오해를 불러 일으키게 되었다.&lt;/li&gt;
-      &lt;li&gt;따라서 자바스크립트에서 객체를 생성하는 조금 더 직관적인 방법으로 Object.create 를 이용한 객체 생성법을 권장한다.&lt;/li&gt;
+      &lt;li&gt;자바스크립트에서 객체를 생성하는 원리에 부합하는 조금 더 직관적인 객체 생성 방법은 Object.create 를 이용하는 것이다&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Object.create 를 이용하는 방법
     &lt;ul&gt;
       &lt;li&gt;prototype 으로 사용할 객체를 인자로 전달하면 인자로 전달 된 객체를 원형으로 하는 새로운 객체(o)가 생성된다. &lt;code class=&quot;highlighter-rouge&quot;&gt;o.__proto__ === a&lt;/code&gt; 는 &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt;
   &lt;script src=&quot;https://gist.github.com/min9nim/5cf5cd11463c79bc3de2f9039c8b2e76.js&quot;&gt;&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;Object.create 가 지원되지 않는다면 아래와 같이 간단하게 polyfill 을 구현할 수 있다.
+      &lt;li&gt;Object.create 가 지원되지 않는다면(ie8이하) 아래와 같이 간단하게 polyfill 을 구현할 수 있다.
   &lt;script src=&quot;https://gist.github.com/min9nim/02f40a241014c6f13e0337cac84cb9f0.js&quot;&gt;&lt;/script&gt;&lt;/li&gt;
+      &lt;li&gt;참고로 위 구현은 두번째 인자를 사용할 수 없고, 첫번째 인자로 null을 이용한 순수객체를 만들 수 없다는 점에서 네이티브 Object.create와 다르다. 해당 예외처리를 포함한 &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create#Polyfill&quot;&gt;Polyfill 참고&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;위 두가지 방식의 유일한 차이점은 1번방식으로 생성된 객체는 해당 속성들이 열거 가능하지만, 2번방법으로 생성된 속성들은 열거 가능하지 않다는 점이다
+  &lt;li&gt;위 두가지 방식의 사소한 차이점은 1번방식으로 생성된 객체는 해당 속성들이 열거 가능하지만, 2번방법으로 생성된 속성들은 열거 가능하지 않다는 점이다
     &lt;ul&gt;
       &lt;li&gt;1번 방법으로 생성된 객체
   &lt;script src=&quot;https://gist.github.com/min9nim/a6ab5bd9563bca5dd35671f64b67a258.js&quot;&gt;&lt;/script&gt;&lt;/li&gt;
