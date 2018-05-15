@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[es6] spread operator 사용"
+title:  "[es6] spread operator 사용 예"
 date:   2018-05-09 00:00:00 +0900
 categories: algorithm
 ---
