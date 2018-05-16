@@ -38,6 +38,9 @@ plugins:
 
 permalink: /:categories/:year/:month/:title:output_ext
 
+port : 4000
+host : 0.0.0.0
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
