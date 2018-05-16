@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Certificates, Private Keys and CSRs"
+title:  "OpenSSL Essentials: Working with SSL Certificates, Private Keys and CSRs"
 date:   2018-05-15 13:00:00 +0900
 categories: network
 ---
