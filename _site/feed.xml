@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://0.0.0.0:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8080/" rel="alternate" type="text/html" /><updated>2018-05-16T07:34:45+00:00</updated><id>http://0.0.0.0:8080/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">OpenSSL Essentials: Working with SSL Certificates, Private Keys and CSRs</title><link href="http://0.0.0.0:8080/network/2018/05/openssl-essentials.html" rel="alternate" type="text/html" title="OpenSSL Essentials: Working with SSL Certificates, Private Keys and CSRs" /><published>2018-05-15T04:00:00+00:00</published><updated>2018-05-15T04:00:00+00:00</updated><id>http://0.0.0.0:8080/network/2018/05/openssl-essentials</id><content type="html" xml:base="http://0.0.0.0:8080/network/2018/05/openssl-essentials.html">&lt;h2 id=&quot;csr이-무엇입니까&quot;&gt;CSR이 무엇입니까&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://0.0.0.0:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8080/" rel="alternate" type="text/html" /><updated>2018-05-17T01:19:35+00:00</updated><id>http://0.0.0.0:8080/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">[mac] 열린 포트 확인</title><link href="http://0.0.0.0:8080/network/2018/05/mac-lsof.html" rel="alternate" type="text/html" title="[mac] 열린 포트 확인" /><published>2018-05-17T01:00:00+00:00</published><updated>2018-05-17T01:00:00+00:00</updated><id>http://0.0.0.0:8080/network/2018/05/mac-lsof</id><content type="html" xml:base="http://0.0.0.0:8080/network/2018/05/mac-lsof.html">&lt;p&gt;아래와 같이 lsof 명령으로 확인&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;MacBook9:~ songmingu$&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;lsof &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; :7005
+&lt;span class=&quot;go&quot;&gt;COMMAND   PID      USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+java    72631 songmingu   57u  IPv6 0x5973dd9e9c2d668d      0t0  TCP localhost:afs3-volser (LISTEN)
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;MacBook9:~ songmingu$&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;kill&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-9&lt;/span&gt; 72631
+&lt;span class=&quot;gp&quot;&gt;MacBook9:~ songmingu$&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;lsof &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; :7005
+&lt;span class=&quot;gp&quot;&gt;MacBook9:~ songmingu$&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ref&quot;&gt;Ref.&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://new93helloworld.tistory.com/138&quot;&gt;http://new93helloworld.tistory.com/138&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">아래와 같이 lsof 명령으로 확인</summary></entry><entry><title type="html">OpenSSL Essentials: Working with SSL Certificates, Private Keys and CSRs</title><link href="http://0.0.0.0:8080/network/2018/05/openssl-essentials.html" rel="alternate" type="text/html" title="OpenSSL Essentials: Working with SSL Certificates, Private Keys and CSRs" /><published>2018-05-15T04:00:00+00:00</published><updated>2018-05-15T04:00:00+00:00</updated><id>http://0.0.0.0:8080/network/2018/05/openssl-essentials</id><content type="html" xml:base="http://0.0.0.0:8080/network/2018/05/openssl-essentials.html">&lt;h2 id=&quot;csr이-무엇입니까&quot;&gt;CSR이 무엇입니까&lt;/h2&gt;
 &lt;p&gt;CA로부터 SSL인증서를 발급 받으려면 먼저 CSR(Certificate Signing Requests) 이 필요합니다. CSR은 공개키와 몇가지 추가 정보로 구성되어있습니다. 그리고 그 정보들이 인증서 발급시 필요합니다.&lt;/p&gt;
 
 &lt;p&gt;CSR생성시 필요한 정보들은 아래와 같습니다&lt;/p&gt;
@@ -381,54 +394,4 @@ A를 3만큼 밀면 D가 되고 z를 1만큼 밀면 a가 됩니다. 공백은 �
 &lt;br /&gt;12. Build your own DAPP using: &lt;a href=&quot;https://remix.ethereum.org/&quot; target=&quot;_blank&quot;&gt;RemixIDE&lt;/a&gt;, &lt;a href=&quot;https://metamask.io/&quot; target=&quot;_blank&quot;&gt;Metamask&lt;/a&gt;, &lt;a href=&quot;https://github.com/ethereum/web3.js/&quot; target=&quot;_blank&quot;&gt;Web3.js&amp;#8202;—&amp;#8202;Ethereum’s API&lt;/a&gt;, and the &lt;a href=&quot;http://truffleframework.com/&quot; target=&quot;_blank&quot;&gt;Truffle Framework&lt;/a&gt;
 &lt;br /&gt;Deploy your DAPP and smart contract on the Ethereum Main Network
 &lt;/blockquote&gt;
-&lt;/div&gt;</content><author><name>mg.song</name></author><summary type="html">Into 요즘 뜨거운 관심을 받고 있는 블록체인 발을 담가볼 준비가 되었다면 5 Technology Trends to Learn in 2018 If You Want a Great Career 에서 소개하는 학습로드맵을 참고해 보자</summary></entry><entry><title type="html">[알고리즘] 최대공약수 최소공배수</title><link href="http://0.0.0.0:8080/algorithm/2018/04/gcd-lcm.html" rel="alternate" type="text/html" title="[알고리즘] 최대공약수 최소공배수" /><published>2018-04-24T04:00:00+00:00</published><updated>2018-04-24T04:00:00+00:00</updated><id>http://0.0.0.0:8080/algorithm/2018/04/gcd-lcm</id><content type="html" xml:base="http://0.0.0.0:8080/algorithm/2018/04/gcd-lcm.html">&lt;h4 id=&quot;유클리드-호제법&quot;&gt;유클리드 호제법&lt;/h4&gt;
-&lt;p&gt;두 자연수 a, b에 대하여&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;a가 b로 나누어 떨어진다면 두 수의 최대공약수는 b 이다&lt;/li&gt;
-  &lt;li&gt;a가 b로 나누어 떨어지지 않았다면 두수의 최대공약수는 b 와 a%b 의 최대공약수와 같다&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;이를 js코드로 작성하면 아래와 같다&lt;/p&gt;
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gcd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gcd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;그럼-최소공배수는&quot;&gt;그럼 최소공배수는?&lt;/h4&gt;
-&lt;p&gt;두수 a, b에 대하여 최대공약수를 G 최소공배수를 L이라 할 때 다음 등식이 성립된다&lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;a * b = L * G&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;그러므로, &lt;code class=&quot;highlighter-rouge&quot;&gt;L = ( a * b ) / G&lt;/code&gt; 가 된다.&lt;/p&gt;
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;lcm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;gcd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;n개-수의-최소공배수는&quot;&gt;n개 수의 최소공배수는?&lt;/h4&gt;
-&lt;p&gt;n개의 자연수 배열을 입력으로 받아서 n개 수의 최소공배수를 리턴하는 함수&lt;/p&gt;
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nlcm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gcd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gcd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;lcm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;gcd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reduce&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;lcm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;ref&quot;&gt;Ref.&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://opentutorials.org/course/1685/9533&quot; target=&quot;_blank&quot;&gt;https://opentutorials.org/course/1685/9533&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ko.wikipedia.org/wiki/유클리드_호제법&quot; target=&quot;_blank&quot;&gt;https://ko.wikipedia.org/wiki/유클리드_호제법&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://programmers.co.kr/learn/challenge_codes/30&quot; target=&quot;_blank&quot;&gt;https://programmers.co.kr/learn/challenge_codes/30&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">유클리드 호제법 두 자연수 a, b에 대하여 a가 b로 나누어 떨어진다면 두 수의 최대공약수는 b 이다 a가 b로 나누어 떨어지지 않았다면 두수의 최대공약수는 b 와 a%b 의 최대공약수와 같다</summary></entry></feed>
+&lt;/div&gt;</content><author><name>mg.song</name></author><summary type="html">Into 요즘 뜨거운 관심을 받고 있는 블록체인 발을 담가볼 준비가 되었다면 5 Technology Trends to Learn in 2018 If You Want a Great Career 에서 소개하는 학습로드맵을 참고해 보자</summary></entry></feed>
