@@ -11,6 +11,6 @@
 <br>
 
 #### 시작
-```
+```console
 ~/min9nim.github.io $ bundle exec jekyll serve
 ```
