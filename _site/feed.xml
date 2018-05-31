@@ -1,4 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://0.0.0.0:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8080/" rel="alternate" type="text/html" /><updated>2018-05-31T06:08:44+00:00</updated><id>http://0.0.0.0:8080/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">[vscode] java 사용시 세팅 관련</title><link href="http://0.0.0.0:8080/tool/2018/05/vscode-setting.html" rel="alternate" type="text/html" title="[vscode] java 사용시 세팅 관련" /><published>2018-05-30T01:00:00+00:00</published><updated>2018-05-30T01:00:00+00:00</updated><id>http://0.0.0.0:8080/tool/2018/05/vscode-setting</id><content type="html" xml:base="http://0.0.0.0:8080/tool/2018/05/vscode-setting.html">&lt;ol&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://0.0.0.0:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8080/" rel="alternate" type="text/html" /><updated>2018-05-31T15:12:10+00:00</updated><id>http://0.0.0.0:8080/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">[AWS-EC2] 리눅스에 nodejs 설치</title><link href="http://0.0.0.0:8080/aws/2018/05/ec2-node.html" rel="alternate" type="text/html" title="[AWS-EC2] 리눅스에 nodejs 설치" /><published>2018-05-31T01:00:00+00:00</published><updated>2018-05-31T01:00:00+00:00</updated><id>http://0.0.0.0:8080/aws/2018/05/ec2-node</id><content type="html" xml:base="http://0.0.0.0:8080/aws/2018/05/ec2-node.html">&lt;ol&gt;
+  &lt;li&gt;EC2 업데이트&lt;br /&gt;
+프롬프트가 뜨면 ‘y’를 입력
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;yum update
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Node.js 설치&lt;br /&gt;
+Node 컴파일에 필요한 패키지를 먼저 설치하고 Github 저장소에서 Node를 내려받는다.
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo yum install gcc-c++ make
+sudo yum install openssl-devel
+sudo yum install git
+git clone git://github.com/joyent/node.git
+cd node
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;이제 어떤 버전의 노드를 설치할 것인지 선택해야 한다. &lt;code class=&quot;highlighter-rouge&quot;&gt;git tag -l&lt;/code&gt; 명령을 사용하면 전체 노드 버전을 확인할 수 있다. make 명령이 완료되기까지는 약 30분 정도 소요된다.&lt;/p&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; git checkout v0.12.7
+ ./configure
+ make
+ sudo make install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+Ref) &lt;a href=&quot;http://behonestar.tistory.com/39&quot;&gt;http://behonestar.tistory.com/39&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">EC2 업데이트 프롬프트가 뜨면 ‘y’를 입력 $ sudo yum update</summary></entry><entry><title type="html">[vscode] java 사용시 세팅 관련</title><link href="http://0.0.0.0:8080/tool/2018/05/vscode-setting.html" rel="alternate" type="text/html" title="[vscode] java 사용시 세팅 관련" /><published>2018-05-30T01:00:00+00:00</published><updated>2018-05-30T01:00:00+00:00</updated><id>http://0.0.0.0:8080/tool/2018/05/vscode-setting</id><content type="html" xml:base="http://0.0.0.0:8080/tool/2018/05/vscode-setting.html">&lt;ol&gt;
   &lt;li&gt;특정 jar를 인식하지 못할 때,&lt;br /&gt;
 작업폴더의 루트 경로의 &lt;code class=&quot;highlighter-rouge&quot;&gt;.classpath&lt;/code&gt; 파일에서 아래처럼 필요한 jar 파일들을 명시해 준다.
     &lt;ul&gt;
@@ -372,29 +398,4 @@ A를 3만큼 밀면 D가 되고 z를 1만큼 밀면 a가 됩니다. 공백은 �
       &lt;li&gt;변경가능한 상태(변수사용)가 sw의 복잡성을 발생시키는 주요 문제로 인식이 되어질 것이다&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">Charles Scalfani의 글을 통해 Elm을 알게 되었다. 이 글을 꼼꼼히 번역해보고 싶지만, 바쁜 일정을 핑계로 번역은 다음으로 미루고 일단 몇가지 인상깊은 문장들을 중심으로 summary 만 남긴다.</summary></entry><entry><title type="html">[알고리즘] 소수 찾기</title><link href="http://0.0.0.0:8080/algorithm/2018/05/find-primes.html" rel="alternate" type="text/html" title="[알고리즘] 소수 찾기" /><published>2018-05-02T05:00:00+00:00</published><updated>2018-05-02T05:00:00+00:00</updated><id>http://0.0.0.0:8080/algorithm/2018/05/find-primes</id><content type="html" xml:base="http://0.0.0.0:8080/algorithm/2018/05/find-primes.html">&lt;h2 id=&quot;problem&quot;&gt;Problem&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;1부터 n까지 모든 소수를 찾는 알고리즘&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;concept&quot;&gt;Concept&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;2부터 n까지 자연수를 요소로 갖는 배열 &lt;code class=&quot;highlighter-rouge&quot;&gt;arr&lt;/code&gt; 생성 &lt;code class=&quot;highlighter-rouge&quot;&gt;[2, 3, 4, ..., n]&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;빈 배열 &lt;code class=&quot;highlighter-rouge&quot;&gt;primes&lt;/code&gt; 를 생성&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;arr&lt;/code&gt; 배열의 첫번째 요소(&lt;code class=&quot;highlighter-rouge&quot;&gt;arr[0]&lt;/code&gt;)를 &lt;code class=&quot;highlighter-rouge&quot;&gt;primes&lt;/code&gt; 배열에 추가&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;arr&lt;/code&gt; 배열에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;arr[0]&lt;/code&gt; 의 배수를 모두 제거&lt;/li&gt;
-  &lt;li&gt;위 3~4과정을 &lt;code class=&quot;highlighter-rouge&quot;&gt;arr[0]&lt;/code&gt; 이 &lt;code class=&quot;highlighter-rouge&quot;&gt;n/2&lt;/code&gt; 보다 커지기 전까지 반복&lt;/li&gt;
-  &lt;li&gt;위 과정이 끝나고 &lt;code class=&quot;highlighter-rouge&quot;&gt;primes&lt;/code&gt; 배열과 &lt;code class=&quot;highlighter-rouge&quot;&gt;arr&lt;/code&gt; 배열을 합치면, 1부터 n까지의 모든 소수를 얻게됨&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;js-code&quot;&gt;JS Code&lt;/h2&gt;
-&lt;script src=&quot;https://gist.github.com/min9nim/1818bf6fe935e99cb9677227a1e8919f.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;ref&quot;&gt;Ref.&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/challenge_codes/21&quot;&gt;https://programmers.co.kr/learn/challenge_codes/21&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Problem 1부터 n까지 모든 소수를 찾는 알고리즘</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">Charles Scalfani의 글을 통해 Elm을 알게 되었다. 이 글을 꼼꼼히 번역해보고 싶지만, 바쁜 일정을 핑계로 번역은 다음으로 미루고 일단 몇가지 인상깊은 문장들을 중심으로 summary 만 남긴다.</summary></entry></feed>
