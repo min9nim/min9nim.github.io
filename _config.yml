@@ -38,7 +38,7 @@ plugins:
 
 permalink: /:categories/:year/:month/:title:output_ext
 
-port : 8080
+port : 4000
 host : 0.0.0.0
 
 

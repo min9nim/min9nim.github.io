@@ -72,6 +72,12 @@ $ git branch --no-merged
 ```
 $ git branch -d iss53
 ```
+  * 원격저장소의 iss53 브랜치를 삭제
+  ```
+  $ git push origin :iss53
+  ```
+
+
 <br>
 
 ### 로그
