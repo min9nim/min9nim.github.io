@@ -13,13 +13,39 @@ $ git branch iss53
 ```
 $ git checkout iss53
 ```
-* 브랜치 목록 보기
+* 로컬 브랜치 목록 보기
 ```console
 $ git branch
   iss53
 > master
   testing
 ```
+  * 원격 저장소 브랜치 목록 보기
+  ```console
+  $ git branch -r
+    origin/HEAD -> origin/master
+    origin/express
+    origin/master
+  ```
+  * 로컬과 원격 저장소 브랜치 목록 모두 보기
+
+    ```console
+    $ git branch -a
+    * express
+      master
+      remotes/origin/HEAD -> origin/master
+      remotes/origin/express
+      remotes/origin/master
+    ```
+
+* 원격 저장소의 브랜치를 내려받기
+```console
+git checkout -t origin/express
+```
+  * 원격저장소의 브랜치를 새이름으로 내려받기
+  ```console
+  git checkout -b [생성할 branch 이름] [원격 저장소의 branch 이름]
+  ```
 * 브랜치를 만들면서 Checkout까지 한 번에
 ```
 $ git checkout -b iss53
