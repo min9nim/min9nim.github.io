@@ -1,5 +1,5 @@
-.DS_Store
 _site
+.DS_Store
 *.bat
 *.command
 .sass-cache
