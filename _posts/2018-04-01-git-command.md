@@ -28,16 +28,18 @@ $ git branch
     origin/master
   ```
   * 로컬과 원격 저장소 브랜치 목록 모두 보기
-
-    ```console
-    $ git branch -a
-    * express
-      master
-      remotes/origin/HEAD -> origin/master
-      remotes/origin/express
-      remotes/origin/master
-    ```
-
+  ```console
+  $ git branch -a
+  > express
+    master
+    remotes/origin/HEAD -> origin/master
+    remotes/origin/express
+    remotes/origin/master
+  ```
+* 원격 저장소 브랜치 내용 업데이트
+```console
+git remote update
+```
 * 원격 저장소의 브랜치를 내려받기
 ```console
 git checkout -t origin/express

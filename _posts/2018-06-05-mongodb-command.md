@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "[mongodb] 명령어"
-date:   2018-05-31 10:00:00 +0900
+date:   2018-06-05 10:00:00 +0900
 categories: back-end
 ---
-#### 몽고디비 시작 및 접속
+#### 몽고디비 시작 및 접속(Windows)
 - 서비스 시작
 ```
 C:\"Program Files"\MongoDB\Server\3.6\bin\mongod
@@ -40,6 +40,20 @@ talkplace  0.000GB
 test       0.000GB
 ```
 
+- 데이터베이스 삭제
+```
+> use talkplace
+switched to db talkplace
+> db.dropDatabase()
+{ "dropped" : "talkplace", "ok" : 1 }
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+test    0.000GB
+>
+```
+
 <br>
 #### 콜렉션 관리
 - 콜렉션 생성  
@@ -57,33 +71,31 @@ posts
 ```
 
 - 콜렉션에 다큐먼트 추가  
-posts 콜렉션이 이미 생성되지 않은 경우에는 자동으로 생성이 된 후 다큐먼트가 추가된다
 ```
 > db.posts.insert({"key" : "BJwttIGe7", "title" : "오늘은 왜케 잠잠하지.. 허허", "writer" : "송혜교", "conten
 t" : "그러니 왠지 더욱 불안..\n", "date" : 1528093055313 })
 WriteResult({ "nInserted" : 1 })
 ```
-
-    - 배열 인자를 전달하여 여러 건을 한꺼번에 추가할 수도 있다
-    ```
-    > db.posts.insert([
-    ... {"key" : "rJf4T8zlm", "title" : "이제 대략 정리가 된거 같다아", "writer" : "휴우", "content" : "정신 하나
-    도 없었엉~~", "date" : 1528093993879 },
-    ... {"key" : "SyTvQvflX", "title" : "이제 나왔다", "writer" : "카카", "content" : "서버에서 돈다 이젠", "date
-    " : 1528095589017 }
-    ... ])
-    BulkWriteResult({
-            "writeErrors" : [ ],
-            "writeConcernErrors" : [ ],
-            "nInserted" : 2,
-            "nUpserted" : 0,
-            "nMatched" : 0,
-            "nModified" : 0,
-            "nRemoved" : 0,
-            "upserted" : [ ]
-    })
-    >
-    ```
+posts 콜렉션이 이미 생성되지 않은 경우에는 자동으로 생성된 후 다큐먼트가 추가된다. 아래와 같이 배열로 여러 건을 한꺼번에 추가할 수도 있다
+```
+> db.posts.insert([
+... {"key" : "rJf4T8zlm", "title" : "이제 대략 정리가 된거 같다아", "writer" : "휴우", "content" : "정신 하나
+도 없었엉~~", "date" : 1528093993879 },
+... {"key" : "SyTvQvflX", "title" : "이제 나왔다", "writer" : "카카", "content" : "서버에서 돈다 이젠", "date
+" : 1528095589017 }
+... ])
+BulkWriteResult({
+        "writeErrors" : [ ],
+        "writeConcernErrors" : [ ],
+        "nInserted" : 2,
+        "nUpserted" : 0,
+        "nMatched" : 0,
+        "nModified" : 0,
+        "nRemoved" : 0,
+        "upserted" : [ ]
+})
+>
+```
 
 
 - 콜렉션 삭제

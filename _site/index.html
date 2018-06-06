@@ -78,12 +78,44 @@
     
       <li>
         
-        <span class="post-meta">May 31, 2018</span>
+        <span class="post-meta">Jun 6, 2018</span>
         <h2>
-          <a class="post-link" href="/back-end/2018/05/mongodb.html">[mongodb] 명령어</a>
+          <a class="post-link" href="/back-end/2018/06/mongodb-setting.html">[mongodb] aws ec2 에서 mongodb 세팅하기</a>
         </h2>
-        <a class="" href="/back-end/2018/05/mongodb.html">
-            <p class="post-excerpt">몽고디비 시작 및 접속
+        <a class="" href="/back-end/2018/06/mongodb-setting.html">
+            <p class="post-excerpt">mongodb 설치
+
+  root 권한으로 전환
+    $ sudo su
+    
+  
+  vi /etc/yum.repos.d/mongodb-org-3.4.repo 입력 후 아래 내용 저장
+    [mongodb-org-3.4]
+name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.4/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.4.asc
+    
+  
+  yum 으로 설치
+    $ yum install -y mongodb-org
+    
+  
+
+
+</p>
+        </a>
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Jun 5, 2018</span>
+        <h2>
+          <a class="post-link" href="/back-end/2018/06/mongodb-command.html">[mongodb] 명령어</a>
+        </h2>
+        <a class="" href="/back-end/2018/06/mongodb-command.html">
+            <p class="post-excerpt">몽고디비 시작 및 접속(Windows)
 
   서비스 시작
     C:\"Program Files"\MongoDB\Server\3.6\bin\mongod
@@ -273,6 +305,17 @@ A를 3만큼 밀면 D가 되고 z를 1만큼 밀면 a가 됩니다. 공백은 �
     
       <li>
         
+        <span class="post-meta">Apr 26, 2018</span>
+        <h2>
+          <a class="post-link" href="/frontend/2018/04/js-regexp.html">[js] 정규표현식 간단히 이해하기</a>
+        </h2>
+        <a class="" href="/frontend/2018/04/js-regexp.html">
+            <p class="post-excerpt">Intro 정규식이 외계어같이 읽기 어려운 얼굴을 가졌음에도 불구하고 널리 사용되는 이유는 아마 코드길이를 탁월하게 짧게 만들어 주기 때문일 것이다. 정규식은 상당한 양의 코드를 단 한줄로 처리 가능하게 해주며 그만큼 높은 추상화의 단계로 프로그래밍을 이끈다. 정규식의 단점이라고 한다면 단지 상당히 읽기 불편하고 직관적이지 않다는 점일 것이다. 하지만 짧은 코드를 지극히 선호하는...</p>
+        </a>
+      </li>
+    
+      <li>
+        
         <span class="post-meta">Apr 24, 2018</span>
         <h2>
           <a class="post-link" href="/algorithm/2018/04/gcd-lcm.html">[알고리즘] 최대공약수 최소공배수</a>
@@ -393,6 +436,19 @@ ALTER TABLE tablename RENAME bbs;
     
       <li>
         
+        <span class="post-meta">Apr 16, 2018</span>
+        <h2>
+          <a class="post-link" href="/frontend/2018/04/es6-iterator.html">[es6] iterator 10분만에 배우기</a>
+        </h2>
+        <a class="" href="/frontend/2018/04/es6-iterator.html">
+            <p class="post-excerpt">Ref.
+https://codeburst.io/a-simple-guide-to-es6-iterators-in-javascript-with-examples-189d052c3d8e
+</p>
+        </a>
+      </li>
+    
+      <li>
+        
         <span class="post-meta">Apr 12, 2018</span>
         <h2>
           <a class="post-link" href="/frontend/2018/04/windows-cmder.html">[windows] 특정 폴더에서 cmder 바로 열기</a>
@@ -487,36 +543,7 @@ webpack 빌드 환경에서 partialjs 를 모듈로 사용하고자 할 경우
           <a class="post-link" href="/frontend/2018/04/git-command.html">git 명령어 요약</a>
         </h2>
         <a class="" href="/frontend/2018/04/git-command.html">
-            <p class="post-excerpt">브랜치
-
-  브랜치 생성
-    $ git branch iss53
-    
-  
-  브랜치 이동
-    $ git checkout iss53
-    
-  
-  로컬 브랜치 목록 보기
-    $ git branch
-iss53
-&gt; master
-testing
-    
-    
-      원격 저장소 브랜치 목록 보기
-        $ git branch -r
-origin/HEAD -&gt; origin/master
-origin/express
-origin/master
-        
-      
-      로컬과 원격 저장소 브랜치 목록 모두 보기
-    
-  
-
-
-</p>
+            <p class="post-excerpt">브랜치 브랜치 생성 $ git branch iss53 브랜치 이동 $ git checkout iss53 로컬 브랜치 목록 보기 $ git branch iss53 &gt; master testing 원격 저장소 브랜치 목록 보기 $ git branch -r origin/HEAD -&gt; origin/master origin/express origin/master 로컬과 원격 저장소 브랜치 목록 모두 보기 $ git branch -a &gt;...</p>
         </a>
       </li>
     

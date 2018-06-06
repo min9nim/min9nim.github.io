@@ -1,4 +1,67 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2018-06-06T00:29:33+09:00</updated><id>http://0.0.0.0:4000/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">[mongodb] 명령어</title><link href="http://0.0.0.0:4000/back-end/2018/05/mongodb.html" rel="alternate" type="text/html" title="[mongodb] 명령어" /><published>2018-05-31T10:00:00+09:00</published><updated>2018-05-31T10:00:00+09:00</updated><id>http://0.0.0.0:4000/back-end/2018/05/mongodb</id><content type="html" xml:base="http://0.0.0.0:4000/back-end/2018/05/mongodb.html">&lt;h4 id=&quot;몽고디비-시작-및-접속&quot;&gt;몽고디비 시작 및 접속&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2018-06-06T23:15:52+09:00</updated><id>http://0.0.0.0:4000/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">[mongodb] aws ec2 에서 mongodb 세팅하기</title><link href="http://0.0.0.0:4000/back-end/2018/06/mongodb-setting.html" rel="alternate" type="text/html" title="[mongodb] aws ec2 에서 mongodb 세팅하기" /><published>2018-06-06T10:00:00+09:00</published><updated>2018-06-06T10:00:00+09:00</updated><id>http://0.0.0.0:4000/back-end/2018/06/mongodb-setting</id><content type="html" xml:base="http://0.0.0.0:4000/back-end/2018/06/mongodb-setting.html">&lt;h4 id=&quot;mongodb-설치&quot;&gt;mongodb 설치&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;root 권한으로 전환
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo su
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;vi /etc/yum.repos.d/mongodb-org-3.4.repo&lt;/code&gt; 입력 후 아래 내용 저장
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[mongodb-org-3.4]
+name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.4/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.4.asc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;yum 으로 설치
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ yum install -y mongodb-org
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;mongodb-서버시작-및-접속&quot;&gt;mongodb 서버시작 및 접속&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;서비스 시작
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo service mongod start
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;서비스 재시작
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo service mongod restart
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;서버접속
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ mongo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;mongodb-보안-설정&quot;&gt;mongodb 보안 설정&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;설정을 수정하려면 root 권한이 필요하다.
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo vi /etc/mongod.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;외부에서 접근을 허용하려면 &lt;code class=&quot;highlighter-rouge&quot;&gt;net&lt;/code&gt; 항목의 &lt;code class=&quot;highlighter-rouge&quot;&gt;bindIp&lt;/code&gt; 항목을 아래와 같이 주석처리한다
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# network interfaces
+net:
+  port: 27017
+#  bindIp: 127.0.0.1  # Listen to local interface only, comment to listen on all interfaces.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;익명 로그인을 제한하려면 &lt;code class=&quot;highlighter-rouge&quot;&gt;security&lt;/code&gt; 항목에 &lt;code class=&quot;highlighter-rouge&quot;&gt;authorization: enabled&lt;/code&gt; 를 추가한다
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;security:
+ authorization: enabled
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;ref&quot;&gt;Ref.&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chichi.space/2017/05/12/한번에-끝내는-AWS-EC2에-MongoDB-설치하고-보안설정하기/&quot;&gt;https://chichi.space/2017/05/12/한번에-끝내는-AWS-EC2에-MongoDB-설치하고-보안설정하기/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">mongodb 설치 root 권한으로 전환 $ sudo su vi /etc/yum.repos.d/mongodb-org-3.4.repo 입력 후 아래 내용 저장 [mongodb-org-3.4] name=MongoDB Repository baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.4/x86_64/ gpgcheck=1 enabled=1 gpgkey=https://www.mongodb.org/static/pgp/server-3.4.asc yum 으로 설치 $ yum install -y mongodb-org</summary></entry><entry><title type="html">[mongodb] 명령어</title><link href="http://0.0.0.0:4000/back-end/2018/06/mongodb-command.html" rel="alternate" type="text/html" title="[mongodb] 명령어" /><published>2018-06-05T10:00:00+09:00</published><updated>2018-06-05T10:00:00+09:00</updated><id>http://0.0.0.0:4000/back-end/2018/06/mongodb-command</id><content type="html" xml:base="http://0.0.0.0:4000/back-end/2018/06/mongodb-command.html">&lt;h4 id=&quot;몽고디비-시작-및-접속windows&quot;&gt;몽고디비 시작 및 접속(Windows)&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;서비스 시작
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C:\&quot;Program Files&quot;\MongoDB\Server\3.6\bin\mongod
@@ -33,6 +96,19 @@ talkplace  0.000GB
 test       0.000GB
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
+  &lt;li&gt;데이터베이스 삭제
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; use talkplace
+switched to db talkplace
+&amp;gt; db.dropDatabase()
+{ &quot;dropped&quot; : &quot;talkplace&quot;, &quot;ok&quot; : 1 }
+&amp;gt; show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+test    0.000GB
+&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -50,22 +126,19 @@ book
 posts
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;콜렉션에 다큐먼트 추가&lt;br /&gt;
-posts 콜렉션이 이미 생성되지 않은 경우에는 자동으로 생성이 된 후 다큐먼트가 추가된다
+  &lt;li&gt;콜렉션에 다큐먼트 추가
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; db.posts.insert({&quot;key&quot; : &quot;BJwttIGe7&quot;, &quot;title&quot; : &quot;오늘은 왜케 잠잠하지.. 허허&quot;, &quot;writer&quot; : &quot;송혜교&quot;, &quot;conten
 t&quot; : &quot;그러니 왠지 더욱 불안..\n&quot;, &quot;date&quot; : 1528093055313 })
 WriteResult({ &quot;nInserted&quot; : 1 })
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;배열 인자를 전달하여 여러 건을 한꺼번에 추가할 수도 있다
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &amp;gt; db.posts.insert([
-  ... {&quot;key&quot; : &quot;rJf4T8zlm&quot;, &quot;title&quot; : &quot;이제 대략 정리가 된거 같다아&quot;, &quot;writer&quot; : &quot;휴우&quot;, &quot;content&quot; : &quot;정신 하나
-  도 없었엉~~&quot;, &quot;date&quot; : 1528093993879 },
-  ... {&quot;key&quot; : &quot;SyTvQvflX&quot;, &quot;title&quot; : &quot;이제 나왔다&quot;, &quot;writer&quot; : &quot;카카&quot;, &quot;content&quot; : &quot;서버에서 돈다 이젠&quot;, &quot;date
-  &quot; : 1528095589017 }
-  ... ])
-  BulkWriteResult({
+    &lt;p&gt;posts 콜렉션이 이미 생성되지 않은 경우에는 자동으로 생성된 후 다큐먼트가 추가된다. 아래와 같이 배열로 여러 건을 한꺼번에 추가할 수도 있다&lt;/p&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; db.posts.insert([
+... {&quot;key&quot; : &quot;rJf4T8zlm&quot;, &quot;title&quot; : &quot;이제 대략 정리가 된거 같다아&quot;, &quot;writer&quot; : &quot;휴우&quot;, &quot;content&quot; : &quot;정신 하나
+도 없었엉~~&quot;, &quot;date&quot; : 1528093993879 },
+... {&quot;key&quot; : &quot;SyTvQvflX&quot;, &quot;title&quot; : &quot;이제 나왔다&quot;, &quot;writer&quot; : &quot;카카&quot;, &quot;content&quot; : &quot;서버에서 돈다 이젠&quot;, &quot;date
+&quot; : 1528095589017 }
+... ])
+BulkWriteResult({
       &quot;writeErrors&quot; : [ ],
       &quot;writeConcernErrors&quot; : [ ],
       &quot;nInserted&quot; : 2,
@@ -74,11 +147,9 @@ WriteResult({ &quot;nInserted&quot; : 1 })
       &quot;nModified&quot; : 0,
       &quot;nRemoved&quot; : 0,
       &quot;upserted&quot; : [ ]
-  })
-  &amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
+})
+&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;콜렉션 삭제
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; show collections
@@ -121,7 +192,7 @@ content&quot; : &quot;입력할때 좀 버벅 거리는 현상이 조금 있는�
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://velopert.com/594&quot;&gt;https://velopert.com/594&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://velopert.com/436&quot;&gt;https://velopert.com/436&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">몽고디비 시작 및 접속 서비스 시작 C:\&quot;Program Files&quot;\MongoDB\Server\3.6\bin\mongod 몽고디비는 기본적으로 C:\data\db 경로를 바라보며 시작한다. 해당 경로가 없을 경우 정상적으로 서비스가 시작되지 않고 오류가 발생하므로 미리 해당 폴더를 만들어 두도록 한다.</summary></entry><entry><title type="html">[AWS-EC2] 리눅스에 nodejs 설치</title><link href="http://0.0.0.0:4000/aws/2018/05/ec2-node.html" rel="alternate" type="text/html" title="[AWS-EC2] 리눅스에 nodejs 설치" /><published>2018-05-31T10:00:00+09:00</published><updated>2018-05-31T10:00:00+09:00</updated><id>http://0.0.0.0:4000/aws/2018/05/ec2-node</id><content type="html" xml:base="http://0.0.0.0:4000/aws/2018/05/ec2-node.html">&lt;ol&gt;
+&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">몽고디비 시작 및 접속(Windows) 서비스 시작 C:\&quot;Program Files&quot;\MongoDB\Server\3.6\bin\mongod 몽고디비는 기본적으로 C:\data\db 경로를 바라보며 시작한다. 해당 경로가 없을 경우 정상적으로 서비스가 시작되지 않고 오류가 발생하므로 미리 해당 폴더를 만들어 두도록 한다.</summary></entry><entry><title type="html">[AWS-EC2] 리눅스에 nodejs 설치</title><link href="http://0.0.0.0:4000/aws/2018/05/ec2-node.html" rel="alternate" type="text/html" title="[AWS-EC2] 리눅스에 nodejs 설치" /><published>2018-05-31T10:00:00+09:00</published><updated>2018-05-31T10:00:00+09:00</updated><id>http://0.0.0.0:4000/aws/2018/05/ec2-node</id><content type="html" xml:base="http://0.0.0.0:4000/aws/2018/05/ec2-node.html">&lt;ol&gt;
   &lt;li&gt;EC2 업데이트&lt;br /&gt;
 프롬프트가 뜨면 ‘y’를 입력
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;yum update
@@ -457,52 +528,4 @@ by Douglas Crockford&lt;/a&gt; 에서는 undefined 는 속성의 값으로 사�
 
 &lt;h2 id=&quot;ref&quot;&gt;Ref.&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://7chan.org/pr/src/OReilly_JavaScript_The_Good_Parts_May_2008.pdf&quot;&gt;https://7chan.org/pr/src/OReilly_JavaScript_The_Good_Parts_May_2008.pdf&lt;/a&gt;
-&lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/create&quot;&gt;https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/create&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Intro 자바스크립트는 prototype 을 이용해 완전하지는 않지만 그럴듯하게 객체지향프로그래밍을 흉내낼 수 있다. 기존 자바의 클래스 기반 객체생성 및 상속에 익숙해져 있는 사람이라면 자바스크립트의 객체 생성 및 상속의 개념이 상당히 이질적으로 느껴질 수 있다. 자바스크립트로 객체지향프로그래밍을 하고자 한다면 prototype 에 대한 정확한 이해는 무엇보다 중요하다. 이 글은 자바스크립트를 처음 접하는 사람들에게 친절하지 않다. 반면 prototype의 동작방식을 대충은 알지만 정확하게 알지 못한 채 자바스크립트를 습관적으로 사용하던 개발자에게 prototype 의 정확한 이해를 돕는데 집중한다.</summary></entry><entry><title type="html">[js] Srting.prototype.replace 에서 function 활용</title><link href="http://0.0.0.0:4000/algorithm/2018/05/caesar-enc.html" rel="alternate" type="text/html" title="[js] Srting.prototype.replace 에서 function 활용" /><published>2018-05-04T00:00:00+09:00</published><updated>2018-05-04T00:00:00+09:00</updated><id>http://0.0.0.0:4000/algorithm/2018/05/caesar-enc</id><content type="html" xml:base="http://0.0.0.0:4000/algorithm/2018/05/caesar-enc.html">&lt;h2 id=&quot;problem&quot;&gt;Problem&lt;/h2&gt;
-&lt;p&gt;어떤 문장의 각 알파벳을 일정한 거리만큼 밀어서 다른 알파벳으로 바꾸는 암호화 방식을 시저 암호라고 합니다.
-A를 3만큼 밀면 D가 되고 z를 1만큼 밀면 a가 됩니다. 공백은 수정하지 않습니다.
-보낼 문자열 s와 얼마나 밀지 알려주는 n을 입력받아 암호문을 만드는 caesar 함수를 완성해 보세요.&lt;/p&gt;
-
-&lt;p&gt;ex) “a B z”,4를 입력받았다면 “e F d”를 리턴합니다.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;문제출처 : &lt;a href=&quot;https://programmers.co.kr/learn/challenge_codes/24&quot;&gt;https://programmers.co.kr/learn/challenge_codes/24&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;solution&quot;&gt;Solution&lt;/h2&gt;
-&lt;h4 id=&quot;풀이1&quot;&gt;풀이1&lt;/h4&gt;
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;caesar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;replacer1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fromCharCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;charCodeAt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;97&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;26&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;97&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;replacer2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fromCharCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;charCodeAt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;65&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;26&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;65&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;  
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;a-z&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;replacer1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;A-Z&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;replacer2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// 실행을 위한 테스트코드입니다.&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'s는 &quot;a B z&quot;, n은 4인 경우: '&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;caesar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;a B z&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;풀이2&quot;&gt;풀이2&lt;/h4&gt;
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;caesar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;enc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;offset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;charCodeAt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;offset&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;26&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;offset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;replacer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fromCharCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;charCodeAt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;90&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;enc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;97&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;enc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;65&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;A-Za-z&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;replacer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// 실행을 위한 테스트코드입니다.&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'s는 &quot;a B z&quot;, n은 4인 경우: '&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;caesar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;a B z&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;ref&quot;&gt;Ref.&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/replace&quot;&gt;https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/replace&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Problem 어떤 문장의 각 알파벳을 일정한 거리만큼 밀어서 다른 알파벳으로 바꾸는 암호화 방식을 시저 암호라고 합니다. A를 3만큼 밀면 D가 되고 z를 1만큼 밀면 a가 됩니다. 공백은 수정하지 않습니다. 보낼 문자열 s와 얼마나 밀지 알려주는 n을 입력받아 암호문을 만드는 caesar 함수를 완성해 보세요.</summary></entry></feed>
+&lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/create&quot;&gt;https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/create&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Intro 자바스크립트는 prototype 을 이용해 완전하지는 않지만 그럴듯하게 객체지향프로그래밍을 흉내낼 수 있다. 기존 자바의 클래스 기반 객체생성 및 상속에 익숙해져 있는 사람이라면 자바스크립트의 객체 생성 및 상속의 개념이 상당히 이질적으로 느껴질 수 있다. 자바스크립트로 객체지향프로그래밍을 하고자 한다면 prototype 에 대한 정확한 이해는 무엇보다 중요하다. 이 글은 자바스크립트를 처음 접하는 사람들에게 친절하지 않다. 반면 prototype의 동작방식을 대충은 알지만 정확하게 알지 못한 채 자바스크립트를 습관적으로 사용하던 개발자에게 prototype 의 정확한 이해를 돕는데 집중한다.</summary></entry></feed>
