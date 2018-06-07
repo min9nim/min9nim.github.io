@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2018-06-06T23:15:52+09:00</updated><id>http://0.0.0.0:4000/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">[mongodb] aws ec2 에서 mongodb 세팅하기</title><link href="http://0.0.0.0:4000/back-end/2018/06/mongodb-setting.html" rel="alternate" type="text/html" title="[mongodb] aws ec2 에서 mongodb 세팅하기" /><published>2018-06-06T10:00:00+09:00</published><updated>2018-06-06T10:00:00+09:00</updated><id>http://0.0.0.0:4000/back-end/2018/06/mongodb-setting</id><content type="html" xml:base="http://0.0.0.0:4000/back-end/2018/06/mongodb-setting.html">&lt;h4 id=&quot;mongodb-설치&quot;&gt;mongodb 설치&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2018-06-07T09:58:03+09:00</updated><id>http://0.0.0.0:4000/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">[js] 불변성을 유지하며 array 순서 뒤집기</title><link href="http://0.0.0.0:4000/front-end/2018/06/array-reverse.html" rel="alternate" type="text/html" title="[js] 불변성을 유지하며 array 순서 뒤집기" /><published>2018-06-07T09:00:00+09:00</published><updated>2018-06-07T09:00:00+09:00</updated><id>http://0.0.0.0:4000/front-end/2018/06/array-reverse</id><content type="html" xml:base="http://0.0.0.0:4000/front-end/2018/06/array-reverse.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
+&lt;p&gt;배열의 순서를 뒤집기 위해 간단히 &lt;code class=&quot;highlighter-rouge&quot;&gt;arr.reverse()&lt;/code&gt; 를 이용할 수 있지만 &lt;code class=&quot;highlighter-rouge&quot;&gt;Array.prototype.reverse&lt;/code&gt; 는 불변성을 유지하지 못한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;해결책&quot;&gt;해결책&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;불변성을 유지하는 slice() 를 이용한 방법
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; const arr = [1,2,3];
+  const newArr = arr.slice().reverse();
+&amp;gt; newArr
+&amp;lt; (3) [3, 2, 1]
+&amp;gt; arr
+&amp;lt; (3) [1, 2, 3]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;… (&lt;em&gt;spread operator&lt;/em&gt;) 를 이용한 방법
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; const arr = [1,2,3];
+  const newArr = [...arr].reverse();
+&amp;gt; newArr
+&amp;lt; (3) [3, 2, 1]
+&amp;gt; arr
+&amp;lt; (3) [1, 2, 3]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>mg.song</name></author><summary type="html">문제 배열의 순서를 뒤집기 위해 간단히 arr.reverse() 를 이용할 수 있지만 Array.prototype.reverse 는 불변성을 유지하지 못한다.</summary></entry><entry><title type="html">[mongodb] aws ec2 에서 mongodb 세팅하기</title><link href="http://0.0.0.0:4000/back-end/2018/06/mongodb-setting.html" rel="alternate" type="text/html" title="[mongodb] aws ec2 에서 mongodb 세팅하기" /><published>2018-06-06T10:00:00+09:00</published><updated>2018-06-06T10:00:00+09:00</updated><id>http://0.0.0.0:4000/back-end/2018/06/mongodb-setting</id><content type="html" xml:base="http://0.0.0.0:4000/back-end/2018/06/mongodb-setting.html">&lt;h4 id=&quot;mongodb-설치&quot;&gt;mongodb 설치&lt;/h4&gt;
 &lt;ol&gt;
   &lt;li&gt;root 권한으로 전환
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo su
@@ -454,78 +478,4 @@ Email Address []:
 &lt;h2 id=&quot;ref&quot;&gt;Ref.&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.acmicpc.net/blog/view/28&quot;&gt;https://www.acmicpc.net/blog/view/28&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">Problem 효진이는 멀리 뛰기를 연습하고 있습니다. 효진이는 한번에 1칸, 또는 2칸을 뛸 수 있습니다. 칸이 총 4개 있을 때, 효진이는 (1칸, 1칸, 1칸, 1칸) (1칸, 2칸, 1칸) (1칸, 1칸, 2칸) (2칸, 1칸, 1칸) (2칸, 2칸) 의 5가지 방법으로 맨 끝 칸에 도달할 수 있습니다. 멀리뛰기에 사용될 칸의 수 n이 주어질 때, 효진이가 끝에 도달하는 방법이 몇 가지인지 출력하는 jumpCase 함수를 완성하세요. 예를 들어 4가 입력된다면, 5를 반환해 주면 됩니다. 문제출처: https://programmers.co.kr/learn/challenge_codes/33</summary></entry><entry><title type="html">[js] 객체와 prototype 의 이해</title><link href="http://0.0.0.0:4000/frontend/2018/05/js-prototype.html" rel="alternate" type="text/html" title="[js] 객체와 prototype 의 이해" /><published>2018-05-04T13:00:00+09:00</published><updated>2018-05-04T13:00:00+09:00</updated><id>http://0.0.0.0:4000/frontend/2018/05/js-prototype</id><content type="html" xml:base="http://0.0.0.0:4000/frontend/2018/05/js-prototype.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;자바스크립트는 prototype 을 이용해 완전하지는 않지만 그럴듯하게 객체지향프로그래밍을 흉내낼 수 있다. 기존 자바의 클래스 기반 객체생성 및 상속에 익숙해져 있는 사람이라면 자바스크립트의 객체 생성 및 상속의 개념이 상당히 이질적으로 느껴질 수 있다. 자바스크립트로 객체지향프로그래밍을 하고자 한다면 prototype 에 대한 정확한 이해는 무엇보다 중요하다.&lt;/li&gt;
-  &lt;li&gt;이 글은 자바스크립트를 처음 접하는 사람들에게 친절하지 않다. 반면 prototype의 동작방식을 대충은 알지만 정확하게 알지 못한 채 자바스크립트를 습관적으로 사용하던 개발자에게 prototype 의 정확한 이해를 돕는데 집중한다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;자바스크립트의-객체&quot;&gt;자바스크립트의 객체&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;자바스크립트의 primitive 데이터타입 5가지
-    &lt;ul&gt;
-      &lt;li&gt;숫자, 문자열, 불리언(true/false), null, undefined&lt;/li&gt;
-      &lt;li&gt;숫자/문자열/불리언은 메소드를 가지고 있기 때문에 객체처럼 보일 수 있지만 일반적인 객체와 달리 이 값들은 한번 정해지면 변경이 불가합니다(immutable)&lt;/li&gt;
-      &lt;li&gt;primitive 타입을 제외한 모든 값은 객체&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;자바스크립트에서 객체란 변경 가능한 속성들의 집합
-    &lt;ul&gt;
-      &lt;li&gt;ex) 배열, 함수, 정규표현식&lt;/li&gt;
-      &lt;li&gt;속성의 이름은 문자열이면 모두 가능, 빈문자열도 허용&lt;/li&gt;
-      &lt;li&gt;속성의 값으로는 자바스크립트의 모든 값이 가능
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;https://7chan.org/pr/src/OReilly_JavaScript_The_Good_Parts_May_2008.pdf&quot;&gt;The Good Parts
-by Douglas Crockford&lt;/a&gt; 에서는 undefined 는 속성의 값으로 사용할 수 없다고 되어있는데 책집필 당시에서 그랬었는지 모르겠지만 최근에는 undefined 도 속성의 값으로 들어가는 것으로 확인됩니다&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;자바스크립트의 객체는 클래스가 불필요&lt;/li&gt;
-      &lt;li&gt;자바스크립트는 특정 객체에 있는 속성들을 다른 객체에 그대로 상속하게 해주는 간단한 방법을 제공하는데 그것이 바로 prototype 연결&lt;/li&gt;
-      &lt;li&gt;객체는 참조방식으로 전달, 결코 복사되지 않음&lt;/li&gt;
-      &lt;li&gt;객체리터럴로 생성되는 모든 객체는 Object.prototype 객체에 연결됨&lt;/li&gt;
-      &lt;li&gt;객체를 생성할 때는 해당 객체의 프로토타입이 될 객체를 선택할 수 있음&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;객체-생성-방법&quot;&gt;객체 생성 방법&lt;/h2&gt;
-&lt;p&gt;prototype 을 선택하여 객체를 생성하는 방법은 2가지가 있다&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;new 연산자를 이용하는 방법
-    &lt;ul&gt;
-      &lt;li&gt;생성자 함수를 정의하고 new 연산자와 함께 생성자 함수를 호출하면 생성자함수의 prototype에 연결을 갖는(생성자함수의 prototype 을 원형으로 하는) 새로운 객체가 생성되고 생성자 함수에 의해 새로운 객체의 속성이 초기화 된다
-  &lt;script src=&quot;https://gist.github.com/min9nim/7a384c89b085ac41ab72f53e0b5c19fb.js&quot;&gt;&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;이 방법은 자바의 클래스 기반 객체생성 표현법을 닮았다. (아마 당시 자바의 인기에 편승하여 흉내를 낸 것이 아닌가 싶다). 이 방법이 자바스크립트가 인기를 끄는데는 조금이나마 기여했을 지도 모르겠지만 프로토타입을 기반으로 객체 상속을 지원하는 자바스크립트의 내부 동작을 숨겼기 때문에 자바스크립트를 배우는 사람들에게 여러가지 혼란을 가져오고 오해를 불러 일으키게 되었다.&lt;/li&gt;
-      &lt;li&gt;new 연산자의 동작을 Function의 메소드로 정의 한다면 아래와 같을 것이다
-  &lt;script src=&quot;https://gist.github.com/min9nim/72fd726a2ff9f6b8d61ad8c534a4a756.js&quot;&gt;&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;자바스크립트에서 객체를 생성하는 원리에 부합하는 조금 더 직관적인 객체 생성 방법은 Object.create 를 이용하는 것이다&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Object.create 를 이용하는 방법
-    &lt;ul&gt;
-      &lt;li&gt;prototype 으로 사용할 객체를 인자로 전달하면 인자로 전달 된 객체를 원형으로 하는 새로운 객체(o)가 생성된다. &lt;code class=&quot;highlighter-rouge&quot;&gt;o.__proto__ === a&lt;/code&gt; 는 &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt;
-  &lt;script src=&quot;https://gist.github.com/min9nim/5cf5cd11463c79bc3de2f9039c8b2e76.js&quot;&gt;&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;Object.create 가 지원되지 않는다면(ie8이하) 아래와 같이 간단하게 polyfill 을 구현할 수 있다.
-  &lt;script src=&quot;https://gist.github.com/min9nim/02f40a241014c6f13e0337cac84cb9f0.js&quot;&gt;&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;참고로 위 구현은 두번째 인자를 사용할 수 없고, 첫번째 인자로 null을 이용한 순수객체를 만들 수 없다는 점에서 네이티브 Object.create와 다르다. 해당 예외처리를 포함한 &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create#Polyfill&quot;&gt;Polyfill 참고&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;위 두가지 방식의 사소한 차이점은 1번방식으로 생성된 객체는 해당 속성들이 열거 가능하지만, 2번방법으로 생성된 속성들은 열거 가능하지 않다는 점이다
-    &lt;ul&gt;
-      &lt;li&gt;1번 방법으로 생성된 객체
-  &lt;script src=&quot;https://gist.github.com/min9nim/a6ab5bd9563bca5dd35671f64b67a258.js&quot;&gt;&lt;/script&gt;&lt;/li&gt;
-      &lt;li&gt;2번 방법으로 생성된 객체
-  &lt;script src=&quot;https://gist.github.com/min9nim/6eb131fd72ec002edfa075e7e2154aea.js&quot;&gt;&lt;/script&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;ref&quot;&gt;Ref.&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://7chan.org/pr/src/OReilly_JavaScript_The_Good_Parts_May_2008.pdf&quot;&gt;https://7chan.org/pr/src/OReilly_JavaScript_The_Good_Parts_May_2008.pdf&lt;/a&gt;
-&lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/create&quot;&gt;https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/create&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">Intro 자바스크립트는 prototype 을 이용해 완전하지는 않지만 그럴듯하게 객체지향프로그래밍을 흉내낼 수 있다. 기존 자바의 클래스 기반 객체생성 및 상속에 익숙해져 있는 사람이라면 자바스크립트의 객체 생성 및 상속의 개념이 상당히 이질적으로 느껴질 수 있다. 자바스크립트로 객체지향프로그래밍을 하고자 한다면 prototype 에 대한 정확한 이해는 무엇보다 중요하다. 이 글은 자바스크립트를 처음 접하는 사람들에게 친절하지 않다. 반면 prototype의 동작방식을 대충은 알지만 정확하게 알지 못한 채 자바스크립트를 습관적으로 사용하던 개발자에게 prototype 의 정확한 이해를 돕는데 집중한다.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">Problem 효진이는 멀리 뛰기를 연습하고 있습니다. 효진이는 한번에 1칸, 또는 2칸을 뛸 수 있습니다. 칸이 총 4개 있을 때, 효진이는 (1칸, 1칸, 1칸, 1칸) (1칸, 2칸, 1칸) (1칸, 1칸, 2칸) (2칸, 1칸, 1칸) (2칸, 2칸) 의 5가지 방법으로 맨 끝 칸에 도달할 수 있습니다. 멀리뛰기에 사용될 칸의 수 n이 주어질 때, 효진이가 끝에 도달하는 방법이 몇 가지인지 출력하는 jumpCase 함수를 완성하세요. 예를 들어 4가 입력된다면, 5를 반환해 주면 됩니다. 문제출처: https://programmers.co.kr/learn/challenge_codes/33</summary></entry></feed>
