@@ -106,11 +106,32 @@ $ git log -p -2
 ```
 $ git rm test.html
 ```
-* 저장소 내려받기  
-(명령을 수행하는 경로에 min9nim.github.io 폴더를 만들고 그 아래에 소스를 내려받음)
+* staging 영역에서만 파일 삭제
 ```
-$ git clone https://github.com/min9nim/min9nim.github.io.git
+$ git rm --cached test.html
 ```
+* 스테이징과 워킹디렉토리를 잠시 따로 저장
+```
+$ git stash save
+```
+* stash 목록보기
+```
+$ git stash list
+```
+* 가장 최근 stash 삭제
+```
+$ git stash drop
+```
+* 가장 최근 stash 로 복원
+```
+$ git stash apply
+```
+* 가장 최근 stash 복원하고 해당 stash 삭제
+```
+$ git stash pop
+```
+
+
 <br>
 
 
