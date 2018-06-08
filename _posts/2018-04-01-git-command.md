@@ -79,6 +79,14 @@ $ git branch -d iss53
   $ git push origin :iss53
   ```
 
+<br>
+
+### 커밋
+* `git add *` + `git commit -m update` 한번에 하기  
+(단, 신규 파일들이 스테이징 영역에 추가되지는 않는다)
+```
+git commit -a -m update
+```
 
 <br>
 
