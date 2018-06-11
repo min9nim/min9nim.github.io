@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2018-06-09T01:07:03+09:00</updated><id>http://0.0.0.0:4000/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">[js] 불변성을 유지하며 array 순서 뒤집기</title><link href="http://0.0.0.0:4000/front-end/2018/06/array-reverse.html" rel="alternate" type="text/html" title="[js] 불변성을 유지하며 array 순서 뒤집기" /><published>2018-06-07T09:00:00+09:00</published><updated>2018-06-07T09:00:00+09:00</updated><id>http://0.0.0.0:4000/front-end/2018/06/array-reverse</id><content type="html" xml:base="http://0.0.0.0:4000/front-end/2018/06/array-reverse.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2018-06-11T11:33:20+09:00</updated><id>http://0.0.0.0:4000/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">iOS 에서 입력컨트롤 테두리 그림자 제거</title><link href="http://0.0.0.0:4000/front-end/2018/06/border-shadow.html" rel="alternate" type="text/html" title="iOS 에서 입력컨트롤 테두리 그림자 제거" /><published>2018-06-07T09:00:00+09:00</published><updated>2018-06-07T09:00:00+09:00</updated><id>http://0.0.0.0:4000/front-end/2018/06/border-shadow</id><content type="html" xml:base="http://0.0.0.0:4000/front-end/2018/06/border-shadow.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
+&lt;p&gt;입력 컨트롤의 테두리를 보시면(border-top) 어두운 그림자가 드리어져 있다&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ios-asis.jpg&quot; alt=&quot;이후&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;해결책&quot;&gt;해결책&lt;/h4&gt;
+&lt;p&gt;아래 스타일을 사용&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;input, textarea {
+    -webkit-appearance: none;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;결과&quot;&gt;결과&lt;/h4&gt;
+&lt;p&gt;그림자가 사라지고 훨씬 깔끔해 졌다&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ios-tobe.jpg&quot; alt=&quot;이후&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;ref&quot;&gt;Ref.&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://webisfree.com/2016-03-22/ios-아이폰-input-태그에-기본-둥근-테두리-및-그림자-제거-방법&quot;&gt;https://webisfree.com/2016-03-22/ios-아이폰-input-태그에-기본-둥근-테두리-및-그림자-제거-방법&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">문제 입력 컨트롤의 테두리를 보시면(border-top) 어두운 그림자가 드리어져 있다</summary></entry><entry><title type="html">[js] 불변성을 유지하며 array 순서 뒤집기</title><link href="http://0.0.0.0:4000/front-end/2018/06/array-reverse.html" rel="alternate" type="text/html" title="[js] 불변성을 유지하며 array 순서 뒤집기" /><published>2018-06-07T09:00:00+09:00</published><updated>2018-06-07T09:00:00+09:00</updated><id>http://0.0.0.0:4000/front-end/2018/06/array-reverse</id><content type="html" xml:base="http://0.0.0.0:4000/front-end/2018/06/array-reverse.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
 &lt;p&gt;배열의 순서를 뒤집기 위해 간단히 &lt;code class=&quot;highlighter-rouge&quot;&gt;arr.reverse()&lt;/code&gt; 를 이용할 수 있지만 &lt;code class=&quot;highlighter-rouge&quot;&gt;Array.prototype.reverse&lt;/code&gt; 는 불변성을 유지하지 못한다.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -449,33 +470,4 @@ Email Address []:
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;case3-tostring-이용&quot;&gt;Case3) toString 이용&lt;/h2&gt;
-&lt;script src=&quot;https://gist.github.com/min9nim/5e90cfe4f78c040d719b346dcf52b31d.js&quot;&gt;&lt;/script&gt;</content><author><name>mg.song</name></author><summary type="html">Problem 2016년 1월 1일은 금요일입니다. 2016년 A월 B일은 무슨 요일일까요? 두 수 A,B를 입력받아 A월 B일이 무슨 요일인지 출력하는 getDayName 함수를 완성하세요. 요일의 이름은 일요일부터 토요일까지 각각</summary></entry><entry><title type="html">[알고리즘] 피보나치 수</title><link href="http://0.0.0.0:4000/algorithm/2018/05/fibonacci-num.html" rel="alternate" type="text/html" title="[알고리즘] 피보나치 수" /><published>2018-05-04T13:00:00+09:00</published><updated>2018-05-04T13:00:00+09:00</updated><id>http://0.0.0.0:4000/algorithm/2018/05/fibonacci-num</id><content type="html" xml:base="http://0.0.0.0:4000/algorithm/2018/05/fibonacci-num.html">&lt;h2 id=&quot;problem&quot;&gt;Problem&lt;/h2&gt;
-&lt;p&gt;효진이는 멀리 뛰기를 연습하고 있습니다. 효진이는 한번에 1칸, 또는 2칸을 뛸 수 있습니다. 칸이 총 4개 있을 때, 효진이는
-(1칸, 1칸, 1칸, 1칸)
-(1칸, 2칸, 1칸)
-(1칸, 1칸, 2칸)
-(2칸, 1칸, 1칸)
-(2칸, 2칸)
-의 5가지 방법으로 맨 끝 칸에 도달할 수 있습니다. 멀리뛰기에 사용될 칸의 수 n이 주어질 때, 효진이가 끝에 도달하는 방법이 몇 가지인지 출력하는 jumpCase 함수를 완성하세요. 예를 들어 4가 입력된다면, 5를 반환해 주면 됩니다.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;문제출처: &lt;a href=&quot;https://programmers.co.kr/learn/challenge_codes/33&quot;&gt;https://programmers.co.kr/learn/challenge_codes/33&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;solution&quot;&gt;Solution&lt;/h2&gt;
-&lt;p&gt;칸의 수가 n 개 주어졌을 때 총 멀리뛰기 방법의 수를 j(n)이라 하자. n칸을 멀리뛰기 하는 전체 방법의 수는 최초 1칸을 뛰었을 경우와 최초 2칸을 뛰었을 경우 2가지로 나누어 볼 수 있다.
-첫번째 경우의 방법의 수는 남아있는 칸의 수가 n-1 개 이므로 j(n-1)이 되고 두번째 경우의 방법의 수는 남아있는 칸의 수가 n-2개 이므로 j(n-2)가 된다.
-그러므로 j(n) = j(n-1) + j(n-2) 와 같이 표현될 수 있다.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;js-code&quot;&gt;JS Code&lt;/h2&gt;
-&lt;script src=&quot;https://gist.github.com/min9nim/efde65bfb9e1fbff36d427c5da551b0c.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;ref&quot;&gt;Ref.&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.acmicpc.net/blog/view/28&quot;&gt;https://www.acmicpc.net/blog/view/28&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>mg.song</name></author><summary type="html">Problem 효진이는 멀리 뛰기를 연습하고 있습니다. 효진이는 한번에 1칸, 또는 2칸을 뛸 수 있습니다. 칸이 총 4개 있을 때, 효진이는 (1칸, 1칸, 1칸, 1칸) (1칸, 2칸, 1칸) (1칸, 1칸, 2칸) (2칸, 1칸, 1칸) (2칸, 2칸) 의 5가지 방법으로 맨 끝 칸에 도달할 수 있습니다. 멀리뛰기에 사용될 칸의 수 n이 주어질 때, 효진이가 끝에 도달하는 방법이 몇 가지인지 출력하는 jumpCase 함수를 완성하세요. 예를 들어 4가 입력된다면, 5를 반환해 주면 됩니다. 문제출처: https://programmers.co.kr/learn/challenge_codes/33</summary></entry></feed>
+&lt;script src=&quot;https://gist.github.com/min9nim/5e90cfe4f78c040d719b346dcf52b31d.js&quot;&gt;&lt;/script&gt;</content><author><name>mg.song</name></author><summary type="html">Problem 2016년 1월 1일은 금요일입니다. 2016년 A월 B일은 무슨 요일일까요? 두 수 A,B를 입력받아 A월 B일이 무슨 요일인지 출력하는 getDayName 함수를 완성하세요. 요일의 이름은 일요일부터 토요일까지 각각</summary></entry></feed>
