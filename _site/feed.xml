@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2018-06-11T11:36:08+09:00</updated><id>http://0.0.0.0:4000/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">iOS 에서 입력컨트롤 테두리 그림자 제거</title><link href="http://0.0.0.0:4000/front-end/2018/06/border-shadow.html" rel="alternate" type="text/html" title="iOS 에서 입력컨트롤 테두리 그림자 제거" /><published>2018-06-11T09:00:00+09:00</published><updated>2018-06-11T09:00:00+09:00</updated><id>http://0.0.0.0:4000/front-end/2018/06/border-shadow</id><content type="html" xml:base="http://0.0.0.0:4000/front-end/2018/06/border-shadow.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2018-06-11T15:48:46+09:00</updated><id>http://0.0.0.0:4000/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">remote 호스트의 mac address 얻어오는 방법</title><link href="http://0.0.0.0:4000/network/2018/06/mac-adress.html" rel="alternate" type="text/html" title="remote 호스트의 mac address 얻어오는 방법" /><published>2018-06-11T09:00:00+09:00</published><updated>2018-06-11T09:00:00+09:00</updated><id>http://0.0.0.0:4000/network/2018/06/mac-adress</id><content type="html" xml:base="http://0.0.0.0:4000/network/2018/06/mac-adress.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
+&lt;p&gt;서버에서 클라이언트의 mac address 를 알아낼 수 있을까&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;결론&quot;&gt;결론&lt;/h4&gt;
+&lt;p&gt;같은 네트웍망에 물려있다면 가능하지만, 서로 다른 네트웍망에 속해 있다면 불가&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;배경지식&quot;&gt;배경지식&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ARP란? Address Resolution Protocol
+    &lt;ul&gt;
+      &lt;li&gt;IP 주소에 대응되는 이더넷카드의 하드웨어 주소(MAC주소)를 알아내는 프로토콜&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;MAC adress란? Media Access Control address
+    &lt;ul&gt;
+      &lt;li&gt;앞 3자리는 네트웍카드 제조회사 고유 코드, 뒤 3자리는 네트웍카드 고유 번호&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ARP 테이블 조회 명령
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; arp &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;? (169.254.143.159) at b8:44:d9:56:6f:92 on en0 [ethernet]
+? (169.254.197.202) at ac:e0:10:60:71:d on en0 [ethernet]
+? (169.254.214.31) at e4:70:b8:ee:4e:d1 on en0 [ethernet]
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;노드에서-mac-address-조회-방법&quot;&gt;노드에서 mac-address 조회 방법&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.npmjs.com/package/node-arp&quot;&gt;node-arp&lt;/a&gt; 를 설치하고 아래와 같이 처리&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'node-arp'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+ 
+&lt;span class=&quot;nx&quot;&gt;arp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getMAC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'192.168.0.1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;mac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;mac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;(단, 로컬의 arp table 을 조회하기 때문에 동일한 네트웍이 아닐 경우에는 활용 불가)&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;ref&quot;&gt;Ref.&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://m.blog.naver.com/sbd38/50191972929&quot;&gt;https://m.blog.naver.com/sbd38/50191972929&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">문제 서버에서 클라이언트의 mac address 를 알아낼 수 있을까</summary></entry><entry><title type="html">iOS 에서 입력컨트롤 테두리 그림자 제거</title><link href="http://0.0.0.0:4000/front-end/2018/06/border-shadow.html" rel="alternate" type="text/html" title="iOS 에서 입력컨트롤 테두리 그림자 제거" /><published>2018-06-11T09:00:00+09:00</published><updated>2018-06-11T09:00:00+09:00</updated><id>http://0.0.0.0:4000/front-end/2018/06/border-shadow</id><content type="html" xml:base="http://0.0.0.0:4000/front-end/2018/06/border-shadow.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
 &lt;p&gt;입력 컨트롤의 테두리를 보시면(border-top) 어두운 그림자가 드리어져 있다&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/ios-asis.jpg&quot; alt=&quot;이후&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
@@ -442,32 +488,4 @@ Email Address []:
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
-&lt;script src=&quot;https://gist.github.com/min9nim/dfb6eb7faa0d2c81914e7f7af1e6ed0b.js&quot;&gt;&lt;/script&gt;</content><author><name>mg.song</name></author><summary type="html">Problem 회사원인 수민이는 많은 일이 쌓여 있습니다. 수민이는 야근을 최소화하기 위해 남은 일의 작업량을 숫자로 메기고, 일에 대한 야근 지수를 줄이기로 결정했습니다. 야근 지수는 남은 일의 작업량을 제곱하여 더한 값을 의미합니다. 수민이는 1시간 동안 남은 일 중 하나를 골라 작업량 1만큼 처리할 수 있습니다. 수민이의 퇴근까지 남은 N 시간과 각 일에 대한 작업량이 있을 때, noOvertime 함수를 제작하여 수민이의 야근 지수를 최소화 한 결과를 출력해 주세요. 예를 들어, N=4 일 때, 남은 일의 작업량이 [4, 3, 3] 이라면 야근 지수를 최소화하기 위해 일을 한 결과는 [2, 2, 2]가 되고 야근 지수는 22 + 22 + 22 = 12가 되어 12를 반환해 줍니다. 문제출처: https://programmers.co.kr/learn/challenge_codes/27</summary></entry><entry><title type="html">[알고리즘] 특정날짜 요일 구하기</title><link href="http://0.0.0.0:4000/algorithm/2018/05/js-getday.html" rel="alternate" type="text/html" title="[알고리즘] 특정날짜 요일 구하기" /><published>2018-05-08T23:00:00+09:00</published><updated>2018-05-08T23:00:00+09:00</updated><id>http://0.0.0.0:4000/algorithm/2018/05/js-getday</id><content type="html" xml:base="http://0.0.0.0:4000/algorithm/2018/05/js-getday.html">&lt;h2 id=&quot;problem&quot;&gt;Problem&lt;/h2&gt;
-&lt;p&gt;2016년 1월 1일은 금요일입니다. 2016년 A월 B일은 무슨 요일일까요? 두 수 A,B를 입력받아 A월 B일이 무슨 요일인지 출력하는 getDayName 함수를 완성하세요. 요일의 이름은 일요일부터 토요일까지 각각&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;SUN,MON,TUE,WED,THU,FRI,SAT&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;를 출력해주면 됩니다. 예를 들어 A=5, B=24가 입력된다면 5월 24일은 화요일이므로 TUE를 반환하면 됩니다.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;문제출처: &lt;a href=&quot;https://programmers.co.kr/learn/challenge_codes/178&quot;&gt;https://programmers.co.kr/learn/challenge_codes/178&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;case1-gettime-이용&quot;&gt;Case1) getTime 이용&lt;/h2&gt;
-&lt;script src=&quot;https://gist.github.com/min9nim/657b6f861c404d44222f7857c9175bde.js&quot;&gt;&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;주의) 문자열로 &lt;code class=&quot;highlighter-rouge&quot;&gt;Date&lt;/code&gt; 초기화시 &lt;code class=&quot;highlighter-rouge&quot;&gt;new Date(&quot;2016-01-01&quot;)&lt;/code&gt; 과 &lt;code class=&quot;highlighter-rouge&quot;&gt;new Date(&quot;2016-1-1&quot;)&lt;/code&gt; 의 결과는 아래와 같이 서로 다릅니다
-&lt;script src=&quot;https://gist.github.com/min9nim/d17465eefae0a066f5f2d2ce241b0204.js&quot;&gt;&lt;/script&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;case2-getday-이용&quot;&gt;Case2) getDay 이용&lt;/h2&gt;
-&lt;script src=&quot;https://gist.github.com/min9nim/534b95f1ddc405fb6cbbaaada5496f2e.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;case3-tostring-이용&quot;&gt;Case3) toString 이용&lt;/h2&gt;
-&lt;script src=&quot;https://gist.github.com/min9nim/5e90cfe4f78c040d719b346dcf52b31d.js&quot;&gt;&lt;/script&gt;</content><author><name>mg.song</name></author><summary type="html">Problem 2016년 1월 1일은 금요일입니다. 2016년 A월 B일은 무슨 요일일까요? 두 수 A,B를 입력받아 A월 B일이 무슨 요일인지 출력하는 getDayName 함수를 완성하세요. 요일의 이름은 일요일부터 토요일까지 각각</summary></entry></feed>
+&lt;script src=&quot;https://gist.github.com/min9nim/dfb6eb7faa0d2c81914e7f7af1e6ed0b.js&quot;&gt;&lt;/script&gt;</content><author><name>mg.song</name></author><summary type="html">Problem 회사원인 수민이는 많은 일이 쌓여 있습니다. 수민이는 야근을 최소화하기 위해 남은 일의 작업량을 숫자로 메기고, 일에 대한 야근 지수를 줄이기로 결정했습니다. 야근 지수는 남은 일의 작업량을 제곱하여 더한 값을 의미합니다. 수민이는 1시간 동안 남은 일 중 하나를 골라 작업량 1만큼 처리할 수 있습니다. 수민이의 퇴근까지 남은 N 시간과 각 일에 대한 작업량이 있을 때, noOvertime 함수를 제작하여 수민이의 야근 지수를 최소화 한 결과를 출력해 주세요. 예를 들어, N=4 일 때, 남은 일의 작업량이 [4, 3, 3] 이라면 야근 지수를 최소화하기 위해 일을 한 결과는 [2, 2, 2]가 되고 야근 지수는 22 + 22 + 22 = 12가 되어 12를 반환해 줍니다. 문제출처: https://programmers.co.kr/learn/challenge_codes/27</summary></entry></feed>
