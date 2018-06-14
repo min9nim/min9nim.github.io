@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2018-06-11T15:48:46+09:00</updated><id>http://0.0.0.0:4000/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">remote 호스트의 mac address 얻어오는 방법</title><link href="http://0.0.0.0:4000/network/2018/06/mac-adress.html" rel="alternate" type="text/html" title="remote 호스트의 mac address 얻어오는 방법" /><published>2018-06-11T09:00:00+09:00</published><updated>2018-06-11T09:00:00+09:00</updated><id>http://0.0.0.0:4000/network/2018/06/mac-adress</id><content type="html" xml:base="http://0.0.0.0:4000/network/2018/06/mac-adress.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2018-06-14T14:24:17+09:00</updated><id>http://0.0.0.0:4000/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">remote 호스트의 mac address 얻어오는 방법</title><link href="http://0.0.0.0:4000/network/2018/06/mac-adress.html" rel="alternate" type="text/html" title="remote 호스트의 mac address 얻어오는 방법" /><published>2018-06-11T09:00:00+09:00</published><updated>2018-06-11T09:00:00+09:00</updated><id>http://0.0.0.0:4000/network/2018/06/mac-adress</id><content type="html" xml:base="http://0.0.0.0:4000/network/2018/06/mac-adress.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
 &lt;p&gt;서버에서 클라이언트의 mac address 를 알아낼 수 있을까&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -253,7 +253,12 @@ posts
 &amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;콜렉션의 다큐먼트 목록 확인
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;다큐먼트-관리&quot;&gt;다큐먼트 관리&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;다큐먼트 목록 확인
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; db.posts.find()
 { &quot;_id&quot; : ObjectId(&quot;5b15e27b8169daf6fd8c7366&quot;), &quot;key&quot; : &quot;BJwttIGe7&quot;, &quot;title&quot; : &quot;오늘은 왜케 잠잠하지.. 허허&quot;,
  &quot;writer&quot; : &quot;송혜교&quot;, &quot;content&quot; : &quot;그러니 왠지 더욱 불안..\n&quot;, &quot;date&quot; : 1528093055313 }
@@ -266,11 +271,6 @@ content&quot; : &quot;입력할때 좀 버벅 거리는 현상이 조금 있는�
 &amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;다큐먼트-관리&quot;&gt;다큐먼트 관리&lt;/h4&gt;
-&lt;ul&gt;
   &lt;li&gt;다큐먼트 삭제
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;db.posts.remove({key : &quot;BJwttIGe7&quot;})
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;

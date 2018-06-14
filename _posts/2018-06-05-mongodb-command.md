@@ -110,7 +110,11 @@ posts
 >
 ```
 
-- 콜렉션의 다큐먼트 목록 확인
+
+
+<br>
+#### 다큐먼트 관리
+- 다큐먼트 목록 확인
 ```
 > db.posts.find()
 { "_id" : ObjectId("5b15e27b8169daf6fd8c7366"), "key" : "BJwttIGe7", "title" : "오늘은 왜케 잠잠하지.. 허허",
@@ -124,12 +128,11 @@ content" : "입력할때 좀 버벅 거리는 현상이 조금 있는거 같은�
 >
 ```
 
-<br>
-#### 다큐먼트 관리
 - 다큐먼트 삭제
 ```
 db.posts.remove({key : "BJwttIGe7"})
 ```
+
 
 <br>
 <br>
