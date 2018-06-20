@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2018-06-14T14:24:17+09:00</updated><id>http://0.0.0.0:4000/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">remote 호스트의 mac address 얻어오는 방법</title><link href="http://0.0.0.0:4000/network/2018/06/mac-adress.html" rel="alternate" type="text/html" title="remote 호스트의 mac address 얻어오는 방법" /><published>2018-06-11T09:00:00+09:00</published><updated>2018-06-11T09:00:00+09:00</updated><id>http://0.0.0.0:4000/network/2018/06/mac-adress</id><content type="html" xml:base="http://0.0.0.0:4000/network/2018/06/mac-adress.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2018-06-20T09:45:01+09:00</updated><id>http://0.0.0.0:4000/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">리눅스 셀스크립트 작성 방법</title><link href="http://0.0.0.0:4000/linux/2018/06/linux-shell.html" rel="alternate" type="text/html" title="리눅스 셀스크립트 작성 방법" /><published>2018-06-20T09:00:00+09:00</published><updated>2018-06-20T09:00:00+09:00</updated><id>http://0.0.0.0:4000/linux/2018/06/linux-shell</id><content type="html" xml:base="http://0.0.0.0:4000/linux/2018/06/linux-shell.html">&lt;ol&gt;
+  &lt;li&gt;아래와 같이 hello.sh 을 작성하고
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/sh&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello Word!!&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;실행권한을 부여한 후
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chmod 700 hello.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;아래와 같이 실행
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./hello.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ref.
+&lt;a href=&quot;http://blog.naver.com/PostView.nhn?blogId=bestheroz&amp;amp;logNo=66975657&amp;amp;categoryNo=4&amp;amp;viewDate=&amp;amp;currentPage=1&amp;amp;listtype=0&quot;&gt;http://blog.naver.com/PostView.nhn?blogId=bestheroz&amp;amp;logNo=66975657&amp;amp;categoryNo=4&amp;amp;viewDate=&amp;amp;currentPage=1&amp;amp;listtype=0&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">아래와 같이 hello.sh 을 작성하고 #!/bin/sh echo &quot;Hello Word!!&quot; 실행권한을 부여한 후 chmod 700 hello.sh</summary></entry><entry><title type="html">remote 호스트의 mac address 얻어오는 방법</title><link href="http://0.0.0.0:4000/network/2018/06/mac-adress.html" rel="alternate" type="text/html" title="remote 호스트의 mac address 얻어오는 방법" /><published>2018-06-11T09:00:00+09:00</published><updated>2018-06-11T09:00:00+09:00</updated><id>http://0.0.0.0:4000/network/2018/06/mac-adress</id><content type="html" xml:base="http://0.0.0.0:4000/network/2018/06/mac-adress.html">&lt;h4 id=&quot;문제&quot;&gt;문제&lt;/h4&gt;
 &lt;p&gt;서버에서 클라이언트의 mac address 를 알아낼 수 있을까&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -479,13 +498,4 @@ Email Address []:
 &lt;h2 id=&quot;ref&quot;&gt;Ref.&lt;/h2&gt;
 &lt;p&gt;더 구체적인 내용은 아래 링크를 참고하세요&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs#about-certificate-signing-requests-(csrs)&quot;&gt;https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs#about-certificate-signing-requests-(csrs)&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">CSR이 무엇입니까 CA로부터 SSL인증서를 발급 받으려면 먼저 CSR(Certificate Signing Requests) 이 필요합니다. CSR은 공개키와 몇가지 추가 정보로 구성되어있습니다. 그리고 그 정보들이 인증서 발급시 필요합니다.</summary></entry><entry><title type="html">[알고리즘] 야근지수</title><link href="http://0.0.0.0:4000/algorithm/2018/05/no-overtime.html" rel="alternate" type="text/html" title="[알고리즘] 야근지수" /><published>2018-05-09T00:00:00+09:00</published><updated>2018-05-09T00:00:00+09:00</updated><id>http://0.0.0.0:4000/algorithm/2018/05/no-overtime</id><content type="html" xml:base="http://0.0.0.0:4000/algorithm/2018/05/no-overtime.html">&lt;h2 id=&quot;problem&quot;&gt;Problem&lt;/h2&gt;
-&lt;p&gt;회사원인 수민이는 많은 일이 쌓여 있습니다. 수민이는 야근을 최소화하기 위해 남은 일의 작업량을 숫자로 메기고, 일에 대한 야근 지수를 줄이기로 결정했습니다. 야근 지수는 남은 일의 작업량을 제곱하여 더한 값을 의미합니다. 수민이는 1시간 동안 남은 일 중 하나를 골라 작업량 1만큼 처리할 수 있습니다. 수민이의 퇴근까지 남은 N 시간과 각 일에 대한 작업량이 있을 때, noOvertime 함수를 제작하여 수민이의 야근 지수를 최소화 한 결과를 출력해 주세요. 예를 들어, N=4 일 때, 남은 일의 작업량이 [4, 3, 3] 이라면 야근 지수를 최소화하기 위해 일을 한 결과는 [2, 2, 2]가 되고 야근 지수는 22 + 22 + 22 = 12가 되어 12를 반환해 줍니다.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;문제출처: &lt;a href=&quot;https://programmers.co.kr/learn/challenge_codes/27&quot;&gt;https://programmers.co.kr/learn/challenge_codes/27&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
-&lt;script src=&quot;https://gist.github.com/min9nim/dfb6eb7faa0d2c81914e7f7af1e6ed0b.js&quot;&gt;&lt;/script&gt;</content><author><name>mg.song</name></author><summary type="html">Problem 회사원인 수민이는 많은 일이 쌓여 있습니다. 수민이는 야근을 최소화하기 위해 남은 일의 작업량을 숫자로 메기고, 일에 대한 야근 지수를 줄이기로 결정했습니다. 야근 지수는 남은 일의 작업량을 제곱하여 더한 값을 의미합니다. 수민이는 1시간 동안 남은 일 중 하나를 골라 작업량 1만큼 처리할 수 있습니다. 수민이의 퇴근까지 남은 N 시간과 각 일에 대한 작업량이 있을 때, noOvertime 함수를 제작하여 수민이의 야근 지수를 최소화 한 결과를 출력해 주세요. 예를 들어, N=4 일 때, 남은 일의 작업량이 [4, 3, 3] 이라면 야근 지수를 최소화하기 위해 일을 한 결과는 [2, 2, 2]가 되고 야근 지수는 22 + 22 + 22 = 12가 되어 12를 반환해 줍니다. 문제출처: https://programmers.co.kr/learn/challenge_codes/27</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs#about-certificate-signing-requests-(csrs)&quot;&gt;https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs#about-certificate-signing-requests-(csrs)&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">CSR이 무엇입니까 CA로부터 SSL인증서를 발급 받으려면 먼저 CSR(Certificate Signing Requests) 이 필요합니다. CSR은 공개키와 몇가지 추가 정보로 구성되어있습니다. 그리고 그 정보들이 인증서 발급시 필요합니다.</summary></entry></feed>
