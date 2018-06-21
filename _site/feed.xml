@@ -1,4 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2018-06-20T09:45:01+09:00</updated><id>http://0.0.0.0:4000/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">리눅스 셀스크립트 작성 방법</title><link href="http://0.0.0.0:4000/linux/2018/06/linux-shell.html" rel="alternate" type="text/html" title="리눅스 셀스크립트 작성 방법" /><published>2018-06-20T09:00:00+09:00</published><updated>2018-06-20T09:00:00+09:00</updated><id>http://0.0.0.0:4000/linux/2018/06/linux-shell</id><content type="html" xml:base="http://0.0.0.0:4000/linux/2018/06/linux-shell.html">&lt;ol&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2018-06-21T12:35:13+09:00</updated><id>http://0.0.0.0:4000/</id><title type="html">Write code like poem</title><subtitle>SW개발에 대한 이야기</subtitle><author><name>mg.song</name></author><entry><title type="html">프라미스 then 함수가 프라미스를 리턴할 때</title><link href="http://0.0.0.0:4000/linux/2018/06/promise-then.html" rel="alternate" type="text/html" title="프라미스 then 함수가 프라미스를 리턴할 때" /><published>2018-06-20T09:00:00+09:00</published><updated>2018-06-20T09:00:00+09:00</updated><id>http://0.0.0.0:4000/linux/2018/06/promise-then</id><content type="html" xml:base="http://0.0.0.0:4000/linux/2018/06/promise-then.html">&lt;p&gt;프라미스 체이닝에서 프라미스를 리턴하고 전달받을 경우에 대한 동작에 대해서 알아본다
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;case1-then-함수에서-문자열을-리턴하는-경우&quot;&gt;CASE1) then 함수에서 문자열을 리턴하는 경우&lt;/h4&gt;
+&lt;p&gt;앞서 리턴한 값을 다음 then 함수에서 인자로 받는다&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Promise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;resolve&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;리턴값1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;res1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;res1 = &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;res1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;리턴값2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;res2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;res2 = &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;res2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;실행결과)&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  res1 = 리턴값1
+  res2 = 리턴값2
+&amp;lt; Promise {&amp;lt;resolved&amp;gt;: undefined}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;case2-then-에서-프라미스를-리턴하는-경우&quot;&gt;CASE2) then 에서 프라미스를 리턴하는 경우&lt;/h4&gt;
+&lt;p&gt;then 에서 프라미스를 리턴하면 해당 프라미스가 resolved 될 때 다음 then 함수가 호출되며 resolve에 전달 된 값이 다음 then 함수에 전달된다&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Promise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;resolve&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;리턴값1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;res1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;res1 = &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;res1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Promise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;resolve&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;리턴값2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;res2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;res2 = &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;res2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;실행결과)&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  res1 = 리턴값1
+&amp;lt; Promise {&amp;lt;pending&amp;gt;}
+  res2 = 리턴값2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;case3-첫번째-프라미스가-resolve-함수에-프라미스를-전달하는-경우&quot;&gt;CASE3) 첫번째 프라미스가 resolve 함수에 프라미스를 전달하는 경우&lt;/h4&gt;
+&lt;p&gt;1번째 프라미스가 리턴한 프라미스가 resolved될 때(3초후) 다음 then 함수가 호출되며, 해당 프라미스가 resolved된 값을 인자로 전달받는다&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Promise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;resolve&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Promise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;resolve&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;리턴값1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}));&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;res1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;res1 = &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;res1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;리턴값2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;res2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;res2 = &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;res2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;실행결과)&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt; Promise {&amp;lt;pending&amp;gt;}
+  res1 = 리턴값1
+  res2 = 리턴값2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;결론&quot;&gt;결론&lt;/h4&gt;
+&lt;p&gt;then 함수 앞에서 프라미스를 리턴하는 경우에는 해당 프라미스가 resolved 된 값을 인자로 전달받는다&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">프라미스 체이닝에서 프라미스를 리턴하고 전달받을 경우에 대한 동작에 대해서 알아본다</summary></entry><entry><title type="html">리눅스 셀스크립트 작성 방법</title><link href="http://0.0.0.0:4000/linux/2018/06/linux-shell.html" rel="alternate" type="text/html" title="리눅스 셀스크립트 작성 방법" /><published>2018-06-20T09:00:00+09:00</published><updated>2018-06-20T09:00:00+09:00</updated><id>http://0.0.0.0:4000/linux/2018/06/linux-shell</id><content type="html" xml:base="http://0.0.0.0:4000/linux/2018/06/linux-shell.html">&lt;ol&gt;
   &lt;li&gt;아래와 같이 hello.sh 을 작성하고
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/sh&lt;/span&gt;
 &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello Word!!&quot;&lt;/span&gt;
@@ -377,125 +442,4 @@ java    72631 songmingu   57u  IPv6 0x5973dd9e9c2d668d      0t0  TCP localhost:a
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;ref&quot;&gt;Ref.&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;http://new93helloworld.tistory.com/138&quot;&gt;http://new93helloworld.tistory.com/138&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">아래와 같이 lsof 명령으로 확인</summary></entry><entry><title type="html">OpenSSL Essentials: Working with SSL Certificates, Private Keys and CSRs</title><link href="http://0.0.0.0:4000/network/2018/05/openssl-essentials.html" rel="alternate" type="text/html" title="OpenSSL Essentials: Working with SSL Certificates, Private Keys and CSRs" /><published>2018-05-15T13:00:00+09:00</published><updated>2018-05-15T13:00:00+09:00</updated><id>http://0.0.0.0:4000/network/2018/05/openssl-essentials</id><content type="html" xml:base="http://0.0.0.0:4000/network/2018/05/openssl-essentials.html">&lt;h2 id=&quot;csr이-무엇입니까&quot;&gt;CSR이 무엇입니까&lt;/h2&gt;
-&lt;p&gt;CA로부터 SSL인증서를 발급 받으려면 먼저 CSR(Certificate Signing Requests) 이 필요합니다. CSR은 공개키와 몇가지 추가 정보로 구성되어있습니다. 그리고 그 정보들이 인증서 발급시 필요합니다.&lt;/p&gt;
-
-&lt;p&gt;CSR생성시 필요한 정보들은 아래와 같습니다&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Country Name (2 letter code) [AU]:US
-State or Province Name (full name) [Some-State]:New York
-Locality Name (eg, city) []:Brooklyn
-Organization Name (eg, company) [Internet Widgits Pty Ltd]:Example Brooklyn Company
-Organizational Unit Name (eg, section) []:Technology Division
-Common Name (e.g. server FQDN or YOUR name) []:examplebrooklyn.com
-Email Address []:
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;csr-만들기&quot;&gt;CSR 만들기&lt;/h2&gt;
-&lt;p&gt;아래 명령은 2048비트 개인키(&lt;code class=&quot;highlighter-rouge&quot;&gt;domain.key&lt;/code&gt;)를 만들고 CSR(&lt;code class=&quot;highlighter-rouge&quot;&gt;domain.csr&lt;/code&gt;)을 생성합니다&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl req \
-       -newkey rsa:2048 -nodes -keyout domain.key \
-       -out domain.csr
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;위 명령을 실핼하면 CSR생성에 필요한 추가 정보들을 차례대로 입력해야 합니다.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-newkey rsa:2048&lt;/code&gt; 옵션 : 2048비트 RSA키를 생성합니다&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-nodes&lt;/code&gt; 옵션 : 개인키를 암호화하지 않습니다&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-new&lt;/code&gt; 옵션 : 명시하지는 않았지만 암묵적으로 적용되며 CSR이 새로 생성될 것임을 의미합니다&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;CSR생성에 필요한 정보들을 아래와 같이 명령어의 옵션으로 주는 것도 가능합니다&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl req \
-       -newkey rsa:2048 -nodes -keyout domain.key \
-       -subj &quot;/C=US/ST=New York/L=Brooklyn/O=Example Brooklyn Company/CN=examplebrooklyn.com&quot; \
-       -out domain.csr \
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;이미 생성된 개인키를 가지고 CSR을 생성하는 것도 가능합니다&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl req \
-       -key domain.key \
-       -new -out domain.csr
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;self-signed-인증서&quot;&gt;self-signed 인증서&lt;/h2&gt;
-&lt;p&gt;CA로부터 인증된 인증서가 아니더라도 당신은 셀프 서명된 인증서를 이용하여 HTTPS서버를 구성할 수 있습니다.&lt;/p&gt;
-
-&lt;p&gt;아래 명령은 2048비트 RSA키를 만들어 self-signed 인증서를 생성합니다.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl req \
-       -newkey rsa:2048 -nodes -keyout domain.key \
-       -x509 -days 365 -out domain.crt
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;이후, CSR 정보들을 추가로 입력해 주어야 합니다&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;-x509 옵션: 인증서에 셀프서명할 것을 의미합니다&lt;/li&gt;
-  &lt;li&gt;-days 365: 365일 동안만 유효함&lt;/li&gt;
-  &lt;li&gt;인증서 생성을 위해 내부적으로 임시 CSR을 생성합니다&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;아래와 같이 이미 생성된 키를 이용하여 self-signed 인증서를 생성할 수도 있습니다&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl req \
-       -key domain.key \
-       -new \
-       -x509 -days 365 -out domain.crt
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;물론 이미 생성된 CSR과 개인키를 가지고 self-signed 인증서를 바로 만들 수도 있습니다&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl x509 \
-       -signkey domain.key \
-       -in domain.csr \
-       -req -days 365 -out domain.crt
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;인증서-검증&quot;&gt;인증서 검증&lt;/h2&gt;
-&lt;p&gt;인증서와 CSR파일은 PEM포맷으로 인코딩 되어 있기 때문에 사람이 읽을 수가 없습니다.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;아래 명령은 CSR파일의 내용을 확인합니다
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl req -text -noout -verify -in domain.csr
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;다음은 인증서(.crt)파일의 내용을 확인합니다
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl x509 -text -noout -in domain.crt
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;CA로부터 인증된 인증서는 아래와 같이 내용 확인을 합니다
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl verify -verbose -CAFile ca.crt domain.crt
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;개인키-검증&quot;&gt;개인키 검증&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;아래는 개인키의 유효성 여부를 검증합니다
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl rsa -check -in domain.key
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;개인키를 암호화할 수 있습니다.(명령 실행 후 암호화를 위한 비밀번호 입력이 필요합니다)
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl rsa -des3 \
-     -in unencrypted.key \
-     -out encrypted.key
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;암호화된 개인키를 복호화할 수 있습니다(복호화를 위한 비밀번호 입력이 필요합니다)
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl rsa \
-     -in encrypted.key \
-     -out decrypted.key
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;ref&quot;&gt;Ref.&lt;/h2&gt;
-&lt;p&gt;더 구체적인 내용은 아래 링크를 참고하세요&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs#about-certificate-signing-requests-(csrs)&quot;&gt;https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs#about-certificate-signing-requests-(csrs)&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">CSR이 무엇입니까 CA로부터 SSL인증서를 발급 받으려면 먼저 CSR(Certificate Signing Requests) 이 필요합니다. CSR은 공개키와 몇가지 추가 정보로 구성되어있습니다. 그리고 그 정보들이 인증서 발급시 필요합니다.</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;http://new93helloworld.tistory.com/138&quot;&gt;http://new93helloworld.tistory.com/138&lt;/a&gt;&lt;/p&gt;</content><author><name>mg.song</name></author><summary type="html">아래와 같이 lsof 명령으로 확인</summary></entry></feed>
