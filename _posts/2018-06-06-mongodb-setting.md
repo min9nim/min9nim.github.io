@@ -61,5 +61,5 @@ security:
 
 <br>
 #### Ref.
-- <https://chichi.space/2017/05/12/한번에-끝내는-AWS-EC2에-MongoDB-설치하고-보안설정하기/>
+- [ec2에 mongoDB설치](https://chichi.space/2017/05/12/한번에-끝내는-AWS-EC2에-MongoDB-설치하고-보안설정하기/)
 
