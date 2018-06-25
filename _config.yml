@@ -35,14 +35,17 @@ theme: minima
 asset_url: /assets
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
-permalink: /:categories/:year/:month/:title:output_ext
+#permalink: /:categories/:year/:month/:title:output_ext
+permalink: /:year/:month/:title:output_ext
 
 port : 4000
 host : 0.0.0.0
 
 # 페이징
-paginate: 10
+paginate: 5
+paginate_path: "/page/:num/"
 
 
 
