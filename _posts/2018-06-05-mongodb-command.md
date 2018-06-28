@@ -14,6 +14,11 @@ $ sudo service mongod start
 ```
 $ sudo service mongod stop
 ```
+
+- 서비스 상태확인
+```
+$ sudo service mongod status
+```
 <br>
 
 #### 몽고디비 시작 및 접속(Windows)

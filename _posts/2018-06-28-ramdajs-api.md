@@ -428,6 +428,43 @@ R.flatten([1, 2, [3, 4], 5, [6, [7, 8, [9, [10, 11], 12]]]]);
 ```
 <br>
 
+#### R.keys
+모든 속성을 배열로 리턴, `Object.keys` 와 유사
+```javascript
+R.keys({a: 1, b: 2, c: 3}); //=> ['a', 'b', 'c']
+```
+<br>
+
+#### R.values
+모든 값을 배열로 리턴, `Object.values` 와 유사
+```javascript
+R.values({a: 1, b: 2, c: 3}); //=> [1, 2, 3]
+```
+<br>
+
+#### R.trim
+문자열 양끝의 공백제거
+```javascript
+R.trim('   xyz  '); //=> 'xyz'
+```
+vanillaJS
+```javascript
+'   xyz  '.trim()
+```
+<br>
+
+#### R.all
+모든 요소가 어떤 조건을 만족하는 지 체크
+```javascript
+var equals3 = R.equals(3);
+R.all(equals3)([3, 3, 3, 3]); //=> true
+R.all(equals3)([3, 3, 1, 3]); //=> false
+```
+<br>
+
+
+
+
 
 
 #### Ref.
