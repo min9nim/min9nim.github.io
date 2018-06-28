@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[mongodb] aws ec2 에서 mongodb 세팅하기"
+title:  "[mongoDB] aws ec2 에서 mongoDB 세팅하기"
 date:   2018-06-06 10:00:00 +0900
 categories: back-end
 ---

@@ -1,9 +1,21 @@
 ---
 layout: post
-title:  "[mongodb] 명령어"
+title:  "[mongoDB] 명령어"
 date:   2018-06-05 10:00:00 +0900
-categories: back-end
+categories: mongodb
 ---
+#### 몽고디비 시작 및 접속(Linux)
+- 서비스 시작
+```
+$ sudo service mongod start
+```
+
+- 서비스 중지
+```
+$ sudo service mongod stop
+```
+<br>
+
 #### 몽고디비 시작 및 접속(Windows)
 - 서비스 시작
 ```
@@ -15,8 +27,8 @@ C:\"Program Files"\MongoDB\Server\3.6\bin\mongod
 ```
 C:\"Program Files"\MongoDB\Server\3.6\bin\mongo
 ```
-
 <br>
+
 #### 데이터베이스 관리
 - 데이터베이스 생성
 ```
@@ -53,8 +65,8 @@ local   0.000GB
 test    0.000GB
 >
 ```
-
 <br>
+
 #### 콜렉션 관리
 - 콜렉션 생성  
 기본 옵션으로 생성

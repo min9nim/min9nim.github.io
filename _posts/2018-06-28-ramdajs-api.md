@@ -117,6 +117,10 @@ R.reduce(R.subtract, 0, [1, 2, 3, 4]) // => ((((0 - 1) - 2) - 3) - 4) = -10
 //   / \              / \
 //  0   1            0   1
 ```
+vanillaJS
+```javascript
+[1, 2, 3, 4].reduce((a,c) => a-c, 0) // => ((((0 - 1) - 2) - 3) - 4) = -10
+```
 <br>
 
 
@@ -308,6 +312,21 @@ R.tail('');     //=> ''
 ```
 <br>
 
+#### R.init
+배열의 마지막 요소만 뺀 앞 부분 전부 리턴
+```javascript
+R.init([1, 2, 3]);  //=> [1, 2]
+R.init([1, 2]);     //=> [1]
+R.init([1]);        //=> []
+R.init([]);         //=> []
+
+R.init('abc');  //=> 'ab'
+R.init('ab');   //=> 'a'
+R.init('a');    //=> ''
+R.init('');     //=> ''
+```
+<br>
+
 #### R.split
 문자열을 특정 기준으로 나눔,  String.prototype.split 과 유사
 ```javascript
@@ -316,3 +335,100 @@ R.tail(pathComponents('/usr/local/bin/node')); //=> ['usr', 'local', 'bin', 'nod
 R.split('.', 'a.b.c.xyz.d'); //=> ['a', 'b', 'c', 'xyz', 'd']
 ```
 <br>
+
+#### R.clone
+깊은복사
+```javascript
+var objects = [{}, {}, {}];
+var objectsClone = R.clone(objects);
+objects === objectsClone; //=> false
+objects[0] === objectsClone[0]; //=> false
+```
+<br>
+
+#### R.isNil
+`undefined` or `null` 체크
+```javascript
+R.isNil(null); //=> true
+R.isNil(undefined); //=> true
+R.isNil(0); //=> false
+R.isNil([]); //=> false
+```
+<br>
+
+#### R.complement
+`true` or `false` 를 리턴하는 함수를 인자로 받아서 그 반대 결과를 리턴하는 함수를 만든다
+```javascript
+var isNotNil = R.complement(R.isNil);
+isNil(null); //=> true
+isNotNil(null); //=> false
+isNil(7); //=> false
+isNotNil(7); //=> true
+```
+<br>
+
+#### R.concat
+두 배열을 병합
+```javascript
+R.concat('ABC', 'DEF'); // 'ABCDEF'
+R.concat([4, 5, 6], [1, 2, 3]); //=> [4, 5, 6, 1, 2, 3]
+R.concat([], []); //=> []
+```
+<br>
+
+#### R.T
+항상 `true` 리턴
+```javascript
+R.T(); //=> true
+```
+<br>
+
+#### R.F
+항상 `false` 리턴
+```javascript
+R.F(); //=> false
+```
+<br>
+
+#### R.always
+항상 주어진 값을 리턴
+```javascript
+var t = R.always('Tee');
+t(); //=> 'Tee'
+```
+<br>
+
+#### R.cond
+true를 만날 때까지 조건을 체크, true를 만나면 해당 함수를 실행, true를 못 만나면 undefined 리턴
+```javascript
+var fn = R.cond([
+  [R.equals(0),   R.always('water freezes at 0°C')],
+  [R.equals(100), R.always('water boils at 100°C')],
+  [R.T,           temp => 'nothing special happens at ' + temp + '°C']
+]);
+fn(0); //=> 'water freezes at 0°C'
+fn(50); //=> 'nothing special happens at 50°C'
+fn(100); //=> 'water boils at 100°C'
+```
+<br>
+
+#### R.sort
+조건에 따라 배열을 정렬
+```javascript
+var diff = function(a, b) { return a - b; };
+R.sort(diff, [4,2,7,5]); //=> [2, 4, 5, 7]
+```
+<br>
+
+#### R.flatten
+이상한? 배열을 받아서 1차원 배열로 리턴
+```javascript
+R.flatten([1, 2, [3, 4], 5, [6, [7, 8, [9, [10, 11], 12]]]]);
+//=> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+```
+<br>
+
+
+
+#### Ref.
+<https://ramdajs.com/docs>
