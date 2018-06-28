@@ -12,12 +12,24 @@ categories: ramdajs
 ```javascript
 R.append('tests', ['write', 'more']); //=> ['write', 'more', 'tests']
 ```
+vanillaJS 예제)
+```javascript
+const arr = ['write', 'more'];
+arr.splice(arr.length, 0, "tests");
+console.log(arr);           //  ['write', 'more', 'tests']
+```
 <br>
 
 #### R.prepend
 배열의 처음에 특정 요소를 추가
 ```javascript
 R.prepend('fee', ['fi', 'fo', 'fum']); //=> ['fee', 'fi', 'fo', 'fum']
+```
+vanillaJS 예제)
+```javascript
+const arr = ['fi', 'fo', 'fum'];
+arr.splice(0,0,"fee");      // []  cause) 제거된 요소들이 없으므로
+console.log(arr);           // ["fee", "fi", "fo", "fum"]
 ```
 <br>
 
@@ -26,6 +38,13 @@ R.prepend('fee', ['fi', 'fo', 'fum']); //=> ['fee', 'fi', 'fo', 'fum']
 ```javascript
 R.insert(2, 'x', [1,2,3,4]); //=> [1,2,'x',3,4]
 ```
+vanillaJS 예제)
+```javascript
+const arr = [1,2,3,4];
+arr.splice(2,0,"x");
+console.log(arr);           // [1,2,'x',3,4]
+```
+
 <br>
 
 #### R.pipe
@@ -67,7 +86,7 @@ R.forEach(printXPlusFive, [1, 2, 3]); //=> [1, 2, 3]
 <br>
 
 #### R.map
-리스트의 각 요소를 다른 값으로 매핑한다. Array.prototype.forEach 와 유사
+리스트의 각 요소를 다른 값으로 매핑한다. Array.prototype.map 와 유사
 ```javascript
 var double = x => x * 2;
 R.map(double, [1, 2, 3]); //=> [2, 4, 6]
@@ -120,13 +139,18 @@ fullName({last: 'Bullet-Tooth', age: 33, first: 'Tony'}); //=> 'Tony Bullet-Toot
 ```
 <br>
 
-
 #### R.find
 배열에서 특정 조건을 만족하는 첫번재 요소를 리턴. Array.prototype.find 와 유사
 ```javascript
 var xs = [{a: 1}, {a: 2}, {a: 3}];
 R.find(R.propEq('a', 2))(xs); //=> {a: 2}
 R.find(R.propEq('a', 4))(xs); //=> undefined
+```
+vanillaJS
+```javascript
+var xs = [{a: 1}, {a: 2}, {a: 3}];
+xs.find(o => o.a === 2); //=> {a: 2}
+xs.find(o => o.a === 4); //=> undefined
 ```
 <br>
 
@@ -289,7 +313,6 @@ R.tail('');     //=> ''
 ```javascript
 var pathComponents = R.split('/');
 R.tail(pathComponents('/usr/local/bin/node')); //=> ['usr', 'local', 'bin', 'node']
-
 R.split('.', 'a.b.c.xyz.d'); //=> ['a', 'b', 'c', 'xyz', 'd']
 ```
 <br>
