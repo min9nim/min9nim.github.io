@@ -34,7 +34,6 @@ function.bind(thisArg, arg1, arg2, ...)
 ```
 - 첫번째 인자를 this 에 바인딩하고, 두번째 인자부터 arguments 를 **순서대로** 전달한다. 전달된 arguments 를 미리 부분적용한 **함수를 리턴**한다.
 - 이후 함수 호출 시 인자를 추가로 전달할 경우 미리 전달받은 arguments 뒤에 concat 된다
-- Sample
 ```javascript
 function test(){
     return Object.assign(this, arguments)
