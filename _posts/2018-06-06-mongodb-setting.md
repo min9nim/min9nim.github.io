@@ -83,6 +83,11 @@ $ mongo admin --username "root" --password "xxxx"
 > use dev
 > db.createUser({user: "keating", pwd: "xxxx", roles:["dbOwner"]})
 ```
+1. 데이터베이스의 사용자계정 삭제
+```
+> use testDB
+> db.dropUser("testUser")
+```
 
 
 
