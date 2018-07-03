@@ -29,6 +29,10 @@ $ yum install -y mongodb-org
 ```
 $ sudo service mongod start
 ```
+1. 서비스 중지
+```
+$ sudo service mongod stop
+```
 1. 서비스 재시작
 ```
 $ sudo service mongod restart
@@ -45,18 +49,42 @@ $ mongo
 ```
 $ sudo vi /etc/mongod.conf
 ```
-1. 외부에서 접근을 허용하려면 `net` 항목의 `bindIp` 항목을 아래와 같이 주석처리한다
+    1. 외부에서 접근을 허용하려면 `net` 항목의 `bindIp` 항목을 아래와 같이 주석처리한다
+    ```
+    # network interfaces
+    net:
+      port: 27017
+    #  bindIp: 127.0.0.1  # Listen to local interface only, comment to listen on all interfaces.
+    ```
+    1. 익명 로그인을 제한하려면 `security` 항목에 `authorization: enabled` 를 추가한다
+    ```
+    security:
+      authorization: enabled
+    ```
+1. 몽고DB 셀에서 admin 데이터베이스에 관리자계정 추가
 ```
-# network interfaces
-net:
-  port: 27017
-#  bindIp: 127.0.0.1  # Listen to local interface only, comment to listen on all interfaces.
+> use admin
+> db.createUser({user: "root", pwd: "xxxx", roles:["root"]})
 ```
-1. 익명 로그인을 제한하려면 `security` 항목에 `authorization: enabled` 를 추가한다
+1. 인증모드로 몽고DB 기동
 ```
-security:
-    authorization: enabled
+$ sudo service mongod stop
+Stopping mongod:                                           [  OK  ]
+$ sudo service mongod start --auth
+Starting mongod:                                           [  OK  ]
+$ 
 ```
+1. 방금 생성했던 관리자 계정으로 몽고DB 셀 접속
+```
+$ mongo admin --username "root" --password "xxxx"
+```
+1. 데이터베이스에 사용자계정 추가
+```
+> use dev
+> db.createUser({user: "keating", pwd: "xxxx", roles:["dbOwner"]})
+```
+
+
 
 
 <br>
