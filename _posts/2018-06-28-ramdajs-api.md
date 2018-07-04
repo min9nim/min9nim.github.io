@@ -64,7 +64,7 @@ R.compose(Math.abs, R.add(1), R.multiply(2))(-4);
 <br>
 
 #### R.flip
-첫번째 두번째 인자의 위치 순서를 뒤집어 놓은 함수를 리턴
+**첫번째 두번째** 인자의 위치 순서를 뒤집어 놓은 함수를 리턴. (전체 인자의 순서를 뒤집는 것은 아님)
 ```javascript
 var mergeThree = (a, b, c) => [].concat(a, b, c);
 mergeThree(1, 2, 3); //=> [1, 2, 3]
@@ -399,7 +399,7 @@ t(); //=> 'Tee'
 <br>
 
 #### R.cond
-true를 만날 때까지 조건을 체크, true를 만나면 해당 함수를 실행, true를 못 만나면 undefined 리턴
+true를 만날 때까지 조건을 체크, true를 만나면 해당 함수를 실행, true를 못 만나면 undefined 리턴. `switch` 문과 비슷
 ```javascript
 var fn = R.cond([
   [R.equals(0),   R.always('water freezes at 0°C')],
@@ -409,6 +409,19 @@ var fn = R.cond([
 fn(0); //=> 'water freezes at 0°C'
 fn(50); //=> 'nothing special happens at 50°C'
 fn(100); //=> 'water boils at 100°C'
+```
+<br>
+
+#### R.ifElse
+if else 구문과 비슷
+```javascript
+var incCount = R.ifElse(
+  R.has('count'),
+  R.over(R.lensProp('count'), R.inc),
+  R.assoc('count', 1)
+);
+incCount({});           //=> { count: 1 }
+incCount({ count: 1 }); //=> { count: 2 }
 ```
 <br>
 
@@ -462,7 +475,46 @@ R.all(equals3)([3, 3, 1, 3]); //=> false
 ```
 <br>
 
+#### R.curry
+원하는 순서대로 인자 하나씩 부분적용 가능, `R.__ `를 이용해 해당인자 잠시 비워두기도 가능. `R.__` 는 `R.curry` 를 통한 함수에서만 사용이 가능
+```javascript
+var g = R.curry((a,b,c) => a-b-c);
+// 아래 예시는 모두 동일한 결과
+g(1,2,3)
+g(1)(2)(3)
+g(1,2)(3)
+g(1)(2,3)
+// 2번째 인자 먼저 적용하고 싶으면
+g(R.__, 2)(1)(3)
 
+// 3번째 인자 먼저 적용하려면
+g(R.__, R.__, 3)(1)(2)
+```
+<br>
+
+
+#### R.drop
+앞쪽부터 n개의 요소를 제거한다
+```javascript
+R.drop(1, ['foo', 'bar', 'baz']); //=> ['bar', 'baz']
+R.drop(2, ['foo', 'bar', 'baz']); //=> ['baz']
+R.drop(3, ['foo', 'bar', 'baz']); //=> []
+R.drop(4, ['foo', 'bar', 'baz']); //=> []
+R.drop(3, 'ramda');               //=> 'da'
+```
+<br>
+
+
+#### R.dropLast
+뒤쪽부터 n개의 요소를 제거한다
+```javascript
+R.dropLast(1, ['foo', 'bar', 'baz']); //=> ['foo', 'bar']
+R.dropLast(2, ['foo', 'bar', 'baz']); //=> ['foo']
+R.dropLast(3, ['foo', 'bar', 'baz']); //=> []
+R.dropLast(4, ['foo', 'bar', 'baz']); //=> []
+R.dropLast(3, 'ramda');               //=> 'ra'
+```
+<br>
 
 
 
