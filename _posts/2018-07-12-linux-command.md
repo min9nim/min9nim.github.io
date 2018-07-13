@@ -13,3 +13,8 @@ $ du -hs
 ```sh
 $ du -hs foldername
 ```
+<br>
+#### 하위 폴더별 용량확인
+```
+$ du -h --max-depth=1
+```
