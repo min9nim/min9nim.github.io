@@ -107,6 +107,14 @@ $ git tag -v v1.0.0
 ```
 $ git push --tags
 ```
+* 태그 삭제
+```
+$ git tag -d v1.0.0
+```
+* 원격 저장소에 올라간 태그를 삭제
+```
+$ git push origin :v1.0.0
+```
 
 <br>
 
