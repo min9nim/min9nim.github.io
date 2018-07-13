@@ -93,7 +93,7 @@ git commit -a -m update
 ### 태그
 * Annotated 태그 만들기
 ```
-git tag -a v1.0.0 -m "Official version 1.0.0"
+$ git tag -a v1.0.0 -m "Official version 1.0.0"
 ```
 * 태그 목록 확인
 ```
