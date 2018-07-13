@@ -90,6 +90,26 @@ git commit -a -m update
 
 <br>
 
+### 태그
+* Annotated 태그 만들기
+```
+git tag -a v1.0.0 -m "Official version 1.0.0"
+```
+* 태그 목록 확인
+```
+$ git tag
+```
+* 태그 정보 확인
+```
+$ git tag -v v1.0.0
+```
+* 태그 포함하여 원격저장소 push
+```
+$ git push --tags
+```
+
+<br>
+
 ### 로그
 * commit 메세지만 한줄로 & 그래프로 보이기
 ```
