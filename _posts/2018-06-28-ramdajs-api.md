@@ -12,12 +12,18 @@ categories: ramdajs
 ```javascript
 R.append('tests', ['write', 'more']); //=> ['write', 'more', 'tests']
 ```
-vanillaJS 예제)
+vs vanillaJS
 ```javascript
 const arr = ['write', 'more'];
 arr.splice(arr.length, 0, "tests");
 console.log(arr);           //  ['write', 'more', 'tests']
 ```
+```javascript
+const arr = ['write', 'more'];
+arr.push("tests");
+console.log(arr);           //  ['write', 'more', 'tests']
+```
+
 <br>
 
 #### R.prepend
@@ -25,7 +31,12 @@ console.log(arr);           //  ['write', 'more', 'tests']
 ```javascript
 R.prepend('fee', ['fi', 'fo', 'fum']); //=> ['fee', 'fi', 'fo', 'fum']
 ```
-vanillaJS 예제)
+vs vanillaJS
+```javascript
+const arr = ['fi', 'fo', 'fum'];
+arr.unshift("fee");
+console.log(arr);           // ["fee", "fi", "fo", "fum"]
+```
 ```javascript
 const arr = ['fi', 'fo', 'fum'];
 arr.splice(0,0,"fee");      // []  cause) 제거된 요소들이 없으므로
@@ -86,7 +97,8 @@ R.forEach(printXPlusFive, [1, 2, 3]); //=> [1, 2, 3]
 <br>
 
 #### R.map
-리스트의 각 요소를 다른 값으로 매핑한다. Array.prototype.map 와 유사
+리스트의 각 요소를 다른 값으로 매핑한다. Array.prototype.map 와 유사.  
+주의) 매핑함수의 2번째 인자로 index가 전달되지 않는다
 ```javascript
 var double = x => x * 2;
 R.map(double, [1, 2, 3]); //=> [2, 4, 6]
