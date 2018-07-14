@@ -8,22 +8,16 @@ categories: ramdajs
 <br>
 <br>
 #### R.append
-배열의 끝에 특정 요소를 추가한다. Array.prototype.push 와 유사
+배열의 끝에 특정 요소를 추가한다
 ```javascript
 R.append('tests', ['write', 'more']); //=> ['write', 'more', 'tests']
 ```
 vs vanillaJS
 ```javascript
 const arr = ['write', 'more'];
-arr.splice(arr.length, 0, "tests");
-console.log(arr);           //  ['write', 'more', 'tests']
-```
-```javascript
-const arr = ['write', 'more'];
 arr.push("tests");
 console.log(arr);           //  ['write', 'more', 'tests']
 ```
-
 <br>
 
 #### R.prepend
@@ -37,19 +31,14 @@ const arr = ['fi', 'fo', 'fum'];
 arr.unshift("fee");
 console.log(arr);           // ["fee", "fi", "fo", "fum"]
 ```
-```javascript
-const arr = ['fi', 'fo', 'fum'];
-arr.splice(0,0,"fee");      // []  cause) 제거된 요소들이 없으므로
-console.log(arr);           // ["fee", "fi", "fo", "fum"]
-```
 <br>
 
 #### R.insert
-배열의 특정 위치에 요소를 삽입, Array.prototype.splice 와 유사
+배열의 특정 위치에 요소를 삽입
 ```javascript
 R.insert(2, 'x', [1,2,3,4]); //=> [1,2,'x',3,4]
 ```
-vanillaJS 예제)
+vs vanillaJS
 ```javascript
 const arr = [1,2,3,4];
 arr.splice(2,0,"x");
@@ -86,6 +75,7 @@ R.flip(mergeThree)(1, 2, 3); //=> [2, 1, 3]
 #### R.forEach
 배열의 각 요소를 인자로 전달받는 특정 함수를 실행시키고 인자로 전달받았던 배열을 리턴한다
 - Array.prototype.forEach 는 undefined 를 리턴
+- 처리함수가 두번째 인자로 index 를 전달받지 못한다
 
 ```javascript
 var printXPlusFive = x => console.log(x + 5);
@@ -93,6 +83,12 @@ R.forEach(printXPlusFive, [1, 2, 3]); //=> [1, 2, 3]
 // logs 6
 // logs 7
 // logs 8
+```
+vs vanillaJS
+```
+var printXPlusFive = x => console.log(x + 5);
+[1,2,3].forEach(printXPlusFive);
+
 ```
 <br>
 
