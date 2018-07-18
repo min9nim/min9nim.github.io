@@ -37,6 +37,12 @@ $ mongorestore -h 127.0.0.1 ~/dump/
 connected to: 127.0.0.1
 ....
 ```
+외부 몽고디비 서버로 복원
+```
+$ mongorestore -h 호스트:포트 -d 디비명 -u 사용자계정 -p 비밀번호 백업폴더
+```
+ex) `mongorestore -h ds239911.mlab.com:39911 -d anony -u user01 -p xxxx anony`
+
 <br>
 
 #### Ref
