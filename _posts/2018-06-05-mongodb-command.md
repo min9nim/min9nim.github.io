@@ -34,6 +34,20 @@ C:\"Program Files"\MongoDB\Server\3.6\bin\mongo
 ```
 <br>
 
+#### mongo shell
+
+- 원격 디비서버 접속  
+*mongo shell 버젼과 원격 몽고디비의 버젼이 다를 경우 접속이 안 될 수 있음*
+```
+$ mongo --username alice --password abc123 --host mongodb0.tutorials.com --port 28015
+```
+
+- 특정 DB로 접속
+```
+$ mongo ds239911.mlab.com:39911/anony -u <dbuser> -p <dbpassword>
+```
+<br>
+
 #### 데이터베이스 관리
 - 데이터베이스 생성
 ```
@@ -131,7 +145,7 @@ posts
 
 <br>
 #### 다큐먼트 관리
-- 다큐먼트 목록 확인
+- 전체 다큐먼트 목록 확인
 ```
 > db.posts.find()
 { "_id" : ObjectId("5b15e27b8169daf6fd8c7366"), "key" : "BJwttIGe7", "title" : "오늘은 왜케 잠잠하지.. 허허",
@@ -145,9 +159,19 @@ content" : "입력할때 좀 버벅 거리는 현상이 조금 있는거 같은�
 >
 ```
 
+- 특정 속성의 값이 어떤 값이 아닌 다큐먼트 조회
+```
+db.posts.find({uuid : {"$ne" : "xxxxxx"}}).pretty()
+```
+
 - 다큐먼트 삭제
 ```
 db.posts.remove({key : "BJwttIGe7"})
+```
+
+- 다큐먼트 수정
+```
+db.posts.update({uuid: "xxxx1"}, {"$set" : {uuid: "zzzz2"}}, {multi: true})
 ```
 
 
@@ -156,3 +180,5 @@ db.posts.remove({key : "BJwttIGe7"})
 #### Ref.
 - <https://velopert.com/594>
 - <https://velopert.com/436>
+- <https://docs.mongodb.com/tutorials/connect-to-mongodb-shell/>
+- <https://docs.mongodb.com/manual/reference/operator/query/>
