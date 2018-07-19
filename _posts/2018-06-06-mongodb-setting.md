@@ -2,7 +2,7 @@
 layout: post
 title:  "[mongoDB] aws ec2 에서 mongoDB 세팅하기"
 date:   2018-06-06 10:00:00 +0900
-categories: mongoDB
+categories: database
 ---
 #### mongodb 설치
 1. root 권한으로 전환

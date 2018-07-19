@@ -2,7 +2,7 @@
 layout: post
 title:  "[vscode] java 사용시 세팅 관련"
 date:   2018-05-30 10:00:00 +0900
-categories: tool
+categories: memo
 ---
 1. 특정 jar를 인식하지 못할 때,  
 작업폴더의 루트 경로의 `.classpath` 파일에서 아래처럼 필요한 jar 파일들을 명시해 준다.

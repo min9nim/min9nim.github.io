@@ -2,7 +2,7 @@
 layout: post
 title:  "[mySQL] 테이블 수정 쿼리"
 date:   2018-04-16 11:00:00 +0900
-categories: FrontEnd
+categories: database
 ---
 #### 이름 바꾸기
 ```sql

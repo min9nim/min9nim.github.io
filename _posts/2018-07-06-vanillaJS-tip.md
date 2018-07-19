@@ -2,7 +2,7 @@
 layout: post
 title:  "[vanillaJS] 활용 팁"
 date:   2018-07-06 16:00:00 +0900
-categories: ramdajs
+categories: vanillaJS
 ---
 #### 배열의 마지막 요소 참조
 배열의 마지막 요소를 아래와 같이 인덱스 참조로 접근할 수 있지만, 

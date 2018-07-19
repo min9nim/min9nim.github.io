@@ -2,7 +2,7 @@
 layout: post
 title:  "[es6] iterator 10분만에 배우기"
 date:   2018-04-16 10:00:00 +0900
-categories: FrontEnd
+categories: vanillaJS
 ---
 
 

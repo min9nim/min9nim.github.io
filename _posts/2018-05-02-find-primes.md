@@ -2,7 +2,7 @@
 layout: post
 title:  "[알고리즘] 소수 찾기"
 date:   2018-05-02 14:00:00 +0900
-categories: Algorithm
+categories: algorithm
 ---
 Problem
 ---

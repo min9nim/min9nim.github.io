@@ -2,7 +2,7 @@
 layout: post
 title:  "ramdajs 라이브러리 forEach 버그"
 date:   2018-04-01 00:35:00 +0900
-categories: FrontEnd
+categories: ramdajs
 ---
 #### 예시
 <script src="https://gist.github.com/min9nim/11a2369a18f41c09ebc39c4991da78b0.js"></script>

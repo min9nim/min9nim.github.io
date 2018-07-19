@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "리눅스 셀스크립트 작성 방법"
+title:  "[linux] 셀스크립트 작성 방법"
 date:   2018-06-20 09:00:00 +0900
 categories: linux
 ---

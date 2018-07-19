@@ -2,7 +2,7 @@
 layout: post
 title:  "[js] 객체와 prototype 의 이해"
 date:   2018-05-04 13:00:00 +0900
-categories: FrontEnd
+categories: vanillaJS
 ---
 
 Intro

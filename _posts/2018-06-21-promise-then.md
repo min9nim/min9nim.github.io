@@ -2,7 +2,7 @@
 layout: post
 title:  "프라미스 then 함수가 프라미스를 리턴할 때"
 date:   2018-06-20 09:00:00 +0900
-categories: linux
+categories: vanillaJS
 ---
 프라미스 체이닝에서 프라미스를 리턴하고 전달받을 경우에 대한 동작에 대해서 알아본다
 <br>

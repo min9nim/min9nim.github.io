@@ -2,7 +2,7 @@
 layout: post
 title:  "[js] 불변성을 유지하며 array 순서 뒤집기"
 date:   2018-06-07 09:00:00 +0900
-categories: FrontEnd
+categories: vanillaJS
 ---
 #### 문제
 배열의 순서를 뒤집기 위해 간단히 `arr.reverse()` 를 이용할 수 있지만 `Array.prototype.reverse` 는 불변성을 유지하지 못한다.
