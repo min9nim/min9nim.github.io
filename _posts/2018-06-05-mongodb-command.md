@@ -2,7 +2,7 @@
 layout: post
 title:  "[mongoDB] 명령어"
 date:   2018-06-05 10:00:00 +0900
-categories: mongodb
+categories: mongoDB
 ---
 #### 몽고디비 시작 및 접속(Linux)
 - 서비스 시작

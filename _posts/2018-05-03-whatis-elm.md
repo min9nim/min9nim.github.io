@@ -2,7 +2,7 @@
 layout: post
 title:  "What is Elm?"
 date:   2018-05-03 09:00:00 +0900
-categories: frontend
+categories: FrontEnd
 ---
 [Charles Scalfani][1]의 [글][2]을 통해 Elm을 알게 되었다. 이 글을 꼼꼼히 번역해보고 싶지만, 바쁜 일정을 핑계로 번역은 다음으로 미루고 일단 몇가지 인상깊은 문장들을 중심으로 summary 만 남긴다.
 
