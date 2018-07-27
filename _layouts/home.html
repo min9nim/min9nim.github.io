@@ -1,30 +1,51 @@
 ---
 layout: default
-title: min
 ---
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
   {{ content }}
 
+  {% capture site_lang %}{{ site.lang | default: "en" }}{% endcapture %}
 
   <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-        <a class="" href="{{ post.url | relative_url }}">
-            <p class="post-excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' | strip_html | truncatewords: 50 }}</p>
-        </a>
+    {% for post in paginator.posts %}
+      {% capture post_lang %}{{ post.lang | default: site_lang }}{% endcapture %}
+      {% capture lang %}{% if post_lang != site_lang %}{{ post_lang }}{% endif %}{% endcapture %}
+
+      <li{% if lang != empty %} lang="{{ lang }}"{% endif %}>
+        <header class="post-header">
+          <h1 class="post-title">
+            {% if post.external-url %}
+              <a class="post-link" href="{{ post.external-url }}">{{ post.title | escape }} &rarr;</a>
+            {% else %}
+              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            {% endif %}
+          </h1>
+
+          <p class="post-meta">
+            {{ post.date | date: "%b %-d, %Y" }}
+            {% if post.categories != empty or post.tags != empty %}
+              {% include category_links.html categories=post.categories tags=post.tags %}
+            {% endif %}
+            {% if post.external-url %}
+              • <a href="{{ post.url | relative_url }}">Permalink</a>
+            {% endif %}
+          </p>
+        </header>
+
+        <div class="post-content">
+          {{ post.excerpt }}
+        </div>
+        {% if post.content contains site.excerpt_separator %}
+          <p class="post-continue">
+            <a href="{{ post.url | relative_url }}">Read on &rarr;</a>
+          </p>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>
-<!--
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
--->
+
+  {% include pagination.html %}
+
 </div>

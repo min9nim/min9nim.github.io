@@ -25,7 +25,11 @@ body {
   font-kerning: normal;
 }
 
-
+table {
+  width: 100%;
+  margin: 0 0 20px 0;
+  text-align: left;
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -83,6 +87,10 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
+
+  code {
+    font-size: inherit;
+  }
 }
 
 
@@ -95,22 +103,15 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: darken($brand-color, 10%);
   }
 
   &:hover {
     color: $text-color;
     text-decoration: underline;
   }
-
-  .social-media-list &:hover {
-    text-decoration: none;
-
-    .username {
-      text-decoration: underline;
-    }
-  }
 }
+
 
 
 /**
@@ -120,7 +121,7 @@ blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
   padding-left: $spacing-unit / 2;
-  @include relative-font-size(1.125);
+  font-size: 18px;
   letter-spacing: -1px;
   font-style: italic;
 
@@ -132,14 +133,27 @@ blockquote {
 
 
 /**
+ * Rules
+ */
+hr {
+  height: 4px;
+  margin: $spacing-unit / 2 0;
+  border: 0;
+  background-color: $grey-color-light;
+}
+
+
+
+/**
  * Code formatting
  */
 pre,
 code {
-  @include relative-font-size(0.9375);
+  font-family: $monospace-font-family;
+  font-size: 13px;
   border: 1px solid $grey-color-light;
-  border-radius: 3px;
-  background-color: #eef;
+  border-radius: 0;
+  background-color: lighten($grey-color-light, 5%);
 }
 
 code {
@@ -169,6 +183,8 @@ pre {
   margin-left: auto;
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
+  text-align: left;
+
   @extend %clearfix;
 
   @include media-query($on-laptop) {
@@ -192,24 +208,78 @@ pre {
 
 
 
-/**
- * Icons
- */
-.icon > svg {
-  display: inline-block;
-  vertical-align: middle;
 
-  path {
-    fill: $grey-color;
+/*18.07.28 푸터 커스터마이징 */
+/**
+ * Site footer
+ */
+ .site-footer {
+  border-top: 1px solid $grey-color-light;
+  padding: $spacing-unit 0;
+}
+
+.footer-heading {
+  @include relative-font-size(1.125);
+  margin-bottom: $spacing-unit / 2;
+}
+
+.contact-list,
+.social-media-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.footer-col-wrapper {
+  @include relative-font-size(0.9375);
+  color: $grey-color;
+  margin-left: -$spacing-unit / 2;
+  @extend %clearfix;
+}
+
+.footer-col {
+  float: left;
+  margin-bottom: $spacing-unit / 2;
+  padding-left: $spacing-unit / 2;
+}
+
+.footer-col-1 {
+  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+  width:         calc(35% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+  width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+  width:         calc(20% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-3 {
+  width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+  width:         calc(45% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-laptop) {
+  .footer-col-1,
+  .footer-col-2 {
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
+  }
+
+  .footer-col-3 {
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
   }
 }
 
-.social-media-list {
-  .icon {
-    padding-right: 5px;
+@include media-query($on-palm) {
+  .footer-col {
+    float: none;
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
   }
+}
 
-  li + li {
-    padding-top: 5px;
-  }
+
+.copyright {
+  display: block;
+  text-align: center;
 }

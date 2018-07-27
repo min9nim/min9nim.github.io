@@ -1,0 +1,65 @@
+<h2 class="footer-heading"><a href="/">{{ site.title | escape }}</a></h2>
+
+<div class="footer-col-wrapper">
+  <div class="footer-col footer-col-1">
+    <ul class="contact-list">
+      <li>
+        {% if site.author %}
+          {{ site.author | escape }}
+        {% else %}
+          {{ site.title | escape }}
+        {% endif %}
+        </li>
+        {% if site.email %}
+        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        {% endif %}
+    </ul>
+  </div>
+
+  <div class="footer-col footer-col-2">
+    <ul class="social-media-list">
+      {% if site.github_username %}
+      <li>
+        {% include icon-github.html username=site.github_username %}
+      </li>
+      {% endif %}
+
+      {% if site.facebook_username %}
+      <li>
+        {% include icon-facebook.html username=site.facebook_username %}
+      </li>
+      {% endif %}
+
+      {% if site.tistory_username %}
+      <li>
+        {% include icon-tistory.html username=site.tistory_username %}
+      </li>
+      {% endif %}
+
+      {% if site.twitter_username %}
+      <li>
+        {% include icon-twitter.html username=site.twitter_username %}
+      </li>
+      {% endif %}
+
+      {% if site.twitter_username2 %}
+      <li>
+        {% include icon-twitter.html username=site.twitter_username2 %}
+      </li>
+      {% endif %}
+
+    </ul>
+  </div>
+
+  <div class="footer-col footer-col-3">
+    <p>{{ site.description | escape }}</p>
+  </div>
+</div>
+
+<div class="copyright">
+{% assign feed_path = "/feed.xml" %}
+{% if site.feed and site.feed.path %}
+  {% assign feed_path = site.feed.path %}
+{% endif %}
+&copy; {{ site.author }} - Powered by <a href="https://jekyllrb.com">Jekyll</a> &amp; <a href="https://github.com/yous/whiteglass">whiteglass</a> - Subscribe via <a href="{{ feed_path | absolute_url }}">RSS</a>
+</div>
