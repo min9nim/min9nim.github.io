@@ -1,5 +1,8 @@
 {% if include.categories != empty %} •
   {% for category in include.categories %}
+  
+  <a href="/category/{{ category | escape }}">{{ category | escape }}</a>
+
     {% assign no_comma = forloop.last %}
     {% for archive in site.archives %}
       {% if archive.type == "category" and archive.title == category %}
