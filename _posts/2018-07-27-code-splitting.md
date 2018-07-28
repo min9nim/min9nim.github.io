@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "리액트 코드 스플리팅"
-date:   2018-07-27 01:00:00 +0900
+date:   2018-07-27 09:00:00 +0900
 categories: react
 ---
 #### Code Spliting 왜 필요한가
