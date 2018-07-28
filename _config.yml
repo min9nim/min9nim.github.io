@@ -59,7 +59,7 @@ jekyll-archives:
 navigation:
  - title: About
    url: /about
- - title: Categories
+ - title: Category
    url: /category
  - title: Archives
    url: /archives
