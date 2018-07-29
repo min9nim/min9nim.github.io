@@ -61,7 +61,6 @@ $
 ### github-pages 이용 시 주의사항
 위와 같이 테마를 변경하고 블로그를 github-pages에 배포했을 때 github 으로부터 다음과 같은 메일이 한통 들어왔다.
 
-
 > The page build completed successfully, but returned the following warning for the `master` branch:
 
 > You are attempting to use a Jekyll theme, "jekyll-whiteglass", which is not supported by GitHub Pages. Please visit https://pages.github.com/themes/ for a list of supported themes. If you are using the "theme" configuration variable for something other than a Jekyll theme, we recommend you rename this variable throughout your site. For more information, see https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/.
@@ -75,8 +74,11 @@ $
 
 whiteglass는 github-pages 블로그에서 공식적으로 지원하는 테마가 아니라는 안내메세지였다. 서비스는 가능하지만 jekyll 버젼의 차이로 일부 기능 사용에 제약이 있는 것으로 보인다. whiteglass 의 경우에는 categories 기능에 오류가 있었다.
 
+위 경고메일은 github에 변경사항을 push를 할 때마다 계속 발송되는데 _config.xml 의 theme 설정을 github-pages 에서 사용가능한 테마로 이름만 변경하면 경고메일을 수신하지 않을 수 있다.
+
 github-pages 에서 공식적으로 지원하는 테마 종류는 아래 링크에서 확인할 수 있다
 <https://pages.github.com/themes/>
+
 
 
 <br>
