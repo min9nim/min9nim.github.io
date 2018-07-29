@@ -1,9 +1,8 @@
 ---
-layout: page
+layout: default
 ---
-<h3>vanillaJS 분류에 포함된 글들:</h3>
-<ul>
-	{% for post in site.categories.vanillaJS %}
-	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-	{% endfor %}
-</ul>
+{% assign categoryName = "vanillaJS" %}
+<div class="home">
+	<h1 class="page-heading">Archives of {{categoryName}}</h3>
+	{% include category_content.html category=categoryName %}
+</div>
