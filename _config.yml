@@ -30,8 +30,8 @@ facebook_comments: true
 
 # Build settings
 markdown: kramdown
-# theme: minima
-theme: jekyll-whiteglass
+theme: minima
+# theme: jekyll-whiteglass
 asset_url: /assets
 plugins:
   - jekyll-feed
