@@ -19,7 +19,7 @@ theme: jekyll-whiteglass
 ```
 1. 터미널에서 다음을 실행
 ```
-$ bundle
+$ bundle install
 ```
 
 테마를 설치할 때 테마관련 리소스들은 현재 나의 블로그 폴더에 직접 설치되는 것은 아니고 ruby 라이브러리 폴더에 전역으로 설치가 된다. 그리고 지킬서버가 시작될 때는 __config.yml_ 파일의 `theme` 설정에 따라 전역의 테마를 참조해 블로그가 빌드된다.
@@ -59,7 +59,7 @@ $
 
 <br>
 ### github-pages 이용 시 주의사항
-위와 같이 신나게 테마를 선택하고 커스터마이징해서 깃헙페이지에 배포했을 때 github 으로부터 아래와 같은 이상한? 메일이 한통 들어왔다.
+위와 같이 테마를 변경하고 블로그를 github-pages에 배포했을 때 github 으로부터 다음과 같은 메일이 한통 들어왔다.
 
 
 > The page build completed successfully, but returned the following warning for the `master` branch:
@@ -78,7 +78,8 @@ whiteglass는 github-pages 블로그에서 공식적으로 지원하는 테마�
 github-pages 에서 공식적으로 지원하는 테마 종류는 아래 링크에서 확인할 수 있다
 <https://pages.github.com/themes/>
 
+
 <br>
 ### Ref.
 <https://jekyllrb.com/docs/themes/#overriding-theme-defaults>
-
+<https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/>
