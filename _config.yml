@@ -26,7 +26,11 @@ twitter_username: min9nim
 twitter_username2: smg529
 facebook_username:  min9nim
 google_analytics: true
-facebook_comments: true
+
+disqus:
+  comments: true
+  shortname: min9nim
+
 
 # Build settings
 markdown: kramdown
