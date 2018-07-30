@@ -1,6 +1,8 @@
 ---
-layout: page
-title: About
+layout: post
+title: "About this blog.."
+date:   2018-04-01 19:20:00 +0900
+categories: memo
 permalink: /about/
 ---
 컴퓨터를 이용해 더 적은 노력으로 더 많은 성과를 내는 일에 관심이 많습니다. 더 나은 방법을 찾는 일은 만만치 않지만 늘 중요하고 가치가 있습니다. 그 일은 우리에게 더 많은 자유와 기회를 제공하기 때문입니다.
