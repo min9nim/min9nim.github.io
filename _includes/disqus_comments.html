@@ -1,9 +1,11 @@
-{% if page.comments != false and jekyll.environment == "production" %}
+{% if true or page.comments != false and jekyll.environment == "production" %}
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = '{{ page.url | absolute_url }}';
-      this.page.identifier = '{{ page.url | absolute_url }}';
+      //this.page.url = '{{ page.url | absolute_url }}';
+      this.page.url = 'https://min9nim.github.io{{ page.url}}';
+      //this.page.identifier = '{{ page.url | absolute_url }}';
+      this.page.identifier = 'https://min9nim.github.io{{ page.url}}';
     };
 
     (function() {
