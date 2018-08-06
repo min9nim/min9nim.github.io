@@ -2,7 +2,7 @@
 layout: post
 title:  "[웹팩4] tree shaking 적용 방법"
 date:   2018-07-28 01:00:00 +0900
-categories: memo
+categories: FrontEnd
 ---
 ### intro
 웹 사이트의 성능 최적화를 위한 많은 시도가 있지만 특별히 tree shaking 은 무엇인지 알아보고 웹팩4에서 어떻게 이를 활용할 수 있는지에 대해 알아보자
@@ -175,8 +175,7 @@ express is listening on port 9999
 ![result](/images/tree-shaking2.png)
 
 <br>
-#### 예제파일 공유
-실습환경 구성이 귀찮으시면 아래 저장소를 clone 하여 확인해 보실 수 있습니다
+#### 예재파일 공유
 <https://github.com/min9nim/tree-shaking-example>
 
 <br>
