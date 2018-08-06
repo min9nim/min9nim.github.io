@@ -23,7 +23,7 @@ entry: {
 
 예를 들면 빌드 결과가 아래와 같을 때
 
-```
+```javascript
 $ webpack --config webpack.prod.js
 
 Hash: a3d89c558b50d3487010
@@ -122,39 +122,39 @@ output: {
 2. highlight.js 동적로딩  
 동기로 처리하는 로직을 비동기로 변환할 때의 포인트는 모듈이 undefined 일 때의 처리를 우선 동기적으로 적절히 구현하여 로직 흐름에 문제가 없게 만든 후 모듈이 로드 되었을 때의 처리를 따로 해당 부분만 새로고침할 수 있도록 로직이 흘러가도록 코딩을 하는 것이다.
 	
-	```javascript
-	// import hljs from 'highlight.js';
-	
-	//== 중략 ==
+    ```javascript
+    // import hljs from 'highlight.js';
+
+    //== 중략 ==
     export default class Post extends React.Component {
         constructor(props){
             super(props)
 
-	        this.md = new Remarkable({
-	            highlight: (str, lang) => { // 아래에서 this를 사용하기 위해 화살표함수로 변경
-	                if(tp.hljs === undefined){  // tp 는 전역변수
-	                    import(/* webpackChunkName: "highlightjs"  */'highlight.js')
-	                        .then(m => {
-	                            tp.hljs = m.default;
-	                            this.setState(this.state);  // 컴포넌트를 re-rendering
-	                        })
-	                        .catch(err => console.log(err.message));
-	                    return "code is loading.."; // highlight.js 로드 전에는 코드를 렌더링하지 않고 code is loading.. 이라고 표시
-	                }else{
-	                    if (lang && tp.hljs.getLanguage(lang)) {
-	                        return tp.hljs.highlight(lang, str).value;
-	                    }
-	                    return tp.hljs.highlightAuto(str).value;
-	                }
-	            }
-	        });
-	
+            this.md = new Remarkable({
+                highlight: (str, lang) => { // 아래에서 this를 사용하기 위해 화살표함수로 변경
+                    if(tp.hljs === undefined){  // tp 는 전역변수
+                        import(/* webpackChunkName: "highlightjs"  */'highlight.js')
+                            .then(m => {
+                                tp.hljs = m.default;
+                                this.setState(this.state);  // 컴포넌트를 re-rendering
+                            })
+                            .catch(err => console.log(err.message));
+                        return "code is loading.."; // highlight.js 로드 전에는 코드를 렌더링하지 않고 code is loading.. 이라고 표시
+                    }else{
+                        if (lang && tp.hljs.getLanguage(lang)) {
+                            return tp.hljs.highlight(lang, str).value;
+                        }
+                        return tp.hljs.highlightAuto(str).value;
+                    }
+                }
+            });
+
         render(){
             const html = this.md.render(this.state.content);    // this.md.render 는 코드 하이라이트닝을 위해 위 객체 생성시 설정한 hightlight 함수를 사용함
             return <div>html</div>
         }
     }
-	```
+    ```
 
 <br>
 #### 리액트 컴포넌트를 동적으로 로드하는 방법
