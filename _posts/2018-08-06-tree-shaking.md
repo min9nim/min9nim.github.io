@@ -175,7 +175,7 @@ express is listening on port 9999
 ![result](/images/tree-shaking2.png)
 
 <br>
-#### 예재파일 공유
+#### 실습에 사용된 파일 저장소
 <https://github.com/min9nim/tree-shaking-example>
 
 <br>
