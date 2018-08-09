@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[웹팩4] tree shaking 적용 방법"
-date:   2018-07-28 01:00:00 +0900
+date:   2018-08-06 01:00:00 +0900
 categories: FrontEnd
 ---
 ### intro
