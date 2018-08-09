@@ -83,7 +83,7 @@ $
 ```
 
 짜잔, git이 해당 파일의 변경사항을 눈치채지 못한다. 이제부터 dbConfig.js의 비밀정보는 woking directory 에만 존재하고 새로운 커밋을 만들 때 신규커밋에는 포함되지 않는다.
-<p align="left"><img src="/images/ceremony.jpg" width="200"/></p>
+<p align="left"><img src="/images/noun_Happy.svg" width="150"/></p>
 
 
 <br>
