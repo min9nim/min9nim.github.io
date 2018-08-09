@@ -68,11 +68,9 @@ C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/jekyll-sass-converter-1.5.2/lib/jekyll/co
 ```
 _jekyll-sass-converter-1.5.2/lib/jekyll/converters/scss.rb_ 파일에서 오류가 발생했다. 해당 ruby 소스를 이리저리 살펴보았지만 감을 잡을 수 없었다. 여긴 어디 나는 누구;; 아무래도 배가 산으로 가는 듯한 느낌이 들었다. ruby를 써본 적도 없는데 ruby 소스를 까보며 디버깅을 하겠다고 덤비는 내가 한심해 보였다. 괜한 내부 소스까지 들춰서 해결할 문제는 아니겠다 싶었다.
 
-찬찬히 마음을 가다듬고 나의 지나온 행적들을 쫓다가 운좋게 원인을 찾아낼 수 있었다.
-
 <br>
-### 문제원인은 역시 한글이었다
-_/assets/main.scss_ 에서 참조하는 _/_sass/whiteglass.scss_ 파일을 수정하면서 아래와 같이 한글주석을 사용했던 것이 화근이었다. 
+### 찬찬히 마음을 가다듬고
+나의 지나온 행적들을 쫓다가 운좋게 원인을 찾아낼 수 있었다. 문제원인은 역시 한글이었다. _/assets/main.scss_ 에서 참조하는 _/_sass/whiteglass.scss_ 파일을 수정하면서 아래와 같이 한글주석을 사용했던 것이 화근이었다. 
 
 ```scss
 // 푸터 커스터마이징 18-07-28
@@ -83,7 +81,6 @@ _/assets/main.scss_ 에서 참조하는 _/_sass/whiteglass.scss_ 파일을 수�
 
 한글주석을 영어로 변경하여 문제를 피해갈 수 있었다.
 <p align="left"><img src="/images/ceremony.jpg" width="200"/></p>
-
 
 <br>
 ### 결론
