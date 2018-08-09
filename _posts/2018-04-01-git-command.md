@@ -129,7 +129,7 @@ $ git log -p -2
 ```
 <br>
 
-### 기타
+### 파일삭제
 * workingDirectory & staging 영역에서 파일 삭제
 ```
 $ git rm test.html
@@ -138,9 +138,16 @@ $ git rm test.html
 ```
 $ git rm --cached test.html
 ```
+
+<br>
+### stash
 * 스테이징과 워킹디렉토리를 잠시 따로 저장
 ```
 $ git stash save
+```
+또는
+```
+$ git stash
 ```
 * stash 목록보기
 ```
