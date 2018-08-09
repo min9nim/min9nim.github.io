@@ -70,17 +70,17 @@ _jekyll-sass-converter-1.5.2/lib/jekyll/converters/scss.rb_ 파일에서 오류�
 
 <br>
 ### 찬찬히 마음을 가다듬고
-나의 지나온 행적들을 쫓다가 운좋게 원인을 찾아낼 수 있었다. 문제원인은 역시 한글이었다. _/assets/main.scss_ 에서 참조하는 _/_sass/whiteglass.scss_ 파일을 수정하면서 아래와 같이 한글주석을 사용했던 것이 화근이었다. 
-
+나의 지나온 행적들을 쫓다가 운좋게 원인을 찾아낼 수 있었다.
+<p align="left"><img src="/images/ceremony.jpg" width="200"/></p>
+문제원인은 역시 한글이었다. _/assets/main.scss_ 에서 참조하는 _/_sass/whiteglass.scss_ 파일을 수정하면서 아래와 같이 한글주석을 사용했던 것이 화근이었다. 
 ```scss
 // 푸터 커스터마이징 18-07-28
 @mixin relative-font-size($ratio) {
   font-size: $base-font-size * $ratio;
 }
 ```
-
 한글주석을 영어로 변경하여 문제를 피해갈 수 있었다.
-<p align="left"><img src="/images/ceremony.jpg" width="200"/></p>
+
 
 <br>
 ### 결론
