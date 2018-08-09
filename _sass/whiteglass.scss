@@ -37,7 +37,7 @@ $on-laptop:        800px !default;
   }
 }
 
-// 푸터 커스터마이징 18-07-28
+// footer customizing 18-07-28
 @mixin relative-font-size($ratio) {
   font-size: $base-font-size * $ratio;
 }
