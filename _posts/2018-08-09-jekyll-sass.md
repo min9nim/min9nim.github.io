@@ -8,7 +8,7 @@ categories: memo
 맥에서 jekyll 블로그 테마를 커스터마이징 했었다. 당시에는 문제가 없었는데 windows7 로컬환경에서 블로그를 가져와 빌드를 해보니 아래와 같은 오류가 발생했다
 
 ```bash
-λ jbundle exec jekyll serve
+λ bundle exec jekyll serve
 Configuration file: C:/Users/myData/project/min9nim.github.io/_config.yml
             Source: C:/Users/myData/project/min9nim.github.io
        Destination: C:/Users/myData/project/min9nim.github.io/_site
