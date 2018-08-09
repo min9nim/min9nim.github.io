@@ -88,10 +88,12 @@ $
 
 <br>
 ### 아쉬운 점
-브랜치를 이동할 때 커밋의 내용으로 다시 덮어쓰기가 되므로, working directory 내 변경내역(비밀정보)가 유실될 수 있다.
+`git pull`을 수행하거나 브랜치를 이동할 때마다 커밋의 내용으로 다시 덮어쓰기가 되므로, working directory 내 변경내역(비밀정보)가 유실될 수 있다.
 <p align="left"><img src="/images/noun_frustration.svg" width="150"/></p>
+이에 대한 해결방법으로는 dbConfig.js 파일을 그냥 프로젝트 외부에 위치시키고 shell스크립트를 이용하여 앱을 배포하기 전에(비밀정보가 필요할 때마다) dbConfig.js 파일을 덮어쓰기 하는 방법을 사용할 수 있다
 
-
+셀스크립트 참고)
+<http://min9nim.github.io/2018/06/linux-shell#deploy>
 
 <br>
 ### --assume-unchanged 설정된 파일 목록
