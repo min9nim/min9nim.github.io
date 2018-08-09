@@ -3,16 +3,29 @@ layout: default
 ---
 <article class="home">
 
-  <header class="post-header">
-    <h1 class="page-heading">Archives by category</h1>
-  </header>
+
 
   <div>
+      <header class="post-header">
+          <h1 class="page-heading">Category list</h1>
+      </header>
       <div>
           {% for category in site.categories %}
-            <div class="">
               {% capture category_name %}{{ category | first }}{% endcapture %}
-              <div id="#{{ category_name | slugize }}"></div>
+              <a href="#{{ category_name | slugize }}">{{ category_name }}</a> &nbsp;
+          {% endfor %}
+      </div> 
+      
+      <div style="height:70px"></div>
+
+      <header class="post-header">
+          <h1 class="page-heading">Archives by category</h1>
+      </header>
+      <div>
+          {% for category in site.categories %}
+          <div style="margin-bottom: 50px;">
+              {% capture category_name %}{{ category | first }}{% endcapture %}
+              <div id="{{ category_name | slugize }}"></div>
               <h4 class="category-head">* {{ category_name }}</h4>
               <ul class="post-archives">
               {% for post in site.categories[category_name] %}
@@ -38,11 +51,12 @@ layout: default
                   
                   
                   
-              {% endfor %}
-              </ul>
+                {% endfor %}
+                </ul>
             </div>
-          {% endfor %}
-          </div>    
+            
+            {% endfor %}
+      </div>    
   </div>
 
   {% if site.comments == true and page.comments != false %}

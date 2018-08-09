@@ -2,7 +2,7 @@
 layout: post
 title:  "[js] boolean 결과 값이 false 인 값들"
 date:   2018-04-09 14:00:00 +0900
-categories: FrontEnd
+categories: vanillaJS
 ---
 
 #### 조건문에서 boolean 값으로 형변환 시,

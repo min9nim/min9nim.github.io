@@ -2,7 +2,7 @@
 layout: post
 title:  "[windows] 특정 폴더에서 cmder 바로 열기"
 date:   2018-04-12 13:50:00 +0900
-categories: FrontEnd
+categories: memo
 ---
 ### Problem
 1. 윈도우에서 기본으로 제공되는 터미널은 Copy & Paste 및 창사이즈 조절에 제한이 있어 불편

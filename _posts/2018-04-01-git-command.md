@@ -2,7 +2,7 @@
 layout: post
 title:  "git 명령어 요약"
 date:   2018-04-01 01:14:00 +0900
-categories: FrontEnd
+categories: git
 ---
 ### 브랜치
 * 브랜치 생성
