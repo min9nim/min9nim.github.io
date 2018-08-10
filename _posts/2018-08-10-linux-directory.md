@@ -3,6 +3,7 @@ layout: post
 title:  "[linux] 디렉토리 구조"
 date:   2018-08-10 01:00:00 +0900
 categories: linux
+tags: [linux, directory]
 ---
 ### Intro
 상세내용을 다루지는 않고 실용적인 내용만 소개한다.

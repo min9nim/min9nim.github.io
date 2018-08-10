@@ -67,6 +67,8 @@ navigation:
    url: /category
  - title: Archives
    url: /archives
+ - title: Tags
+   url: /tags
  
 
 # Exclude from processing.

@@ -3,6 +3,7 @@ layout: post
 title:  "jekyll 블로그 테마 변경"
 date:   2018-07-28 01:00:00 +0900
 categories: memo
+tags: [jekyll, 테마변경]
 ---
 ### 테마를 변경하고자 할 때
 가끔 집안의 가구 배치를 바꾸면 새로운 기분이 드는 것 같이 블로그의 옷도(theme) 가끔씩 갈아 입혀주면 기분전환에 좋다. 지킬 블로그를 처음 개설하고 디폴트 테마인 _minima_ 로 몇개월간 운영을 해왔는데 다른 블로그들의 멋진 테마들을 보고 욕심이 나서 내 블로그에도 새 옷을 입혀 보기로 했다. 지킬블로그 테마는 [jekyllthemes.org](http://jekyllthemes.org) 에서 여러 종류의 테마들을 확인할 수 있다. 나는 심플하고 깔끔한 [whiteglass](https://yous.be/whiteglass/) 로 테마를 변경해 보았다.

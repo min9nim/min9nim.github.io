@@ -3,6 +3,7 @@ layout: post
 title:  "Fuction.prototype.apply, call, bind 차이점"
 date:   2018-06-28 17:00:00 +0900
 categories: vanillaJS
+tags: [apply, call, bind]
 ---
 
 #### Function.prototype.apply

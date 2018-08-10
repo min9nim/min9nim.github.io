@@ -3,6 +3,7 @@ layout: post
 title:  "[jekyll] Invalid CP949 character 오류"
 date:   2018-08-09 01:00:00 +0900
 categories: memo
+tags: [jekyll, encoding, CP949]
 ---
 ### Intro
 맥에서 jekyll 블로그 테마를 커스터마이징 했었다. 당시에는 문제가 없었는데 windows7 로컬환경에서 블로그를 가져와 빌드를 해보니 아래와 같은 오류가 발생했다

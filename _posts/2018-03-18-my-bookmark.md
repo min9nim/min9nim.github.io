@@ -3,6 +3,7 @@ layout: post
 title:  "Bookmark"
 date:   2018-03-18 08:06:00 +0900
 categories: memo
+tags: [bookmark, reference]
 ---
 * Frequently
   * [pyhon 프로그래밍 강좌](http://blog.eairship.kr/category/프로그래밍 관련/Python){:target="_blank"}
@@ -20,7 +21,9 @@ categories: memo
   * [js-good-parts](https://drive.google.com/file/d/1eMNpa9r_o1N6BMgZ0x9V_kvTdpHN07rV/view?usp=sharing){:target="_blank"}
 
   
-  
+* 자료
+  * [windows 테스트vm 다운로드](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/#downloads)
+
 
 * temp
   * [jekyll 태그기능 적용방법](http://tech.kakao.com/2016/07/07/tech-blog-story){:target="_blank"}

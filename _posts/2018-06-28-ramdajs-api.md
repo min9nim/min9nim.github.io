@@ -3,6 +3,7 @@ layout: post
 title:  "ramdajs 주요 함수"
 date:   2018-06-28 01:00:00 +0900
 categories: ramdajs
+tags: [함수형프로그래밍, ramdajs]
 ---
 흔히 사용될 수 있는 ramdajs 함수들을 알아본다
 <br>
