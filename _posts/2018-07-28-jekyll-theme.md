@@ -2,7 +2,7 @@
 layout: post
 title:  "jekyll 블로그 테마 변경"
 date:   2018-07-28 01:00:00 +0900
-categories: memo
+categories: jekyll
 tags: [jekyll, 테마변경]
 ---
 ### 테마를 변경하고자 할 때

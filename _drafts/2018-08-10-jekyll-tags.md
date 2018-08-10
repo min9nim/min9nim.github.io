@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "[linux] 권한파일을 이용한 ssh 접근 조건"
+title:  "[jekyll] tag 기능 추가"
 date:   2018-08-10 01:00:00 +0900
-categories: linux
-tags: [linux, ssh]
+categories: jekyll
+tags: [jekyll, tags]
 ---
 ### Intro
 카테고리 별 월별 글목록 기능만으로는 뭔가 좀 아쉬웠어. 지킬블로그는 모 하나 기능 붙이려면 여간 귀찮은 게 아니다. 하지만 뭔가 내 글을 찾아들어갈 수 있는 방법이 여전히 뭔가 불편함을 지울 수가 없었어. 그래서 흔한 태그 기능을 추가하기로 했어

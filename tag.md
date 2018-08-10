@@ -4,7 +4,7 @@ permalink: /tags/
 title: Tags
 ---
 
-<ul class="tag-cloud">
+<div class="tag-cloud">
 {% for tag in site.tags %}
     <!-- tag_name 변수 지정: 태그명은 소문자화(slugize) 한다 -->
     {% capture tag_name %}{{tag|first|slugize}}{% endcapture %}
@@ -13,21 +13,20 @@ title: Tags
     <!-- tag_size 변수 지정-->
     {% capture tag_size %}{{tag|last|size}}{% endcapture %}
 
-    <li style="font-size:{{font_size}}">
-        <a href="#{{tag_name}}" onclick="showTag('#{{tag_name}}')">
-            {{tag_name}} ({{tag_size}})
-        </a>
-    </li>
+    <a href="#{{tag_name}}" onclick="showTag('#{{tag_name}}')">
+        {{tag_name}} ({{tag_size}})
+    </a>
 
 {% endfor %}
-</ul>
+</div>
 
-<div id="archives">
+
+<div id="archives" style="margin-top:20px;">
 {% for tag in site.tags %}
 
     {% capture tag_name %}{{tag|first|slugize}}{% endcapture %}
 
-    <div class="archive-group" style="display:none" id="{{tag_name}}">
+    <div class="archive-group" style="" id="{{tag_name}}">
 
     <h3 id="{{tag_name}}">{{ tag_name }}</h3>
 
@@ -55,7 +54,8 @@ title: Tags
         if(!Array.isArray(req)) {
             return false;
         }
-        var selector = '#' + req.pop();
+        //var selector = '#' + req.pop();
+        var selector = '#dummy-' + req.pop();
         showTag(selector);
     });
 
