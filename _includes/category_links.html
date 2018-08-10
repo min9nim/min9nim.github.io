@@ -1,7 +1,7 @@
-{% if include.categories != empty %} •
+{% if include.categories != empty %} -
   {% for category in include.categories %}
   
-  <a href="/category/{{ category | escape }}">{{ category | escape }}</a>
+  <a href="/category/#{{ category | escape }}">{{ category | escape }}</a>
 
     {% assign no_comma = forloop.last %}
     {% for archive in site.archives %}
@@ -12,13 +12,9 @@
   {% endfor %}
 {% endif %}
 
-{% if include.tags != empty %} •
-  {% for tag in include.tags %}
-    {% assign no_comma = forloop.last %}
-    {% for archive in site.archives %}
-      {% if archive.type == "tag" and archive.title == tag %}
-        <a href="{{ archive.url | relative_url }}">{{ archive.title | escape }}</a>{% unless no_comma %},{% endunless %}
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
+{% if include.tags != empty %}
+  - [{% for tag in include.tags %}
+      <a href="/tags/#{{ tag | escape }}">{{tag}}</a>
+      {% if forloop.index != include.tags.size %},{% endif %} 
+    {% endfor %}]
 {% endif %}
