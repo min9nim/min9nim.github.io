@@ -7,6 +7,11 @@ layout: default
         <header class="post-header">
             <h1 class="page-heading">Tag cloud</h1>
         </header>
+
+        <div>
+            {% include tag_cloud.html %}
+        </div>  
+
         <div>
             {%  for tag in site.tags %}
                 <!-- tag_name 변수 지정: 태그명은 소문자화(slugize) 한다 -->
@@ -19,6 +24,7 @@ layout: default
                 <a href="#{{tag_name}}">{{ tag_name }}({{tag_size}})</a> &nbsp;
             {% endfor %}
         </div> 
+
         
         <div style="height:70px"></div>
   
