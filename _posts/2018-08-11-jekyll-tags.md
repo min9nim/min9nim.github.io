@@ -14,7 +14,7 @@ tags: [jekyll, tags]
 
 <br>
 ### 포스트에 태그 입력방법
-글 작성시 [front-matter](https://jekyllrb.com/docs/frontmatter/) 영역에 아래와 같이 tag 항목을 추가하면 된다
+글 작성시 [front-matter](https://jekyllrb.com/docs/frontmatter/) 영역에 아래와 같이 tags 항목을 추가하면 된다
 ```
 ---
 layout: post
