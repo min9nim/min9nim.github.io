@@ -3,6 +3,7 @@ layout: post
 title:  "Srting.prototype.replace 에서 function 활용"
 date:   2018-05-04 00:00:00 +0900
 categories: vanillaJS
+tags: [replace]
 ---
 Problem
 ---

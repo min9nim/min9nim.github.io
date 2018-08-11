@@ -3,6 +3,7 @@ layout: post
 title:  "[linux] 셀스크립트 작성 방법"
 date:   2018-06-20 09:00:00 +0900
 categories: linux
+tags: [shell, linux]
 ---
 ### 초간단 hello.sh 예제
 1. 첫번째 줄에 `#!/bin/sh` 입력하고 2번째 라인부터 스크립트 작성

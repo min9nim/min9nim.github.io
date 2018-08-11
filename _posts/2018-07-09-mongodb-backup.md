@@ -3,7 +3,7 @@ layout: post
 title:  "[mongoDB] 자동 백업"
 date:   2018-07-06 16:00:00 +0900
 categories: database
-tags: [mongoDB, database]
+tags: [mongoDB, database, backup, 백업]
 ---
 #### backup.sh 작성
 ```

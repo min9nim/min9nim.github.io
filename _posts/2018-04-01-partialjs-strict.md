@@ -3,6 +3,7 @@ layout: post
 title:  "[partialjs] webpack 빌드시 use strict 오류"
 date:   2018-04-01 19:20:00 +0900
 categories: FrontEnd
+tags: [partialjs, webpack]
 ---
 #### Benefits to
 webpack 빌드 환경에서 [partialjs](https://github.com/marpple/partial.js) 를 모듈로 사용하고자 할 경우

@@ -3,6 +3,7 @@ layout: post
 title:  "[crossBrowsing] 이벤트 처리시 주의사항"
 date:   2018-03-21 10:20:36 +0900
 categories: FrontEnd
+tags: [event]
 ---
 #### 문제
 * 아래와 같이 event객체를 직접 참조하면 firefox에서 오류 발생

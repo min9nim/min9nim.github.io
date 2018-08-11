@@ -3,6 +3,7 @@ layout: post
 title:  "[crossBrowsing] safari 에서 가로스크롤 막기"
 date:   2018-03-22 13:18:00 +0900
 categories: FrontEnd
+tags: [ios, safari, x-scroll]
 ---
 #### 문제
 ```css

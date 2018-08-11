@@ -3,6 +3,7 @@ layout: post
 title:  "React life-cycle method"
 date:   2018-07-14 01:00:00 +0900
 categories: react
+tags: [react, life-cycle]
 ---
 #### life-cycle 메소드 순서
 컴포넌트를 생성 할 때

@@ -1,3 +1,7 @@
+<!--
+  태그 클라우드
+  https://github.com/jasondavies/d3-cloud
+-->
 <div id="vis"></div>
 <form id="form" style="display:none;">
     <p style="position: absolute; right: 0; top: 0" id="status"></p>
@@ -63,7 +67,6 @@
 <script>
 // tag-cloud 크기를 스크린 사이즈에 따라 보정 18.08.11
 function resizeTagCloud(){
-  console.log()
   if(document.body.offsetWidth < 800){
     document.getElementById("vis").style.zoom = 0.8 * (document.body.offsetWidth/800)
   }

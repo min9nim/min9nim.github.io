@@ -3,6 +3,7 @@ layout: post
 title:  "[python] SimpleHTTPServer"
 date:   2018-04-20 13:00:00 +0900
 categories: memo
+tags: [SimpleHTTPServer, python]
 ---
 #### Problem
 로컬에 서버가 설치되어 있지 않지만 간단하게(3초 안에) 웹서버를 띄우고 싶다

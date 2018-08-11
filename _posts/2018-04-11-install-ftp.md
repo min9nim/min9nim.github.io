@@ -3,6 +3,7 @@ layout: post
 title:  "[mac] High Sierra 에서 telnet & ftp CLI 설치"
 date:   2018-04-11 14:40:00 +0900
 categories: memo
+tags: [HighSierra, mac, telnet, ftp]
 ---
 ### Problem
 Mac High Sierra 는 보안 상의 문제로 터미널에서 telnet, ftp 명령어를 기본적으로 지원하지 않는다

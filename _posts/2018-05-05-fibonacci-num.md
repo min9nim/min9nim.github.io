@@ -3,6 +3,7 @@ layout: post
 title:  "[알고리즘] 피보나치 수"
 date:   2018-05-04 13:00:00 +0900
 categories: algorithm
+tags: [피보나치수열, fibonacci]
 ---
 Problem
 ---

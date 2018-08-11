@@ -3,6 +3,7 @@ layout: post
 title:  "jekyll 사이트 favicon 추가하기"
 date:   2018-03-17 17:00:00 +0900
 categories: memo
+tags : [favicon]
 ---
 
 #### jekyll 테마 변경 가이드  

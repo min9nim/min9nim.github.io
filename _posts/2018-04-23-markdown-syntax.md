@@ -3,6 +3,7 @@ layout: post
 title:  "마크다운 주요 문법 정리"
 date:   2018-04-23 22:00:00 +0900
 categories: FrontEnd
+tags: [markdown, syntax]
 ---
 
 #### 마크다운 이미지 중앙정렬 방법

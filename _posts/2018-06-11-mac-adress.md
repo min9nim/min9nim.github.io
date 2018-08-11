@@ -3,6 +3,7 @@ layout: post
 title:  "remote 호스트의 mac address 얻어오는 방법"
 date:   2018-06-11 09:00:00 +0900
 categories: network
+tags: [macaddress, ARP]
 ---
 #### 문제
 서버에서 클라이언트의 mac address 를 알아낼 수 있을까

@@ -3,7 +3,7 @@ layout: post
 title:  "[scss] 주요 문법 정리"
 date:   2018-08-11 01:00:00 +0900
 categories: FrontEnd
-tags: [scss]
+tags: [scss, syntax]
 ---
 ### 변수 사용
 scss

@@ -3,6 +3,7 @@ layout: post
 title:  "[express] https 세팅"
 date:   2018-07-06 16:00:00 +0900
 categories: nodejs
+tags: [express, https, SSL]
 ---
 #### private key 생성
 ```console

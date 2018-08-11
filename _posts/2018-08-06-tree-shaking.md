@@ -3,6 +3,7 @@ layout: post
 title:  "[웹팩4] tree shaking 적용 방법"
 date:   2018-08-06 01:00:00 +0900
 categories: FrontEnd
+tags: [tree-shaking, webpack, import]
 ---
 ### intro
 웹 사이트의 성능 최적화를 위한 많은 시도가 있지만 특별히 tree shaking 은 무엇인지 알아보고 웹팩4에서 어떻게 이를 활용할 수 있는지에 대해 알아보자

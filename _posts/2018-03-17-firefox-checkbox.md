@@ -3,6 +3,7 @@ layout: post
 title:  "[crossBrowsing] Firefox 에서 contenteditable 안의 checkbox 가 선택되지 않는 문제"
 date:   2018-03-17 01:43:36 +0900
 categories: FrontEnd
+tags: [firefox, checkbox]
 ---
 ### 문제
 파이어폭스에서는 아래와 같이 contenteditable 영역 안의 checkbox는 선택도 클릭 이벤트도 정상동작 되지 않는다

@@ -3,6 +3,7 @@ layout: post
 title:  "iOS 에서 입력컨트롤 테두리 그림자 제거"
 date:   2018-06-11 09:00:00 +0900
 categories: FrontEnd
+tags: [border, shadow, ios]
 ---
 #### 문제
 입력 컨트롤의 테두리를 보시면(border-top) 어두운 그림자가 드리어져 있다

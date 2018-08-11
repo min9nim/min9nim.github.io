@@ -3,6 +3,7 @@ layout: post
 title:  "What exactly is Node.js?"
 date:   2018-04-23 14:00:00 +0900
 categories: FrontEnd
+tags: [nodejs]
 ---
 
 Node.js는 자바스크립트 실행 환경입니다. 멋진 말입니다. 그런데 그것이 의미하는 바는 무엇이며 어떻게 동작이 된다는 말일까요?

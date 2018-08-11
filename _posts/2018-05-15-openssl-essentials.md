@@ -3,6 +3,7 @@ layout: post
 title:  "OpenSSL Essentials: Working with SSL Certificates, Private Keys and CSRs"
 date:   2018-05-15 13:00:00 +0900
 categories: network
+tags: [SSL, CSR]
 ---
 
 CSR이 무엇입니까

@@ -3,6 +3,7 @@ layout: post
 title:  "[js] getter와 setter 를 설정하는 방법"
 date:   2018-04-19 10:00:00 +0900
 categories: vanillaJS
+tags: [getter, setter]
 ---
 getter와 setter 를 이용하면 객체의 속성값을 읽고 쓰는 방법을 새롭게 정의할 수 있다
 아래 코드를 먼저 보자

@@ -3,6 +3,7 @@ layout: post
 title:  "크롬 개발자도구를 이용한 js beautify"
 date:   2018-04-02 23:25:00 +0900
 categories: FrontEnd
+tags: [chrome, beautify]
 ---
 #### Summary
 - 난독화된 js를 디버깅해야 할 경우 크롬 개발자도구의 beautify 기능을 간단히 이용할 수 있다.

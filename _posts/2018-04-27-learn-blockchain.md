@@ -3,6 +3,7 @@ layout: post
 title:  "Blockchain 학습 로드맵"
 date:   2018-04-27 17:00:00 +0900
 categories: memo
+tags: [blockchain]
 ---
 Into
 ---

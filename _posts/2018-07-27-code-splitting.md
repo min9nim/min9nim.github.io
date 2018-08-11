@@ -3,6 +3,7 @@ layout: post
 title:  "리액트 코드 스플리팅"
 date:   2018-07-27 01:00:00 +0900
 categories: react
+tags: [code-splitting, react]
 ---
 #### Code Spliting 왜 필요한가
 webpack 을 이용하여 spa 애플리케이션을 만들면 결국 모든 소스파일이 하나의 파일로 (ex, index.bundle.js) 번들링되는데 개발이 진행되면서 여러가지 라이브러리들을 사용하게 되면 번들파일의 용량이 4~5MB 이상으로 금방 무거워질 수 있다. 이렇게 될 경우, 네트워크 상황에 따라 해당 js를 처음 내려받는데 오랜 시간이 걸릴 수 있다. 이럴 경우에는 index.bundle.js 파일을 splitting 하여 다운로드 받는데 걸리는 시간을 줄일 필요가 있다.

@@ -3,6 +3,7 @@ layout: post
 title:  "일반함수와 화살표함수에서 this 참조의 차이점"
 date:   2018-07-13 10:00:00 +0900
 categories: vanillaJS
+tags: [this]
 ---
 #### Point.
 화살표 함수에서 사용된 this 참조는 해당 함수가 정의될 당시의 컨텍스트를 참조한다. function 함수에서 사용된 this는 해당 함수가 어떤 객체의 메소드로 호출되었느냐에 따라 해당 객체를 가르키는 참조가 된다.
