@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="home">
+<article class="tag">
     <div>
         <header class="post-header">
             <h1 class="page-heading">Tag cloud</h1>
@@ -17,54 +17,15 @@ layout: default
                 <!-- tag_name 변수 지정: 태그명은 소문자화(slugize) 한다 -->
                 {% capture tag_name %}{{tag|first|slugize}}{% endcapture %}
                 <!-- font_size 변수 지정: 태그숫자/전체태그숫자 * 100 + 50 -->
-                {% capture font_size %}{{tag|last|size| times:100 | divided_by:site.tags.size | plus: 50 }}%{% endcapture %}
+                {% capture font_size %}{{tag|last|size| times:50 | divided_by:site.tags.size | plus: 14 }}{% endcapture %}
                 <!-- tag_size 변수 지정-->
                 {% capture tag_size %}{{tag|last|size}}{% endcapture %}
 
-                <a href="#{{tag_name}}">{{ tag_name }}({{tag_size}})</a> &nbsp;
+                <div class="tagname">
+                    <a href="/tags/archives#{{tag_name}}" style="font-size:{{font_size}}px">{{ tag_name }}({{tag_size}})</a>
+                </div>
             {% endfor %}
         </div> 
-
-        
-        <div style="height:70px"></div>
-  
-        <header class="post-header">
-            <h1 class="page-heading">Archives by tag</h1>
-        </header>
-        <div>
-            {% for tag in site.tags%}
-            <div style="margin-bottom: 50px;">
-                {% capture tag_name %}{{tag|first|slugize}}{% endcapture %}
-                <div id="{{ tag_name }}"></div>
-                <h4 class="category-head">* {{ tag_name }}</h4>
-                <ul class="post-archives">
-                {% for post in site.tags[tag_name] %}
-                  <li style="margin-left: 20px;">
-                      <span class="post-meta">
-                        {{ post.date | date: "%b %-d, %Y" }}
-                        {% if post.categories != empty or post.tags != empty %}
-                          {% include category_links.html categories=post.categories tags=post.tags %}
-                        {% endif %}
-                        {% if post.external-url %}
-                          • <a href="{{ post.url | relative_url }}">Permalink</a>
-                        {% endif %}
-                      </span>
-              
-                      <h2>
-                        {% if post.external-url %}
-                          <a class="post-link" href="{{ post.external-url }}">{{ post.title | escape }} &rarr;</a>
-                        {% else %}
-                          <a class="post-link" href="{{ post.url | relative_url }}"{% if lang != empty %} lang="{{ lang }}"{% endif %}>{{ post.title | escape }}</a>
-                        {% endif %}
-                      </h2>
-                    </li>
-                    
-                  {% endfor %}
-                  </ul>
-              </div>
-              
-              {% endfor %}
-        </div>    
     </div>
   
     {% if site.comments == true and page.comments != false %}
@@ -72,5 +33,4 @@ layout: default
         {% include custom_comments_provider.html %}
       </div>
     {% endif %}
-  
   </article>

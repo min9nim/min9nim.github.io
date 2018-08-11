@@ -65,10 +65,10 @@ navigation:
    url: /about
  - title: Category
    url: /category
- - title: Archives
-   url: /archives
  - title: Tags
    url: /tags
+ - title: Archives
+   url: /archives
  
 
 # Exclude from processing.

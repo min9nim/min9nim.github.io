@@ -14,7 +14,7 @@
 
 {% if include.tags != empty %}
   - [{% for tag in include.tags %}
-      <a href="/tags/#{{ tag | escape }}">{{tag}}</a>
+      <a href="/tags/archives/#{{ tag | escape }}">{{tag}}</a>
       {% if forloop.index != include.tags.size %},{% endif %} 
     {% endfor %}]
 {% endif %}
