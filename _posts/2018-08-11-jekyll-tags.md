@@ -50,7 +50,7 @@ tag.html 에서는 전체 포스트에서 사용된 모든 태그의 목록을 �
 
 <br>
 #### /includes/tag_cloud.html
-태그클라우드 렌더링은 [jasondavies 의 tag-cloud](https://github.com/jasondavies/d3-cloud) 소스를 이용했다. 아래 소스는 태그클라우드  [demo화면](https://www.jasondavies.com/wordcloud/)의 소스를 일부 수정한 것이다. download d3.min.js, cloud.min.js , and save /assets/ path
+태그클라우드 렌더링은 [jasondavies 의 tag-cloud](https://github.com/jasondavies/d3-cloud) 소스를 이용했다. 아래 소스는 태그클라우드  [demo화면](https://www.jasondavies.com/wordcloud/)의 소스를 일부 수정한 것이다.
 <script src="https://gist.github.com/min9nim/59fe57387b354344834508d0293bd366.js"></script>
 
 <br>
