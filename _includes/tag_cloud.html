@@ -72,6 +72,5 @@ function resizeTagCloud(){
     document.getElementById("vis").style.zoom = 0.8 * (document.body.offsetWidth/800)
   }
 }
-window.onresize = resizeTagCloud;
-window.onload = resizeTagCloud;
+window.onload = window.onresize = resizeTagCloud;
 </script>
