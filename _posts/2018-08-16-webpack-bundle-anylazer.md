@@ -3,7 +3,7 @@ layout: post
 title:  "webpack 번들파일 size 분석"
 date:   2018-08-16 01:00:00 +0900
 categories: webpack
-tags: [wepack, bundle, analyzer]
+tags: [webpack, bundle, analyzer]
 ---
 ### Intro
 웹사이트 성능을 튜닝할 때 빌드한 번들파일의 용량 분석이 필요할 수 있다. 이 때 [webpack-bundle-analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer) 를 이용하면 빌드된 번들파일을 보다 직관적으로 분석하고 이해할 수 있다.
