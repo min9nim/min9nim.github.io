@@ -36,6 +36,8 @@ tags: [bookmark, reference]
   * [4 Types of Memory Leaks in JavaScript](https://auth0.com/blog/four-types-of-leaks-in-your-javascript-code-and-how-to-get-rid-of-them/){:target="_blank"}
 
 * 개발자블로그
-  * <http://ingeec.tistory.com>{:target="_blank"}
+  * [인기씨](http://ingeec.tistory.com){:target="_blank"}
   * [김태곤](https://taegon.kim){:target="_blank"}
   * [장기효](https://joshua1988.github.io/){:target="_blank"}
+  * [조대협](http://bcho.tistory.com){:target="_blank"}
+  
