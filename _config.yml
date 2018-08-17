@@ -50,16 +50,6 @@ permalink: /:year/:month/:title/
 paginate_path: /posts/:num/
 paginate: 5
 
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layout: category_archives
-  permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
-
-
 navigation:
  - title: About
    url: /about

@@ -8,9 +8,8 @@ layout: default
         </header>
         <div>
             {% for tag in site.tags%}
-            <div style="margin-bottom: 50px;">
-                {% capture tag_name %}{{tag|first|slugize}}{% endcapture %}
-                <div id="{{ tag_name }}"></div>
+              {% capture tag_name %}{{tag|first|slugize}}{% endcapture %}
+            <div style="margin-bottom: 50px; display: none;" id="{{ tag_name }}">    
                 <h4 class="category-head">* {{ tag_name }}</h4>
                 <ul class="post-archives">
                 {% for post in site.tags[tag_name] %}
@@ -48,3 +47,8 @@ layout: default
       </div>
     {% endif %}    
   </article>
+
+
+  <script>
+    document.querySelector(location.hash).style.display = "block";
+  </script>

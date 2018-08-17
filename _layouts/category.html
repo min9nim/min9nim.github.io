@@ -9,7 +9,12 @@ layout: default
       <div>
           {% for category in site.categories %}
               {% capture category_name %}{{ category | first }}{% endcapture %}
-              <a href="#{{ category_name | slugize }}">{{ category_name }}</a> &nbsp;
+                <!-- tag_size 변수 지정-->
+                {% capture category_size %}{{category|last|size}}{% endcapture %}
+                <!-- font_size 변수 지정: 태그숫자/전체태그숫자 * 100 + 50 -->
+                {% capture font_size %}{{category_size | divided_by: 2 | plus: 14 }}{% endcapture %}
+
+              <a href="#{{ category_name | slugize }}" style="font-size:{{font_size}}px">{{ category_name }}({{category_size}})</a> &nbsp;
           {% endfor %}
       </div> 
       

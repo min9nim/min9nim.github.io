@@ -108,7 +108,7 @@ a.active { text-decoration: none; color: #000; font-weight: bold; cursor: text; 
 <img src="/images/tags2.png" style="border: 1px solid #ddd">
 
 <br>
-#### /tag_archives.html
+#### /tag_archives.md
 태그당 포스트목록 화면의 링크는 `/tags/archives` 로 정한다(물론 본인이 원하는데로 parmalink 값을 정해도 무관한다)
 ```
 ---
@@ -122,6 +122,12 @@ title: Tags
 #### /layouts/tag_archives.html
 태그목록 화면에서(~/tags) 태그 클릭시 링크에 따라 해당 태그의 글목을 바로 보여주기 위하여 13라인의 div태그에 id를 태그명으로 각각 지정했음을 주목 해주기 바란다.
 <script src="https://gist.github.com/min9nim/1d4f5f1d2d268b709799c1e49e354bc5.js"></script>
+
+또는 아래와 같이 해당하는 태그의 글목록만 보여주는 것도 가능하다. 
+<img src="/images/tags4.png" style="border: 1px solid #ddd">
+
+위와 같이 처리하려면 각 태그별 글항목 div를 모두 `display: none;` 으로 처리하되(아래 소스 12라인) 마지막에 스크립트를 이용하여(53라인) 현재 태그에 해당하는 항목만 `display: block;` 으로 처리한다.
+<script src="https://gist.github.com/min9nim/b21470b041e950104942040ee53d6d0a.js"></script>
 
 <br>
 ### 글 내용에 태그 보여주기
