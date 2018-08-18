@@ -26,7 +26,6 @@ tags: [bookmark, reference]
 
 
 * temp
-  * [jekyll 태그기능 적용방법](http://tech.kakao.com/2016/07/07/tech-blog-story){:target="_blank"}
   * [intro-to-immutable-js](https://auth0.com/blog/intro-to-immutable-js){:target="_blank"}
   * [javascript-module-systems-showdown](https://auth0.com/blog/javascript-module-systems-showdown){:target="_blank"}
   * [Git-브랜치-브랜치-워크플로](https://git-scm.com/book/ko/v2/Git-브랜치-브랜치-워크플로){:target="_blank"}
