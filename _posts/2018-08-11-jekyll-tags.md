@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[jekyll] tag 기능 추가"
+title:  "jekyll 블로그 tag 기능 추가"
 date:   2018-08-11 01:00:00 +0900
 categories: jekyll
 tags: [jekyll, tags]
