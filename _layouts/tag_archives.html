@@ -50,5 +50,5 @@ layout: default
 
 
   <script>
-    document.querySelector(decodeURIComponent(location.hash+"_")).style.display = "block";
+    document.getElementById(decodeURIComponent(location.hash.substr(1)+"_")).style.display = "block";
   </script>
