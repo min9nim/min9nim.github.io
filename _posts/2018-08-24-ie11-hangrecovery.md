@@ -17,6 +17,37 @@ ie11 에서 팝업을(window.open) 사용할 때, 팝업창 로드가 끝나기 
     1. 해당 설정이 체크되어 있으면 ie11 크래시 이후 부모창이 자동으로 다시 열리고
     1. 체크 해제된 경우에는 자식창 부모창 모두 한꺼번에 닫힌다
 
+<br>
+### 재현샘플 sync통신 예제
+1. 클라이언트
+```javascript
+var r = new XMLHttpRequest();
+r.open("POST", "/delay.jsp", false);        // 3번째 인자를 false로 세팅(sync)
+r.onreadystatechange = function () {
+  if (r.readyState != 4 || r.status != 200) return;
+  alert("Success: " + r.responseText);
+};
+r.send("banana=yellow");
+```
+1. 서버
+```java
+<%@ page language="java" contentType="text/javascript; charset=UTF-8" pageEncoding="UTF-8"
+%><%
+try {
+    Thread.sleep(3000);     // 3초 지연
+} catch (InterruptedException e) {
+    System.out.println(e.getMessage());
+}
+%>hello
+```
+
+<br>
+### 재현샘플 무한루프 예제
+클라이언트
+```javascript
+for(var i=0; i<100000000>; i++){}       // 루프횟수를 로컬PC 사양에 따라 적당히 조정한다
+```
+
 
 <br>
 ### 원인
