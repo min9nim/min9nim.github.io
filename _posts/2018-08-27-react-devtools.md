@@ -2,7 +2,7 @@
 layout: post
 title: "react-devtools 설치시 permission denied 오류"
 date: 2018-08-27 01:00:00 +0900
-categories: expo
+categories: react-native
 tags: [react-devtools, --unsafe-perm=true]
 ---
 [react-devtools](https://github.com/facebook/react-devtools/tree/master/packages/react-devtools) 설치시 아래와 같은 오류가 날 경우

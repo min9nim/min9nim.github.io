@@ -2,8 +2,8 @@
 layout: post
 title: "expo 개발환경 세팅"
 date: 2018-08-27 01:00:00 +0900
-categories: expo
-tags: [react-native, expo]
+categories: react-native
+tags: [expo, react-native]
 ---
 Expo는 React Native 를 사용하여 기본 iOS 및 Android 프로젝트를 구축 할 수 있는 빌드&테스트 환경을 제공한다. 
 1. 장점
