@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "react-devtools 설치시 permission denied 오류"
-date: 2018-08-27 01:00:00 +0900
+date: 2018-08-27 01:00:00 +0000
 categories: react-native
 tags: [react-devtools, --unsafe-perm=true]
 ---

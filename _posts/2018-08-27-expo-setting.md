@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "expo 개발환경 세팅"
-date: 2018-08-27 01:00:00 +0900
+date: 2018-08-27 01:00:00 +0000
 categories: react-native
 tags: [expo, react-native]
 ---
