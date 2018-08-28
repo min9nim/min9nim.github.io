@@ -18,7 +18,6 @@ tags: [immutable, js, array, function]
 <br>
 ### mutable 함수
 - splice
-- forEach
 - reverse
 - sort
 - push / pop
