@@ -40,6 +40,7 @@ quickSort([7,4,9,8,5,3,2,1,9,3]);
 ```
 
 위 코드는 이해하기 쉽지만 공간복잡도 O(nLogn) 을 사용한다. 아래와 같이 공간복잡도 O(1)만을 사용하며 퀵소트를 수행하는 것도 가능하다.
+(아래 코드는 오류가 있음 수정 필요)
 ```javascript
 function quickSort(a, left=0, right=a.length-1){
     if(right-left < 2){
