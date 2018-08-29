@@ -34,7 +34,7 @@ function quickSort(a){
         if(a[i] > pivot){
             right.push(a[i])
         }else if(a[i] === pivot){
-            center.push(pivot);
+            center.push(a[i]);
         }else{
             left.push(a[i]);
         }
