@@ -3,7 +3,7 @@ layout: post
 title: "[알고리즘] 선택정렬"
 date: 2018-08-29 01:00:00 +0100
 categories: algorithm
-tags: [algorithm, insertion-sort]
+tags: [algorithm, selection-sort]
 ---
 선택정렬은 아래와 같은 절차로 수행된다.
 1. 주어진 배열의 최소값을 찾는다
