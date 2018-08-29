@@ -47,7 +47,7 @@ function quickSort(a, left=0, right=a.length-1){
         return a;
     }
     var pivot = a[left];   // 첫번째 요소를 pivot으로 세팅
-    var i = left;
+    var i = left+1;
     var j = right;
     var tmp;
 
