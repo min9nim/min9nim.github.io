@@ -89,3 +89,4 @@ selectionSort(arr, (a,b) => a.score-b.score);
 ### Ref.
 - <https://ko.wikipedia.org/wiki/선택_정렬>
 - [Why is Selection Sort not stable?](https://stackoverflow.com/questions/4601057/why-is-selection-sort-not-stable)
+- <http://mygumi.tistory.com/94>
