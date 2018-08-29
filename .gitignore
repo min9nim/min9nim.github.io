@@ -4,3 +4,4 @@ _site/*
 *.command
 .sass-cache
 .jekyll-metadata
+.vscode
