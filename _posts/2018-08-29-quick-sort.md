@@ -17,7 +17,7 @@ tags: [algorithm, quick-sort]
 ### 특징
 - 분할&정복
 - 불안정정렬
--  O(nLogn)
+- 시간복잡도: 최악 O(n^2), 평균 O(nLogn), 최선 O(nLogn)
 
 <br>
 ### 간단한 js구현
