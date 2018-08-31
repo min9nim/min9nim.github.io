@@ -287,7 +287,7 @@ pre {
 
 
 /* 18.08.31 markdown table */
-table {
+table[class=""] { /* gist에서 참조되는 소스코드의 라인넘버에 영향을 주지 않기 위해 실렉터 수정 */
   border-spacing: 0px;
   thead {
     background-color:#f7eef2;
