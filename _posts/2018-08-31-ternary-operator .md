@@ -2,7 +2,7 @@
 layout: post
 title: "삼항연산자 사용시 주의사항"
 date: 2018-08-31 15:00
-categories: algorithm
+categories: etc
 tags: [array, max-array-sum]
 ---
 주어진 배열에서 양수의 개수를 구하고자 할 때 reduce를 이용하여 아래와 같이 양수의 누적값을 카운트할 수 있다.
