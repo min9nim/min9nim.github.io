@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[알고리즘] Quick sort"
-date: 2018-08-29 01:00:00 +0100
+date: 2018-08-29 01:00
 categories: algorithm
 tags: [algorithm, quick-sort]
 ---
