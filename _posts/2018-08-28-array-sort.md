@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[vanillaJS] Array.prototype.sort"
-date: 2018-08-28 01:00:00 +0000
+title: "[js] Array.prototype.sort"
+date: 2018-08-28 01:00
 categories: vanillaJS
 tags: [array, sort]
 ---

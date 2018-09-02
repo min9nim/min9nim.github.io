@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[vanillaJS] 배열의 마지막 요소 참조"
+title:  "[js] 배열의 마지막 요소 참조"
 date:   2018-07-06 16:00:00 +0900
 categories: vanillaJS
 ---

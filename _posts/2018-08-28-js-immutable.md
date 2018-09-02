@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[vanillaJS] mutable vs immutable"
-date: 2018-08-28 01:00:00 +0000
+title: "[js] mutable vs immutable"
+date: 2018-08-28 01:00
 categories: vanillaJS
 tags: [immutable, js, array, function]
 ---

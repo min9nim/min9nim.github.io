@@ -20,10 +20,6 @@ tags: [bookmark, reference]
   * [Javascript the good parts](https://7chan.org/pr/src/OReilly_JavaScript_The_Good_Parts_May_2008.pdf){:target="_blank"}
   * [js-good-parts](https://drive.google.com/file/d/1eMNpa9r_o1N6BMgZ0x9V_kvTdpHN07rV/view?usp=sharing){:target="_blank"}
 
-  
-* 자료
-  * [windows 테스트vm 다운로드](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/#downloads)
-
 
 * temp
   * [intro-to-immutable-js](https://auth0.com/blog/intro-to-immutable-js){:target="_blank"}
@@ -31,12 +27,11 @@ tags: [bookmark, reference]
   * [Git-브랜치-브랜치-워크플로](https://git-scm.com/book/ko/v2/Git-브랜치-브랜치-워크플로){:target="_blank"}
   * [ecmascript-2016-2017-2018](https://medium.freecodecamp.org/here-are-examples-of-everything-new-in-ecmascript-2016-2017-and-2018-d52fa3b5a70e){:target="_blank"}
 
-* later
-  * [4 Types of Memory Leaks in JavaScript](https://auth0.com/blog/four-types-of-leaks-in-your-javascript-code-and-how-to-get-rid-of-them/){:target="_blank"}
 
 * 개발자블로그
   * [인기씨](http://ingeec.tistory.com){:target="_blank"}
   * [김태곤](https://taegon.kim){:target="_blank"}
   * [장기효](https://joshua1988.github.io/){:target="_blank"}
   * [조대협](http://bcho.tistory.com){:target="_blank"}
+  * [양성익](http://unikys.tistory.com){:target="_blank"}
   

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[vanillaJS] How reduce() works"
+title: "[js] How reduce() works"
 date: 2018-08-31 09:00
 categories: vanillaJS
 tags: [array, reduce]
