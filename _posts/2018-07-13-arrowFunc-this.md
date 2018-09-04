@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "일반함수와 화살표함수에서 this 참조의 차이점"
-date:   2018-07-13 10:00:00 +0900
+title:  "일반함수와 화살표함수에서 this 의 차이점"
+date:   2018-07-13 10:00
 categories: vanillaJS
 tags: [this]
 ---
