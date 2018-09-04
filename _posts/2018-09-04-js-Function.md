@@ -86,7 +86,7 @@ getFunc()(); // "hello world", from Global scope
 ### _new Function_ with minifier
 운영환경에서는 일반적으로 js를 minify 하여 배포한다. 난독화 과정을 거치면서 지역스코프의 모든 변수명들은 간단한 이름으로 치환이 된다. 하지만 `new Function` 의 인자로 전달되는 문자열은 난독화 대상이 아니기 때문에 해당 문자열에서 사용하는 변수가 외부변수일 경우 실제 운영환경에서 문제가 발생할 수 있다.
 
-이러한 문제를 해결하려면 우리는 `new Function` 으로 생성되는 함수 내에서 최대한 외부변수 사용을 자제하고 필요하다면 반드시 명시적인 패러미터로 전달하도록 한다.
+이러한 문제를 해결하려면 우리는 `new Function` 으로 생성되는 함수 내에서 최대한 외부변수 사용을 자제하고 필요하다면 반드시 명시적인 패러미터로 전달해야 한다
 
 ```javascript
 let sum = new Function('a', 'b', 'extVal', 'return a + b + extVal');
