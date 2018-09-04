@@ -2,8 +2,13 @@
 layout: default
 ---
 <div class="home">
+  {% capture posts_size %}{{site.posts|size}}{% endcapture %}
+  - All posts: {{ posts_size }}
+  <br>
 
+  <br>
   <h1 class="page-heading">Archives by month</h1>
+  <br>
 
   {{ content }}
 
@@ -22,7 +27,7 @@ layout: default
           <li>&nbsp;</li>
         {% endif %}
         {% assign prev_month = this_month %}
-        <li>* {{post.date | date: "%Y-%m"}}</li>
+        <li><h2>* {{post.date | date: "%Y년 %m월"}}</h2></li>
       {% endif %}
 
       <li style="margin-left: 20px;">
