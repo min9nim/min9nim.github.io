@@ -48,7 +48,7 @@ $
 
 <br>
 ### npm outdated
-`npm outdated` 명령을 이용하면 사용하던 npm 패키지의 오래된 버젼을 한 눈에 확인할 수 있다
+`npm outdated` 명령을 이용하면 해당 프로젝트에서 사용하던 npm 패키지의 오래된 버젼을 한 눈에 확인할 수 있다
 
 ```bash
 $ npm outdated
