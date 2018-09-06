@@ -72,3 +72,9 @@ $
 ```
 
 위 내용을 참고하여 업그레이드하고자 하는 버젼을 package.json 에 반영하고 `npm install` 을 이용하면 일괄적으로 오래된 패키지 버젼을 업그레이드할 수 있다.
+
+
+<br>
+### Ref.
+- <https://docs.npmjs.com/cli/outdated>
+- <https://blog.outsider.ne.kr/757>
