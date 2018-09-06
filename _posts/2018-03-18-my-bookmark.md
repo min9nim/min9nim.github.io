@@ -31,7 +31,11 @@ tags: [bookmark, reference]
 * 개발자블로그
   * [인기씨](http://ingeec.tistory.com){:target="_blank"}
   * [김태곤](https://taegon.kim){:target="_blank"}
+      - 프론트엔드
   * [장기효](https://joshua1988.github.io/){:target="_blank"}
   * [조대협](http://bcho.tistory.com){:target="_blank"}
   * [양성익](http://unikys.tistory.com){:target="_blank"}
+      - All-round programmer
+  * [이기창](https://ratsgo.github.io/blog/categories/){:target="_blank"}
+      - 자연어처리, 머신러닝
   
