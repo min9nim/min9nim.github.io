@@ -2,8 +2,8 @@
 layout: post
 title: "GCP App Engine 에 node_modules 폴더 배포 문제"
 date: 2018-09-06 09:00
-categories: node
-tags: [nodejs, npm]
+categories: cloud
+tags: [google-cloud, node_modules, deploy]
 ---
 이 글은 Google Cloud 의 App Engine 을 이용해 Node 프로젝트를 서비스할 경우 만날 수 있는 배포 관련 문제를 공유하기 위해 작성되었다
 
