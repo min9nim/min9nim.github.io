@@ -6,9 +6,7 @@ $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
-//$spacing-unit:     30px !default;
-$spacing-unit:     20px !default;   // Archives 화면에서 목록의 제목들 간 간격 좁힘, 2018/09/04
-// $spacing-unit 값은 /assets/main.scss 에서 다시 덮어써짐 수정이 필요하다면 main.scss 를 수정해야 함
+$spacing-unit:     30px !default;
 
 $text-color:       #111 !default;
 $background-color: #fdfdfd !default;
