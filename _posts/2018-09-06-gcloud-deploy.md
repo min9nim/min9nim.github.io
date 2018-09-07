@@ -64,6 +64,8 @@ README.md
 
 `gcloud app deploy`를 이용한 배포는 기존 배포내역을 전부 삭제하고 새로운 배포내역으로 교체되는 식으로 업로드 되는 것이 아니라 기존 배포사항은 그대로 두고 그 위에 **추가 배포내역들을 덮어쓰기로 업로드** 한다는 것을 기억하자.
 
+또한 기존 배포내역과 비교해서 다른 부분만 배포가 되는 것 같다...(이 부분은 구체적인 확인 필요)
+
 <br>
 ### Ref.
 <https://cloud.google.com/sdk/gcloud/reference/topic/gcloudignore>
