@@ -22,7 +22,6 @@ tags: [bookmark, reference]
 
 <br>
 ### 개발자블로그
-* [인기씨](http://ingeec.tistory.com){:target="_blank"}
 * [김태곤](https://taegon.kim){:target="_blank"}
     - 프론트엔드
 * [장기효](https://joshua1988.github.io/){:target="_blank"}
