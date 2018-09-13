@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "use strict 를 왜 사용하는가"
-date:   2018-07-27 01:00:00 +0900
+title:  "[js] use strict 를 왜 사용하는가"
+date:   2018-07-27 01:00
 categories: vanillaJS
 ---
 #### 충분한 설계없이 만들어진 자바스크립트

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "배열에서 중복 제거"
+title: "[js] 배열에서 중복 제거"
 date: 2018-09-13 09:00
 categories: vanillaJS
 tags: [array, filter, indexOf]
