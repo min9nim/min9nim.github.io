@@ -9,7 +9,7 @@ filter 와 indexOf 를 이용한 중복제거 방법
 
 ```javascript
 var a = ['a', 1, 'a', 2, '1'];
-var unique = a.filter((v, i, a) => a.indexOf(v) === i); // returns ['a', 1, 2, '1']
+var unique = a.filter((v, i, s) => s.indexOf(v) === i); // returns ['a', 1, 2, '1']
 ```
 
 <br>
