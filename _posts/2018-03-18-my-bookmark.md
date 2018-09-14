@@ -18,6 +18,8 @@ tags: [bookmark, reference]
 * [Javascript the good parts](https://7chan.org/pr/src/OReilly_JavaScript_The_Good_Parts_May_2008.pdf){:target="_blank"}
 * [js-good-parts](https://drive.google.com/file/d/1eMNpa9r_o1N6BMgZ0x9V_kvTdpHN07rV/view?usp=sharing){:target="_blank"}
 * [HACKS-웹기술블로그](http://hacks.mozilla.or.kr){:target="_blank"}
+* [좋은 글 모음](http://heej.in){:target="_blank"}
+
 
 
 <br>
