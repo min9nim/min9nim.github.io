@@ -2,10 +2,10 @@
 layout: post
 title:  "Blockchain 학습 로드맵"
 date:   2018-04-27 17:00:00 +0900
-categories: memo
-tags: [blockchain]
+categories: blockchain
+tags: [blockchain, roadmap]
 ---
-Into
+Intro
 ---
 * 요즘 뜨거운 관심을 받고 있는 블록체인
 * 발을 담가볼 준비가 되었다면 [5 Technology Trends to Learn in 2018 If You Want a Great Career][1] 에서 소개하는 학습로드맵을 참고해 보자
