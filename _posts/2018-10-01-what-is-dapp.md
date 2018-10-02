@@ -1,20 +1,20 @@
 ---
 layout: post
-title: "DAPP이란 무엇인가"
+title: "DApp이란 무엇인가"
 date: 2018-10-01 00:30
 categories: blockchain
-tags: [DAPP, blockchain]
+tags: [DApp, blockchain]
 ---
 [5 Reasons to Build Decentralized Apps][1] 영상의 내용을 간략히 정리해 보았다
 
 <br>
-### DAPP이란?
+### DApp이란?
 기존의 모든 애플리케이션은 중앙서버에서 동작되고 그 결과를 클라이언트에게 내려주는 방식으로 동작이 되었다. 중앙서버가 그 모든 일을 해내기 때문에 늘 해커들의 공격대상이 되었고 중앙서버가 클라이언트에게 미치는 영향력은 막대했다.
 
-이와 대조적으로 DAPP(Decentralized Application)은 중앙서버가 아닌 지구적으로 연결된(peer to peer) 가상의 컴퓨터 머신에 데이터가 저장되고 그 위에서 실행된다.
+이와 대조적으로 DApp(Decentralized Application)은 중앙서버가 아닌 지구적으로 연결된(peer to peer) 가상의 컴퓨터 머신에 데이터가 저장되고 그 위에서 실행된다.
 
 <br>
-### DAPP 개발을 시작해야 하는 5가지 이유
+### DApp 개발을 시작해야 하는 5가지 이유
 1. 데이터를 내가 직접 소유한다  
 기존에 중앙서버에 저장되던 데이터가 이제는 온전히 나의 것이 된다
 
