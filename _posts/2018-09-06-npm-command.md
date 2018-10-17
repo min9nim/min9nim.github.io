@@ -2,7 +2,7 @@
 layout: post
 title: "사용 중이던 npm 패키지 버젼 업그레이드"
 date: 2018-09-06 09:00
-categories: node
+categories: nodejs
 tags: [nodejs, npm]
 ---
 `npm init` 으로 npm 프로젝트를 생성한 후 처음으로 필요한 npm 패키지를 설치할 때 `npm i -S {패키지명}` 를 사용하면 기본적으로 최신 버젼의 패키지가 설치된다. 하지만 시간이 흘러 사용 중이던 모듈을 최신버젼으로 업그레이드하고자 할 때 `npm i -S {패키지명}` 를 사용하면 _package.json_ 에서 정의된 버젼으로 다시 설치가 될 뿐 최신버젼이 설치되지는 않는다. 

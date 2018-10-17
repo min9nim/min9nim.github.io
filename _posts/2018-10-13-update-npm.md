@@ -2,7 +2,7 @@
 layout: post
 title: "npm 최신버젼으로 업그레이드"
 date: 2018-10-13 00:30
-categories: node
+categories: nodejs
 tags: [npm]
 ---
 오랜 만에 create-react-app을 이용해 react 개발을 시작하려고 하는데 시작부터 npx 가 갑자기 나온다. 근데 내 windows 머신에는 npx를 사용할 수 없었다. npm5.2 부터 사용이 가능 하다고 한다. 로컬의 npm 버젼은 3.10이었다. 귀찮지만 npm 을 최신 버젼으로 업그레이드 하기로 했다.
