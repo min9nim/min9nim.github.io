@@ -15,7 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 
 #title: Practical coding
-title: 학습하고 적용하고 공유하자
+#title: 학습하고 적용하고 공유하자
+title: Learn, apply and share
 email: min9nim@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   SW 개발에 대한 이야기
