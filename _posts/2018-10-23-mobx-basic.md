@@ -15,7 +15,7 @@ tags: [react]
 
 <br>
 #### setState 를 이용한 일반적인 입력폼 예제
-<https://codepen.io/song-mingu/pen/NOLaGG>
+[실행가능 예제링크](https://codepen.io/song-mingu/pen/NOLaGG)
 ```javascript
 class Form extends React.Component {
   constructor(props){
@@ -44,7 +44,7 @@ ReactDOM.render(<Root/>, document.getElementById('root'));
 
 <br>
 #### mobX 를 적용
-<https://codepen.io/song-mingu/pen/bmxowV>
+[실행가능 예제링크](https://codepen.io/song-mingu/pen/bmxowV)
 ```javascript
 const { observable, reaction, decorate } = mobx;
 
