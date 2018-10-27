@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[json-server] 30초 안에 RESTFul API서버 만들기"
+title: "[json-server] 30초 안에 RESTful API서버 만들기"
 date: 2018-10-27 00:30
 categories: memo
 tags: [json-server]
@@ -25,7 +25,7 @@ npm init
 npm install json-server --save-dev
 ```
 
-3\. server.js 작성
+3\. /server.js 작성
 ```javascript
 const jsonServer = require('json-server')
 const server = jsonServer.create()
@@ -48,7 +48,7 @@ server.listen(port, () => {
 })
 ```
 
-4\. 데이터베이스로 이용할 db.json 파일 생성
+4\. 데이터베이스로 이용할 /db.json 파일 생성
 ```javascript
 {
   "posts": [
@@ -65,20 +65,26 @@ server.listen(port, () => {
 ```
 node server.js
 ```
-![](/images/json-server.png)
+<img src="/images/json-server.png" border="1px"/>
 
 끝!
 
 <br>
 이제 아래와 같은 REST API 를 이용할 수 있다
 
-기능 | method | path
---- | --- | ---
-전체목록조회 | GET | /posts
-추가 | POST | /posts
+기능 | method | path 
+--- | --- | --- 
+전체목록조회 | GET | /posts 
+추가 | POST | /posts 
 삭제 | DELETE | /posts/:id
 수정 | PUT | /posts/:id
 
+추가/수정 처리시 HTTP요청 헤더에 `cotent-type: application/json` 헤더를 세팅해야 한다
+
+
+참고)
+소스코드 예제: <https://github.com/min9nim/my-json-server>
+실행 서버: <https://my-json-server.now.sh/>
 
 <br>
 #### Ref.
