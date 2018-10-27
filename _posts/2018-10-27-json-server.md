@@ -65,7 +65,7 @@ server.listen(port, () => {
 ```
 node server.js
 ```
-<img src="/images/json-server.png" border="1px"/>
+<img src="/images/json-server.png" style="border: 1px solid #aaa;"/>
 
 끝!
 
