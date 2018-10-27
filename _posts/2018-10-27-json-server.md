@@ -13,7 +13,7 @@ json-server 를 이용하여 아주(really simple!) 간단하게 Rest API 서버
 
 0\. Nodejs 는 사전 설치되어 있다고 가정한다.
 
-1\. 프로젝트 폴더를 만들고 npm init 을 수행
+1\. 프로젝트 폴더를 만들고 `npm init` 을 수행
 ```
 mkdir my-json-server
 cd my-json-server
@@ -81,10 +81,10 @@ node server.js
 
 추가/수정 처리시 HTTP요청 헤더에 `cotent-type: application/json` 헤더를 세팅해야 한다
 
-
+<br>
 참고)
-소스코드 예제: <https://github.com/min9nim/my-json-server>
-실행 서버: <https://my-json-server.now.sh/>
+- 소스코드 예제: <https://github.com/min9nim/my-json-server>
+- 실행 서버: <https://my-json-server.now.sh/>
 
 <br>
 #### Ref.
