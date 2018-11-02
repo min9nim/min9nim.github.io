@@ -2,8 +2,8 @@
 layout: post
 title:  "nprogress 소개"
 date:   2018-11-02 00:10
-categories: vanillaJS
-tags: [array, js]
+categories: memo
+tags: [nprogress]
 ---
 프론트엔드 개발할 때 언제나 필요한 기능 중 하나가 서버의 응답을 기다리는 동안에 보여줄 진행중 표시이다. 특별히 개발 프레임웍에 종속적이지 않고 모든 웹개발 프로젝트에서 간단히 사용 가능한 [nprogress](https://github.com/rstacruz/nprogress) 모듈 사용법을 소개한다.
 
