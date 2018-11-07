@@ -66,6 +66,12 @@ export default Page
 - `err` - Error object if any error is encountered during the rendering
 
 <br>
+
+#### 주의사항
+- `getInitialProps` 는 `pages` 폴더안의 파일들에서만 사용할 수 있고 자식컴포넌트들에서는 사용할 수 없다
+- `getInitialProps` 가 서버측에서 수행될 때만 필요한 모듈들은 클라이언트 쪽에서 불필요하게 로드되지 않도록 주의한다.
+
+<br>
 #### Ref.
 <https://nextjs.org/docs/#fetching-data-and-component-lifecycle>
 
