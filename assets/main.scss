@@ -47,3 +47,32 @@ $on-laptop:        800px;
 
 // Import partials from the `whiteglass` theme.
 @import "whiteglass";
+
+
+
+
+/* logo font */
+// @import url(//db.onlinewebfonts.com/c/13b003e481c54fdf324c9ed0d312d49c?family=Colopocle);
+// @font-face {font-family: "logofont";
+//     src: url("//db.onlinewebfonts.com/t/13b003e481c54fdf324c9ed0d312d49c.eot");
+//     src: url("//db.onlinewebfonts.com/t/13b003e481c54fdf324c9ed0d312d49c.eot?#iefix") format("embedded-opentype"),
+//     url("//db.onlinewebfonts.com/t/13b003e481c54fdf324c9ed0d312d49c.woff2") format("woff2"),
+//     url("//db.onlinewebfonts.com/t/13b003e481c54fdf324c9ed0d312d49c.woff") format("woff"),
+//     url("//db.onlinewebfonts.com/t/13b003e481c54fdf324c9ed0d312d49c.ttf") format("truetype"),
+//     url("//db.onlinewebfonts.com/t/13b003e481c54fdf324c9ed0d312d49c.svg#Colopocle") format("svg");
+// }
+
+
+  /**
+  * https://min9nim.github.io/2018/11/logo-webfont/
+  * 위 포스트 작성하고 기분좋아서 블로그에도 웹폰트 적용해 봤는데 더 이상해서 그냥 주석처리함
+  * 
+  */
+
+// .site-title {
+  //font-family: "logofont";
+// }
+
+.post-title {
+  font-size: 30px
+}
