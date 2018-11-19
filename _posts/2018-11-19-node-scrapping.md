@@ -42,6 +42,7 @@ $
 - `iconv` 를 이용해 인코딩변환(11라인)을 할 때 넘겨줄 문자열 인자는 바이트배열이어야 하므로 16라인의 `encoding: null`옵션이 꼭 필요하다
 - 16라인의 `utf-8//translit//ignore` 에서 `translit` 는 이상한 문자가 발견될 경우 대체 가능한 다른 문자로 자동 치환하는 옵션이다. `ignore` 는 대체 가능한 문자가 없을 경우에는 오류를 발생시키지 않고 그냥 무시하는 설정이다
 - 8라인: 사이트의 인코딩에 따라 인코딩변환을 하려면 `jschardet` 모듈을 사용해 사이트의 인코딩을 확인해야 한다.
+    - 하지만 `jschardet` 가 항상 정확하게 해당 인코딩을 탐지하는 것은 아닌 것 같다. 예를 들면 http://blog.jeonghwan.net/2016/04/28/es6.html 글의 경우 `utf-8`로 읽어야 하지만 `jschardet.detect(str)` 결과는 `ISO-8859-2` 가 나와서 위 코드대로 하면 한글이 깨지게 된다. 이에 대한 보정 작업은 따로 필요해 보인다. 추가 보정작업으로서 응답헤더의 `content-type` 의 `charset` 값을 확인하면 될 줄 알았지만 이 마저도 정확한 탐지는 아닌 것 같다. 위 [알라딘 링크][1]의 경우 `euc-kr` 인코딩이지만 응답헤더의 값은 `Content-Type: text/html; charset=ks_c_5601-1987` 로 확인된다. `Content-Type` 값을 이용하는 것도 적절한 방법은 아닌 것 같다. 필자는 일단 `jschardet` 의 탐지결과가 `euc-kr` 이 아니면 모두 `utf-8` 로 간주하도록 임시처리를 해두었다.
 
 
 
@@ -62,3 +63,7 @@ function eucKrToUtf8(str) {
 
 ### Ref.
 - 이 글보다 친절한 설명: http://victorydntmd.tistory.com/94
+
+
+
+[1]:https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=168915737
