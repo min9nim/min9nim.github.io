@@ -13,6 +13,7 @@ npm i -S cheerio iconv jschardet request request-promise
 ```
 
 <br>
+
 모듈명 | 기능
 --- | --- 
 cheerio | selector를 이용해 웹페이지의 특정 내용을 가져온다
@@ -41,8 +42,21 @@ $
 - `iconv` 를 이용해 인코딩변환(11라인)을 할 때 넘겨줄 문자열 인자는 바이트배열이어야 하므로 16라인의 `encoding: null`옵션이 꼭 필요하다
 - 16라인의 `utf-8//translit//ignore` 에서 `translit` 는 이상한 문자가 발견될 경우 대체 가능한 다른 문자로 자동 치환하는 옵션이다. `ignore` 는 대체 가능한 문자가 없을 경우에는 오류를 발생시키지 않고 그냥 무시하는 설정이다
 - 8라인: 사이트의 인코딩에 따라 인코딩변환을 하려면 `jschardet` 모듈을 사용해 사이트의 인코딩을 확인해야 한다.
-- 원래는 `isomorphic-unfetch` 모듈을 사용하려고 했었으나 `encoding: null` 과 동일한 옵션을 찾지 못해서 `request-promise` 모듈로 대체하였음
 
+
+
+<br>
+
+### 기타
+`anyToUtf8` 함수는 http://ohgyun.com/665 글의 아래 함수를 참고하였다. 
+```javascript
+function eucKrToUtf8(str) {
+    var iconv = new Iconv('euc-kr', 'utf-8');
+    var buf = new Buffer(str, 'binary');
+    return iconv.convert(buf).toString();
+}
+```
+원래는 `isomorphic-unfetch` 모듈을 사용하고자 했었다. `isomorphic-unfetch` 모듈을 이용해서 가져온 응답결과를(`res.json()`)를 위 함수와 같이 `new Buffer(str, 'binary')` 를 이용해 바이너리로 읽어 들이고자 했으나 원하는대로 동작되지는 않았다. 처음 서버응답을 읽어들일 때 부터 바이너리로 읽어들이는 옵션이 반드시 필요한 것 같다.  `isomorphic-unfetch` 에서는 `encoding: null` 과 동일한 옵션을 찾지 못해서(시간관계상 많이 찾아보지는 않았음. 아마 관련 옵션이 있을 것이라고 예상함) 결국 `request-promise` 모듈로 대체하였음.
 
 <br>
 
