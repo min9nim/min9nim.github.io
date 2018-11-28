@@ -7,7 +7,7 @@ tags: [jest, TDD, node]
 ---
 테스트 대상이 되는 모듈을 테스트하기 위해서는 테스트코드에서 일단 해당 모듈을 불러올 수 있어야 한다. 하지만 JEST 는 기본적으로 ES6의 `import`, `export` 구문을 사용할 수 없다. 해당 구문을 사용하려면 `import`, `export` 를 commonjs 모듈로 변환해 주는 바벨 설정이 필요하다.
 
-본 글은 노드에서 `import`, `export` 구문을 사용할 수 있도록 설정 방법을 안내한다.
+본 글은 JEST에서 `import`, `export` 구문을 사용할 수 있도록 설정 방법을 안내한다.
 
 <br>
 
