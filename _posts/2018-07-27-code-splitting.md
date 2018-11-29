@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "리액트 코드 스플리팅"
+title:  "[React] 코드 스플리팅"
 date:   2018-07-27 01:00:00 +0900
 categories: react
 tags: [code-splitting, react]

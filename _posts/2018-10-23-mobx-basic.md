@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "mobX를 이용하여 setState 없애기"
+title: "[React] mobX를 이용하여 setState 없애기"
 date: 2018-10-23 00:30
 categories: react
 tags: [react]

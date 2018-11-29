@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "React life-cycle method"
+title:  "[React] life-cycle method"
 date:   2018-07-14 01:00:00 +0900
 categories: react
 tags: [react, life-cycle]
