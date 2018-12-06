@@ -38,7 +38,7 @@ class Checkbox extends React.Component {
 }
 ```
 
-하지만 class fields proposal 를 편히 사용할 수 있기 전까지 우리들은 임시적으로 `super(props)` 를 사용해야만 합니다. 앞서 제시된 ES2016 기준의 코드를 다시 봅시다.
+하지만 class fields proposal 를 편히 사용할 수 있기 전까지 우리들은 임시적으로 `super(props)` 를 사용해야만 합니다. 앞서 제시된 ES2015 코드를 다시 봅시다.
 
 ```javascript
 class Checkbox extends React.Component {
