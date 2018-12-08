@@ -3,7 +3,7 @@ layout: post
 title: "Next.js + Sass"
 date: 2018-10-28 00:30
 categories: nextjs
-tags: [nextjs-sass]
+tags: [nextjs, sass]
 ---
 Next.js 에서 scss를 사용하려면 next-sass 플러그인을 추가로 설치해야 한다. next-sass 플러그인을 설치하고 사용하는 방법은 다음과 같다.
 

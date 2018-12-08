@@ -3,7 +3,7 @@ layout: post
 title: "[React] mobX를 이용하여 setState 없애기"
 date: 2018-10-23 00:30
 categories: react
-tags: [react]
+tags: [react, mobx]
 ---
 리액트에서 컴포넌트의 상태를 setState 를 이용해 변경하는 것은 functional 과 immutable 을 적극적으로 사용하는 리액트의 근간을 이루는 기본 개념이고 사용법이다. 
 
