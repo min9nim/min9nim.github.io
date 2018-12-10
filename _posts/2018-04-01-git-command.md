@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "git 명령어 요약"
-date:   2018-04-01 01:14:00 +0900
+date:   2018-04-01 01:00
 categories: git
 tags: [git, command]
 ---
@@ -88,6 +88,15 @@ $ git branch -d iss53
 ```
 git commit -a -m update
 ```
+* 최신 커밋 취소하기
+```
+git reset HEAD^
+```
+* 마지막 2개의 commit을 취소
+```
+git reset HEAD~2
+```
+
 
 <br>
 
@@ -180,3 +189,4 @@ $ git config --global user.email johndoe@example.com
 * <https://git-scm.com/book/ko/v2/Git-브랜치-브랜치와-Merge-의-기초>
 * <https://git-scm.com/book/ko/v1/Git의-기초-커밋-히스토리-조회하기>
 * <https://backlog.com/git-tutorial/kr/stepup/stepup1_1.html>
+* <https://gmlwjd9405.github.io/2018/05/25/git-add-cancle.html>
