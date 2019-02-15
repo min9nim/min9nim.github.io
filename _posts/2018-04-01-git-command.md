@@ -199,6 +199,11 @@ git remote add [단축이름] [url]
 ```
 $ git remote rm [단축이름]
 ```
+* 원격저장소 이름변경
+```
+$ git remote rename [현재이름] [바꿀이름]
+```
+
 
 <br>
 
