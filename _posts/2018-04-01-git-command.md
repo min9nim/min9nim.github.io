@@ -184,6 +184,23 @@ $ git config --global user.email johndoe@example.com
 
 <br>
 
+### 원격저장소
+* 원격저장소 확인
+```
+$ git remote -v
+origin  git://github.com/schacon/ticgit.git (fetch)
+origin  git://github.com/schacon/ticgit.git (push)
+```
+* 원격저장소 추가하기
+```
+git remote add [단축이름] [url]
+```
+* 원격저장소 삭제하기
+```
+$ git remote rm [단축이름]
+```
+
+<br>
 
 ### Ref.
 * <https://git-scm.com/book/ko/v2/Git-브랜치-브랜치와-Merge-의-기초>
