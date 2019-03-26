@@ -11,7 +11,7 @@ tags: [nodejs]
 
 #### @babel/preset-env 설치
 ```
-npm install --save-dev @babel/preset-env
+npm install -D @babel/preset-env
 ```
 
 <br>
@@ -31,12 +31,30 @@ npm install --save-dev @babel/preset-env
 npx babel-node test.js
 ```
 
+<br>
+
+### 기타
+preset-env 는 Babel7.x 부터 사용할 수 있다. Babel7.x 부터는 아래와 같이 npm모듈 네이밍이 변경되었다
+
+Babel6.x 스타일
+```
+babel-core
+babel-node
+babel-cli
+```
+
+Babel7.x 스타일
+```
+@babel/core
+@babel/node
+@babel/cli
+```
+
 
 <br>
 
 #### Ref.
 <https://babeljs.io/docs/en/babel-preset-env>
-
 
 
 [1]:https://babeljs.io/docs/en/babel-node
