@@ -125,6 +125,10 @@ $ git tag -d v1.0.0
 ```
 $ git push origin :v1.0.0
 ```
+* 특정 태그로 체크아웃
+```
+$ git checkout tagname
+```
 
 <br>
 
@@ -175,7 +179,9 @@ $ git stash apply
 ```
 $ git stash pop
 ```
-* global 설정 변경
+
+<br>
+###  global 설정 변경
 ```
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
