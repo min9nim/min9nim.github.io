@@ -25,6 +25,17 @@ export PS1="\w\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 <img src="/images/prompt.png" style="width: 500px">
 
+프롬프트 설정시 아래와 같은 값을 사용할 수 있다
+```
+\d – Current date
+\t – Current time
+\h – Host name
+\# – Command number
+\u – User name
+\W – Current working directory (ie: Desktop/)
+\w – Current working directory with full path (ie: /Users/Admin/Desktop/)
+```
+
 <br>
 
 #### Ref
