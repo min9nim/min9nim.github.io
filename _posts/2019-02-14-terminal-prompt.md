@@ -28,4 +28,4 @@ export PS1="\w\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 <br>
 
 #### Ref
-<https://code.i-harness.com/ko-kr/q/f25c98>
+<http://osxdaily.com/2006/12/11/how-to-customize-your-terminal-prompt/>
