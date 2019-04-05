@@ -152,6 +152,12 @@ $ git rm test.html
 ```
 $ git rm --cached test.html
 ```
+* 특정 파일을 tracked 상태에서 제거
+```
+rm .DS_Strore
+git add -u    --> -u 옵션의 의미는 update tracked files
+git commit -m "delete .DS_Strore"
+```
 
 <br>
 ### stash
