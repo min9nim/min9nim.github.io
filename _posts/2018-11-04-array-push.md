@@ -31,8 +31,15 @@ let arr2 = [3,4];
 arr1.push(...arr2);
 ```
 
+<br>
+넷, `spread operator`
+```javascript
+let arr1 = [1,2];
+let arr2 = [3,4];
+arr1 = [...arr1, ...arr2]
+```
 
 <br>
 #### 결론
-3번이 가장 짧고 직관적으로 이해하기 쉽다고 생각한다.
+4번이 가장 직관적으로 이해하기 쉽다고 생각한다.
 
