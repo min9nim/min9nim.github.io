@@ -7,6 +7,8 @@ tags: [graphql]
 ---
 본 글에서는 Nodejs 에서 간단히 GrahpQL 서버에서 데이터를 fetch 하는 클라이언트 작성 방법을 소개한다.
 
+<br>
+
 #### 필요 모듈
 ```json
   "devDependencies": {
@@ -52,7 +54,7 @@ client.query({
 ```
 1. 예제를 테스트하기 전에 https://48p1r2roz4.sse.codesandbox.io 를 클릭하여 서버 인스턴스를 시작해 두어야 한다
 1. ApolloClient 는 http 요청을 날리기 위해 내부적으로 전역스코프에서 fetch 를 찾는다. Nodejs 환경에서는 기본으로 fetch 를 제공하지 않기 때문에 node-fetch 모듈을 객체생성시 전달해야 한다.
-1. gql 은 작성된 쿼리를 파싱하고 ApolloClient 가 처리할 수 있는 객체로 반환한다.
+1. gql 은 작성된 grahpql 쿼리를 파싱하고 ApolloClient 가 처리할 수 있는 객체로 반환한다.
 1. 본 예제에서 ts-node 와 typescript 는 바벨설정 없이 import 구문을 간단히 사용하기 위해 사용되었다.
 
 <br>
