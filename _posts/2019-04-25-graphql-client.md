@@ -9,7 +9,7 @@ tags: [graphql]
 
 <br>
 
-#### 필요 모듈
+### 필요 모듈
 ```json
   "devDependencies": {
     "ts-node": "^8.1.0",        
@@ -32,7 +32,7 @@ tags: [graphql]
 
 <br>
 
-#### 소스
+### 소스
 ```javascript
 import ApolloClient, {gql} from "apollo-boost";
 import fetch from 'node-fetch'
@@ -59,11 +59,27 @@ client.query({
 
 <br>
 
-#### Ref.
+#### mutation 예제
+```javascript
+client.mutate({
+    mutation : gql`
+        mutation {
+          signUp(email: "user01@gmail.com", password: "Dev1@#$%^&"){
+              email
+              roles
+          }
+        }
+  `
+}).then(result => console.log(result));
+```
+
+<br>
+
+### Ref.
 https://www.apollographql.com/docs/react/essentials/get-started
 
  <br>
 
-#### GitHub
+### GitHub
 https://github.com/min9nim/toy-apollo-client
  
