@@ -78,14 +78,18 @@ user.sayHi();
 ```
 
 <br>
-#### use strict 를 사용할 때 일반적인 변화
-1. 이전에는 발생하지 않던 오류를 발생시킬 수 있다
-1. 더 빨라질 수 있다(strict 모드로 작성된 코드들에 대하여 자바스크립트 엔진이 자동으로 최적화를 수행)
+#### use strict 사용이 필요한 이유
+1. 좀 더 수월하게 안전한 코드를 작성할 수 있다
+1. 기존의 js의 애매한 문법요소들에 대하여 오류를 던지기 때문에 좀 더 정확한 코드를 작성할 수 있다
+1. 더 빨라질 수 있다(strict 모드로 작성된 코드들에 대하여 자바스크립트 엔진이 자동으로 최적화를 수행)
 1. ECMAScript의 향후 버전에서 정의 될 가능성이 있는 구문들에 대하여 사용이 제한된다
 
+<br>
+#### use strict 를 사용할 때 일반적인 변화
+1. 이전에는 발생하지 않던 오류를 발생시킬 수 있다
+1. ECMAScript의 향후 버전에서 정의 될 가능성이 있는 구문들에 대하여 사용이 제한된다
 
 <br>
-
 #### Not Allowed in Strict Mode
 선언되지 않은 변수는 사용할 수 없다
 ```javascript
@@ -160,7 +164,9 @@ eval ("var x = 2");
 alert (x);             // This will cause an error
 ```
 
-In function calls like f(), the this value was the global object. In strict mode, it is now undefined.
+<br>
+
+**In function calls like f(), the this value was the global object. In strict mode, it is now undefined.**
 ```javascript
 function fn(){
 "use strict"
@@ -169,6 +175,37 @@ function fn(){
 fn()    // return undefined
 ```
 
+non strict mode
+```javascript
+var aa = 11
+function pfn(){
+  var aa = 22
+  function fn(){
+  
+    console.log(this.aa) // print 11
+  }
+  fn()
+}
+pfn()
+```
+
+strict mode
+```javascript
+"use strict"
+var aa = 11
+function pfn(){
+  var aa = 22
+  function fn(){
+    console.log(this.aa) // this is undefined
+  }
+  fn()
+}
+pfn()
+VM543:6 Uncaught TypeError: Cannot read property 'aa' of undefined
+    at fn (<anonymous>:6:22)
+    at pfn (<anonymous>:8:3)
+    at <anonymous>:10:1
+```
 
 <br>
 #### Ref
