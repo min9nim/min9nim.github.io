@@ -83,7 +83,95 @@ user.sayHi();
 1. 더 빨라질 수 있다(strict 모드로 작성된 코드들에 대하여 자바스크립트 엔진이 자동으로 최적화를 수행)
 1. ECMAScript의 향후 버전에서 정의 될 가능성이 있는 구문들에 대하여 사용이 제한된다
 
+
+<br>
+
+#### Not Allowed in Strict Mode
+선언되지 않은 변수는 사용할 수 없다
+```javascript
+"use strict";
+x = 3.14;                // This will cause an error
+```
+
+변수를 제거할 수 없다
+```javascript
+"use strict";
+var x = 3.14;
+delete x;                // This will cause an error
+```
+
+함수를 제거할 수 없다
+```javascript
+"use strict";
+function x(p1, p2) {}; 
+delete x;                // This will cause an error 
+```
+
+Octal numeric literals are not allowed:
+```javascript
+"use strict";
+var x = 010;             // This will cause an error
+```
+
+Writing to a read-only property is not allowed:
+```javascript
+"use strict";
+var obj = {};
+Object.defineProperty(obj, "x", {value:0, writable:false});
+obj.x = 3.14;            // This will cause an error
+```
+
+Writing to a get-only property is not allowed:
+```javascript
+"use strict";
+var obj = {get x() {return 0} };
+
+obj.x = 3.14;            // This will cause an error
+```
+
+Deleting an undeletable property is not allowed:
+```javascript
+"use strict";
+delete Object.prototype; // This will cause an error
+```
+
+The string "eval" cannot be used as a variable:
+```javascript
+"use strict";
+var eval = 3.14;         // This will cause an error
+```
+
+The string "arguments" cannot be used as a variable:
+```javascript
+"use strict";
+var arguments = 3.14;    // This will cause an error
+```
+
+The with statement is not allowed:
+```javascript
+"use strict";
+with (Math){x = cos(2)}; // This will cause an error
+```
+
+For security reasons, eval() is not allowed to create variables in the scope from which it was called:
+```javascript
+"use strict";
+eval ("var x = 2");
+alert (x);             // This will cause an error
+```
+
+In function calls like f(), the this value was the global object. In strict mode, it is now undefined.
+```javascript
+function fn(){
+"use strict"
+  return this
+}
+fn()    // return undefined
+```
+
+
 <br>
 #### Ref
 - <https://javascript.info/strict-mode>
 - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode>
+- <https://www.w3schools.com/js/js_strict.asp>
