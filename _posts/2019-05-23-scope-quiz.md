@@ -18,14 +18,14 @@ function fn(){
 
 class Outer {
   name = 'object property'
-  Inner(){
+  inner(){
     var name = 'inner of local'
     console.log(this.name)
     fn()
   }
 }
 
-new Outer().Inner()
+new Outer().inner()
 ```
 실행결과는?
 
@@ -39,13 +39,13 @@ this 는 해당 함수가 실행되는 모양?에 따라 동적으로 바인딩�
 
 <br>
 
-fn 함수가 Inner 안에서 정의되면 어떨까
+fn 함수가 inner 안에서 정의되면 어떨까
 ```javascript
 var name = 'global'
 
 class Outer {
   name = 'object property'
-  Inner(){
+  inner(){
     var name = 'inner of local'
     console.log(this.name)
     function fn(){
@@ -55,14 +55,14 @@ class Outer {
   }
 }
 
-new Outer().Inner()
+new Outer().inner()
 ```
 
 ```
 object property
 Uncaught TypeError: Cannot read property 'name' of undefined
     at fn (<anonymous>:9:24)
-    at Outer.Inner (<anonymous>:11:5)
+    at Outer.inner (<anonymous>:11:5)
     at <anonymous>:15:13
 ```
 클래스의 body는 자동으로 strict 모드로 실행된다.
@@ -76,7 +76,7 @@ var name = 'global'
 
 function Outer() {
   var name = 'object property'
-  function Inner(){
+  function inner(){
     var name = 'inner of local'
     console.log(this.name)
     function fn(){
@@ -84,7 +84,7 @@ function Outer() {
     }    
     fn()
   }
-  Inner()
+  inner()
 }
 
 Outer()
@@ -94,18 +94,18 @@ Outer()
 global
 global
 ```
-fn과 Inner 가 모두 함수로서 호출되었기 때문에 this 는 글로벌객체에 바인딩된다(strict mode 라면 undefined)
+fn과 inner 가 모두 함수로서 호출되었기 때문에 this 는 글로벌객체에 바인딩된다(strict mode 라면 undefined)
 
 
 
 
-Inner 를 화살표함수로 변경하면??
+inner 를 화살표함수로 변경하면??
 ```javascript
 var name = 'global'
 
 function Outer() {
   var name = 'object property'
-  var Inner = () => {
+  var inner = () => {
     var name = 'inner of local'
     console.log(this.name)
     function fn(){
@@ -113,7 +113,7 @@ function Outer() {
     }    
     fn()
   }
-  Inner()
+  inner()
 }
 
 Outer()
@@ -123,4 +123,4 @@ Outer()
 global
 global
 ```
-화살표함수를 사용하더라도 마찬가지로 Inner와 fn 이 함수로서 호출되었기 때문에 this 는 전역객체에 바인딩 된다
+화살표함수를 사용하더라도 마찬가지로 inner와 fn 이 함수로서 호출되었기 때문에 this 는 전역객체에 바인딩 된다
