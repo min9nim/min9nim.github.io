@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[js] 함수 선안과 함수표현의 차이"
+title:  "[js] 함수 선언과 함수표현의 차이"
 date:   2019-05-26 00:10
 categories: js
 tags: [js]
