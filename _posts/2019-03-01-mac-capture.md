@@ -43,5 +43,12 @@ Shift + command + 5
 
 Note)
 - 이거는 전체화면 + 선택윈도우 + 특정영역 + 동영상캡쳐 까지 종합선물세트로 기능 지원
-- 파일로만 저장(클립보드로 저장은 안 됨)
+- 기본적으로 파일로 저장
+    - 클립보드로 저장하려면 Ctrl 누르고 "캡쳐" 클릭
+- 동영상녹화 종료 단축키
+    - Command + Ctrl + ESC
 
+<br>
+
+### Ref.
+https://support.apple.com/ko-kr/HT201361
