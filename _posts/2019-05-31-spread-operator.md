@@ -66,5 +66,16 @@ console.log(JSON.stringify({...event}))
 ### 결론
 spread operator 는 객체 자신이 소유한 속성만 열거 가능하며 상속받은 속성은 열거되지 않는다는 것을 꼭 기억하자
 
+<br>
+
+### 기타
+객체 소유의 속성만 나열 하는 것
+- `Object.keys`
+
+<br>
+
+상속받은 속성까지 나열 하는 것
+- `for ~ in`
+
 
 [1]:https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Spread_syntax
