@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[js] generator 를 이용한 interator 구현"
+title:  "[js] generator 를 이용한 iterator 구현"
 date:   2019-06-07 00:10
 categories: js
 tags: [js]
