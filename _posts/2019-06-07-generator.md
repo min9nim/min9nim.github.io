@@ -3,7 +3,7 @@ layout: post
 title:  "[js] generator 를 이용한 iterator 구현"
 date:   2019-06-07 00:10
 categories: js
-tags: [js]
+tags: [generator, iterator]
 ---
 iterable 하지 않은 객체를 iterable 하게 만들려면  `Symbol.iterator` 에 이터레이터를 리턴하는 함수를 작성해야 한다.
 
