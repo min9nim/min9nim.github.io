@@ -69,8 +69,8 @@ spread operator 는 객체 자신이 소유한 속성만 열거 가능하며 상
 <br>
 
 ### 기타
-객체 소유의 속성만 나열 하는 것
-- `Object.keys`
+객체 소유의 속성만 접근하는 것
+- `Object.keys`, `Object.assign`
 
 <br>
 
