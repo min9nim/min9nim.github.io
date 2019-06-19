@@ -38,6 +38,12 @@ https://coolors.co/46b1c9-84c0c6-9fb7b9-bcc1ba-f2e2d2
 
 나머지는 gray 톤의 색상으로 상황에 맞게 사용하도록 한다.
 
+<br>
+
+### 19.06.20 업데이트
+전문적으로 로고를 생성해주는 서비스도 있다!
+
+https://www.brandcrowd.com/maker/logos?Text=min9nim&SearchText=tech+blog&LogoStyle=0&Colors=&FontStyles=
 
 
 
