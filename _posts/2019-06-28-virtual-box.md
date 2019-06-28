@@ -28,7 +28,7 @@ https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
 
 <br>
 
-### 설치
+### Windows10 시작
 VirtualBox 를 실행시키고 가상OS이미지를 import 한다. (손쉬운 부분이기에 디테일한 안내는 생략한다)
 
 Windows10을 시작한다. 최초 로그인 비밀번호는 `Passw0rd!` 이다
