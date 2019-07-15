@@ -108,6 +108,13 @@ class Rabbit extends mixins(Animal) {
 ```
 
 <br>
+#### 기타
+mounted 함수는 아래와 같이 접근할 수 있다.
+```javascript
+Animal.options.mounted[0].call(this)
+```
+
+<br>
 
 #### Ref.
 - https://javascript.info/class-inheritance
