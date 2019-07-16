@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[funtional] ramdajs 의 렌즈(lens)"
-date:   2019-07-15 00:10
+date:   2019-07-16 00:10
 categories: ramdajs
 tags: [ramdajs, funtional]
 ---
@@ -44,7 +44,7 @@ lens 를 생성하는 함수는 4가지가 있다
 <br>
 
 #### lens
-특정 속성에 대한 getter 와 setter 를 인자로 받아서 렌즈를 생성한다. `lens` 함수는 아마 렌즈의 개념이 처음 제안되던 때에 만들어졌던 함수가 아닌가 싶다. 아래에서 생성한 `xLens` 는 그냥 `R.lensProp`를 이용해 보다 쉽게 만들 수 있다(아래 `R.lensProp` 예제를 보라). 실생활?에서 굳이 `lens` 함수를 이용해야 할 필요를 필자는 아직 경험하지 못했다.
+특정 속성에 대한 getter 와 setter 를 인자로 받아서 렌즈를 생성한다. `lens` 함수는 아마 렌즈의 개념이 처음 제안되던 때에 만들어졌던 함수가 아닌가 싶다. 아래에서 생성한 `xLens` 는 그냥 `R.lensProp`를 이용해 보다 쉽게 만들 수 있다(아래 `R.lensProp` 예제를 보라). 현장?에서 굳이 `lens` 함수를 이용해야 할 필요를 필자는 아직 경험하지 못했다.
 ```javascript
 const xLens = R.lens(R.prop('x'), R.assoc('x'));
 
@@ -83,7 +83,7 @@ R.over(xHeadYLens, R.negate, {x: [{y: 2, z: 3}, {y: 4, z: 5}]});
 <br>
 
 #### lensProp
-(depth 가 없는) 특정 속성에 대한 lens를 생성한다.
+(depth 가 없는) 특정 속성에 대한 lens를 생성한다. `R.lensProp` 는 `R.lens` 보다 좀 더 간편하게 렌즈를 생성할 수 있게 해준다.
 
 ```javascript
 const xLens = R.lensProp('x');
@@ -96,7 +96,7 @@ R.over(xLens, R.negate, {x: 1, y: 2});  //=> {x: -1, y: 2}
 <br>
 
 #### 주의사항
-`R.lensProp` 대신 `R.assoc` 를, `R.lensPath` 대신에 `R.assocPath`를 이용하면 좀 더 간단히 동일한 작업을 수행할 수 있다. 하지만 `R.assoc` 와 `R.assocPath` 는 객체를 shallow copy 한다는 점에 주의한다
+`R.lensProp` 대신 `R.assoc` 를, `R.lensPath` 대신에 `R.assocPath`를 이용하면 좀 더 간단히 동일한 작업(`R.set`)을 수행할 수 있다. 하지만 `R.assoc` 와 `R.assocPath` 는 객체를 shallow copy 한다는 점에 주의한다
 
 <br>
 
