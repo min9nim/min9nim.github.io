@@ -96,7 +96,8 @@ R.over(xLens, R.negate, {x: 1, y: 2});  //=> {x: -1, y: 2}
 <br>
 
 #### 주의사항
-`R.lensProp` 대신 `R.assoc` 를, `R.lensPath` 대신에 `R.assocPath`를 이용하면 좀 더 간단히 동일한 작업(`R.set`)을 수행할 수 있다. 하지만 `R.assoc` 와 `R.assocPath` 는 객체를 shallow copy 한다는 점에 주의한다
+`R.lensProp` 대신 `R.assoc` 를, `R.lensPath` 대신에 `R.assocPath`를 이용하면 좀 더 간단히 동일한 작업(`R.set`)을 수행할 수 있다. 하지만 `R.assoc` 와 `R.assocPath` 는 ~~객체를 shallow copy 한다는 점에 주의한다~~
+    - [19/07/17 업데이트] ramdajs v0.26.1 에서 `R.assocPath` 는 깊은 복사를 하는 것 같다.
 
 <br>
 
