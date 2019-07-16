@@ -12,10 +12,11 @@ tags: [js, utils, replace]
 쿼리스트링을 파싱하여 리턴하는 유틸함수(원본 소스를 일부 수정함)
 
 ```javascript
-const getQueryParams = () => {
+// const url = window.location.href
+const getQueryParams = (url) => {
   const params = {}
-  const idx = window.location.href.indexOf('?') + 1
-  const fromIdx = window.location.href.slice(idx)
+  const idx = url.indexOf('?') + 1
+  const fromIdx = url.slice(idx)
   fromIdx.replace(/([^(?|#)=&]+)(=([^&]*))?/g, ($0, $1, $2, $3) => {
     params[$1] = $3
   })
