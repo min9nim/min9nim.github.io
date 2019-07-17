@@ -43,10 +43,12 @@ tags: [typescript, funtional, ramda]
 
 구체적으로 어떤 수고로움이 필요한 것일까.
 
-1. 당연히 타입정의가 먼저 필요하다.
+<br>
+
+1\. 당연히 타입정의가 먼저 필요하다.
 필자가 주로 사용하는 함수형 라이브러리 ramdajs 에서는 pipe 함수에 대한 타입을 아래와 같이 장황하게 제공한다. 특별히 `pipe` 의 타입 정의를 보면 10개의 인자까지만 타입 정의가 되어 있는데 그 이상의 인자를 사용하고자 할 경우엔 또 따로 추가를 해주어야 한다.
 
-```typescript
+```javascript
   interface Static {
     includes(__: Placeholder, list: ReadonlyArray<string> | string): (s: string)  => boolean;
     includes<T>(__: Placeholder, list: ReadonlyArray<T>): (target: T) => boolean;
@@ -260,9 +262,9 @@ declare namespace R {
 ```
 그래도 이렇게 한번 타입을 정의해 놓으면 이후에는 거의 수정될 일이 없다는 것은 다행스런 일이다.
 
+<br>
 
-
-2. 함수 호출시 사용될 타입을 명시해야 한다.
+2\. 함수 호출시 사용될 타입을 명시해야 한다.
 아래는 [ramdajs](https://ramdajs.com/docs) 의 pipe, prop, includes 를 사용한 코드의 일부이다. pipe 함수 사용시 아래와 같이 사용되어질 타입을 명시해야 한다
 ```typescript
 pipe<IType, string, boolean>(
