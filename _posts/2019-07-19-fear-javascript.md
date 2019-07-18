@@ -3,7 +3,7 @@ layout: post
 title:  "더 나은 자바스크립트 코드에 대하여"
 date:   2019-07-19 00:10
 categories: js
-tags: [js]
+tags: [js, functional, typescript]
 ---
 https://medium.com/@rinae/번역-두려움-믿음-그리고-자바스크립트-언제-타입-시스템과-함수형-프로그래밍이-먹히지-않는가-dde33972301f
 
