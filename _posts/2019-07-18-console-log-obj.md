@@ -26,7 +26,16 @@ console.log(obj)
 더 나은 방법이 있을 지 모르겠지만, 아래와 같은 방법을 추천한다.
 <br>
 ```javascript
-function log(obj){
-    console.log(JSON.stringify(obj, null, 2))
+global.log = (...args: any[]): void => {
+  const serialized = args.map((arg) => {
+    if(typeof arg === 'object'){
+      return JSON.stringify(arg, null, 2)
+    }else if(typeof arg === 'function'){
+      return arg.toString()
+    }else{
+      return arg
+    }
+  })
+  console.log(...serialized)
 }
 ```
