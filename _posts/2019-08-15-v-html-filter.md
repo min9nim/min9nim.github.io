@@ -9,7 +9,7 @@ vue 에서 text 를 화면에 렌더링하기 위해서는 머시태그나 v-htm
 
 특별히 html 태그사용이 필요한 경우 `v-html` 을 이용해 html 문자열을 렌더링해야 한다. 뷰는 template 태그 영역 내에서 간단하게/직관적으로/readable 하게 데이터를 변환시키는 용도로 [vue filter](https://kr.vuejs.org/v2/guide/filters.html) 를 제공한다. 하지만 vue filter 는 머시태그와 `v-bind` 에서만 사용이 가능하다
 
-아쉽지만 `v-html` 에서는 아래와 같이 비스므리하게 vue filter 를 흉내내서 사용할 수 았다.
+아쉽지만 `v-html` 에서는 아래와 같이 `go`함수를 이용하여 비스므리하게 vue filter 를 흉내내서 사용할 수 있다.
 
 ```html
 <template lang="pug">

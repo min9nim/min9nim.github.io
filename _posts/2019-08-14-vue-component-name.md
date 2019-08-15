@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "뷰 컴포넌트 이름이 필요한 이유"
+title:  "[vue] 뷰 컴포넌트 이름이 필요한 이유"
 date:   2019-08-14 00:10
 categories: vue
 tags: [vue, typescript, nuxt]
