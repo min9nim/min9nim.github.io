@@ -57,12 +57,8 @@ now 에 github 계정 연동을 미리 설정해 둔 경우에는 github 에 소
 
 <br>
 
-### 코드샘플
-https://github.com/min9nim/webscrap
-
-<br>
-
 ### Ref.
+https://github.com/min9nim/webscrap
 https://scotch.io/tutorials/easily-deploy-a-serverless-node-app-with-zeit-now
 
 
