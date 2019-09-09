@@ -37,7 +37,7 @@ tags: [zeit, now, deploy, node]
 ```
 \* 사용되는 route 경로를 `now.json` 에도 추가로 정의해 주어야 함에 주의한다
 
-\* cors 설정이 필요하다면 `Access-Control-Allow-Origin` 헤더 추가와 함께 methods 에 `OPTIONS` 항목도 추가해 주어야 함에 주의한다. 
+\* cors 설정이 필요하다면 `Access-Control-Allow-Origin` 헤더 추가와 함께 methods 에 `OPTIONS` 항목도 추가해야 한다
 
 <br>
 
