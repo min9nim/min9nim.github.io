@@ -1,0 +1,68 @@
+---
+layout: post
+title:  "[now] Node express 서버 배포"
+date:   2019-09-09 00:10
+categories: Node
+tags: [zeit, now, deploy, node]
+---
+작년 이 맘때 [now 서비스를 사용하는 방법](/2018/10/zeit-now/)을 간단히 포스트 한적이 있다. 당시에는 1.0 버젼이었는데 최근? 2.0으로 버젼 업이 되면서 소소하게 적잖은 부분이 변경되었다.
+
+최근 2.0 내용에 맞춰 express 서버를 간단히 now 를 이용해 배포하는 방법을 공유한다. (해당 내용은 본 글에서 다루고자 하는 내용이 아니므로 구체적인 내용 생략)
+ 
+<br>
+
+### 1\. node 프로젝트 작성
+간단하게 노드 프로젝트를 작성한다. 깃헙이나 깃랩을 이용할 경우에는 원격저장소를 작접 연결하여 배포가 가능하다
+
+<br>
+
+### 2\. `now.json` 작성
+프로젝트 루트경로에 `now.json` 파일을 작성한다. 아래와 같이 해당 프로젝트가 node 프로젝트임을 명시적으로 정의해야 한다
+```json
+{
+  "public": true,
+  "version": 2,
+  "builds": [{ "src": "src/index.js", "use": "@now/node-server" }],
+  "routes": [
+    {
+      "src": "/webscrap",
+      "dest": "/src/index.js",
+      "methods": ["POST", "OPTIONS"],
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }
+    }
+  ]
+}
+```
+\* 사용되는 route 경로를 `now.json` 에도 추가로 정의해 주어야 함에 주의한다
+
+\* cors 설정이 필요하다면 `Access-Control-Allow-Origin` 헤더 추가와 함께 methods 에 `OPTIONS` 항목도 추가해 주어야 함에 주의한다. 
+
+<br>
+
+### 3\. package.json에 start, build 명령 작성
+package.json 파일에는 반드시 start, build 명령이 포함되어 있어야 한다
+
+<br>
+
+### 4\. 배포
+```
+now
+```
+<br>
+now 에 github 계정 연동을 미리 설정해 둔 경우에는 github 에 소스코드를 푸시할 경우 자동으로 now 로 배포가 된다.
+
+![](/images/now-deploy.png)
+
+<br>
+
+### 코드샘플
+https://github.com/min9nim/webscrap
+
+<br>
+
+### Ref.
+https://scotch.io/tutorials/easily-deploy-a-serverless-node-app-with-zeit-now
+
+
