@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[now] Node express 서버 배포"
+title:  "[now] Node 서버 배포"
 date:   2019-09-09 00:10
 categories: Node
 tags: [zeit, now, deploy, node]
