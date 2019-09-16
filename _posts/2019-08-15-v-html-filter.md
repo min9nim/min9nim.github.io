@@ -42,3 +42,8 @@ export default class VComment extends Vue {
 }
 </script>
 ```
+
+<br>
+
+### 주의사항
+하지만 위와 같이 처리할 경우 `go` 함수의 결과값(primitive)이 `v-html` 에 바인딩되기 때문에 reactive 하지 않은 문제가 있다.
