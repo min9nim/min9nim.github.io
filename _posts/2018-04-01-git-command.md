@@ -158,6 +158,10 @@ rm .DS_Strore
 git add -u    --> -u 옵션의 의미는 update tracked files
 git commit -m "delete .DS_Strore"
 ```
+* 트래킹 파일 리스트
+```
+git ls-files
+```
 
 <br>
 ### stash
