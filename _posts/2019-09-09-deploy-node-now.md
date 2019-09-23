@@ -50,8 +50,30 @@ package.json 파일에는 반드시 start, build 명령이 포함되어 있어�
 ```
 now
 ```
+여기까지 배포과정의 전부다.
+
+github 의 특정 레포지토리와 연결하여 프로젝트를 관리하고자 한다면 이후 내용을 참고한다.
+
 <br>
-now 에 github 계정 연동을 미리 설정해 둔 경우에는 github 에 소스코드를 푸시할 경우 자동으로 now 로 배포가 된다.
+
+### 5\. github 연동
+now.sh 계정과 github 계정의 연동설정을 미리 해두었다면 아래와 같이 now.sh 의 레포지토리가 github 의 특정 레포지토리를 바라보도록 설정할 수 있다.
+
+![](/images/now-github1.png)
+
+<br>
+
+연결할 레포지토리 선택한 후 save
+![](/images/now-github2.png)
+
+<br>
+
+연결이 완료되면 아래와 같이 표시됨
+![](/images/now-github3.png)
+
+<br>
+
+이제 해당 github 레포지토리에 소스코드를 푸시할 경우 자동으로 now 로 배포가 된다.
 
 ![](/images/now-deploy.png)
 
