@@ -48,6 +48,8 @@ function atomic(asyncFn) {
 }
 ```
 
+<br>
+
 ### Usage
 ```javascript
 const atomicAsyncFn = atomic(asyncFn) // atomic 으로 래핑된 함수 asyncFn 은 어떤 상황에서도 순차적 실행이 보장된다
