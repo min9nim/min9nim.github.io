@@ -31,18 +31,18 @@ async () => {
 
 ```javascript
 function atomic(asyncFn) {
-  const resultQueue: any[] = []
+  const queue: Array<Promise<void>> = []
   return (...args) => {
-    resultQueue.push(
-      new Promise(async resolve => {
-        if (resultQueue.length > 0) {
-          await resultQueue[resultQueue.length - 1]
-          resultQueue.shift()
+    queue.push(
+      new Promise(async (resolve) => {
+        if(queue.length > 0){
+          await queue[queue.length - 1]
+          queue.shift()
         }
         const result = await asyncFn(...args)
         resolve()
         return result
-      })
+      }),
     )
   }
 }
