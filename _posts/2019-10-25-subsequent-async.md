@@ -89,4 +89,11 @@ it('should be excuted subsequentially with continuous call', async () => {
   await delay(100)
   expect(count).to.be.equal(2)
 })
+it('should return same promise of origin async function', async () => {
+  const asyncFn = () => Promise.resolve(2)
+  const atomicAsyncFn = atomic(asyncFn)
+  const asyncFnResult = await asyncFn()
+  const atomicAsyncFnResult = await atomicAsyncFn()
+  expect(atomicAsyncFnResult).to.be.equal(asyncFnResult)
+})
 ```
