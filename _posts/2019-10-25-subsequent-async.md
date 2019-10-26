@@ -30,7 +30,7 @@ async () => {
 위와 같이 `await` 없이 연속적으로 비동기함수를 호출하는 상황에서도 `asyncFn` 의 순차적 실행을 보장할 수 있도록 유틸성 함수를 `atomic` 을 하나 만들어 보았다.
 
 ```javascript
-function atomic(asyncFn) {
+export function atomic(asyncFn) {
   const queue: Array<Promise<void>> = []
   return (...args) => {
     queue.push(
@@ -39,11 +39,11 @@ function atomic(asyncFn) {
           await queue[queue.length - 1]
           queue.shift()
         }
-        const result = await asyncFn(...args)
-        resolve()
-        return result
+        const resolved = await asyncFn(...args)
+        resolve(resolved)
       }),
     )
+    return queue[queue.length - 1]
   }
 }
 ```
