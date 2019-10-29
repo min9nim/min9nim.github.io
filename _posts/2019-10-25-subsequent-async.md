@@ -31,7 +31,7 @@ async () => {
 
 ```javascript
 export function atomic(asyncFn) {
-  const queue: Array<Promise<void>> = []
+  const queue: Array<Promise<any>> = []
   return (...args) => {
     queue.push(
       new Promise(async (resolve) => {
