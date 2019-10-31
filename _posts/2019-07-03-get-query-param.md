@@ -32,8 +32,13 @@ http://www.11st.co.kr/product/SellerProductDetail.tmall?method=getSellerProductD
 <br>
 
 리턴 결과
-```
-{method: "getSellerProductDetail", prdNo: "2228972569", trTypeCd: "22", trCtgrNo: "895019"}
+```javascript
+{
+    method: "getSellerProductDetail",
+    prdNo: "2228972569",
+    trTypeCd: "22",
+    trCtgrNo: "895019"
+}
 ```
 
 
