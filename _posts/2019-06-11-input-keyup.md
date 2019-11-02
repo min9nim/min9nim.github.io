@@ -73,3 +73,37 @@ function intervalCall(interval){
 }
 </script>
 ```
+
+---
+
+### 19.11.03 update
+앞서 제시된 예제는 `intervalCall1000` 가 콜백함수를 인자로 받아야 하는데 이 부분이 코드의 가독성을 저해하는 요인이 될 수 있을 것 같다. 그렇다면 아래와 같이 조금 더 개선된 방법을 이용할 수도 있다.
+
+```javascript
+function useIntervalCall(interval = 1000) {
+  // interval 시간 안에 다시 호출된 함수 콜은 무시한다
+  let elapsed = true
+  return (fn) => {
+    return function(...args) {
+      if (!elapsed) {
+        console.warn((fn.name || 'anonymous function') + ' is canceled by intervalCall')
+        return // 마지막 호출 후 제한된 경과시간이 지나지 않은 경우 리턴
+      }
+      elapsed = false
+      setTimeout(() => {
+        elapsed = true
+      }, interval)
+      // @ts-ignore
+      return fn.call(this, ...args)
+    }
+  }
+}
+const intervalCall = useIntervalCall()
+
+function handleKeyup(e){
+  if(e.keyCode === 13){
+    search(document.getElementById('word').value)
+  }
+}
+handleKeyup = intervalCall(handleKeyup)
+```
