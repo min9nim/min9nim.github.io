@@ -3,7 +3,7 @@ layout: post
 title: '[js] 비동기 함수의 순차적 실행 보장'
 date: 2019-10-25 00:10
 categories: js
-tags: [js]
+tags: [js, atomic, async]
 ---
 async/await 를 이용하면 간단하게 비동기함수를 순차적으로 실행할 수 있다.
 
