@@ -9,11 +9,14 @@ tags: [mac, shell]
 
 맥에서 기본 shell을 변경하는 방법을 간단히 정리하고 넘어간다.
 
+<br>
 
 맥 기본 bash 사용
 ```
 chsh -s /bin/bash
 ```
+
+<br>
 
 기본 설치된 shell 목록 확인
 ```
