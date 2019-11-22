@@ -74,9 +74,10 @@ function intervalCall(interval){
 </script>
 ```
 
----
+<br>
+<br>
 
-### `interval-call` npm 모듈
+### npm 모듈 이용
 [interval-call](https://www.npmjs.com/package/interval-call) 모듈을 이용해 아래와 같이 사용할 수도 있다.
 
 #### Install
