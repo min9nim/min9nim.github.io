@@ -27,73 +27,36 @@ async () => {
 }
 ```
 
-위와 같이 `await` 없이 연속적으로 비동기함수를 호출하는 상황에서도 `asyncFn` 의 순차적 실행을 보장할 수 있도록 유틸성 함수를 `atomic` 을 하나 만들어 보았다.
+위와 같이 `await` 없이 연속적으로 비동기함수를 호출하는 상황에서도 `asyncFn` 의 순차적 실행을 보장하고자 한다면 간단히 [atomicasync](https://www.npmjs.com/package/atomicasync) 모듈을 이용할 수 있다.
 
-```javascript
-export function atomic(asyncFn) {
-  const queue: Array<Promise<any>> = []
-  return (...args) => {
-    queue.push(
-      new Promise(async (resolve) => {
-        if(queue.length > 0){
-          await queue[queue.length - 1]
-          queue.shift()
-        }
-        const resolved = await asyncFn(...args)
-        resolve(resolved)
-      }),
-    )
-    return queue[queue.length - 1]
-  }
-}
+<br>
+
+### Install
+```
+npm i atomicasync
 ```
 
 <br>
 
 ### Usage
 ```javascript
-const atomicAsyncFn = atomic(asyncFn) // atomic 으로 래핑된 함수 asyncFn 은 어떤 상황에서도 순차적 실행이 보장된다
-async () => {
-  atomicAsyncFn()
-  atomicAsyncFn()
-  atomicAsyncFn()
+const atomic = require('atomicasync')
+ 
+function asyncFn(){
+  return new Promise(resolve => {
+    setTimeout(() => {
+      console.log('asyncFn called', new Date())
+      resolve('done')
+    }, 1000)
+  })
 }
+ 
+const atomicAsyncFn = atomic(asyncFn)
+/*
+* atomicAsyncFn will be executed sequentially like using await
+*/
+atomicAsyncFn()   // 1s later call
+atomicAsyncFn()   // 2s later call
+atomicAsyncFn()   // 3s later call
 ```
 
-<br>
-
-### testcase
-```javascript
-it('should be excuted subsequentially with continuous call', async () => {
-  const delay = ms => {
-    return new Promise(resolve => {
-      setTimeout(resolve, ms)
-    })
-  }
-  let count = 0
-  const asyncFn = async () => {
-    await delay(100)
-    count++
-  }
-  asyncFn()
-  asyncFn()
-  await delay(150)
-  expect(count).to.be.equal(2)
-
-  count = 0
-  const atomicAsyncFn = atomic(asyncFn)
-  atomicAsyncFn()
-  atomicAsyncFn()
-  await delay(150)
-  expect(count).to.be.equal(1)
-  await delay(100)
-  expect(count).to.be.equal(2)
-})
-it('should return same promise of origin async function', async () => {
-  const asyncFn = () => Promise.resolve(2)
-  const atomicAsyncFn = atomic(asyncFn)
-  const asyncFnResult = await asyncFn()
-  const atomicAsyncFnResult = await atomicAsyncFn()
-  expect(atomicAsyncFnResult).to.be.equal(asyncFnResult)
-})
-```
