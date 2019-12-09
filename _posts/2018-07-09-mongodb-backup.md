@@ -10,6 +10,11 @@ tags: [mongoDB, database, backup, 백업]
 #!/bin/sh
 mongodump -h 127.0.0.1 -u root -p xxxx -o /home/ec2-user/dbbackup/dump_$(date +%y%m%d-%H%M)
 ```
+
+외부 몽고디비를 백업
+```
+$ mongodump -h 호스트:포트 -d 디비명 -u 사용자계정 -p 비밀번호 -o 백업폴더
+```
 <br>
 
 #### crontab 에 등록
