@@ -30,3 +30,22 @@ kubectl 로그 확인
 ```
 kubectl logs -f container-name
 ```
+
+<br>
+
+### 로그 확인 shell 스크립트
+쿠버네티스는 컨테이너를 재기동할 때마다 컨테이너 이름이 바뀐다. 그래서 로그를 열려면 매번 컨테이너 이름을 확인해 줘야 한다. 삽질을 조금 줄이려면 아래와 같이 shell 스크립트를 사용할 수 있다.
+```
+#!/bin/sh
+
+IN=$(kubectl get pod | grep case)
+#echo $IN
+arrIN=(${IN// / })
+#echo $arrIN
+kubectl logs -f $arrIN
+```
+
+<br>
+
+### Ref.
+https://stackoverflow.com/questions/918886/how-do-i-split-a-string-on-a-delimiter-in-bash
