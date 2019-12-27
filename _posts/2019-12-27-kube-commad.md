@@ -17,6 +17,8 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl/
 kubectl get pod
 ```
 
+<br>
+
 컨테이너 삭제
 ```
 kubectl delete pod container-name
