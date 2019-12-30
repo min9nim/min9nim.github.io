@@ -40,6 +40,15 @@ kubectl logs -f container-name
 
 <br>
 
+컨테이너의 파일을 로컬로 복사
+```
+kubectl cp <source pod>:<source file> <destination>
+```
+ex) `kubectl cp blabla-name:/var/app/screenshot/image1.png ./image1.png`
+
+
+<br>
+
 ### 로그 확인 shell 스크립트
 쿠버네티스는 컨테이너를 재기동할 때마다 컨테이너 이름이 바뀐다. 그래서 로그를 열려면 매번 컨테이너 이름을 확인해 줘야 한다. 삽질을 조금 줄이려면 아래와 같이 shell 스크립트를 사용할 수 있다.
 ```
