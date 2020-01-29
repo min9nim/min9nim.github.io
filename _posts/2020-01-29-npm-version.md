@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "npm 버젼의 캐럿(^) 의미"
+title: 'npm 버젼의 캐럿(^) 의미'
 date: 2020-01-29 00:10
 categories: npm
 tags: [npm, version]
@@ -49,6 +49,19 @@ tags: [npm, version]
 ^0.1 : >=0.1.0 <0.2.0
 ^0 : >=0.0.0 <1.0.0
 ^0.0.1 : ==0.0.1
+```
+
+<br>
+
+### 버젼 고정
+
+그냥 간단하게 버젼을 고정하고 싶으면 특수기호 없이 그냥 버젼만 명시
+
+```javascript
+// package.json
+"dependencies": {
+  "if-logger": "0.4.2",
+}
 ```
 
 <br>
