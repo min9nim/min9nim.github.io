@@ -1,15 +1,18 @@
 ---
 layout: post
-title: "[React] 함수형 컴포넌트와 클래스기반 컴포넌트의 차이점"
+title: '[React] 함수형 컴포넌트와 클래스기반 컴포넌트의 차이점'
 date: 2018-10-21 00:30
 categories: react
 tags: [react]
 ---
+
 #### 함수형 컴포넌트
+
 순수 자바스크립트 함수를 이용하여 컴포넌트를 정의한 것
+
 ```javascript
 function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
+  return <h1>Hello, {props.name}</h1>
 }
 ```
 
@@ -27,10 +30,10 @@ class Welcome extends React.Component {
 <br>
 #### 차이점
 
-구분 | 함수형 컴포넌트 | 클래스기반 컴포넌트
---- | --- | ---
-장점 | 코드를 간결하게 작성할 수 있다. | N/A
-단점 | state를 갖지 못하므로 setState 사용불가<br> [life-cycle 함수][1] 사용 불가 | N/A
+| 구분 | 함수형 컴포넌트                                                            | 클래스기반 컴포넌트 |
+| ---- | -------------------------------------------------------------------------- | ------------------- |
+| 장점 | 코드를 간결하게 작성할 수 있다.                                            | N/A                 |
+| 단점 | state를 갖지 못하므로 setState 사용불가<br> [life-cycle 함수][1] 사용 불가 | N/A                 |
 
 <br>
 #### 결론
@@ -40,8 +43,12 @@ class Welcome extends React.Component {
 1. 그 외 굳이 함수형 컴포넌트를 써야 할 이유는 없을 것 같다.
 
 <br>
+#### 업데이트
+1. 20/02/02
+    - closure 와 this 관련 socpe 문제) https://www.hamadevelop.me/reactfunctionclassdiff/
+
+<br>
 #### Ref.
 <https://medium.com/@Zwenza/functional-vs-class-components-in-react-231e3fbd7108>
 
-
-[1]:https://min9nim.github.io/2018/07/react-lifecycle/
+[1]: https://min9nim.github.io/2018/07/react-lifecycle/
