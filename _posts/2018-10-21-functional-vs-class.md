@@ -45,7 +45,7 @@ class Welcome extends React.Component {
 <br>
 #### 업데이트
 1. 20/02/02
-    - closure 와 this 관련 socpe 문제) https://www.hamadevelop.me/reactfunctionclassdiff/
+    - closure 와 this 관련 socpe 문제) https://overreacted.io/ko/how-are-function-components-different-from-classes/
 
 <br>
 #### Ref.
