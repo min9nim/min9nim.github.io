@@ -11,34 +11,38 @@ image lazy load 란 사용자가 보여지는 화면 영역 안에(viewport) 들
 과거에는 아래와 같이 문서상의 이미지의 높이값과 스크롤 위치등을 계산해서 이미지가 보여지는 영역 안으로 들어왔는 지 여부를 체크해야만 했었다.
 
 ```javascript
-function imageLazyLoad() {
+function debounce(callback, ms) {
   let timeout
-  function lazyload() {
+  return (...args) => {
     if (timeout) {
-      // 성능 문제를 고려하여 debounce 기법 적용
       clearTimeout(timeout)
     }
-    timeout = setTimeout(function() {
-      let lazyloadImages = document.querySelectorAll('img.lazy')
-      lazyloadImages.forEach(img => {
-        if (img.offsetTop >= window.innerHeight + window.pageYOffset) {
-          return
-        }
-        if (img.dataset.src) {
-          img.src = img.dataset.src
-        } else {
-          img.removeAttribute('src')
-        }
-        img.removeAttribute('data-src')
-        img.classList.remove('lazy')
-      })
-      if (lazyloadImages.length == 0) {
-        document.removeEventListener('scroll', lazyload)
-        window.removeEventListener('resize', lazyload)
-        window.removeEventListener('orientationChange', lazyload)
-      }
-    }, 500)
+    timeout = setTimeout(() => callback(...args), ms)
   }
+}
+
+function imageLazyLoadPolyfill() {
+  let lazyload = () => {
+    let lazyloadImages = document.querySelectorAll('img.lazy')
+    lazyloadImages.forEach(img => {
+      if (img.offsetTop >= window.innerHeight + window.pageYOffset) {
+        return
+      }
+      if (img.dataset.src) {
+        img.src = img.dataset.src
+      } else {
+        img.removeAttribute('src')
+      }
+      img.removeAttribute('data-src')
+      img.classList.remove('lazy')
+    })
+    if (lazyloadImages.length == 0) {
+      document.removeEventListener('scroll', lazyload)
+      window.removeEventListener('resize', lazyload)
+      window.removeEventListener('orientationChange', lazyload)
+    }
+  }
+  lazyload = debounce(lazyload, 100) // 성능문제도 고려해 줘야 함
   lazyload()
   document.addEventListener('scroll', lazyload)
   window.addEventListener('resize', lazyload)
