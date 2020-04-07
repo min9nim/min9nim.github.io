@@ -78,7 +78,7 @@ function observeDom(dom, callback) {
 최초 image 는 아래와 같이 렌더링한다.
 
 ```html
-<img class="lazy" data-src="~~" />
+<img class="lazy" src="some-loading-image" data-src="~~" />
 ```
 
 <br>
@@ -90,6 +90,8 @@ function imageLazyLoad() {
   const loadImage = img => {
     if (img.dataset.src) {
       img.src = img.dataset.src
+    } else {
+      img.removeAttribute('src')
     }
     img.removeAttribute('data-src')
     img.classList.remove('lazy')
