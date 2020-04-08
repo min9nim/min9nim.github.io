@@ -58,18 +58,15 @@ IntersectionObserver api 는 어떤 dom 요소가 화면에 노출되었는 지 
 
 ```javascript
 function observeDom(dom, callback) {
-  new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-          return
-        }
-        callback(entry.target)
-        observer.unobserve(entry.target)
-      })
-    },
-    {threshold: 0.5}
-  ).observe(dom)
+  new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) {
+        return
+      }
+      callback(entry.target)
+      observer.unobserve(entry.target)
+    })
+  }).observe(dom)
 }
 ```
 
