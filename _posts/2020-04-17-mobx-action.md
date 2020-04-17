@@ -94,7 +94,11 @@ store.incNum()
 
 <br>
 
-Note) `configuare` 를 이용한 설정은 mobx 를 사용하는 프로젝트 전체에 영향을 주기 때문에 전역에서 한번만 호출한다.
+Note)
+
+1. `configuare` 를 이용한 설정은 mobx 를 사용하는 프로젝트 전체에 영향을 주기 때문에 전역에서 한번만 호출한다.
+1. `action` 은 해당 함수내에서 변경이 여러 번 발생할 경우 하나의 트랜잭션으로 처리하며 reaction 이 한번만 발생하도록 처리한다.
+1. 여러 개의 action 을 하나의 트랜잭션으로 처리하기 위해서는 mobx의 `transaction` 을 사용한다
 
 <br>
 
