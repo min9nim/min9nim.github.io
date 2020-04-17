@@ -14,5 +14,5 @@ react 에서 코드 재사용을 위해 적극적으로 권장하는 방법 **Re
 
 <iframe
   style="width: 100%; height: 500px"
-  src="https://stackblitz.com/edit/react-render-props-sdk51o?embed=1&file=Mouse.js" >
+  src="https://stackblitz.com/edit/react-render-props-9?embed=1&file=Mouse.js" >
 </iframe>
