@@ -20,3 +20,9 @@ React.Component 는 `setState` 가 호출될 때 항상 `render` 함수가 호�
   style="width: 100%; height: 500px"
   src="https://stackblitz.com/edit/react-pure-component-9?embed=1&file=index.js" >
 </iframe>
+
+<br>
+
+### Ref.
+
+https://ko.reactjs.org/docs/react-api.html#reactpurecomponent
