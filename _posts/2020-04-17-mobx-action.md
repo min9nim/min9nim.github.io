@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '[mobx] enforceActions'
-date: 2020-04-09 00:10
+date: 2020-04-17 00:10
 categories: mobx
 tags: [js, mobx]
 ---
