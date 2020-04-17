@@ -17,10 +17,23 @@ obsarvable 상태를 변화시키는 로직들을 특별하게 관리하기 위�
 기본적으로 mobx 에서 상태는 아래와 같이 간단하게 변화를 줄 수 있다.
 
 ```jsx
-import {observable} from 'mobx'
+import {observable, autorun, action} from 'mobx'
 
-const state = observable({num: 0})
-state.num++
+class Store {
+  @observable state = {num: 0}
+  @action
+  incNum() {
+    this.state.num++
+  }
+}
+
+const store = new Store()
+
+autorun(() => {
+  console.log(store.state.num)
+})
+
+store.incNum()
 ```
 
 하지만 `state.num` 의 변화가 가져올 사이드이펙트에 대한 위화감?을 조장하고 싶다.
@@ -28,12 +41,23 @@ state.num++
 `state.num` 이 사이드이펙트를 불러올 수 있다!라는 것을 명시적으로 표현하기 위해 아래와 같이 코드를 작성할 수 있다.
 
 ```jsx
-import {observable, action} from 'mobx'
+import {observable, autorun, action} from 'mobx'
 
-const state = observable({num: 0})
-action(() => {
-  state.num++
+class Store {
+  @observable state = {num: 0}
+  @action
+  incNum() {
+    this.state.num++
+  }
+}
+
+const store = new Store()
+
+autorun(() => {
+  console.log(store.state.num)
 })
+
+store.incNum()
 ```
 
 이제 조금 마음에 편안함이 전해진다.
@@ -43,14 +67,25 @@ action(() => {
 하지만 코딩 컨벤션에만 의존하기엔 역시나 아직 개운치 않다. 이를 강제하기 위한 방법을 mobx 는 제공한다.
 
 ```jsx
-import {observable, action, configuare} from 'mobx'
+import {observable, autorun, action, configure} from 'mobx'
 
-configure({enforceActions: 'observed'}) // default 는 'never'
+configure({enforceActions: 'observed'})
 
-const state = observable({num: 0})
-action(() => {
-  state.num++
+class Store {
+  @observable state = {num: 0}
+  @action
+  incNum() {
+    this.state.num++
+  }
+}
+
+const store = new Store()
+
+autorun(() => {
+  console.log(store.state.num)
 })
+
+store.incNum()
 ```
 
 이제 action 을 사용하지 않고 직접 상태를 변경할 경우에는 아래와 같은 오류를 만나게 될 것이다.
