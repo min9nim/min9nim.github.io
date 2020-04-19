@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '[react] mobx 사용 설정'
+title: '[react] mobx 개발환경 설정'
 date: 2020-04-19 00:10
 categories: react
 tags: [js, react, mobx]
