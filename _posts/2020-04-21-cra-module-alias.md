@@ -32,7 +32,9 @@ yarn eject
 yarn add -D module-alias
 ```
 
-package.json 루트 위치에 별칭 정의
+<br>
+
+### package.json 루트 위치에 별칭 정의
 
 ```json
 ...
