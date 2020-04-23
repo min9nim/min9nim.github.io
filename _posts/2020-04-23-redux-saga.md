@@ -449,7 +449,7 @@ import {addCount, mulCount} from './store'
 function* computeCount(action) {
   yield call(action.setLoading, true) // true 를 인자로 action.setLoading 호출
   const random1 = yield call(fetchNumber) // fetchNumber 호출
-  yield put(addCount(random1)) // mulCount(random1) 액션을 dispatch
+  yield put(addCount(random1)) // addCount(random1) 액션을 dispatch
   const random2 = yield call(fetchNumber) // fetchNumber 호출
   yield put(mulCount(random2)) // mulCount(random2) 액션을 dispatch
   yield call(action.setLoading, false) // false 를 인자로 action.setLoading 호출
