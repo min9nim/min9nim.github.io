@@ -41,8 +41,8 @@ console.log("에러가 발생합니다.")
 
 위 예시는 세미콜론 자동삽입 규칙에 해당하지 않기 때문에 세미콜론 자동삽입이 일어나지 않는다. 결국 자바스크립트 실행 엔진은 아래와 같은 문장을 바라볼 것이고
 
-```js
-console.log('에러가 발생합니다.')[(1, 2)].forEach(console.log)
+```
+console.log('에러가 발생합니다.')[1, 2].forEach(console.log)
 ```
 
 코드 실행시 `Uncaught TypeError: Cannot read property '2' of undefined` 오류가 발생하게 된다.
@@ -59,7 +59,7 @@ vscode 에서 세미콜론 관련 자동포맷 옵션을 적용하면 아래 코
 
 ```
 console.log('에러가 발생합니다.')
-[(1, 2)].forEach(console.log)
+[1, 2].forEach(console.log)
 ```
 
 자동으로 아래와 같이 변환이 되기 때문에 쉽게 오류 발생지점을 확인할 수 있다.
